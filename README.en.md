@@ -3,10 +3,10 @@
 > [!WARNING]
 > **Research status and AI-use disclosure**
 >
-> - **✅ VERIFIED BY THE REPOSITORY OWNER:** the correctness of the two explicit counterexamples.
-> - **🤖 PRODUCED BY AI; NOT YET FULLY CHECKED BY THE OWNER:** the general proofs, derivations, and proposed bounds. These should be treated as provisional.
-> - **🚧 ONGOING:** work toward rigorous bounds.
-> - **📝 PLANNED:** after the author has checked the arguments and confirmed that they are correct, the results will be written up and submitted to arXiv.
+> - **VERIFIED BY THE REPOSITORY OWNER:** the correctness of the two explicit counterexamples.
+> - **PRODUCED BY AI; NOT YET FULLY CHECKED BY THE OWNER:** the general proofs, derivations, and proposed bounds. These should be treated as provisional.
+> - **ONGOING:** work toward rigorous bounds.
+> - **PLANNED:** after the author has checked the arguments and confirmed that they are correct, the results will be written up and submitted to arXiv.
 
 **The conjectured double-cover distance bound $d\le d_2\le2d$ fails for binary BB codes. Exact counterexamples, cubic replacement bounds, complete proofs, and certificates. Version 0.2.1.**
 
