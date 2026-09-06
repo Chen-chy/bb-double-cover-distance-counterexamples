@@ -6,7 +6,7 @@
 
 **104 records are not 104 valid or independent theorems.** [The report](REPORT.en.md) collects the exact counterexamples, current bounds, proof scope and excluded approaches. [The status register](results/STATUS.md) separates headline results, scoped statements, negative results, gaps, searches and open questions. Historical notes are not endorsed wholesale.
 
-[中文首页](README.md) · [Complete mathematical contents](results/README.md) · [104 research records](results/CLAIMS.md) · [Reproduction](docs/REPRODUCIBILITY.md)
+[中文](README.zh-CN.md) · [Complete mathematical contents](results/README.md) · [104 research records](results/CLAIMS.md) · [Reproduction](docs/REPRODUCIBILITY.md)
 
 This is an independent research repository, not an arXiv ancillary tree. Seven theory chapters and twenty-five complete research notes are readable directly on GitHub. The optional manuscript in `paper/` is a typeset exposition of selected results, not the authority for the whole research record.
 
