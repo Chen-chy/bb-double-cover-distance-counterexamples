@@ -1,12 +1,11 @@
 # BB double-cover distance counterexamples
 
-> [!WARNING]
-> **Research status and AI-use disclosure**
+> [!NOTE]
+> A note on where this project stands:
 >
-> - **VERIFIED BY THE REPOSITORY OWNER:** the correctness of the two explicit counterexamples.
-> - **PRODUCED BY AI; NOT YET FULLY CHECKED BY THE OWNER:** the general proofs, derivations, and proposed bounds. These should be treated as provisional.
-> - **ONGOING:** work toward rigorous bounds.
-> - **PLANNED:** after the author has checked the arguments and confirmed that they are correct, the results will be written up and submitted to arXiv.
+> - **I have personally checked the two explicit counterexamples and confirmed that they are correct.**
+> - The other proofs and derivations were produced by AI, and I have not yet checked them carefully myself. In particular, the proposed bounds should still be treated as preliminary.
+> - I am continuing to work on rigorous bounds. If the arguments hold up after a full check, I plan to write them up and post the paper on arXiv.
 
 [Principal report](REPORT.en.md) · [中文主报告](REPORT.md)
 
