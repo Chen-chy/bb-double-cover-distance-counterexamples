@@ -1,5 +1,8 @@
 # BB double-cover distance counterexamples
 
+> [!WARNING]
+> **Research status and AI-use disclosure.** The proofs and general derivations in this repository were produced by AI. The repository owner has so far personally verified only the explicit counterexamples. The general derivations and proposed bounds have not yet been fully checked by the owner and should be treated as provisional. Work toward rigorous bounds is continuing. Once the author has checked the arguments and confirmed that they are correct, a manuscript is planned for submission to arXiv.
+
 **The conjectured double-cover distance bound $d\le d_2\le2d$ fails for binary BB codes. Exact counterexamples, cubic replacement bounds, complete proofs, and certificates. Version 0.2.1.**
 
 ## [Read first: principal results and evidence report](REPORT.en.md)
