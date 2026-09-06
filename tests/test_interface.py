@@ -20,7 +20,7 @@ class InterfaceTests(unittest.TestCase):
         return json.loads(out.getvalue())
 
     def test_version(self):
-        self.assertEqual(__version__, "0.2.0")
+        self.assertEqual(__version__, "0.2.1")
 
     def test_complete_register(self):
         data = catalog()

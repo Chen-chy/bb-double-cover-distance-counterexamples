@@ -1,0 +1,30 @@
+VALIDITY: Theorem-3.1 congruences, two-element fibers, all Tanner neighborhoods: PASS
+SHA256 L=39 HX 6e84e8c9cbb4cec64bb6d04405ae0ac9d87ce71e6a1a972e8b833ab1a824eef4
+SHA256 L=39 HZ 341909344e831fdcb9aaa7d117aafe474718b0e25b610ae536b20eb7b370b6b3
+RANK L=39: HX=37, HZ=37, k=4; J checked on every basis vector
+SHA256 L=78 HX 468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e
+SHA256 L=78 HZ 4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de
+RANK L=78: HX=76, HZ=76, k=4; J checked on every basis vector
+WITNESSES: base weight 6, cover weight 14, p(w)=z, both nonboundaries: PASS
+TAU_Z_PREIMAGE H=[1,8,9,10,11,12,13,15,16,17,18,19,20,23,24,25,27,28,31,32,34,37,38,41,43,44,46,48,51,53,54,57,61,63,65,66,68,74]
+ENUM {"L":39,"blocked_check_leaves":0,"bound":4,"budget_leaves":5,"circuit_weight_histogram":{},"expanded_nodes":7,"nodes":36,"nonboundary_leaves":0,"root":0,"sector":"Z","syndrome_bound_leaves":24,"zero_leaves":0,"zero_weight_histogram":{}}
+ENUM {"L":39,"blocked_check_leaves":0,"bound":4,"budget_leaves":5,"circuit_weight_histogram":{},"expanded_nodes":7,"nodes":36,"nonboundary_leaves":0,"root":39,"sector":"Z","syndrome_bound_leaves":24,"zero_leaves":0,"zero_weight_histogram":{}}
+ENUM {"L":39,"blocked_check_leaves":0,"bound":4,"budget_leaves":5,"circuit_weight_histogram":{},"expanded_nodes":7,"nodes":36,"nonboundary_leaves":0,"root":0,"sector":"X","syndrome_bound_leaves":24,"zero_leaves":0,"zero_weight_histogram":{}}
+ENUM {"L":39,"blocked_check_leaves":0,"bound":4,"budget_leaves":5,"circuit_weight_histogram":{},"expanded_nodes":7,"nodes":36,"nonboundary_leaves":0,"root":39,"sector":"X","syndrome_bound_leaves":24,"zero_leaves":0,"zero_weight_histogram":{}}
+ENUM {"L":78,"blocked_check_leaves":924,"bound":12,"budget_leaves":5889,"circuit_weight_histogram":{"6":3,"10":30,"12":16},"expanded_nodes":234911,"nodes":985001,"nonboundary_leaves":0,"root":0,"sector":"Z","syndrome_bound_leaves":743178,"zero_leaves":99,"zero_weight_histogram":{"6":3,"10":30,"12":66}}
+ENUM {"L":78,"blocked_check_leaves":1347,"bound":12,"budget_leaves":5488,"circuit_weight_histogram":{"6":3,"10":30,"12":14},"expanded_nodes":236744,"nodes":991809,"nonboundary_leaves":0,"root":78,"sector":"Z","syndrome_bound_leaves":748141,"zero_leaves":89,"zero_weight_histogram":{"6":3,"10":30,"12":56}}
+ENUM {"L":78,"blocked_check_leaves":1096,"bound":12,"budget_leaves":4767,"circuit_weight_histogram":{"6":3,"10":30,"12":14},"expanded_nodes":225282,"nodes":941501,"nonboundary_leaves":0,"root":0,"sector":"X","syndrome_bound_leaves":710265,"zero_leaves":91,"zero_weight_histogram":{"6":3,"10":30,"12":58}}
+ENUM {"L":78,"blocked_check_leaves":1039,"bound":12,"budget_leaves":4215,"circuit_weight_histogram":{"6":3,"10":30,"12":16},"expanded_nodes":213806,"nodes":894576,"nonboundary_leaves":0,"root":78,"sector":"X","syndrome_bound_leaves":675425,"zero_leaves":91,"zero_weight_histogram":{"6":3,"10":30,"12":58}}
+ORBIT 1 {"boundary":true,"boundary_preimage":[0],"flat_support":[0,2,13,78,86,103],"orbit_size":78,"stabilizer":[0],"support":{"left":[0,2,13],"right":[0,8,25]},"weight":6}
+ORBIT 2 {"boundary":true,"boundary_preimage":[0,70],"flat_support":[0,2,5,13,70,72,86,95,103,148],"orbit_size":78,"stabilizer":[0],"support":{"left":[0,2,5,13,70,72],"right":[8,17,25,70]},"weight":10}
+ORBIT 3 {"boundary":true,"boundary_preimage":[0,11],"flat_support":[0,2,11,24,78,86,89,97,103,114],"orbit_size":78,"stabilizer":[0],"support":{"left":[0,2,11,24],"right":[0,8,11,19,25,36]},"weight":10}
+ORBIT 4 {"boundary":true,"boundary_preimage":[0,17],"flat_support":[0,2,13,17,19,30,78,86,95,120],"orbit_size":78,"stabilizer":[0],"support":{"left":[0,2,13,17,19,30],"right":[0,8,17,42]},"weight":10}
+ORBIT 5 {"boundary":true,"boundary_preimage":[0,25],"flat_support":[0,2,13,25,27,38,78,86,111,128],"orbit_size":78,"stabilizer":[0],"support":{"left":[0,2,13,25,27,38],"right":[0,8,33,50]},"weight":10}
+ORBIT 6 {"boundary":true,"boundary_preimage":[0,13],"flat_support":[0,2,15,26,78,86,91,99,103,116],"orbit_size":78,"stabilizer":[0],"support":{"left":[0,2,15,26],"right":[0,8,13,21,25,38]},"weight":10}
+ORBIT 7 {"boundary":true,"boundary_preimage":[65,67],"flat_support":[0,2,65,69,90,92,143,145,151,153],"orbit_size":78,"stabilizer":[0],"support":{"left":[0,2,65,69],"right":[12,14,65,67,73,75]},"weight":10}
+ORBIT 8 {"boundary":true,"boundary_preimage":[0,17,70],"flat_support":[0,2,5,13,17,19,30,70,72,86,120,148],"orbit_size":78,"stabilizer":[0],"support":{"left":[0,2,5,13,17,19,30,70,72],"right":[8,42,70]},"weight":12}
+ORBIT 9 {"boundary":true,"boundary_preimage":[0,2,13],"flat_support":[0,4,26,78,80,86,88,91,99,103,105,116],"orbit_size":78,"stabilizer":[0],"support":{"left":[0,4,26],"right":[0,2,8,10,13,21,25,27,38]},"weight":12}
+ORBIT 10 {"boundary":true,"boundary_preimage":[1,8,9,10,11,12,13,15,16,17,18,19,20,23,24,25,27,28,31,32,34,37,38,41,43,44,46,48,51,53,54,57,61,63,65,66,68,74],"flat_support":[0,8,16,25,39,47,55,64,78,89,117,128],"orbit_size":39,"stabilizer":[0,39],"support":{"left":[0,8,16,25,39,47,55,64],"right":[0,11,39,50]},"weight":12}
+CIRCUIT_SET_SHA256 ab05b51aa41a2cea530557a6d9940877c8974472edcff3aca84815ccbe79a957
+DISTANCES: dX=dZ=6; cover_dX=cover_dZ=14; 14>2*6
+BB_DOUBLE_COVER_COUNTEREXAMPLE_VERIFIED

@@ -56,10 +56,12 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--n", type=int, help="base number of qubits")
     p.add_argument("--k", type=int)
     p.add_argument("--k2", type=int)
-    p = sub.add_parser("results", help="read the complete, evidence-qualified claim register")
+    p = sub.add_parser("results", help="show principal results, or explicitly select other research records")
     p.add_argument("identifier", nargs="?")
     p.add_argument("--branch", choices=("main", "homology", "amplification", "degradation"))
     p.add_argument("--status", help="exact status string, as stored in the register")
+    p.add_argument("--view", choices=("main", "scoped", "negative", "historical", "gap", "exploratory", "open", "outside", "all"),
+                   help="defaults to main without other selectors, otherwise all")
     args = parser.parse_args(argv)
     try:
         if args.command == "bounds":
@@ -69,7 +71,8 @@ def main(argv: list[str] | None = None) -> None:
         elif args.command == "compare":
             result = compare_cover(args.cover)
         else:
-            result = find_results(args.identifier, branch=args.branch, status=args.status)
+            view = args.view or ("all" if args.identifier or args.branch or args.status else "main")
+            result = find_results(args.identifier, branch=args.branch, status=args.status, view=view)
     except ValueError as exc:
         parser.error(str(exc))
     print(json.dumps(result, indent=2, ensure_ascii=False))

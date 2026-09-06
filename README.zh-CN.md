@@ -1,5 +1,5 @@
-# 中文说明
+# 中文阅读入口
 
-中文主文已移到仓库首页 [README.md](README.md)。
+**先读[主要结论与有效性总报告](REPORT.md)。** [仓库首页](README.md)展示两个精确反例和现行上下界；[采用／排除状态](results/STATUS.md)区分有效结果、附条件结果、否定路线、证据缺口与未决问题。
 
-完整研究正文见 [results/README.md](results/README.md)，全部结论见 [results/CLAIMS.md](results/CLAIMS.md)。本仓库是独立研究项目，不是 arXiv 附属材料。
+[104 条研究记录](results/CLAIMS.md)不是 104 个已证定理；[完整正文与过程笔记](results/README.md)保留全部材料但不将历史推理整体背书。本仓库是独立研究项目，不是 arXiv 附属材料。

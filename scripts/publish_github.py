@@ -34,7 +34,7 @@ def main() -> int:
                           'command': shlex.join(command), 'remote_created': False,
                           'required_checks': ['complete-repository integrity', 'clean Git commit',
                                               'authorized gh', 'new destination', 'unused github remote'],
-                          'optional_tag_command': 'git push github v0.2.0'}, indent=2))
+                          'optional_tag_command': 'git push github v0.2.1'}, indent=2))
         return 0
     for executable in ('git', 'gh'):
         if not shutil.which(executable): parser.error(f'Required executable is unavailable: {executable}')
@@ -60,7 +60,7 @@ def main() -> int:
     remote = run(['git', 'remote', 'get-url', 'github'])
     if remote.returncode: parser.error('Creation returned success but no github remote could be read; inspect gh output')
     print(json.dumps({'status': 'created_and_pushed', 'remote': remote.stdout.strip(),
-                      'commit': commit.stdout.strip(), 'optional_tag_command': 'git push github v0.2.0'}, indent=2))
+                      'commit': commit.stdout.strip(), 'optional_tag_command': 'git push github v0.2.1'}, indent=2))
     return 0
 
 

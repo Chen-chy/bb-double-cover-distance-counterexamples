@@ -1,0 +1,81 @@
+{
+  "profile": "core",
+  "started_utc": "2026-09-06T17:03:29.216010+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "name": "unit-tests",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "started_utc": "2026-09-06T17:03:29.218037+00:00",
+      "log": "unit-tests.log",
+      "script_sha256": null,
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 0.82094,
+      "log_sha256": "7011351acc05850700e0f0efac5709306cbb224fd905b19a75eda31862739750"
+    },
+    {
+      "name": "lattice-transport",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/verify_lattice_transport.py",
+        "--output",
+        "/mnt/data/report_revision/bb-double-cover-research/checks/release/report-v0.2.1/core/lattice.json"
+      ],
+      "started_utc": "2026-09-06T17:03:30.039671+00:00",
+      "log": "lattice-transport.log",
+      "script_sha256": "6fc1239e29f6ba4ecd1177178d528c570b549eaab9a1dd0fb15d10bf0232a5df",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 1.433375,
+      "log_sha256": "f0ab648c6d1bc4822974607793378cf8caaa1a7b925a74b920635b82ee28e2c3"
+    },
+    {
+      "name": "upper-bitset",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "certificates/upper/verify_bitset.py",
+        "--output-dir",
+        "/mnt/data/report_revision/bb-double-cover-research/checks/release/report-v0.2.1/core/upper-bitset"
+      ],
+      "started_utc": "2026-09-06T17:03:31.473621+00:00",
+      "log": "upper-bitset.log",
+      "script_sha256": "2fc62d81925b981cc29f90f53e780be45d7f4b792a8ba9d6dedd42c0cad25516",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 4.925458,
+      "log_sha256": "2e26b1a511c14d8c57a3b0e431cd75955facbe47685b1b3830398a756917c1a8"
+    },
+    {
+      "name": "upper-polynomial",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "certificates/upper/verify_polynomial.py",
+        "--output-dir",
+        "/mnt/data/report_revision/bb-double-cover-research/checks/release/report-v0.2.1/core/upper-polynomial"
+      ],
+      "started_utc": "2026-09-06T17:03:36.400350+00:00",
+      "log": "upper-polynomial.log",
+      "script_sha256": "53a1beee02c3937cb22594de56331161cb676b588d6a978def3e9f76f77df447",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 20.881188,
+      "log_sha256": "f5f1f76cd0da623190cfcb08c77f05ab666424974c95608826220fac91f61ad1"
+    }
+  ],
+  "status": "interrupted_external_tool_timeout",
+  "scope": "exact counterexample regeneration and explicitly listed retained audits",
+  "interruption_note": "The enclosing execution tool interrupted the driver before all commands were recorded. This attempt is not a completed core run.",
+  "cross_checks": {
+    "status": "not_run"
+  }
+}

@@ -1,0 +1,564 @@
+{
+  "view": "negative",
+  "record_warning": "Research records are not all valid or independent theorems. See review.disposition, scope and evidence limitations.",
+  "schema_version": 2,
+  "version": "0.2.1",
+  "count": 15,
+  "path_convention": "Proof/evidence paths are relative to the complete research repository, not the installed wheel.",
+  "results": [
+    {
+      "id": "CEX-SUPPORT-FAMILY",
+      "branch": "homology",
+      "statement": "For every j>=2, [[18j,4,4]] -> [[36j,4,6]], every minimum logical is killed by transfer, and rho(z)=2j-1. The support-Bockstein lemma fails unboundedly, although d_2<=2d holds here.",
+      "scope": "The explicit cyclic family L=9j, A=1+x^(3j-1)+x^(6j-2), B=1+x^(9j-2)+x^(9j-1), with the specified term lift.",
+      "evidence_type": "symbolic-proof-with-finite-audit",
+      "status": "symbolic-proof-with-finite-audit",
+      "proofs": [
+        "results/notes/H02-support-obstruction-family.md"
+      ],
+      "evidence": [
+        "archive/early_counterexample/verify_previous_family.py",
+        "archive/early_counterexample/verify_auxiliary.py"
+      ],
+      "limitations": "The text proves the full family; finite j checks are audits, not the proof for all j.",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "CEX-SUPPORT-FAMILY",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "support–Bockstein 支撑控制引理被无限族否定；该族并不违反 d₂≤2d。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "CEX-LOW-SHEET-INFINITE",
+      "branch": "homology",
+      "statement": "[[6,4,2]] -> [[12,4,2]] has a killed class with delta=mu=2, rho=0, but nu=infinity.",
+      "scope": "The period-3/period-6 example and the designated low-monomial section.",
+      "evidence_type": "explicit-proof-and-finite-audit",
+      "status": "explicit-proof-and-finite-audit",
+      "proofs": [
+        "results/notes/H03-class-metrics-and-exchange.md"
+      ],
+      "evidence": [
+        "archive/early_counterexample/verify_auxiliary.py"
+      ],
+      "limitations": "nu is section-dependent and is not the cover distance.",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "CEX-LOW-SHEET-INFINITE",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "低片指标 ν 可为无穷而覆盖距离有限；ν 不能当作 d₂。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "AMP-METRIC-01",
+      "branch": "amplification",
+      "statement": "For A=1+x+x^2, B=A^2, L=3q, q>=3 odd: d=d2=4, k=k2=4, mu=lambda3=lambda4=q+1",
+      "scope": "Transfer-sector metric, not amplification",
+      "evidence_type": "symbolic exact family; recovered finite checker",
+      "status": "symbolic exact family; recovered finite checker",
+      "proofs": [
+        "results/notes/A02-distance4-and-transfer-metric.md"
+      ],
+      "evidence": [
+        "research/amplification/history/recovered_round2/verify_metric_family.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "METRIC-01",
+        "statement": "For A=1+x+x^2, B=A^2, L=3q, q>=3 odd: d=d2=4, k=k2=4, mu=lambda3=lambda4=q+1",
+        "evidence_type": "symbolic exact family; recovered finite checker",
+        "scope": "Transfer-sector metric, not amplification",
+        "source": "history/02_distance4_and_transfer_metric.md",
+        "section": "6",
+        "evidence_files": [
+          "history/recovered_round2/verify_metric_family.py"
+        ],
+        "limits": "",
+        "current": true
+      },
+      "review": {
+        "id": "AMP-METRIC-01",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "transfer 扇区指标可发散而 d=d₂=4；不能用该指标替代实际距离。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "AMP-R3-03",
+      "branch": "amplification",
+      "statement": "A [[78,4,6]] base has auxiliary reduced code [[78,4,9]]",
+      "scope": "Auxiliary reduced code, not a strict-trinomial BB cover",
+      "evidence_type": "exact finite counterexample to an intermediate lemma",
+      "status": "exact finite counterexample to an intermediate lemma",
+      "proofs": [
+        "results/notes/A03-amplification-search.md"
+      ],
+      "evidence": [
+        "research/amplification/research/03_amplification_search/reduced_code_mitm.json",
+        "research/amplification/research/03_amplification_search/mitm.cpp",
+        "research/amplification/research/03_amplification_search/independent_search.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "R3-03",
+        "statement": "A [[78,4,6]] base has auxiliary reduced code [[78,4,9]]",
+        "evidence_type": "exact finite counterexample to an intermediate lemma",
+        "scope": "Auxiliary reduced code, not a strict-trinomial BB cover",
+        "source": "research/03_amplification_search/REPORT.md",
+        "section": "4",
+        "evidence_files": [
+          "research/03_amplification_search/reduced_code_mitm.json",
+          "research/03_amplification_search/mitm.cpp",
+          "research/03_amplification_search/independent_search.py"
+        ],
+        "limits": "",
+        "current": true
+      },
+      "review": {
+        "id": "AMP-R3-03",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "辅助约化码的距离 9 否定中间引理，不是新的严格三项式覆盖距离。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "AMP-MAJORITY-01",
+      "branch": "amplification",
+      "statement": "Weight-182 locally stable circuit boundary gives restricted output 550>546",
+      "scope": "Input is explicitly a boundary",
+      "evidence_type": "exact counterexample to a restricted majority assertion",
+      "status": "exact counterexample to a restricted majority assertion",
+      "proofs": [
+        "results/notes/A09-joint-completion.md"
+      ],
+      "evidence": [
+        "research/amplification/research/09_joint_completion/majority_control_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a counterexample for a minimum nonboundary or full cover distance.",
+      "current_update": "",
+      "original_record": {
+        "id": "MAJORITY-01",
+        "statement": "Weight-182 locally stable circuit boundary gives restricted output 550>546",
+        "evidence_type": "exact counterexample to a restricted majority assertion",
+        "scope": "Input is explicitly a boundary",
+        "source": "research/09_joint_completion/REPORT.md",
+        "section": "6",
+        "evidence_files": [
+          "research/09_joint_completion/majority_control_verification.json"
+        ],
+        "limits": "Not a counterexample for a minimum nonboundary or full cover distance.",
+        "current": true
+      },
+      "review": {
+        "id": "AMP-MAJORITY-01",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "局部稳定 boundary 否定受限 majority 断言，不是最短非边界反例。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "AMP-TREE-03",
+      "branch": "amplification",
+      "statement": "A genuine compact message produces a triangular conflict graph",
+      "scope": "Not a minimum-distance assertion",
+      "evidence_type": "exact constructive negative control",
+      "status": "exact constructive negative control",
+      "proofs": [
+        "results/notes/A10-nonlocal-exchange.md"
+      ],
+      "evidence": [
+        "research/amplification/research/10_nonlocal_exchange/triangle_certificate.json",
+        "research/amplification/research/10_nonlocal_exchange/audit_triangle.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "TREE-03",
+        "statement": "A genuine compact message produces a triangular conflict graph",
+        "evidence_type": "exact constructive negative control",
+        "scope": "Not a minimum-distance assertion",
+        "source": "research/10_nonlocal_exchange/REPORT.md",
+        "section": "6",
+        "evidence_files": [
+          "research/10_nonlocal_exchange/triangle_certificate.json",
+          "research/10_nonlocal_exchange/audit_triangle.py"
+        ],
+        "limits": "",
+        "current": true
+      },
+      "review": {
+        "id": "AMP-TREE-03",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "冲突图可含三角形；只能否定所提简单图结构捷径。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "AMP-TREE-04",
+      "branch": "amplification",
+      "statement": "Fixed-message minimum 74 with support 15; same universal class has full minimum 14",
+      "scope": "One explicit message in the record code",
+      "evidence_type": "exact conditional minimum plus unrestricted inherited certificate",
+      "status": "exact conditional minimum plus unrestricted inherited certificate",
+      "proofs": [
+        "results/notes/A10-nonlocal-exchange.md"
+      ],
+      "evidence": [
+        "research/amplification/research/10_nonlocal_exchange/fixed_message_certificate.json",
+        "research/amplification/research/10_nonlocal_exchange/fixed_message_potential.bin",
+        "research/amplification/research/10_nonlocal_exchange/audit_fixed_certificate.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "74 is not code distance; explicit boundary to 14 retained.",
+      "current_update": "",
+      "original_record": {
+        "id": "TREE-04",
+        "statement": "Fixed-message minimum 74 with support 15; same universal class has full minimum 14",
+        "evidence_type": "exact conditional minimum plus unrestricted inherited certificate",
+        "scope": "One explicit message in the record code",
+        "source": "research/10_nonlocal_exchange/REPORT.md",
+        "section": "7.2-7.3",
+        "evidence_files": [
+          "research/10_nonlocal_exchange/fixed_message_certificate.json",
+          "research/10_nonlocal_exchange/fixed_message_potential.bin",
+          "research/10_nonlocal_exchange/audit_fixed_certificate.py"
+        ],
+        "limits": "74 is not code distance; explicit boundary to 14 retained.",
+        "current": true
+      },
+      "review": {
+        "id": "AMP-TREE-04",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "固定消息最小重量 74；同一类的完整最小重量为 14，不能把 74 当码距。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "AMP-TREE-05",
+      "branch": "amplification",
+      "statement": "For positive odd N, conditional minimum 74N and support 15N in one universal class of minimum 14",
+      "scope": "Separated messages in one fixed code",
+      "evidence_type": "symbolic parametric negative control",
+      "status": "symbolic parametric negative control",
+      "proofs": [
+        "results/notes/A10-nonlocal-exchange.md"
+      ],
+      "evidence": [
+        "research/amplification/research/10_nonlocal_exchange/parametric_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not an increasing-distance family.",
+      "current_update": "",
+      "original_record": {
+        "id": "TREE-05",
+        "statement": "For positive odd N, conditional minimum 74N and support 15N in one universal class of minimum 14",
+        "evidence_type": "symbolic parametric negative control",
+        "scope": "Separated messages in one fixed code",
+        "source": "research/10_nonlocal_exchange/REPORT.md",
+        "section": "7.4",
+        "evidence_files": [
+          "research/10_nonlocal_exchange/parametric_verification.json"
+        ],
+        "limits": "Not an increasing-distance family.",
+        "current": true
+      },
+      "review": {
+        "id": "AMP-TREE-05",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "固定消息重量 74N 随 N 增长；同一固定码仍有重量 14 代表，不是无界升距族。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "DEG-D02",
+      "branch": "degradation",
+      "statement": "The weight-six two-check coefficient-filling lemma is false. For L=4^j, |q|=6 and minimum coefficient filling is 3*9^j.",
+      "scope": "Explicit connected strict-trinomial family; L<=d<=4L.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D01-weight-six.md"
+      ],
+      "evidence": [
+        "research/degradation/research/01-weight-six/verify_family.py",
+        "research/degradation/research/01-weight-six/family_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Base distances are intervals, not asserted exact distances.",
+      "current_update": "",
+      "original_record": {
+        "id": "D02",
+        "stage": "01",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "The weight-six two-check coefficient-filling lemma is false. For L=4^j, |q|=6 and minimum coefficient filling is 3*9^j.",
+        "scope": "Explicit connected strict-trinomial family; L<=d<=4L.",
+        "evidence": [
+          "research/01-weight-six/proof.md",
+          "research/01-weight-six/verify_family.py",
+          "research/01-weight-six/family_verification.json"
+        ],
+        "limitations": "Base distances are intervals, not asserted exact distances."
+      },
+      "review": {
+        "id": "DEG-D02",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "常重量 boundary 的 coefficient filling 可发散；线性支撑填充引理为假。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "DEG-D03",
+      "branch": "degradation",
+      "statement": "For that specified cover, 2+2*9^j <= Fill(q) <= 6+6*9^j.",
+      "scope": "Lifted filling of the particular weight-six boundary.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D01-weight-six.md"
+      ],
+      "evidence": [
+        "research/degradation/research/01-weight-six/family_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Every cover cycle above that q also obeys the lower bound. Not a vanishing-ratio family.",
+      "current_update": "",
+      "original_record": {
+        "id": "D03",
+        "stage": "01",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "For that specified cover, 2+2*9^j <= Fill(q) <= 6+6*9^j.",
+        "scope": "Lifted filling of the particular weight-six boundary.",
+        "evidence": [
+          "research/01-weight-six/proof.md",
+          "research/01-weight-six/family_verification.json"
+        ],
+        "limitations": "Every cover cycle above that q also obeys the lower bound. Not a vanishing-ratio family."
+      },
+      "review": {
+        "id": "DEG-D03",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "特定 boundary 的最小提升重量可发散；不能推出整码距离退化。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "DEG-D08",
+      "branch": "degradation",
+      "statement": "Short relation rows do not imply a quadratic cofactor bound; changing their integral basis does not repair the example.",
+      "scope": "Saturated rank-one lattice example.",
+      "evidence_type": "disproved-approach",
+      "status": "disproved-approach",
+      "proofs": [
+        "results/notes/D04-quadratic-bottleneck.md"
+      ],
+      "evidence": [
+        "research/degradation/research/04-quadratic-bottleneck/summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not an actual code-distance counterexample.",
+      "current_update": "",
+      "original_record": {
+        "id": "D08",
+        "stage": "04",
+        "status": "disproved-approach",
+        "statement": "Short relation rows do not imply a quadratic cofactor bound; changing their integral basis does not repair the example.",
+        "scope": "Saturated rank-one lattice example.",
+        "evidence": [
+          "research/04-quadratic-bottleneck/proof.md",
+          "research/04-quadratic-bottleneck/summary.json"
+        ],
+        "limitations": "Not an actual code-distance counterexample."
+      },
+      "review": {
+        "id": "DEG-D08",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "短关系行不保证二次 cofactor 界；格对照例不是码距离反例。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "DEG-D09",
+      "branch": "degradation",
+      "statement": "A torsion-changing strict-trinomial quotient can kill the compact image even when universal H1 is simple/semisimple.",
+      "scope": "Specified C3 x C2 x Z example and its finite realization.",
+      "evidence_type": "disproved-approach",
+      "status": "disproved-approach",
+      "proofs": [
+        "results/notes/D04-quadratic-bottleneck.md"
+      ],
+      "evidence": [
+        "research/degradation/research/04-quadratic-bottleneck/verify.py",
+        "research/degradation/research/04-quadratic-bottleneck/summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a degradation counterfamily; there is an independent short base logical.",
+      "current_update": "",
+      "original_record": {
+        "id": "D09",
+        "stage": "04",
+        "status": "disproved-approach",
+        "statement": "A torsion-changing strict-trinomial quotient can kill the compact image even when universal H1 is simple/semisimple.",
+        "scope": "Specified C3 x C2 x Z example and its finite realization.",
+        "evidence": [
+          "research/04-quadratic-bottleneck/proof.md",
+          "research/04-quadratic-bottleneck/verify.py",
+          "research/04-quadratic-bottleneck/summary.json"
+        ],
+        "limitations": "Not a degradation counterfamily; there is an independent short base logical."
+      },
+      "review": {
+        "id": "DEG-D09",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "改变 torsion 可杀死 compact image；不能假设所有 specialization 保持存活。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "DEG-D14",
+      "branch": "degradation",
+      "statement": "The deck-killing derivative operator can have nonzero syndrome in a retained-involution base.",
+      "scope": "Exact unchanged-check odd-period family in source.",
+      "evidence_type": "disproved-approach",
+      "status": "disproved-approach",
+      "proofs": [
+        "results/notes/D06-sparse-deck-descent.md"
+      ],
+      "evidence": [
+        "research/degradation/research/06-sparse-deck-descent/verification_summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Its weight-14 kernel witness is not minimum; an independent base logical has weight at most 8.",
+      "current_update": "",
+      "original_record": {
+        "id": "D14",
+        "stage": "06",
+        "status": "disproved-approach",
+        "statement": "The deck-killing derivative operator can have nonzero syndrome in a retained-involution base.",
+        "scope": "Exact unchanged-check odd-period family in source.",
+        "evidence": [
+          "research/06-sparse-deck-descent/proof.md",
+          "research/06-sparse-deck-descent/verification_summary.json"
+        ],
+        "limitations": "Its weight-14 kernel witness is not minimum; an independent base logical has weight at most 8."
+      },
+      "review": {
+        "id": "DEG-D14",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "导数候选在 retained-involution 底码可有非零 syndrome，不能直接当 logical。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "DEG-P06",
+      "branch": "degradation",
+      "statement": "The naive Frobenius weight-at-most-3w candidate is a multiplier of transfer and is killed whenever that transfer is killed.",
+      "scope": "Exact physical and homology identity.",
+      "evidence_type": "disproved-approach",
+      "status": "disproved-approach",
+      "proofs": [
+        "results/notes/D07-rank-one-amplification.md"
+      ],
+      "evidence": [
+        "research/degradation/research/07-rank-one-amplification/verify.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Disproves the proposed nonboundary argument, not factor three.",
+      "current_update": "",
+      "original_record": {
+        "id": "P06",
+        "stage": "07",
+        "status": "disproved-approach",
+        "statement": "The naive Frobenius weight-at-most-3w candidate is a multiplier of transfer and is killed whenever that transfer is killed.",
+        "scope": "Exact physical and homology identity.",
+        "evidence": [
+          "research/07-rank-one-amplification/proof.md",
+          "research/07-rank-one-amplification/verify.py"
+        ],
+        "limitations": "Disproves the proposed nonboundary argument, not factor three."
+      },
+      "review": {
+        "id": "DEG-P06",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "naive Frobenius 候选是 transfer 的倍数，会与被杀死的 transfer 一起消失。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "DEG-P08",
+      "branch": "degradation",
+      "statement": "The four-term message cancellation family beats the constant message by a growing additive gap.",
+      "scope": "Explicit B_j,F_j polynomial identity for all j>=0.",
+      "evidence_type": "disproved-approach",
+      "status": "disproved-approach",
+      "proofs": [
+        "results/notes/D08-mixed-laurent.md"
+      ],
+      "evidence": [
+        "research/degradation/research/08-mixed-laurent/verify.py",
+        "research/degradation/research/08-mixed-laurent/verification_summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Only constructed message weights; not complete minima and not a factor-three counterexample.",
+      "current_update": "",
+      "original_record": {
+        "id": "P08",
+        "stage": "08",
+        "status": "disproved-approach",
+        "statement": "The four-term message cancellation family beats the constant message by a growing additive gap.",
+        "scope": "Explicit B_j,F_j polynomial identity for all j>=0.",
+        "evidence": [
+          "research/08-mixed-laurent/proof.md",
+          "research/08-mixed-laurent/verify.py",
+          "research/08-mixed-laurent/verification_summary.json"
+        ],
+        "limitations": "Only constructed message weights; not complete minima and not a factor-three counterexample."
+      },
+      "review": {
+        "id": "DEG-P08",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "常消息可被非常消息改进，否定常消息最优捷径；尚未求得完整覆盖最小值。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    }
+  ]
+}

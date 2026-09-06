@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "matrix_comparisons": [
+    {
+      "left": "upper-bitset/L39_HX.txt",
+      "right": "upper-polynomial/L39_HX.txt",
+      "sha256": "6e84e8c9cbb4cec64bb6d04405ae0ac9d87ce71e6a1a972e8b833ab1a824eef4"
+    },
+    {
+      "left": "upper-bitset/L39_HZ.txt",
+      "right": "upper-polynomial/L39_HZ.txt",
+      "sha256": "341909344e831fdcb9aaa7d117aafe474718b0e25b610ae536b20eb7b370b6b3"
+    },
+    {
+      "left": "upper-bitset/L78_HX.txt",
+      "right": "upper-polynomial/L78_HX.txt",
+      "sha256": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e"
+    },
+    {
+      "left": "upper-bitset/L78_HZ.txt",
+      "right": "upper-polynomial/L78_HZ.txt",
+      "sha256": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+    },
+    {
+      "left": "lower-bitset/base_HX.txt",
+      "right": "lower-polynomial/base_HX.txt",
+      "sha256": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e"
+    },
+    {
+      "left": "lower-bitset/base_HZ.txt",
+      "right": "lower-polynomial/base_HZ.txt",
+      "sha256": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+    },
+    {
+      "left": "lower-bitset/cover_HX.txt",
+      "right": "lower-polynomial/cover_HX.txt",
+      "sha256": "9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8"
+    },
+    {
+      "left": "lower-bitset/cover_HZ.txt",
+      "right": "lower-polynomial/cover_HZ.txt",
+      "sha256": "6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb"
+    },
+    {
+      "left": "upper-bitset/L78_HX.txt",
+      "right": "lower-bitset/base_HX.txt",
+      "sha256": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e"
+    },
+    {
+      "left": "upper-bitset/L78_HZ.txt",
+      "right": "lower-bitset/base_HZ.txt",
+      "sha256": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+    }
+  ],
+  "circuit_comparisons": [
+    {
+      "left": "upper-bitset/circuits.txt",
+      "right": "upper-polynomial/circuits.txt",
+      "count": 741,
+      "weight_histogram": {
+        "6": 78,
+        "10": 468,
+        "12": 195
+      }
+    },
+    {
+      "left": "lower-bitset/base_circuits.txt",
+      "right": "lower-polynomial/base_circuits.txt",
+      "count": 741,
+      "weight_histogram": {
+        "6": 78,
+        "10": 468,
+        "12": 195
+      }
+    },
+    {
+      "left": "upper-bitset/circuits.txt",
+      "right": "lower-bitset/base_circuits.txt",
+      "count": 741,
+      "weight_histogram": {
+        "6": 78,
+        "10": 468,
+        "12": 195
+      }
+    },
+    {
+      "left": "lower-bitset/cover_circuits.txt",
+      "right": "lower-polynomial/cover_circuits.txt",
+      "count": 1092,
+      "weight_histogram": {
+        "6": 156,
+        "10": 936
+      }
+    }
+  ],
+  "convenience_matrices_compared": 6,
+  "shared_middle_code_identical": true
+}

@@ -45,7 +45,7 @@ def validate() -> dict:
     warnings = ["Symbolic proofs and finite audits are not independent peer review or formal verification.",
                 "Original historical records can reference unavailable material; see results/HISTORY_AND_LIMITS.md.",
                 "No reuse license or research authorship is inferred by this technical check."]
-    required = ['README.md', 'README.en.md', 'results/README.md', 'results/CLAIMS.md',
+    required = ['REPORT.md', 'REPORT.en.md', 'results/STATUS.md', 'results/review_policy.json', 'README.md', 'README.en.md', 'results/README.md', 'results/CLAIMS.md',
                 'results/catalog.json', 'results/HISTORY_AND_LIMITS.md', 'results/OPEN_PROBLEMS.md',
                 'docs/REPRODUCIBILITY.md', 'docs/PUBLISH_GITHUB.md', 'repository.json',
                 'bbcover/catalog.json', 'scripts/package_repository.py', 'scripts/publish_github.py',
@@ -107,7 +107,7 @@ def validate() -> dict:
         if re.search(r'\]\((?:sandbox:|/mnt/data/)', text):
             errors.append('Nonportable sandbox link: ' + str(p.relative_to(ROOT)))
     generated = {}
-    for script in ('build_theory.py', 'build_notes.py', 'build_catalog.py'):
+    for script in ('build_theory.py', 'build_notes.py', 'build_catalog.py', 'check_report.py'):
         proc = subprocess.run([sys.executable, str(ROOT / 'scripts' / script), '--check'],
                               cwd=ROOT, capture_output=True, text=True)
         generated[script] = 'passed' if proc.returncode == 0 else 'failed'

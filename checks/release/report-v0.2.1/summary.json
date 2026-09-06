@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "version": "0.2.1",
+  "completed_utc": "2026-09-06T17:07:30.569669+00:00",
+  "revision_scope": "Principal reporting and evidence triage, no new mathematical constants or general theorems.",
+  "primary_report": "REPORT.md",
+  "english_report": "REPORT.en.md",
+  "review_table": "results/STATUS.md",
+  "editorial_review": {
+    "status": "passed",
+    "version": "0.2.1",
+    "research_records": 104,
+    "headline_record_indices": 12,
+    "disposition_counts": {
+      "main": 12,
+      "scoped": 52,
+      "negative": 15,
+      "gap": 8,
+      "exploratory": 2,
+      "historical": 3,
+      "outside": 4,
+      "open": 8
+    },
+    "reading_notes_with_current_use_warnings": 25,
+    "scope": "Editorial consistency and listed dependency gates only; not verification of mathematical proofs.",
+    "errors": []
+  },
+  "executed": {
+    "unit_tests": 37,
+    "core_profile": "passed",
+    "independent_exact_counterexample_verifiers": 4,
+    "matrix_comparisons": 10,
+    "circuit_comparisons": 4,
+    "shared_middle_code_identical": true,
+    "installed_cli_outside_source_tree": {
+      "version": "0.2.1",
+      "default_view_count": 12,
+      "negative_view_count": 15
+    },
+    "retained_input_member_mappings_checked": 573,
+    "unique_original_files_unchanged": 484,
+    "maintained_local_targets_checked": 1010
+  },
+  "interrupted_attempt": {
+    "path": "checks/release/report-v0.2.1/interrupted-core/report.json",
+    "status": "interrupted_external_tool_timeout",
+    "counts_as_completed_core_run": false,
+    "note": "Retained separately. A later fresh core run completed and is recorded in core/report.json."
+  },
+  "historical_not_rerun_in_this_revision": {
+    "branch_audit_commands": 47,
+    "homology_history_programs": 4,
+    "original_complete_classification_searches": "not rerun",
+    "typeset_manuscript": "unchanged, not rebuilt"
+  },
+  "evidence_limits": [
+    "Editorial selection and tests are not independent proof review or formal verification.",
+    "Constant 8 and derived upper intervals retain consolidation review provenance.",
+    "The weight-six source explicitly inherits unavailable weight-four exclusions; its unconditional promotion is blocked.",
+    "The 104 entries include duplicates, negative results, gaps, open questions and out-of-scope records.",
+    "Prior logs remain prior logs; one interrupted attempt is not relabeled as successful."
+  ],
+  "remote_publication": {
+    "performed": false,
+    "remote_actions_run_claimed": false
+  }
+}

@@ -9,4 +9,4 @@ from .examples import get_example, names
 
 __all__ = ["BBCode", "validate_double_cover", "DistanceInterval", "cubic_interval",
            "get_example", "names"]
-__version__ = "0.2.0"
+__version__ = "0.2.1"

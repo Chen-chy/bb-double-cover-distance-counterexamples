@@ -1,6 +1,6 @@
 # 历史、证据与限制
 
-[全部结果](README.md) · [结论登记表](CLAIMS.md) · [来源映射](../provenance/import_map.json)
+[主报告](../REPORT.md) · [当前采用状态](STATUS.md) · [全部结果](README.md) · [结论登记表](CLAIMS.md) · [来源映射](../provenance/import_map.json)
 
 ## 已修复的缺口
 
@@ -12,7 +12,7 @@
 
 早期降距输入报告过 $[[4h,4,14]]\to[[8h,8,12]]$，其中 $h>156$、$3\mid h$、$7\nmid h$。原完整参数族验证包未恢复，不能用有限 $14\to12$ seed 自动替代它。与此不同，D07 的稳定化 $8\to14$ 族有其独立的 all-degree Bellman 和 winding 论证。
 
-早期输入还报告了 $d>4\Rightarrow d_2\ge6$ 及指定范围的 stronger no-small-cycle fact。后续 $d_2=6$ 和组合小重量结论调用这些输入时，必须保留依赖。主文一般三次证明不依赖这些小重量分类。
+早期输入还报告了 $d>4\Rightarrow d_2\ge6$ 及指定范围的 stronger no-small-cycle fact。D01 的 Theorem 1 本身就明确以早期 weight-four 排除为条件，因此 $d_2=6\Rightarrow d\le56$ 以及组合结论都必须保留依赖，不仅是组合 corollary。D02 的 $d_2=8\Rightarrow d\le96$ 则明确独立于这些输入；其组合推论仍有依赖。主文一般三次证明不依赖这些小重量分类。
 
 四项式/任意项数的 [X00 数学公开报告](notes/X00-beyond-trinomials.md)完整恢复，但它是早期公开回答的数学转录，不是原 `proof.md`、`verify.py` 与输出包的恢复。其推导可以阅读和检查；机器登记仍标为 `reported-proof-only`，且不适用于严格三项式范围。
 

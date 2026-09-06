@@ -1,3 +1,6 @@
+> **先看当前采用状态：** rank-one 模与 fixed-slope 结果不等于统一常数界；有限距离识别需要 long-period / no-winding 条件。
+> [主报告](../../REPORT.md) · [逐项采用／排除表](../STATUS.md)。本篇为保留过程，不是整篇无条件有效的定理集合。
+
 [全部研究结果](../README.md) · [逐项结论](../CLAIMS.md) · [原始完整文本](../../research/amplification/research/07_rank_one_resonance/REPORT.md)
 
 > 完整研究笔记的 GitHub 阅读版；仅调整数学分隔符、引用标记与链接。历史状态、限制和证明内容均保留。当前结论以总登记表中的逐项状态为准；这里的“验证”不等于独立同行评审。

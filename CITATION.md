@@ -2,7 +2,7 @@
 
 Use the repository title, version tag and the exact commit used for the computation:
 
-> *BB double-cover research: complete results, proofs, certificates and code*. Version 0.2.0. Git tag `v0.2.0`; include the actual repository URL and commit SHA from the copy used.
+> *BB double-cover research: complete results, proofs, certificates and code*. Version 0.2.1. Git tag `v0.2.1`; include the actual repository URL and commit SHA from the copy used.
 
 Obtain the exact revision with `git rev-parse HEAD`. Cite a claim by its stable identifier, for example `CEX-UP`, `DIST-UPPER`, `AMP-LINEAR-01` or `DEG-P15`, and identify the relevant proof and verifier. A run-specific claim should also identify `report.json` and its SHA-256.
 

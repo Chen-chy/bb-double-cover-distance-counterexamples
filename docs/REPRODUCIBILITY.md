@@ -51,7 +51,7 @@ python scripts/verify_homology_history.py --output checks/homology-history
 
 `report.json` 保存命令、状态、解释器、平台、耗时、脚本与输出哈希；日志与规范化矩阵/circuit 放在同一个输出目录。平台信息和本地路径只用于审计，不是后续执行所需的硬编码路径。
 
-`checks/release/` 的旧目录是上一版本的执行历史，`github-v0.2.0/` 是本版重跑。以相应记录的命令、时间和作用域为准，不把旧执行的路径当新目录导航。自动生成的工作副本和编译二进制不进入 Git 发布包。
+`checks/release/github-v0.2.0/` 是 v0.2.0 的执行历史，不是 v0.2.1 的重跑。v0.2.1 的实际检查位于 `checks/release/report-v0.2.1/`；其中 `interrupted-core/` 是执行工具中断的未完成尝试，不能当成通过记录；完成状态以新的 `core/report.json` 和 `summary.json` 为准。以相应记录的命令、时间和作用域为准，不把旧执行的路径当新目录导航。自动生成的工作副本和编译二进制不进入 Git 发布包。
 
 ## 便利接口与完整证书
 
@@ -62,3 +62,7 @@ python scripts/verify_homology_history.py --output checks/homology-history
 ## GitHub Actions
 
 CI 定义在 `.github/workflows/`：快速单元/目录检查、核心精确证书、手动扩展审计和源码打包。它们不需要个人访问令牌来执行研究计算。远端首次执行后才会有真实 Actions 结果；本仓库不伪造已通过的远端 badge。
+
+## 报告与过程的采用方式
+
+先读[主报告](../REPORT.md)及[状态表](../results/STATUS.md)。`python -m bbcover results` 默认只列主报告索引，`--view all` 才列全部 104 条记录。`scripts/check_report.py --check` 检查采用标签、已知依赖与报告一致性，不检查一般定理的数学正确性。原始证书、符号证明和实验扫描仍按前述不同证据层次使用。

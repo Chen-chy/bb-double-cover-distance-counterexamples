@@ -1,0 +1,10 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/report_revision/bb-double-cover-research
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: bbcover-research
+  Building wheel for bbcover-research (pyproject.toml): started
+  Building wheel for bbcover-research (pyproject.toml): finished with status 'done'
+  Created wheel for bbcover-research: filename=bbcover_research-0.2.1-py3-none-any.whl size=39210 sha256=c25e4672e32dbae4d7a45e3dbfc28c583e952f4c5a7175fb59e774409d2f016e
+  Stored in directory: /tmp/pip-ephem-wheel-cache-thy0s29l/wheels/67/a9/f8/a63bb808ab85a9195cc6325f21eaab9133e3d167d55a745d61
+Successfully built bbcover-research

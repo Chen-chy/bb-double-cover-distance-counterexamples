@@ -1,14 +1,16 @@
 {
   "name": "bb-double-cover-research",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "distribution": "standalone-complete-research-repository",
   "default_branch": "main",
-  "release_tag": "v0.2.0",
+  "release_tag": "v0.2.1",
   "remote_repository_url": null,
   "remote_publication_status": "not_created_by_local_packaging",
   "reuse_license_status": "not_assigned",
   "research_authors": null,
   "primary_contents": [
+    "REPORT.md",
+    "REPORT.en.md",
     "results",
     "research",
     "certificates",
@@ -16,6 +18,8 @@
   ],
   "optional_typeset_manuscript": "paper",
   "source_archives": 3,
-  "claim_count": 104,
-  "note": "Technical repository checks are separate from optional formal-manuscript approval."
+  "note": "Principal report and adoption gates distinguish established finite certificates, supplied symbolic proofs and process records; not independent mathematical peer review.",
+  "research_record_count": 104,
+  "principal_result_records": 12,
+  "editorial_policy": "results/review_policy.json"
 }

@@ -1,8 +1,14 @@
 # BB double-cover research
 
-**BB 二重覆盖距离：完整结果、证明、反例证书与研究代码。**
+**BB 二重覆盖距离：主要结论、完整证明与精确证书。版本 0.2.1。**
 
-[完整结果与阅读路线](results/README.md) · [全部 104 项结论](results/CLAIMS.md) · [复现方法](docs/REPRODUCIBILITY.md) · [English](README.en.md)
+## [先读：主要结论与有效性总报告](REPORT.md)
+
+**已认证的两个有限反例：$6\to14$ 否定 $d_2\le2d$，$14\to12$ 否定 $d_2\ge d$。仓库另提供 $d\le4d_2^3$、$d_2\le8d^3$ 及显式上下端点的符号证明。** 常数 8 的合并推论来源与审阅状态单独标明。
+
+**104 条是研究记录，不是 104 个已证定理。** 失败路线、未决问题、范围外构造和材料缺口不进入主结论；有效的否定结果单独保留。[总报告](REPORT.md)集中回答“得到了什么、证据是什么、哪些不能用”，[逐项状态表](results/STATUS.md)给出每条记录的当前采用方式。
+
+[完整结果与阅读路线](results/README.md) · [104 条研究记录（含未决与否定结果）](results/CLAIMS.md) · [复现方法](docs/REPRODUCIBILITY.md) · [English](README.en.md)
 
 这是独立的研究仓库。数学正文、完整研究笔记、分类数据、验证器和探索代码都在仓库内；不需要 arXiv 页面或论文附件才能阅读、理解和复现。`paper/` 只是可选的排版稿，**不是仓库的主体，也不覆盖全部研究结果**。
 
@@ -53,14 +59,14 @@ $$
 
 **证明在仓库正文中：**[双向三次界](results/theory/03-polynomial-bounds.md)、[长度界及显式区间](results/theory/04-size-bounds.md)。常数 8 来自此前合并时增加的指数二关系子格推论；原始支线的常数 32 及证明也完整保留。没有将新推论冒充为原档案结论，也不声称常数或指数最优。程序的有限恒等式检查不是一般定理的证明或独立同行评审。
 
-## 3. 完整结果不止主定理
+## 3. 补充结果与研究过程分开使用
 
-正文包含七章主理论，以及 **25 篇不删节的研究笔记阅读版**。两支线的全部 78 项原始结论、16 项主结果及 10 项同调/类度量结果合为 [104 项登记表](results/CLAIMS.md)，每项都有范围、状态、完整证明、证据和限制。
+正文包含七章主理论，以及 **25 篇不删节的研究笔记阅读版**。两支线的 78 条原始记录、16 条主线记录及 10 条同调/类度量记录合为 [104 条研究记录](results/CLAIMS.md)。它们包含未决、失败路线和重复条目；每项显示当前采用方式、范围、论证或问题出处和限制。
 
 | 主题 | 正文入口 |
 |---|---|
 | 维数、projection/transfer 秩、可见/核扇区、逻辑张成阈值 | [第二章](results/theory/02-homology.md) |
-| 小重量分类：$d=4\Rightarrow d_2\le48$、$d=6\Rightarrow d_2\le112$、$d_2=6\Rightarrow d\le56$、$d_2=8\Rightarrow d\le96$ | [完整阅读路线及各自限制](results/README.md#small-weight) |
+| 小重量分类：按每条证明的依赖使用；weight-six 排除有未恢复的继承输入，不能无条件并列 | [总报告中的采用边界](REPORT.md)、[完整阅读路线](results/README.md#small-weight) |
 | torsion–Frobenius compact metric、有限存活条件、指定范围内的 factor-two replacement | [A05](results/notes/A05-compact-survival.md)、[A06](results/notes/A06-linear-compact-replacement.md) |
 | rank-one resonance、所有次数的 Bellman 证书、稳定化 $8\to14$ 族 | [A07](results/notes/A07-rank-one-resonance.md)、[D07](results/notes/D07-rank-one-amplification.md) |
 | 可见二主扭率、sparse deck descent、mixed Laurent、fixed-$c$ 乘积界 | [D05](results/notes/D05-visible-two-primary.md)、[D06](results/notes/D06-sparse-deck-descent.md)、[D08](results/notes/D08-mixed-laurent.md)、[D09](results/notes/D09-fixed-c-product-bound.md) |
@@ -81,6 +87,8 @@ python scripts/reproduce.py --profile core --output checks/local
 python -m bbcover compare upper
 python -m bbcover compare lower
 python -m bbcover bounds 14 --n 156 --k 4 --k2 8
+python -m bbcover results
+python -m bbcover results --view negative
 python -m bbcover results DIST-UPPER
 ```
 
@@ -100,7 +108,8 @@ python scripts/reproduce.py --profile extended --output checks/extended
 ## 5. 仓库结构
 
 ```text
-results/          完整 GitHub 数学正文、25 篇研究笔记、104 项结论与开放问题
+REPORT.md         首要阅读入口：主要结论、证据、采用边界与失败路线
+results/          完整数学正文、25 篇过程笔记、104 条分状态研究记录
 research/         两支线完整代码、原始证明、搜索数据和范围外公开数学报告
 bbcover/          可安装的标准库接口、反例重建、精确整数界、结论查询
 tests/            接口、代数、覆盖、CLI、目录一致性与发布测试
@@ -122,7 +131,7 @@ docs/             使用、开发、证据格式和 GitHub 发布说明
 git clone bb-double-cover-research.bundle bb-double-cover-research
 cd bb-double-cover-research
 gh repo create bb-double-cover-research --source=. --remote=github --public --push
-git push github v0.2.0
+git push github v0.2.1
 ```
 
 也提供 `scripts/publish_github.py`：默认只预览，指定 `--execute` 才创建并推送，不覆盖现有仓库、不强制推送。工作流已随源码提供；本地测试通过不代表 GitHub Actions 已在远端执行。

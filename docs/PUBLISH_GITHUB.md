@@ -12,7 +12,7 @@ cd bb-double-cover-research
 python scripts/check_repository.py
 python scripts/check_release.py
 gh repo create bb-double-cover-research --source=. --remote=github --public --push
-git push github v0.2.0
+git push github v0.2.1
 ```
 
 `github` 是新远端名，避免覆盖 bundle 克隆产生的本地 `origin`。需要先做私有审阅时，把 `--public` 改成 `--private`。组织仓库可以把名称写为 `OWNER/bb-double-cover-research`；权限和可见性由你的实际账号控制。

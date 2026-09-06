@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "root_determinants": 20736,
+  "root_determinant_histogram": {
+    "-1": 1728,
+    "0": 17280,
+    "1": 1728
+  },
+  "rank_three_samples": 512,
+  "all_voltage_cases_checked": 4096,
+  "random_seed": 20260906,
+  "scope": "exact algebraic identity tests, not a proof by finite examples"
+}

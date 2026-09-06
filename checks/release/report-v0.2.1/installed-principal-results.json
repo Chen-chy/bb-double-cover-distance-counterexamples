@@ -1,0 +1,326 @@
+{
+  "view": "main",
+  "record_warning": "Research records are not all valid or independent theorems. See review.disposition, scope and evidence limitations.",
+  "schema_version": 2,
+  "version": "0.2.1",
+  "count": 12,
+  "path_convention": "Proof/evidence paths are relative to the complete research repository, not the installed wheel.",
+  "results": [
+    {
+      "id": "CEX-UP",
+      "branch": "main",
+      "statement": "[[78,4,6]] -> [[156,4,14]]: exact d2/d=7/3>2.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "exact-computer-assisted-certificate",
+      "status": "exact-computer-assisted-certificate",
+      "proofs": [
+        "results/theory/01-counterexamples.md#thm-examples"
+      ],
+      "evidence": [
+        "certificates/upper/CERTIFICATE.md",
+        "certificates/upper/verify_bitset.py",
+        "certificates/upper/verify_polynomial.py"
+      ],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "CEX-UP",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "有限例的两套独立精确距离证书已保留；全距离 6→14，而非单个 witness 上界。",
+        "known_dependencies": [
+          "CERT-COMPLETENESS"
+        ],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "CEX-DOWN",
+      "branch": "main",
+      "statement": "[[156,4,14]] -> [[312,8,12]]: exact d2/d=6/7<1.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "exact-computer-assisted-certificate",
+      "status": "exact-computer-assisted-certificate",
+      "proofs": [
+        "results/theory/01-counterexamples.md#thm-examples"
+      ],
+      "evidence": [
+        "certificates/lower/CERTIFICATE.md",
+        "certificates/lower/verify_lower_bitset.py",
+        "certificates/lower/verify_lower_polynomial.py"
+      ],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "CEX-DOWN",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "有限例的两套独立精确距离证书已保留；全距离 14→12，而非特定类的受限最小值。",
+        "known_dependencies": [
+          "CERT-COMPLETENESS"
+        ],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "HOM-RANK",
+      "branch": "main",
+      "statement": "k<=k2<=2k; rank(transfer)=rank(projection)=k2/2.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/02-homology.md#prop-ranks"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-RANK",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "HOM-FULL",
+      "branch": "main",
+      "statement": "k2=2k implies d2<=2d.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/02-homology.md#eq-full-dimension"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-FULL",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [
+          "HOM-RANK"
+        ],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "HOM-REFINED",
+      "branch": "main",
+      "statement": "d2<=2*lambda_(k-k2/2+1), where lambda_j is the logical spanning threshold.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/02-homology.md#prop-lambda"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-REFINED",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [
+          "HOM-RANK"
+        ],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "HOM-SECTORS",
+      "branch": "main",
+      "statement": "d2=min(d_vis,d_ker); d_vis>=d. Projection-kernel classes must not be omitted.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/02-homology.md"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-SECTORS",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "DIST-LOWER",
+      "branch": "main",
+      "statement": "d<=4*d2^3; equivalently d2>=2*ceil((d/4)^(1/3)/2).",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/03-polynomial-bounds.md#thm-polynomial"
+      ],
+      "evidence": [],
+      "limitations": "Also proved in the stated finite abelian 2-group-kernel descent extension.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-LOWER",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "主文提供完整三次退化论证，不调用尚未恢复的小重量排除输入。",
+        "known_dependencies": [
+          "FINITE-SUBGROUP",
+          "STRIP-COFACTOR"
+        ],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "DIST-UPPER",
+      "branch": "main",
+      "statement": "d2<=8*d^3.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-consolidation",
+      "status": "symbolic-proof-consolidation",
+      "proofs": [
+        "results/theory/03-polynomial-bounds.md#thm-polynomial"
+      ],
+      "evidence": [
+        "scripts/verify_lattice_transport.py"
+      ],
+      "limitations": "The imported upper constant was 32. Constant 8 is a prior consolidation corollary, not an original-archive claim. Finite identity checks do not prove the universal theorem.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-UPPER",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "主文提供常数 8 的合并推论；区别于原支线常数 32，不视为外部独立审稿通过。",
+        "known_dependencies": [
+          "FINITE-SUBGROUP",
+          "STRIP-COFACTOR",
+          "LATTICE-TRANSPORT"
+        ],
+        "consolidation_review": true
+      }
+    },
+    {
+      "id": "DIST-INTERVAL",
+      "branch": "main",
+      "statement": "d_lower=2 ceil((d/4)^(1/3)/2); d_upper=2 floor(min(8d^3,n,C0(2n)^(3/4))/2), C0=(16/3)(12/pi^2)^(3/4); also minimize with 2d when k2=2k.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/04-size-bounds.md#eq-dlower"
+      ],
+      "evidence": [],
+      "limitations": "The integer CLI implements the safe cubic/length/transfer caps only, not an unsafe floating-point rounding of the analytic cap. Constants and exponents are not claimed optimal.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-INTERVAL",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "由现行三次界、长度界及偶性推导；对常数 8 的审阅依赖不能被取整消除。",
+        "known_dependencies": [
+          "DIST-LOWER",
+          "DIST-UPPER",
+          "DIST-AMBIENT",
+          "HOM-FULL"
+        ],
+        "consolidation_review": true
+      }
+    },
+    {
+      "id": "DIST-AMBIENT",
+      "branch": "main",
+      "statement": "d<=min(n/2,C0*n^(3/4)), C0=(16/3)(12/pi^2)^(3/4).",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/04-size-bounds.md"
+      ],
+      "evidence": [],
+      "limitations": "The geometry-of-numbers proof cites Minkowski second theorem; see REFERENCES.md.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-AMBIENT",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [
+          "FINITE-SUBGROUP",
+          "STRIP-COFACTOR"
+        ],
+        "consolidation_review": false
+      }
+    },
+    {
+      "id": "DIST-TRUNCATED",
+      "branch": "main",
+      "statement": "gamma_-(N)>=max(N^(-2/3),c_-*N^(-1/2)); Gamma(N)<=c_+*sqrt(N); c_-=pi*3^(1/6)/2^(13/3), c_+=2^(3/2)*C0^(2/3).",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/04-size-bounds.md#cor-truncated"
+      ],
+      "evidence": [],
+      "limitations": "Nonempty collection and N is a cap on BASE qubits, not cover qubits. Not asymptotic equality.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-TRUNCATED",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "现行两项下界不含有缺失输入的 min(1/12,20/N) 项；上界使用常数 8。",
+        "known_dependencies": [
+          "DIST-LOWER",
+          "DIST-UPPER",
+          "DIST-AMBIENT"
+        ],
+        "consolidation_review": true
+      }
+    },
+    {
+      "id": "DIST-EXAMPLE-THRESHOLDS",
+      "branch": "main",
+      "statement": "Gamma(N)>=7/3 for N>=78; gamma_-(N)<=6/7 for N>=156.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/04-size-bounds.md#cor-truncated"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-EXAMPLE-THRESHOLDS",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "由两个有限证书直接导出底码长度阈值，不依赖早期无限族。",
+        "known_dependencies": [
+          "CEX-UP",
+          "CEX-DOWN"
+        ],
+        "consolidation_review": false
+      }
+    }
+  ]
+}

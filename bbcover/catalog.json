@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "version": "0.2.0",
+  "schema_version": 2,
+  "version": "0.2.1",
   "scope": "Complete supplied-result register; original statuses retained and current overlays explicit.",
   "counts": {
     "main": 16,
@@ -27,7 +27,17 @@
       ],
       "limitations": "",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "CEX-UP",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "有限例的两套独立精确距离证书已保留；全距离 6→14，而非单个 witness 上界。",
+        "known_dependencies": [
+          "CERT-COMPLETENESS"
+        ],
+        "consolidation_review": false
+      }
     },
     {
       "id": "CEX-DOWN",
@@ -46,7 +56,17 @@
       ],
       "limitations": "",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "CEX-DOWN",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "有限例的两套独立精确距离证书已保留；全距离 14→12，而非特定类的受限最小值。",
+        "known_dependencies": [
+          "CERT-COMPLETENESS"
+        ],
+        "consolidation_review": false
+      }
     },
     {
       "id": "HOM-RANK",
@@ -61,7 +81,15 @@
       "evidence": [],
       "limitations": "",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-RANK",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "HOM-FULL",
@@ -76,7 +104,17 @@
       "evidence": [],
       "limitations": "",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-FULL",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [
+          "HOM-RANK"
+        ],
+        "consolidation_review": false
+      }
     },
     {
       "id": "HOM-REFINED",
@@ -91,7 +129,17 @@
       "evidence": [],
       "limitations": "",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-REFINED",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [
+          "HOM-RANK"
+        ],
+        "consolidation_review": false
+      }
     },
     {
       "id": "HOM-SECTORS",
@@ -106,7 +154,15 @@
       "evidence": [],
       "limitations": "",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-SECTORS",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "DIST-LOWER",
@@ -121,7 +177,18 @@
       "evidence": [],
       "limitations": "Also proved in the stated finite abelian 2-group-kernel descent extension.",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-LOWER",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "主文提供完整三次退化论证，不调用尚未恢复的小重量排除输入。",
+        "known_dependencies": [
+          "FINITE-SUBGROUP",
+          "STRIP-COFACTOR"
+        ],
+        "consolidation_review": false
+      }
     },
     {
       "id": "DIST-UPPER",
@@ -138,7 +205,19 @@
       ],
       "limitations": "The imported upper constant was 32. Constant 8 is a prior consolidation corollary, not an original-archive claim. Finite identity checks do not prove the universal theorem.",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-UPPER",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "主文提供常数 8 的合并推论；区别于原支线常数 32，不视为外部独立审稿通过。",
+        "known_dependencies": [
+          "FINITE-SUBGROUP",
+          "STRIP-COFACTOR",
+          "LATTICE-TRANSPORT"
+        ],
+        "consolidation_review": true
+      }
     },
     {
       "id": "DIST-INTERVAL",
@@ -153,7 +232,20 @@
       "evidence": [],
       "limitations": "The integer CLI implements the safe cubic/length/transfer caps only, not an unsafe floating-point rounding of the analytic cap. Constants and exponents are not claimed optimal.",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-INTERVAL",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "由现行三次界、长度界及偶性推导；对常数 8 的审阅依赖不能被取整消除。",
+        "known_dependencies": [
+          "DIST-LOWER",
+          "DIST-UPPER",
+          "DIST-AMBIENT",
+          "HOM-FULL"
+        ],
+        "consolidation_review": true
+      }
     },
     {
       "id": "DIST-AMBIENT",
@@ -168,7 +260,18 @@
       "evidence": [],
       "limitations": "The geometry-of-numbers proof cites Minkowski second theorem; see REFERENCES.md.",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-AMBIENT",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [
+          "FINITE-SUBGROUP",
+          "STRIP-COFACTOR"
+        ],
+        "consolidation_review": false
+      }
     },
     {
       "id": "DIST-TRUNCATED",
@@ -183,7 +286,19 @@
       "evidence": [],
       "limitations": "Nonempty collection and N is a cap on BASE qubits, not cover qubits. Not asymptotic equality.",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-TRUNCATED",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "现行两项下界不含有缺失输入的 min(1/12,20/N) 项；上界使用常数 8。",
+        "known_dependencies": [
+          "DIST-LOWER",
+          "DIST-UPPER",
+          "DIST-AMBIENT"
+        ],
+        "consolidation_review": true
+      }
     },
     {
       "id": "DIST-EXAMPLE-THRESHOLDS",
@@ -198,7 +313,18 @@
       "evidence": [],
       "limitations": "",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "DIST-EXAMPLE-THRESHOLDS",
+        "disposition": "main",
+        "headline": true,
+        "reason_zh": "由两个有限证书直接导出底码长度阈值，不依赖早期无限族。",
+        "known_dependencies": [
+          "CEX-UP",
+          "CEX-DOWN"
+        ],
+        "consolidation_review": false
+      }
     },
     {
       "id": "FINITE-SUBGROUP",
@@ -213,7 +339,15 @@
       "evidence": [],
       "limitations": "",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "FINITE-SUBGROUP",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "STRIP-COFACTOR",
@@ -228,7 +362,15 @@
       "evidence": [],
       "limitations": "",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "STRIP-COFACTOR",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "LATTICE-TRANSPORT",
@@ -245,7 +387,17 @@
       ],
       "limitations": "",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "LATTICE-TRANSPORT",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "合并稿新增的指数至多二关系子格推论；有限恒等式检查不是所有参数的证明。",
+        "known_dependencies": [
+          "STRIP-COFACTOR"
+        ],
+        "consolidation_review": true
+      }
     },
     {
       "id": "CERT-COMPLETENESS",
@@ -262,7 +414,15 @@
       ],
       "limitations": "Exact searches must terminate successfully; a timeout is incomplete, not an exclusion.",
       "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "CERT-COMPLETENESS",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "HOM-BOCKSTEIN",
@@ -277,7 +437,15 @@
       "evidence": [],
       "limitations": "",
       "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-BOCKSTEIN",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "四重厚化存在的矩形周期覆盖中的结论，不自动推广到任意抽象二重覆盖。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "HOM-EXACT-DIMENSION",
@@ -292,7 +460,15 @@
       "evidence": [],
       "limitations": "",
       "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-EXACT-DIMENSION",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "继承 H01 四重厚化范围；不把该精化的范围与一般 rank 公式混同。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "HOM-DECK-JORDAN",
@@ -307,7 +483,18 @@
       "evidence": [],
       "limitations": "",
       "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-DECK-JORDAN",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "继承 H01 四重厚化范围；描述 deck 在同调上的作用而非 Hamming 等距。",
+        "known_dependencies": [
+          "HOM-BOCKSTEIN",
+          "HOM-EXACT-DIMENSION"
+        ],
+        "consolidation_review": false
+      }
     },
     {
       "id": "HOM-PAIRING",
@@ -322,7 +509,15 @@
       "evidence": [],
       "limitations": "",
       "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "HOM-PAIRING",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "METRIC-CLASS-VARIATIONAL",
@@ -337,7 +532,15 @@
       "evidence": [],
       "limitations": "",
       "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "METRIC-CLASS-VARIATIONAL",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "METRIC-QUOTIENT-DUAL",
@@ -352,7 +555,15 @@
       "evidence": [],
       "limitations": "",
       "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "METRIC-QUOTIENT-DUAL",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "CEX-SUPPORT-FAMILY",
@@ -370,7 +581,15 @@
       ],
       "limitations": "The text proves the full family; finite j checks are audits, not the proof for all j.",
       "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "CEX-SUPPORT-FAMILY",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "support–Bockstein 支撑控制引理被无限族否定；该族并不违反 d₂≤2d。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "CEX-LOW-SHEET-INFINITE",
@@ -387,7 +606,15 @@
       ],
       "limitations": "nu is section-dependent and is not the cover distance.",
       "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "CEX-LOW-SHEET-INFINITE",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "低片指标 ν 可为无穷而覆盖距离有限；ν 不能当作 d₂。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "METRIC-COUNTEREXAMPLE-TABLE",
@@ -405,7 +632,15 @@
       ],
       "limitations": "Do not identify rho, mu, nu, fixed-message weight, or restricted-sector weight with an unrestricted code distance.",
       "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "METRIC-COUNTEREXAMPLE-TABLE",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "δ、ρ、μ、ν 对应指定类及截面；这些指标不能互换或一律等于 d₂。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "METRIC-EXCHANGE",
@@ -420,7 +655,15 @@
       "evidence": [],
       "limitations": "Local overlap restrictions alone do not imply a universal factor-two distance bound.",
       "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
-      "unavailable_historical_sources": []
+      "unavailable_historical_sources": [],
+      "review": {
+        "id": "METRIC-EXCHANGE",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
+      }
     },
     {
       "id": "AMP-BASE-01",
@@ -452,6 +695,14 @@
         ],
         "limits": "Original early full archive/fixed-box logs unavailable; finite seed has intact later verification.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-BASE-01",
+        "disposition": "gap",
+        "headline": false,
+        "reason_zh": "只对 j=0 的有限 seed 有现行独立精确证书；整个早期参数族保留恢复稿状态。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -478,6 +729,17 @@
         "evidence_files": [],
         "limits": "Not a metric theorem for a killed chosen class.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-BASE-02",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "旧基线在 HOM-RANK/HOM-FULL 已有现行证明；重复登记不是独立新增定理。",
+        "known_dependencies": [
+          "HOM-RANK",
+          "HOM-FULL"
+        ],
+        "consolidation_review": false
       }
     },
     {
@@ -504,6 +766,14 @@
         "evidence_files": [],
         "limits": "Original full early report is unavailable; downstream reports identify this as input.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-BASE-03",
+        "disposition": "gap",
+        "headline": false,
+        "reason_zh": "d=2⇒d₂≤4 在此条目中是继承输入，原独立完整报告未恢复。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -536,6 +806,14 @@
         ],
         "limits": "Recovered text is not authenticated original source bytes; not an optimality claim.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-D4-01",
+        "disposition": "gap",
+        "headline": false,
+        "reason_zh": "d=4⇒d₂≤48 有恢复论证及转录验证器，但原报告和原包缺失；保留来源限制，不列作闭合的主证书结果。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -566,6 +844,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-METRIC-01",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "transfer 扇区指标可发散而 d=d₂=4；不能用该指标替代实际距离。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -596,6 +882,14 @@
         ],
         "limits": "Does not imply factor two for mixed-block minima.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-R3-01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -626,6 +920,14 @@
         ],
         "limits": "Ordinary reduced Hamming distance is not physical cover distance.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-R3-02",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -660,6 +962,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-R3-03",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "辅助约化码的距离 9 否定中间引理，不是新的严格三项式覆盖距离。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -690,6 +1000,14 @@
         ],
         "limits": "Cover witnesses are upper bounds, not exact cover distances in every row.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-SEARCH-01",
+        "disposition": "exploratory",
+        "headline": false,
+        "reason_zh": "仅为指定样本的搜索记录；witness 给上界，未完成搜索不提供下界或全局排除。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -720,6 +1038,14 @@
         ],
         "limits": "No failed search is a lower exclusion.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-SEARCH-02",
+        "disposition": "exploratory",
+        "headline": false,
+        "reason_zh": "仅为指定样本的搜索记录；witness 给上界，未完成搜索不提供下界或全局排除。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -754,6 +1080,14 @@
         ],
         "limits": "Full enumeration not rerun during export; retained full-matrix check rerun.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-D6-01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -784,6 +1118,14 @@
         ],
         "limits": "Power equality alone is not a nonboundary certificate.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-D6-02",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -810,6 +1152,14 @@
         "evidence_files": [],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-ONEBLOCK-01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -842,6 +1192,14 @@
         ],
         "limits": "Not an unrestricted homology base-change theorem.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-COMPACT-01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -868,6 +1226,14 @@
         "evidence_files": [],
         "limits": "Historical bound; later cubic bound is stronger asymptotically.",
         "current": false
+      },
+      "review": {
+        "id": "AMP-COMPACT-02",
+        "disposition": "historical",
+        "headline": false,
+        "reason_zh": "原较弱估计保留作为证明演进记录；现行主报告优先使用 DIST-UPPER / DIST-TRUNCATED。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -894,6 +1260,14 @@
         "evidence_files": [],
         "limits": "Polynomial in d, not a finite universal amplification constant.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-GLOBAL-01",
+        "disposition": "historical",
+        "headline": false,
+        "reason_zh": "原较弱估计保留作为证明演进记录；现行主报告优先使用 DIST-UPPER / DIST-TRUNCATED。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -920,6 +1294,14 @@
         "evidence_files": [],
         "limits": "Size-dependent; does not prove C_* finite.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-GLOBAL-02",
+        "disposition": "historical",
+        "headline": false,
+        "reason_zh": "原较弱估计保留作为证明演进记录；现行主报告优先使用 DIST-UPPER / DIST-TRUNCATED。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -950,6 +1332,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-PATHOLOGY-01",
+        "disposition": "outside",
+        "headline": false,
+        "reason_zh": "非 BB square-zero 变形；可作错误推广的对照，不是目标类反例。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -982,6 +1372,14 @@
         ],
         "limits": "Universal support weight, not an unqualified statement about every finite logical.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-LINEAR-01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1014,6 +1412,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-LINEAR-02",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1044,6 +1450,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-RANK1-01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1074,6 +1488,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-RANK1-02",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1104,6 +1526,14 @@
         ],
         "limits": "m is not universally bounded; slope (2,1) gives factor four.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-RANK1-03",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1130,6 +1560,14 @@
         "evidence_files": [],
         "limits": "Cannot be applied to restricted-sector or fixed-message minima.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-RANK1-04",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "只有兼容且足够长的周期可把 full compact minima 识别为有限码距离。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1160,6 +1598,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-S21-01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1192,6 +1638,14 @@
         ],
         "limits": "12,10,16 are restricted minima, not new finite BB distances.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-S21-02",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "完整/单块/补空间的最小值必须分开；尤其 cover full=14、pure=16。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1222,6 +1676,14 @@
         ],
         "limits": "Alternating local updates are not claimed globally optimal.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-GRAPH-01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1252,6 +1714,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-GRAPH-02",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1284,6 +1754,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-PARETO-01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "指定实例的 Pareto frontier；须连同 closure 证书与完整消息优化范围引用。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1314,6 +1792,14 @@
         ],
         "limits": "Not a counterexample for a minimum nonboundary or full cover distance.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-MAJORITY-01",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "局部稳定 boundary 否定受限 majority 断言，不是最短非边界反例。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1344,6 +1830,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-TREE-01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1376,6 +1870,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-TREE-02",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1408,6 +1910,14 @@
         ],
         "limits": "",
         "current": true
+      },
+      "review": {
+        "id": "AMP-TREE-03",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "冲突图可含三角形；只能否定所提简单图结构捷径。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1442,6 +1952,14 @@
         ],
         "limits": "74 is not code distance; explicit boundary to 14 retained.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-TREE-04",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "固定消息最小重量 74；同一类的完整最小重量为 14，不能把 74 当码距。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1472,6 +1990,14 @@
         ],
         "limits": "Not an increasing-distance family.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-TREE-05",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "固定消息重量 74N 随 N 增长；同一固定码仍有重量 14 代表，不是无界升距族。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1498,6 +2024,14 @@
         "evidence_files": [],
         "limits": "Neither proved nor refuted; inherited bound is four.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-OPEN-01",
+        "disposition": "open",
+        "headline": false,
+        "reason_zh": "在本仓库材料中未证未伪；问题的提出或数值探索不构成证明。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1524,6 +2058,14 @@
         "evidence_files": [],
         "limits": "Failure would not by itself refute OPEN-01.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-OPEN-02",
+        "disposition": "open",
+        "headline": false,
+        "reason_zh": "在本仓库材料中未证未伪；问题的提出或数值探索不构成证明。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1550,6 +2092,14 @@
         "evidence_files": [],
         "limits": "No numerical universal linear upper bound and no unbounded-ratio family established.",
         "current": true
+      },
+      "review": {
+        "id": "AMP-OPEN-03",
+        "disposition": "open",
+        "headline": false,
+        "reason_zh": "在本仓库材料中未证未伪；问题的提出或数值探索不构成证明。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1576,6 +2126,14 @@
           "context/conversation/00-arbitrary-term-public-report.md"
         ],
         "limitations": "Original source/verifier/output package absent; public derivation retained. Not a strict-trinomial construction."
+      },
+      "review": {
+        "id": "DEG-A00",
+        "disposition": "outside",
+        "headline": false,
+        "reason_zh": "四项式族，不满足严格三项式条件；同时原验证包未恢复。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1602,6 +2160,14 @@
           "context/conversation/00-arbitrary-term-public-report.md"
         ],
         "limitations": "Not a result for the strict-trinomial class; source code package absent."
+      },
+      "review": {
+        "id": "DEG-A01",
+        "disposition": "outside",
+        "headline": false,
+        "reason_zh": "允许任意项数的 Θ(N⁻¹) 结论，不是严格三项式结论；同时原验证包未恢复。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1620,7 +2186,7 @@
         "research/degradation/context/conversation/INHERITED_INPUTS.md",
         "research/degradation/context/input/Pasted text.txt"
       ],
-      "limitations": "Independent exact-distance certificates are not present in the available filesystem.",
+      "limitations": "The original missing-certificate note is superseded for this finite example; use CEX-UP. This duplicate entry is not an additional counterexample.",
       "current_update": "The third input ZIP supplies two independent exact verifiers. See CEX-UP; the original missing-certificate note is historical.",
       "original_record": {
         "id": "I01",
@@ -1633,7 +2199,18 @@
           "context/input/Pasted text.txt"
         ],
         "limitations": "Independent exact-distance certificates are not present in the available filesystem."
-      }
+      },
+      "review": {
+        "id": "DEG-I01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "旧“证书缺失”已修复，当前采用 CEX-UP；原限制只保留在历史记录中。",
+        "known_dependencies": [
+          "CEX-UP"
+        ],
+        "consolidation_review": false
+      },
+      "historical_limitations": "Independent exact-distance certificates are not present in the available filesystem."
     },
     {
       "id": "DEG-I02",
@@ -1653,7 +2230,7 @@
         "research/degradation/context/input/Pasted markdown.md",
         "research/degradation/context/conversation/INHERITED_INPUTS.md"
       ],
-      "limitations": "Early report checks a weight-12 nonboundary and dimensions, not both exact distances. Later stages inherit exactness; original independent source package absent.",
+      "limitations": "The finite example is fully certified as CEX-DOWN; the inherited infinite family remains evidence-limited. Do not promote the combined entry wholesale.",
       "current_update": "The finite 14->12 example is repaired by CEX-DOWN; the entire inherited infinite family is not upgraded by testing that seed.",
       "original_record": {
         "id": "I02",
@@ -1667,7 +2244,18 @@
           "context/conversation/INHERITED_INPUTS.md"
         ],
         "limitations": "Early report checks a weight-12 nonboundary and dimensions, not both exact distances. Later stages inherit exactness; original independent source package absent."
-      }
+      },
+      "review": {
+        "id": "DEG-I02",
+        "disposition": "gap",
+        "headline": false,
+        "reason_zh": "本条把已认证有限 14→12 例与未恢复的无限族合写；有限部分使用 CEX-DOWN，不能整体升级。",
+        "known_dependencies": [
+          "CEX-DOWN"
+        ],
+        "consolidation_review": false
+      },
+      "historical_limitations": "Early report checks a weight-12 nonboundary and dimensions, not both exact distances. Later stages inherit exactness; original independent source package absent."
     },
     {
       "id": "DEG-I03",
@@ -1695,6 +2283,14 @@
           "context/input/Pasted markdown.md"
         ],
         "limitations": "Prior weight-two/weight-four package unavailable; preserve the original supplied scope."
+      },
+      "review": {
+        "id": "DEG-I03",
+        "disposition": "gap",
+        "headline": false,
+        "reason_zh": "早期 weight-two/weight-four 排除及 stronger no-small-cycle 输入包未恢复。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1732,6 +2328,16 @@
           "research/01-weight-six/verify_presentations.py"
         ],
         "limitations": "Uniform conclusion requires the proof and exhaustive completeness argument, not only retained-catalogue checking."
+      },
+      "review": {
+        "id": "DEG-D01",
+        "disposition": "gap",
+        "headline": false,
+        "reason_zh": "原定理明确以起始 weight-four 排除为条件；本次没有补证该输入，d₂=6⇒d≤56 不作无条件主结论。",
+        "known_dependencies": [
+          "DEG-I03"
+        ],
+        "consolidation_review": false
       }
     },
     {
@@ -1763,6 +2369,14 @@
           "research/01-weight-six/family_verification.json"
         ],
         "limitations": "Base distances are intervals, not asserted exact distances."
+      },
+      "review": {
+        "id": "DEG-D02",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "常重量 boundary 的 coefficient filling 可发散；线性支撑填充引理为假。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1792,6 +2406,14 @@
           "research/01-weight-six/family_verification.json"
         ],
         "limitations": "Every cover cycle above that q also obeys the lower bound. Not a vanishing-ratio family."
+      },
+      "review": {
+        "id": "DEG-D03",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "特定 boundary 的最小提升重量可发散；不能推出整码距离退化。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1827,6 +2449,14 @@
           "research/02-weight-eight/verify_summary.py"
         ],
         "limitations": "No new exact ratio record. Combined d>96 => d_2>=10 uses earlier exclusions."
+      },
+      "review": {
+        "id": "DEG-D04",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "d₂=8⇒d≤96 的正文明确独立于早期小重量输入；组合 d>96⇒d₂≥10 则仍需该输入。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1856,6 +2486,16 @@
           "research/03-structural-degradation/verification_summary.json"
         ],
         "limitations": "Symbolic theorem independent of earlier incidence catalogues; finite tests are not its proof."
+      },
+      "review": {
+        "id": "DEG-D05",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "与 DIST-LOWER 是同一三次退化结论的原支线登记，不能重复计算成果。",
+        "known_dependencies": [
+          "DIST-LOWER"
+        ],
+        "consolidation_review": false
       }
     },
     {
@@ -1887,6 +2527,18 @@
           "research/03-structural-degradation/geometry_verification.json"
         ],
         "limitations": "Not a positive universal ratio and not a sharp asymptotic equivalence."
+      },
+      "review": {
+        "id": "DEG-D06",
+        "disposition": "gap",
+        "headline": false,
+        "reason_zh": "min(1/12,20/N) 项依赖早期小重量输入；不依赖该输入的其余部分另列于 DIST-TRUNCATED。",
+        "known_dependencies": [
+          "DEG-I03",
+          "DEG-D01",
+          "DEG-D04"
+        ],
+        "consolidation_review": false
       }
     },
     {
@@ -1920,6 +2572,14 @@
           "research/04-quadratic-bottleneck/cases.json"
         ],
         "limitations": "Not a statement that all finite homology is compact. Visible 2-primary torsion remains."
+      },
+      "review": {
+        "id": "DEG-D07",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1949,6 +2609,14 @@
           "research/04-quadratic-bottleneck/summary.json"
         ],
         "limitations": "Not an actual code-distance counterexample."
+      },
+      "review": {
+        "id": "DEG-D08",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "短关系行不保证二次 cofactor 界；格对照例不是码距离反例。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -1980,6 +2648,14 @@
           "research/04-quadratic-bottleneck/summary.json"
         ],
         "limitations": "Not a degradation counterfamily; there is an independent short base logical."
+      },
+      "review": {
+        "id": "DEG-D09",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "改变 torsion 可杀死 compact image；不能假设所有 specialization 保持存活。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2011,6 +2687,14 @@
           "research/04-quadratic-bottleneck/cyclic_strip_cases.json"
         ],
         "limitations": "The specialization-created term remains separate; not applicable unchanged to a zerodivisor torsion quotient."
+      },
+      "review": {
+        "id": "DEG-D10",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2044,6 +2728,14 @@
           "research/05-visible-two-primary/verify_local.py"
         ],
         "limitations": "Not arbitrary universal rank-four incidence groups; normalizing maps are not Hamming isometries."
+      },
+      "review": {
+        "id": "DEG-D11",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2075,6 +2767,14 @@
           "research/05-visible-two-primary/family_verification.json"
         ],
         "limitations": "No exact cover distance claimed; not an unbounded-degradation family."
+      },
+      "review": {
+        "id": "DEG-D12",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2108,6 +2808,14 @@
           "research/06-sparse-deck-descent/audit.md"
         ],
         "limitations": "Not a global quadratic theorem; retained-involution period doubles and higher/finite incidence mechanisms remain outside."
+      },
+      "review": {
+        "id": "DEG-D13",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "d≤3d₂² 只用于指定 deck-involution strip 子类，不能改写成一般二次退化界。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2137,6 +2845,14 @@
           "research/06-sparse-deck-descent/verification_summary.json"
         ],
         "limitations": "Its weight-14 kernel witness is not minimum; an independent base logical has weight at most 8."
+      },
+      "review": {
+        "id": "DEG-D14",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "导数候选在 retained-involution 底码可有非零 syndrome，不能直接当 logical。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2168,6 +2884,14 @@
           "research/07-rank-one-amplification/audit.md"
         ],
         "limitations": "Retains separate specialization-created finite homology. No conclusion for arbitrary torsion presentations."
+      },
+      "review": {
+        "id": "DEG-P01",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2197,6 +2921,14 @@
           "research/07-rank-one-amplification/verification_summary.json"
         ],
         "limitations": "Not the entire residual mixed-parity inequality."
+      },
+      "review": {
+        "id": "DEG-P02",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2225,6 +2957,14 @@
           "research/07-rank-one-amplification/audit.md"
         ],
         "limitations": "Does not assert equality for arbitrary short periods."
+      },
+      "review": {
+        "id": "DEG-P03",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2257,6 +2997,14 @@
           "research/07-rank-one-amplification/verify.py"
         ],
         "limitations": "Independent Bellman edge checking gives the all-degree lower bounds. Finite matrix tests alone would not suffice."
+      },
+      "review": {
+        "id": "DEG-P04",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "all-degree Bellman 证书支持完整 Laurent 最小值 8/14；不能只靠有限矩阵扫描。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2288,6 +3036,17 @@
           "research/07-rank-one-amplification/verify.py"
         ],
         "limitations": "Ratio 7/4 is not a new record or unbounded-amplification result."
+      },
+      "review": {
+        "id": "DEG-P05",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "稳定化条件 L≥105、奇数且 3|L 下的 8→14 族；比值 7/4 不是新纪录。",
+        "known_dependencies": [
+          "DEG-P03",
+          "DEG-P04"
+        ],
+        "consolidation_review": false
       }
     },
     {
@@ -2317,6 +3076,14 @@
           "research/07-rank-one-amplification/verify.py"
         ],
         "limitations": "Disproves the proposed nonboundary argument, not factor three."
+      },
+      "review": {
+        "id": "DEG-P06",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "naive Frobenius 候选是 transfer 的倍数，会与被杀死的 transfer 一起消失。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2348,6 +3115,14 @@
           "research/08-mixed-laurent/verification_summary.json"
         ],
         "limitations": "Not exact distances for every pair and not the full mixed-parity class."
+      },
+      "review": {
+        "id": "DEG-P07",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2379,6 +3154,14 @@
           "research/08-mixed-laurent/verification_summary.json"
         ],
         "limitations": "Only constructed message weights; not complete minima and not a factor-three counterexample."
+      },
+      "review": {
+        "id": "DEG-P08",
+        "disposition": "negative",
+        "headline": false,
+        "reason_zh": "常消息可被非常消息改进，否定常消息最优捷径；尚未求得完整覆盖最小值。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2408,6 +3191,14 @@
           "research/08-mixed-laurent/audit.py"
         ],
         "limitations": "No restriction to base-minimizing F or fixed H is justified by the reformulation."
+      },
+      "review": {
+        "id": "DEG-P09",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2437,6 +3228,14 @@
           "research/08-mixed-laurent/verification_summary.json"
         ],
         "limitations": "Not an exact cover minimum or a new finite ratio record."
+      },
+      "review": {
+        "id": "DEG-P10",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2468,6 +3267,14 @@
           "research/09-fixed-c-product-bound/verification_summary.json"
         ],
         "limitations": "Not a linear uncertainty bound. Uses actual strict-trinomial support structure."
+      },
+      "review": {
+        "id": "DEG-P11",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2496,6 +3303,14 @@
           "research/09-fixed-c-product-bound/audit.md"
         ],
         "limitations": "Not a global BB amplification bound and not the degradation inequality d<=C*d_2^2."
+      },
+      "review": {
+        "id": "DEG-P12",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "fixed-c 的 μ₊≤μ₀²+2；不是一般 d≤Cd₂²，也不是全局线性放大。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2525,6 +3340,14 @@
           "research/09-fixed-c-product-bound/verify.py"
         ],
         "limitations": "The boundary variable remains arbitrary; does not imply constant-message optimality."
+      },
+      "review": {
+        "id": "DEG-P13",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2551,6 +3374,14 @@
           "research/09-fixed-c-product-bound/proof.md"
         ],
         "limitations": "Necessary is not sufficient; still need a full cover lower bound."
+      },
+      "review": {
+        "id": "DEG-P14",
+        "disposition": "scoped",
+        "headline": false,
+        "reason_zh": "按条目原文中的适用范围与限制使用；符号论证、有限审计与精确最小值的证据层次不互换。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2582,6 +3413,14 @@
           "research/09-fixed-c-product-bound/audit.md"
         ],
         "limitations": "Invalid strict-trinomial termwise support matching. Not a target BB-cover counterexample."
+      },
+      "review": {
+        "id": "DEG-P15",
+        "disposition": "outside",
+        "headline": false,
+        "reason_zh": "第二个提升分子有五项，违反目标类的逐项三项匹配。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2608,6 +3447,14 @@
           "research/03-structural-degradation/proof.md"
         ],
         "limitations": "Neither established in the available record."
+      },
+      "review": {
+        "id": "DEG-O01",
+        "disposition": "open",
+        "headline": false,
+        "reason_zh": "在本仓库材料中未证未伪；问题的提出或数值探索不构成证明。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2634,6 +3481,14 @@
           "research/06-sparse-deck-descent/proof.md"
         ],
         "limitations": "Finite-local classification and the deck-involution subclass do not settle the global statement."
+      },
+      "review": {
+        "id": "DEG-O02",
+        "disposition": "open",
+        "headline": false,
+        "reason_zh": "在本仓库材料中未证未伪；问题的提出或数值探索不构成证明。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2660,6 +3515,14 @@
           "research/09-fixed-c-product-bound/proof.md"
         ],
         "limitations": "Unproved and unrefuted; no certified strict-trinomial full-minimum violation."
+      },
+      "review": {
+        "id": "DEG-O03",
+        "disposition": "open",
+        "headline": false,
+        "reason_zh": "在本仓库材料中未证未伪；问题的提出或数值探索不构成证明。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2686,6 +3549,14 @@
           "research/09-fixed-c-product-bound/proof.md"
         ],
         "limitations": "Unproved and unrefuted. Its failure alone would not prove factor-three failure."
+      },
+      "review": {
+        "id": "DEG-O04",
+        "disposition": "open",
+        "headline": false,
+        "reason_zh": "在本仓库材料中未证未伪；问题的提出或数值探索不构成证明。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2712,6 +3583,14 @@
           "research/09-fixed-c-product-bound/proof.md"
         ],
         "limitations": "No global universal linear bound or admissible unbounded-ratio family established here."
+      },
+      "review": {
+        "id": "DEG-O05",
+        "disposition": "open",
+        "headline": false,
+        "reason_zh": "在本仓库材料中未证未伪；问题的提出或数值探索不构成证明。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     },
     {
@@ -2742,7 +3621,83 @@
           "context/conversation/INHERITED_INPUTS.md"
         ],
         "limitations": "No standalone proof package for this assertion was available; not promoted to a repository theorem."
+      },
+      "review": {
+        "id": "DEG-I04",
+        "disposition": "gap",
+        "headline": false,
+        "reason_zh": "旧交接描述没有精确的独立假设；采用 AMP-LINEAR-01 的明确 normal-form/survival 定理，不采用旧笼统断言。",
+        "known_dependencies": [],
+        "consolidation_review": false
       }
     }
-  ]
+  ],
+  "review_categories": {
+    "main": {
+      "label_zh": "主报告采用",
+      "label_en": "Headline result",
+      "rule_zh": "主要结论；区分精确有限证书与仓库提供的符号证明。采用不等于独立同行评审。"
+    },
+    "scoped": {
+      "label_zh": "按范围采用",
+      "label_en": "Scoped or supporting result",
+      "rule_zh": "仅按原假设、对象和量词使用；包含支撑引理及重复登记，不能一律解读为全距离定理。"
+    },
+    "negative": {
+      "label_zh": "有效否定结果",
+      "label_en": "Valid negative result",
+      "rule_zh": "有效地否定某条捷径或某个辅助断言；被否定的路线不能再作为正面证明步骤。"
+    },
+    "historical": {
+      "label_zh": "历史较弱界",
+      "label_en": "Historical weaker bound",
+      "rule_zh": "被更强结论取代展示优先级，不等于错误；不与现行界重复计算成果。"
+    },
+    "gap": {
+      "label_zh": "证据或依赖待补",
+      "label_en": "Evidence or dependency gap",
+      "rule_zh": "原始包、依赖证明或精确陈述尚不齐全；不按已闭合证据链的主结论发布，不等于判定为假。"
+    },
+    "exploratory": {
+      "label_zh": "探索性记录",
+      "label_en": "Exploratory record",
+      "rule_zh": "样本、上界或未完成搜索；不能从无 witness、超时或局部优化推断全局下界。"
+    },
+    "open": {
+      "label_zh": "未决问题",
+      "label_en": "Open in this record",
+      "rule_zh": "在现有材料中未证未伪；问题出处不是证明，不作全球最新文献状态声明。"
+    },
+    "outside": {
+      "label_zh": "目标范围外",
+      "label_en": "Outside the target class",
+      "rule_zh": "不是严格三项式逐项匹配 BB 二重覆盖的主结论；范围外推导仍可保留供比较。"
+    }
+  },
+  "disposition_counts": {
+    "main": 12,
+    "scoped": 52,
+    "negative": 15,
+    "gap": 8,
+    "exploratory": 2,
+    "historical": 3,
+    "outside": 4,
+    "open": 8
+  },
+  "headline_ids": [
+    "CEX-UP",
+    "CEX-DOWN",
+    "HOM-RANK",
+    "HOM-FULL",
+    "HOM-REFINED",
+    "HOM-SECTORS",
+    "DIST-LOWER",
+    "DIST-UPPER",
+    "DIST-INTERVAL",
+    "DIST-AMBIENT",
+    "DIST-TRUNCATED",
+    "DIST-EXAMPLE-THRESHOLDS"
+  ],
+  "review_basis": "Editorial scope-and-evidence review of supplied files, not a new independent proof audit.",
+  "dependency_policy": "Listed dependencies record known top-level curation constraints, not an exhaustive formal proof graph."
 }

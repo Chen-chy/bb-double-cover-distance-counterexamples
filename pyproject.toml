@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "bbcover-research"
-version = "0.2.0"
+version = "0.2.1"
 description = "Exact certificates and research tools for BB double-cover distance distortion"
 requires-python = ">=3.10"
 readme = "README.md"

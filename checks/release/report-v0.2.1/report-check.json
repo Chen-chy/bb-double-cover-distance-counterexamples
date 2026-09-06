@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "version": "0.2.1",
+  "research_records": 104,
+  "headline_record_indices": 12,
+  "disposition_counts": {
+    "main": 12,
+    "scoped": 52,
+    "negative": 15,
+    "gap": 8,
+    "exploratory": 2,
+    "historical": 3,
+    "outside": 4,
+    "open": 8
+  },
+  "reading_notes_with_current_use_warnings": 25,
+  "scope": "Editorial consistency and listed dependency gates only; not verification of mathematical proofs.",
+  "errors": []
+}
