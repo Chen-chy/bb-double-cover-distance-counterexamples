@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "scope": "Wheel installed in an isolated virtual environment and invoked outside the source checkout. The wheel is an interface, not the complete research repository.",
+  "package": {
+    "module": "/mnt/data/github_work/installed-env/lib/python3.13/site-packages/bbcover/__init__.py",
+    "version": "0.2.0",
+    "claims": 104
+  },
+  "commands": [
+    {
+      "command": [
+        "/mnt/data/github_work/installed-env/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-deps",
+        "--no-index",
+        "/mnt/data/github_work/wheels/bbcover_research-0.2.0-py3-none-any.whl"
+      ],
+      "returncode": 0,
+      "stdout": "Processing ./wheels/bbcover_research-0.2.0-py3-none-any.whl\nInstalling collected packages: bbcover-research\nSuccessfully installed bbcover-research-0.2.0\n",
+      "stderr": "WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n"
+    },
+    {
+      "command": [
+        "/mnt/data/github_work/installed-env/bin/bbcover",
+        "--version"
+      ],
+      "returncode": 0,
+      "stdout": "0.2.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/mnt/data/github_work/installed-env/bin/bbcover",
+        "compare",
+        "upper"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"counterexample\": \"upper\",\n  \"base\": {\n    \"example\": \"q39\",\n    \"n\": 78,\n    \"k_recomputed\": 4,\n    \"rank_HX\": 37,\n    \"rank_HZ\": 37,\n    \"connected\": true,\n    \"witness_weight\": 6,\n    \"witness_is_nonboundary_cycle\": true,\n    \"distance_from_independent_certificate\": 6,\n    \"distance_recomputed_by_this_command\": false,\n    \"certificate\": \"certificates/upper\",\n    \"matrix_sha256\": {\n      \"X\": \"6e84e8c9cbb4cec64bb6d04405ae0ac9d87ce71e6a1a972e8b833ab1a824eef4\",\n      \"Z\": \"341909344e831fdcb9aaa7d117aafe474718b0e25b610ae536b20eb7b370b6b3\"\n    }\n  },\n  \"cover\": {\n    \"example\": \"q78\",\n    \"n\": 156,\n    \"k_recomputed\": 4,\n    \"rank_HX\": 76,\n    \"rank_HZ\": 76,\n    \"connected\": true,\n    \"witness_weight\": 14,\n    \"witness_is_nonboundary_cycle\": true,\n    \"distance_from_independent_certificate\": 14,\n    \"distance_recomputed_by_this_command\": false,\n    \"certificate\": \"certificates/upper and certificates/lower\",\n    \"matrix_sha256\": {\n      \"X\": \"468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e\",\n      \"Z\": \"4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de\"\n    }\n  },\n  \"cover_validation\": {\n    \"degree\": 2,\n    \"term_matching\": true,\n    \"neighborhood_bijections\": true,\n    \"vertices_checked\": 312,\n    \"base_connected\": true,\n    \"cover_connected\": true\n  },\n  \"ratio_d2_over_d\": \"7/3\",\n  \"violated_claim\": \"d2 <= 2*d\",\n  \"violation_verified_using_certified_distances\": true,\n  \"distance_recomputed_by_this_command\": false,\n  \"exact_distance_verification\": \"python scripts/reproduce.py --profile core --output checks/new-run\",\n  \"scope\": \"This command reconstructs ranks, witnesses and cover maps; exhaustive distance exclusion is performed by the independent certificate verifiers.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/mnt/data/github_work/installed-env/bin/bbcover",
+        "compare",
+        "lower"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"counterexample\": \"lower\",\n  \"base\": {\n    \"example\": \"q78\",\n    \"n\": 156,\n    \"k_recomputed\": 4,\n    \"rank_HX\": 76,\n    \"rank_HZ\": 76,\n    \"connected\": true,\n    \"witness_weight\": 14,\n    \"witness_is_nonboundary_cycle\": true,\n    \"distance_from_independent_certificate\": 14,\n    \"distance_recomputed_by_this_command\": false,\n    \"certificate\": \"certificates/upper and certificates/lower\",\n    \"matrix_sha256\": {\n      \"X\": \"468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e\",\n      \"Z\": \"4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de\"\n    }\n  },\n  \"cover\": {\n    \"example\": \"q78x2\",\n    \"n\": 312,\n    \"k_recomputed\": 8,\n    \"rank_HX\": 152,\n    \"rank_HZ\": 152,\n    \"connected\": true,\n    \"witness_weight\": 12,\n    \"witness_is_nonboundary_cycle\": true,\n    \"distance_from_independent_certificate\": 12,\n    \"distance_recomputed_by_this_command\": false,\n    \"certificate\": \"certificates/lower\",\n    \"matrix_sha256\": {\n      \"X\": \"9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8\",\n      \"Z\": \"6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb\"\n    }\n  },\n  \"cover_validation\": {\n    \"degree\": 2,\n    \"term_matching\": true,\n    \"neighborhood_bijections\": true,\n    \"vertices_checked\": 624,\n    \"base_connected\": true,\n    \"cover_connected\": true\n  },\n  \"ratio_d2_over_d\": \"6/7\",\n  \"violated_claim\": \"d2 >= d\",\n  \"violation_verified_using_certified_distances\": true,\n  \"distance_recomputed_by_this_command\": false,\n  \"exact_distance_verification\": \"python scripts/reproduce.py --profile core --output checks/new-run\",\n  \"scope\": \"This command reconstructs ranks, witnesses and cover maps; exhaustive distance exclusion is performed by the independent certificate verifiers.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/mnt/data/github_work/installed-env/bin/bbcover",
+        "results",
+        "HOM-BOCKSTEIN"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"schema_version\": 1,\n  \"version\": \"0.2.0\",\n  \"count\": 1,\n  \"path_convention\": \"Proof/evidence paths are relative to the complete research repository, not the installed wheel.\",\n  \"results\": [\n    {\n      \"id\": \"HOM-BOCKSTEIN\",\n      \"branch\": \"homology\",\n      \"statement\": \"The connecting maps satisfy beta_1 beta_2 = 0. Hence ker(tau_*) = im(beta_2) is contained in im(p_*).\",\n      \"scope\": \"Binary rectangular x/y BB double covers with the specified fourfold coefficient-ring thickening.\",\n      \"evidence_type\": \"symbolic-proof\",\n      \"status\": \"symbolic-proof\",\n      \"proofs\": [\n        \"results/notes/H01-bockstein-and-deck-structure.md\"\n      ],\n      \"evidence\": [],\n      \"limitations\": \"\",\n      \"current_update\": \"Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.\",\n      \"unavailable_historical_sources\": []\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/mnt/data/github_work/installed-env/bin/bbcover",
+        "bounds",
+        "14",
+        "--n",
+        "156",
+        "--k",
+        "4",
+        "--k2",
+        "8"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"lower\": 2,\n  \"upper\": 28,\n  \"source_distance\": 14,\n  \"base_length\": 156,\n  \"full_dimension_transfer_used\": true\n}\n",
+      "stderr": ""
+    }
+  ]
+}

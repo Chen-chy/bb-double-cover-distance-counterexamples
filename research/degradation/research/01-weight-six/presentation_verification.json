@@ -1,0 +1,45 @@
+{
+  "checked_presentations": 5392,
+  "distinct_relation_lattices": 3334,
+  "counts": {
+    "(3, 0, 0)": 2191,
+    "(3, 0, 1)": 16,
+    "(3, 1, 0)": 1043,
+    "(3, 1, 1)": 54,
+    "(3, 2, 0)": 82,
+    "(3, 2, 1)": 44,
+    "(3, 3, 1)": 6,
+    "(3, 4, 1)": 1,
+    "(4, 0, 0)": 1133,
+    "(4, 0, 2)": 22,
+    "(4, 1, 0)": 502,
+    "(4, 1, 2)": 44,
+    "(4, 2, 0)": 6,
+    "(4, 2, 2)": 8,
+    "(5, 0, 0)": 117,
+    "(5, 1, 0)": 123
+  },
+  "categories": {
+    "boundary_1": 121,
+    "monomial_associates": 40,
+    "strip": 1668,
+    "finite": 3441,
+    "equal_squares": 20,
+    "order_three_projector": 6,
+    "order_three_check": 16,
+    "boundary_2": 74,
+    "Frobenius_multiple": 6
+  },
+  "rank_zero_maximum_group_orders": {
+    "3": 27,
+    "4": 22,
+    "5": 12
+  },
+  "rank_one_distance_bounds": {
+    "3": 48,
+    "4": 56,
+    "5": 40
+  },
+  "uniform_base_distance_cutoff": 56,
+  "unresolved_presentations": 0
+}

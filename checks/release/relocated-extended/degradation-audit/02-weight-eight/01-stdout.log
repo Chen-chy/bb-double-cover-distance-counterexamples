@@ -1,0 +1,50 @@
+{
+  "labelled_counts_all": [
+    1,
+    0,
+    0,
+    0,
+    7,
+    0,
+    640,
+    0,
+    170555
+  ],
+  "labelled_counts_connected": [
+    0,
+    0,
+    0,
+    0,
+    7,
+    0,
+    640,
+    0,
+    168840
+  ],
+  "connected_eight_types": 20,
+  "automorphism_orders": [
+    4,
+    2,
+    4,
+    4,
+    8,
+    4,
+    4,
+    12,
+    2,
+    8,
+    8,
+    4,
+    2,
+    8,
+    8,
+    12,
+    48,
+    16,
+    4,
+    16
+  ],
+  "colour_orbits": 877,
+  "mixed_port_assignments": 40917312,
+  "pure_port_assignments": 5598720
+}

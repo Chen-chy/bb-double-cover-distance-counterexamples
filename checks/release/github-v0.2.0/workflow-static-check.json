@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "Local YAML structure and SHA-pin review; not a remote Actions execution.",
+  "workflows": [
+    {
+      "file": ".github/workflows/ci.yml",
+      "status": "parsed_and_pins_checked",
+      "jobs": [
+        "interface",
+        "certificates"
+      ],
+      "remote_execution": false
+    },
+    {
+      "file": ".github/workflows/release-source.yml",
+      "status": "parsed_and_pins_checked",
+      "jobs": [
+        "source"
+      ],
+      "remote_execution": false
+    },
+    {
+      "file": ".github/workflows/research-audit.yml",
+      "status": "parsed_and_pins_checked",
+      "jobs": [
+        "audit"
+      ],
+      "remote_execution": false
+    }
+  ]
+}

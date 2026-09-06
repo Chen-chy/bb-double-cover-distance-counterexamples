@@ -1,0 +1,6 @@
+PROGRESS 100 {'base_tests': 96, 'base_d_gt_bound': 75, 'disconnected_skipped': 5, 'base_d6': 11, 'cover_tests': 272, 'd2_skipped': 4, 'cutoffs': 34, 'base_d4': 6} sec 1.41
+PROGRESS 900 {'base_tests': 853, 'base_d_gt_bound': 657, 'disconnected_skipped': 38, 'base_d6': 80, 'cover_tests': 2512, 'd2_skipped': 39, 'cutoffs': 224, 'base_d4': 77, 'duplicates': 10} sec 9.09
+PROGRESS 1000 {'base_tests': 947, 'base_d_gt_bound': 734, 'disconnected_skipped': 41, 'base_d6': 87, 'cover_tests': 2720, 'd2_skipped': 43, 'cutoffs': 237, 'base_d4': 83, 'duplicates': 13} sec 9.62
+PROGRESS 1100 {'base_tests': 1043, 'base_d_gt_bound': 815, 'disconnected_skipped': 43, 'base_d6': 96, 'cover_tests': 2912, 'd2_skipped': 46, 'cutoffs': 274, 'base_d4': 86, 'duplicates': 15} sec 11.03
+PROGRESS 1200 {'base_tests': 1138, 'base_d_gt_bound': 892, 'disconnected_skipped': 45, 'base_d6': 103, 'cover_tests': 3168, 'd2_skipped': 48, 'cutoffs': 293, 'base_d4': 95, 'duplicates': 18} sec 11.74
+FINAL {'base_tests': 2250, 'base_d_gt_bound': 1811, 'disconnected_skipped': 87, 'base_d6': 170, 'cover_tests': 5776, 'd2_skipped': 78, 'cutoffs': 524, 'base_d4': 191, 'duplicates': 63} sec 19.775768518447876

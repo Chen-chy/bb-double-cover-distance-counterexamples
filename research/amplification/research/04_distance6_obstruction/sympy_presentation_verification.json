@@ -1,0 +1,15 @@
+{
+  "method": "full nine-generator Smith normal form plus independent Hermite relation checks",
+  "checked_presentations": 684,
+  "cases": {
+    "unit": 156,
+    "two_boundary_sum": 192,
+    "frobenius_square": 24,
+    "odd_three_twist": 50,
+    "single_involution": 234,
+    "finite_polynomial": 16,
+    "three_boundary_sum": 6,
+    "double_involution": 6
+  },
+  "sympy_version": "1.14.0"
+}

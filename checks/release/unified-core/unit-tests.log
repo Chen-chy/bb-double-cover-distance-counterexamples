@@ -1,0 +1,16 @@
+test_examples (test_core.BoundTests.test_examples) ... ok
+test_integer_rounding (test_core.BoundTests.test_integer_rounding) ... ok
+test_invalid_bounds (test_core.BoundTests.test_invalid_bounds) ... ok
+test_collapsed_checks_are_rejected (test_core.ExampleTests.test_collapsed_checks_are_rejected) ... ok
+test_cover_neighborhoods (test_core.ExampleTests.test_cover_neighborhoods) ... ok
+test_inversion_swap (test_core.ExampleTests.test_inversion_swap) ... ok
+test_new_kernel_sector_projects_to_boundary (test_core.ExampleTests.test_new_kernel_sector_projects_to_boundary) ... ok
+test_parameters_witnesses_and_commutation (test_core.ExampleTests.test_parameters_witnesses_and_commutation) ... ok
+test_transfer_kills_weight_six_logical (test_core.ExampleTests.test_transfer_kills_weight_six_logical) ... ok
+test_invalid_vectors (test_core.GF2Tests.test_invalid_vectors) ... ok
+test_rank_and_solve (test_core.GF2Tests.test_rank_and_solve) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.026s
+
+OK

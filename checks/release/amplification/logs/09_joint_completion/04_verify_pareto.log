@@ -1,0 +1,121 @@
+Command: {python} verify_pareto.py
+
+{
+  "status": "all exact checks passed",
+  "base_minimum": 6,
+  "inherited_lower_certificates_reaudited": [
+    {
+      "name": "base_full",
+      "minimum": 6,
+      "closure_states": 45,
+      "transitions_checked": 90,
+      "subthreshold_transitions": 45,
+      "primal": {
+        "weight": 6,
+        "exact_cycle": true,
+        "exact_label": true
+      },
+      "seconds": 0.0001842040000212819
+    },
+    {
+      "name": "base_resonant_purified",
+      "minimum": 12,
+      "closure_states": 3025,
+      "transitions_checked": 6050,
+      "subthreshold_transitions": 3844,
+      "primal": {
+        "weight": 12,
+        "exact_cycle": true,
+        "exact_label": true
+      },
+      "seconds": 0.002904858000022159
+    },
+    {
+      "name": "cover_full",
+      "minimum": 14,
+      "closure_states": 58707,
+      "transitions_checked": 234828,
+      "subthreshold_transitions": 68362,
+      "primal": {
+        "weight": 14,
+        "exact_cycle": true,
+        "exact_label": true
+      },
+      "seconds": 0.07560497500000452
+    }
+  ],
+  "complete_pareto_frontier": [
+    [
+      12,
+      1
+    ],
+    [
+      14,
+      0
+    ]
+  ],
+  "witnesses": [
+    {
+      "physical": [
+        [
+          3,
+          10,
+          11
+        ],
+        [
+          0,
+          4,
+          6,
+          7,
+          9,
+          11,
+          12
+        ],
+        [
+          0
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "projection_weight": 12,
+      "outside_support_cost": 1,
+      "total_weight": 14,
+      "exact_cycle": true,
+      "nonzero_compact_label": true
+    },
+    {
+      "physical": [
+        [
+          4,
+          12,
+          20
+        ],
+        [
+          0,
+          5,
+          16,
+          19,
+          21
+        ],
+        [
+          0,
+          4,
+          10
+        ],
+        [
+          2,
+          6,
+          13
+        ]
+      ],
+      "projection_weight": 14,
+      "outside_support_cost": 0,
+      "total_weight": 14,
+      "exact_cycle": true,
+      "nonzero_compact_label": true
+    }
+  ]
+}

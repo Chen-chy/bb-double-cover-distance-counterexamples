@@ -1,0 +1,11 @@
+{
+  "independent_formal_symbols": [
+    "A",
+    "B",
+    "Y",
+    "H"
+  ],
+  "complete_common_message_matrix_identities": true,
+  "maximal_minor_factorization": true,
+  "number_of_formal_identities": 6
+}

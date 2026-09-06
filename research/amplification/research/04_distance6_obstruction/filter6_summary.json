@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "(5, 'not_circuit')": 12860,
+    "(5, 'invalid_terms')": 4200,
+    "(5, 'unit')": 120,
+    "(4, 'not_circuit')": 18740,
+    "(4, 'invalid_terms')": 52716,
+    "(4, 'other')": 192,
+    "(4, 'frobenius')": 24,
+    "(3, 'cofactor_boundary')": 1222,
+    "(3, 'not_circuit')": 12138,
+    "(3, 'invalid_terms')": 4572,
+    "(3, 'torsion_frobenius')": 56,
+    "(3, 'involution')": 234,
+    "(3, 'other')": 22,
+    "(3, 'unit')": 36
+  },
+  "retained": 684,
+  "seconds": 7.153450965881348
+}

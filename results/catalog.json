@@ -1,0 +1,2748 @@
+{
+  "schema_version": 1,
+  "version": "0.2.0",
+  "scope": "Complete supplied-result register; original statuses retained and current overlays explicit.",
+  "counts": {
+    "main": 16,
+    "homology": 10,
+    "amplification": 38,
+    "degradation": 40,
+    "total": 104
+  },
+  "results": [
+    {
+      "id": "CEX-UP",
+      "branch": "main",
+      "statement": "[[78,4,6]] -> [[156,4,14]]: exact d2/d=7/3>2.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "exact-computer-assisted-certificate",
+      "status": "exact-computer-assisted-certificate",
+      "proofs": [
+        "results/theory/01-counterexamples.md#thm-examples"
+      ],
+      "evidence": [
+        "certificates/upper/CERTIFICATE.md",
+        "certificates/upper/verify_bitset.py",
+        "certificates/upper/verify_polynomial.py"
+      ],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "CEX-DOWN",
+      "branch": "main",
+      "statement": "[[156,4,14]] -> [[312,8,12]]: exact d2/d=6/7<1.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "exact-computer-assisted-certificate",
+      "status": "exact-computer-assisted-certificate",
+      "proofs": [
+        "results/theory/01-counterexamples.md#thm-examples"
+      ],
+      "evidence": [
+        "certificates/lower/CERTIFICATE.md",
+        "certificates/lower/verify_lower_bitset.py",
+        "certificates/lower/verify_lower_polynomial.py"
+      ],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "HOM-RANK",
+      "branch": "main",
+      "statement": "k<=k2<=2k; rank(transfer)=rank(projection)=k2/2.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/02-homology.md#prop-ranks"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "HOM-FULL",
+      "branch": "main",
+      "statement": "k2=2k implies d2<=2d.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/02-homology.md#eq-full-dimension"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "HOM-REFINED",
+      "branch": "main",
+      "statement": "d2<=2*lambda_(k-k2/2+1), where lambda_j is the logical spanning threshold.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/02-homology.md#prop-lambda"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "HOM-SECTORS",
+      "branch": "main",
+      "statement": "d2=min(d_vis,d_ker); d_vis>=d. Projection-kernel classes must not be omitted.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/02-homology.md"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "DIST-LOWER",
+      "branch": "main",
+      "statement": "d<=4*d2^3; equivalently d2>=2*ceil((d/4)^(1/3)/2).",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/03-polynomial-bounds.md#thm-polynomial"
+      ],
+      "evidence": [],
+      "limitations": "Also proved in the stated finite abelian 2-group-kernel descent extension.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "DIST-UPPER",
+      "branch": "main",
+      "statement": "d2<=8*d^3.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-consolidation",
+      "status": "symbolic-proof-consolidation",
+      "proofs": [
+        "results/theory/03-polynomial-bounds.md#thm-polynomial"
+      ],
+      "evidence": [
+        "scripts/verify_lattice_transport.py"
+      ],
+      "limitations": "The imported upper constant was 32. Constant 8 is a prior consolidation corollary, not an original-archive claim. Finite identity checks do not prove the universal theorem.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "DIST-INTERVAL",
+      "branch": "main",
+      "statement": "d_lower=2 ceil((d/4)^(1/3)/2); d_upper=2 floor(min(8d^3,n,C0(2n)^(3/4))/2), C0=(16/3)(12/pi^2)^(3/4); also minimize with 2d when k2=2k.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/04-size-bounds.md#eq-dlower"
+      ],
+      "evidence": [],
+      "limitations": "The integer CLI implements the safe cubic/length/transfer caps only, not an unsafe floating-point rounding of the analytic cap. Constants and exponents are not claimed optimal.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "DIST-AMBIENT",
+      "branch": "main",
+      "statement": "d<=min(n/2,C0*n^(3/4)), C0=(16/3)(12/pi^2)^(3/4).",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/04-size-bounds.md"
+      ],
+      "evidence": [],
+      "limitations": "The geometry-of-numbers proof cites Minkowski second theorem; see REFERENCES.md.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "DIST-TRUNCATED",
+      "branch": "main",
+      "statement": "gamma_-(N)>=max(N^(-2/3),c_-*N^(-1/2)); Gamma(N)<=c_+*sqrt(N); c_-=pi*3^(1/6)/2^(13/3), c_+=2^(3/2)*C0^(2/3).",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/04-size-bounds.md#cor-truncated"
+      ],
+      "evidence": [],
+      "limitations": "Nonempty collection and N is a cap on BASE qubits, not cover qubits. Not asymptotic equality.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "DIST-EXAMPLE-THRESHOLDS",
+      "branch": "main",
+      "statement": "Gamma(N)>=7/3 for N>=78; gamma_-(N)<=6/7 for N>=156.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/04-size-bounds.md#cor-truncated"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "FINITE-SUBGROUP",
+      "branch": "main",
+      "statement": "A check supported in a finite subgroup K implies d<=|K| whenever k>0.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/03-polynomial-bounds.md#lem-finite-check"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "STRIP-COFACTOR",
+      "branch": "main",
+      "statement": "d<=4|T|R0 on a finite image of T+Z; three independent relation rows give the signed-cofactor strip bound.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-supplied",
+      "status": "symbolic-proof-supplied",
+      "proofs": [
+        "results/theory/03-polynomial-bounds.md#lem-strip"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "LATTICE-TRANSPORT",
+      "branch": "main",
+      "statement": "The voltage-kernel sublattice of three base relations has index 1 or 2; its cofactor vector is multiplied by that index.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "symbolic-proof-consolidation",
+      "status": "symbolic-proof-consolidation",
+      "proofs": [
+        "results/theory/03-polynomial-bounds.md#lem-transport"
+      ],
+      "evidence": [
+        "scripts/verify_lattice_transport.py"
+      ],
+      "limitations": "",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "CERT-COMPLETENESS",
+      "branch": "main",
+      "statement": "Circuit minimality, even parity, translation-root reduction and both branching algorithms certify exhaustive finite distance exclusions.",
+      "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+      "evidence_type": "algorithm-completeness-proof",
+      "status": "algorithm-completeness-proof",
+      "proofs": [
+        "results/theory/06-certificate-algorithms.md"
+      ],
+      "evidence": [
+        "scripts/reproduce.py"
+      ],
+      "limitations": "Exact searches must terminate successfully; a timeout is incomplete, not an exclusion.",
+      "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "HOM-BOCKSTEIN",
+      "branch": "homology",
+      "statement": "The connecting maps satisfy beta_1 beta_2 = 0. Hence ker(tau_*) = im(beta_2) is contained in im(p_*).",
+      "scope": "Binary rectangular x/y BB double covers with the specified fourfold coefficient-ring thickening.",
+      "evidence_type": "symbolic-proof",
+      "status": "symbolic-proof",
+      "proofs": [
+        "results/notes/H01-bockstein-and-deck-structure.md"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "HOM-EXACT-DIMENSION",
+      "branch": "homology",
+      "statement": "rank(beta_1)=rank(beta_2)=r, k_2=2k-2r, and k_2-k=dim(ker beta_1 / im beta_2).",
+      "scope": "Binary rectangular x/y BB double covers with the specified fourfold coefficient-ring thickening.",
+      "evidence_type": "symbolic-proof",
+      "status": "symbolic-proof",
+      "proofs": [
+        "results/notes/H01-bockstein-and-deck-structure.md"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "HOM-DECK-JORDAN",
+      "branch": "homology",
+      "statement": "For D=F_2[epsilon]/epsilon^2, H_1(cover) is D^(k_2-k) direct-sum F_2^(2k-k_2); rank(T_*+I)=k_2-k.",
+      "scope": "Binary rectangular x/y BB double covers with the specified fourfold coefficient-ring thickening.",
+      "evidence_type": "symbolic-proof",
+      "status": "symbolic-proof",
+      "proofs": [
+        "results/notes/H01-bockstein-and-deck-structure.md"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "HOM-PAIRING",
+      "branch": "homology",
+      "statement": "Transfer and projection are adjoint for the perfect logical X/Z pairing; two full-fibre transfers always pair to zero.",
+      "scope": "Binary term-preserving double covers with the stated physical pairing conventions.",
+      "evidence_type": "symbolic-proof",
+      "status": "symbolic-proof",
+      "proofs": [
+        "results/notes/H01-bockstein-and-deck-structure.md"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "METRIC-CLASS-VARIATIONAL",
+      "branch": "homology",
+      "statement": "mu(alpha)=min (|q+r|+|r|), over [q]=alpha and partial_1 r=D_1 q; the second-order parameterization is independent of the chosen Bockstein preimage.",
+      "scope": "Binary rectangular x/y BB double covers with the specified fourfold coefficient-ring thickening. Projectable nonzero classes; triangular coordinates include carry terms.",
+      "evidence_type": "symbolic-proof",
+      "status": "symbolic-proof",
+      "proofs": [
+        "results/notes/H03-class-metrics-and-exchange.md"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "METRIC-QUOTIENT-DUAL",
+      "branch": "homology",
+      "statement": "K=cover boundaries + transfer(base cycles); mu(alpha)=dist_H(y_alpha,K). The exact binary separation dual and projected-circuit shortest-path formula hold.",
+      "scope": "Projectable classes for the explicitly defined binary chain maps; this is not a real-norm duality.",
+      "evidence_type": "symbolic-proof",
+      "status": "symbolic-proof",
+      "proofs": [
+        "results/notes/H03-class-metrics-and-exchange.md"
+      ],
+      "evidence": [],
+      "limitations": "",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "CEX-SUPPORT-FAMILY",
+      "branch": "homology",
+      "statement": "For every j>=2, [[18j,4,4]] -> [[36j,4,6]], every minimum logical is killed by transfer, and rho(z)=2j-1. The support-Bockstein lemma fails unboundedly, although d_2<=2d holds here.",
+      "scope": "The explicit cyclic family L=9j, A=1+x^(3j-1)+x^(6j-2), B=1+x^(9j-2)+x^(9j-1), with the specified term lift.",
+      "evidence_type": "symbolic-proof-with-finite-audit",
+      "status": "symbolic-proof-with-finite-audit",
+      "proofs": [
+        "results/notes/H02-support-obstruction-family.md"
+      ],
+      "evidence": [
+        "archive/early_counterexample/verify_previous_family.py",
+        "archive/early_counterexample/verify_auxiliary.py"
+      ],
+      "limitations": "The text proves the full family; finite j checks are audits, not the proof for all j.",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "CEX-LOW-SHEET-INFINITE",
+      "branch": "homology",
+      "statement": "[[6,4,2]] -> [[12,4,2]] has a killed class with delta=mu=2, rho=0, but nu=infinity.",
+      "scope": "The period-3/period-6 example and the designated low-monomial section.",
+      "evidence_type": "explicit-proof-and-finite-audit",
+      "status": "explicit-proof-and-finite-audit",
+      "proofs": [
+        "results/notes/H03-class-metrics-and-exchange.md"
+      ],
+      "evidence": [
+        "archive/early_counterexample/verify_auxiliary.py"
+      ],
+      "limitations": "nu is section-dependent and is not the cover distance.",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "METRIC-COUNTEREXAMPLE-TABLE",
+      "branch": "homology",
+      "statement": "For the main 6->14 counterexample: delta=6, rho=4, mu=14, nu=22. For the support family: delta=4, rho=2j-1, mu=6, nu=10j for even j and infinity for odd j.",
+      "scope": "Specified classes and the standard low-monomial section only.",
+      "evidence_type": "symbolic-proof-with-finite-audit",
+      "status": "symbolic-proof-with-finite-audit",
+      "proofs": [
+        "results/notes/H03-class-metrics-and-exchange.md"
+      ],
+      "evidence": [
+        "archive/early_counterexample/verify_counterexample.py",
+        "archive/early_counterexample/verify_auxiliary.py"
+      ],
+      "limitations": "Do not identify rho, mu, nu, fixed-message weight, or restricted-sector weight with an unrestricted code distance.",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "METRIC-EXCHANGE",
+      "branch": "homology",
+      "statement": "The coupled boundary and transfer-cycle moves have exact support-overlap formulas for their physical weight changes.",
+      "scope": "Triangular physical sheets (q+r,r) with the stated chain differentials.",
+      "evidence_type": "symbolic-proof",
+      "status": "symbolic-proof",
+      "proofs": [
+        "results/notes/H03-class-metrics-and-exchange.md"
+      ],
+      "evidence": [],
+      "limitations": "Local overlap restrictions alone do not imply a universal factor-two distance bound.",
+      "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step.",
+      "unavailable_historical_sources": []
+    },
+    {
+      "id": "AMP-BASE-01",
+      "branch": "amplification",
+      "statement": "Connected uniform family [[252j+78,4,6]] -> [[504j+156,4,14]], j>=0; record ratio 7/3",
+      "scope": "Unchanged polynomials, univariate cyclic double cover",
+      "evidence_type": "conversation-derived uniform proof plus certified seed",
+      "status": "conversation-derived uniform proof plus certified seed",
+      "proofs": [
+        "results/notes/A01-initial-family-and-baseline.md"
+      ],
+      "evidence": [
+        "research/amplification/research/03_amplification_search/search_verification.json",
+        "research/amplification/research/03_amplification_search/independent_exclusions.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Original early full archive/fixed-box logs unavailable; finite seed has intact later verification.",
+      "current_update": "The finite j=0 seed is repaired by CEX-UP. The complete historical family retains its recovered-source status; checking the seed does not independently certify all j.",
+      "original_record": {
+        "id": "BASE-01",
+        "statement": "Connected uniform family [[252j+78,4,6]] -> [[504j+156,4,14]], j>=0; record ratio 7/3",
+        "evidence_type": "conversation-derived uniform proof plus certified seed",
+        "scope": "Unchanged polynomials, univariate cyclic double cover",
+        "source": "history/01_initial_family_and_baseline.md",
+        "section": "1",
+        "evidence_files": [
+          "research/03_amplification_search/search_verification.json",
+          "research/03_amplification_search/independent_exclusions.json"
+        ],
+        "limits": "Original early full archive/fixed-box logs unavailable; finite seed has intact later verification.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-BASE-02",
+      "branch": "amplification",
+      "statement": "k<=k2<=2k; ranks of transfer and projection are k2/2; k2=2k implies d2<=2d",
+      "scope": "Binary BB double covers",
+      "evidence_type": "inherited symbolic baseline",
+      "status": "inherited symbolic baseline",
+      "proofs": [
+        "results/notes/A01-initial-family-and-baseline.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a metric theorem for a killed chosen class.",
+      "current_update": "",
+      "original_record": {
+        "id": "BASE-02",
+        "statement": "k<=k2<=2k; ranks of transfer and projection are k2/2; k2=2k implies d2<=2d",
+        "evidence_type": "inherited symbolic baseline",
+        "scope": "Binary BB double covers",
+        "source": "history/01_initial_family_and_baseline.md",
+        "section": "3",
+        "evidence_files": [],
+        "limits": "Not a metric theorem for a killed chosen class.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-BASE-03",
+      "branch": "amplification",
+      "statement": "d=2 implies d2<=4",
+      "scope": "Weight-six BB double covers",
+      "evidence_type": "inherited symbolic baseline",
+      "status": "inherited symbolic baseline",
+      "proofs": [
+        "results/notes/A01-initial-family-and-baseline.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Original full early report is unavailable; downstream reports identify this as input.",
+      "current_update": "",
+      "original_record": {
+        "id": "BASE-03",
+        "statement": "d=2 implies d2<=4",
+        "evidence_type": "inherited symbolic baseline",
+        "scope": "Weight-six BB double covers",
+        "source": "history/01_initial_family_and_baseline.md",
+        "section": "3",
+        "evidence_files": [],
+        "limits": "Original full early report is unavailable; downstream reports identify this as input.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-D4-01",
+      "branch": "amplification",
+      "statement": "d=4 implies d2<=48",
+      "scope": "All stated term-matched weight-six covers",
+      "evidence_type": "uniform computer-assisted; recovered-source provenance",
+      "status": "uniform computer-assisted; recovered-source provenance",
+      "proofs": [
+        "results/notes/A02-distance4-and-transfer-metric.md"
+      ],
+      "evidence": [
+        "research/amplification/history/recovered_round2/verify4_independent.py",
+        "research/amplification/history/recovered_round2/verify_weight_four_sympy.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Recovered text is not authenticated original source bytes; not an optimality claim.",
+      "current_update": "",
+      "original_record": {
+        "id": "D4-01",
+        "statement": "d=4 implies d2<=48",
+        "evidence_type": "uniform computer-assisted; recovered-source provenance",
+        "scope": "All stated term-matched weight-six covers",
+        "source": "history/02_distance4_and_transfer_metric.md",
+        "section": "2-4",
+        "evidence_files": [
+          "history/recovered_round2/verify4_independent.py",
+          "history/recovered_round2/verify_weight_four_sympy.py"
+        ],
+        "limits": "Recovered text is not authenticated original source bytes; not an optimality claim.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-METRIC-01",
+      "branch": "amplification",
+      "statement": "For A=1+x+x^2, B=A^2, L=3q, q>=3 odd: d=d2=4, k=k2=4, mu=lambda3=lambda4=q+1",
+      "scope": "Transfer-sector metric, not amplification",
+      "evidence_type": "symbolic exact family; recovered finite checker",
+      "status": "symbolic exact family; recovered finite checker",
+      "proofs": [
+        "results/notes/A02-distance4-and-transfer-metric.md"
+      ],
+      "evidence": [
+        "research/amplification/history/recovered_round2/verify_metric_family.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "METRIC-01",
+        "statement": "For A=1+x+x^2, B=A^2, L=3q, q>=3 odd: d=d2=4, k=k2=4, mu=lambda3=lambda4=q+1",
+        "evidence_type": "symbolic exact family; recovered finite checker",
+        "scope": "Transfer-sector metric, not amplification",
+        "source": "history/02_distance4_and_transfer_metric.md",
+        "section": "6",
+        "evidence_files": [
+          "history/recovered_round2/verify_metric_family.py"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-R3-01",
+      "branch": "amplification",
+      "statement": "Univariate one-block restricted distance doubles or does not increase according to the support-lift gcd dichotomy; a one-block logical w gives d2<=2w",
+      "scope": "Univariate strict-trinomial term-matched doubles",
+      "evidence_type": "symbolic proof",
+      "status": "symbolic proof",
+      "proofs": [
+        "results/notes/A03-amplification-search.md"
+      ],
+      "evidence": [
+        "research/amplification/research/03_amplification_search/verify_theorems.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Does not imply factor two for mixed-block minima.",
+      "current_update": "",
+      "original_record": {
+        "id": "R3-01",
+        "statement": "Univariate one-block restricted distance doubles or does not increase according to the support-lift gcd dichotomy; a one-block logical w gives d2<=2w",
+        "evidence_type": "symbolic proof",
+        "scope": "Univariate strict-trinomial term-matched doubles",
+        "source": "research/03_amplification_search/REPORT.md",
+        "section": "2",
+        "evidence_files": [
+          "research/03_amplification_search/verify_theorems.py"
+        ],
+        "limits": "Does not imply factor two for mixed-block minima.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-R3-02",
+      "branch": "amplification",
+      "statement": "Full split-cover homology reduces to (P^2,Q+delta P) with exact physical W_delta",
+      "scope": "Split group extensions",
+      "evidence_type": "symbolic exact reduction",
+      "status": "symbolic exact reduction",
+      "proofs": [
+        "results/notes/A03-amplification-search.md"
+      ],
+      "evidence": [
+        "research/amplification/research/03_amplification_search/theorem_checks.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Ordinary reduced Hamming distance is not physical cover distance.",
+      "current_update": "",
+      "original_record": {
+        "id": "R3-02",
+        "statement": "Full split-cover homology reduces to (P^2,Q+delta P) with exact physical W_delta",
+        "evidence_type": "symbolic exact reduction",
+        "scope": "Split group extensions",
+        "source": "research/03_amplification_search/REPORT.md",
+        "section": "3",
+        "evidence_files": [
+          "research/03_amplification_search/theorem_checks.json"
+        ],
+        "limits": "Ordinary reduced Hamming distance is not physical cover distance.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-R3-03",
+      "branch": "amplification",
+      "statement": "A [[78,4,6]] base has auxiliary reduced code [[78,4,9]]",
+      "scope": "Auxiliary reduced code, not a strict-trinomial BB cover",
+      "evidence_type": "exact finite counterexample to an intermediate lemma",
+      "status": "exact finite counterexample to an intermediate lemma",
+      "proofs": [
+        "results/notes/A03-amplification-search.md"
+      ],
+      "evidence": [
+        "research/amplification/research/03_amplification_search/reduced_code_mitm.json",
+        "research/amplification/research/03_amplification_search/mitm.cpp",
+        "research/amplification/research/03_amplification_search/independent_search.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "R3-03",
+        "statement": "A [[78,4,6]] base has auxiliary reduced code [[78,4,9]]",
+        "evidence_type": "exact finite counterexample to an intermediate lemma",
+        "scope": "Auxiliary reduced code, not a strict-trinomial BB cover",
+        "source": "research/03_amplification_search/REPORT.md",
+        "section": "4",
+        "evidence_files": [
+          "research/03_amplification_search/reduced_code_mitm.json",
+          "research/03_amplification_search/mitm.cpp",
+          "research/03_amplification_search/independent_search.py"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-SEARCH-01",
+      "branch": "amplification",
+      "statement": "16,384 selected distance-four/six cover instances certified within 7/3",
+      "scope": "Parameter instances; no exhaustive coverage of BB class",
+      "evidence_type": "retained exact finite audits on selected corpus",
+      "status": "retained exact finite audits on selected corpus",
+      "proofs": [
+        "results/notes/A03-amplification-search.md"
+      ],
+      "evidence": [
+        "research/amplification/research/03_amplification_search/final_verification_summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Cover witnesses are upper bounds, not exact cover distances in every row.",
+      "current_update": "",
+      "original_record": {
+        "id": "SEARCH-01",
+        "statement": "16,384 selected distance-four/six cover instances certified within 7/3",
+        "evidence_type": "retained exact finite audits on selected corpus",
+        "scope": "Parameter instances; no exhaustive coverage of BB class",
+        "source": "research/03_amplification_search/REPORT.md",
+        "section": "5.1",
+        "evidence_files": [
+          "research/03_amplification_search/final_verification_summary.json"
+        ],
+        "limits": "Cover witnesses are upper bounds, not exact cover distances in every row.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-SEARCH-02",
+      "branch": "amplification",
+      "statement": "2,800 distance-eight instances; 1,020 unresolved at 7/3",
+      "scope": "Capped searches remain unresolved",
+      "evidence_type": "partial discovery with exact certified subset",
+      "status": "partial discovery with exact certified subset",
+      "proofs": [
+        "results/notes/A03-amplification-search.md"
+      ],
+      "evidence": [
+        "research/amplification/research/03_amplification_search/RESULTS.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "No failed search is a lower exclusion.",
+      "current_update": "",
+      "original_record": {
+        "id": "SEARCH-02",
+        "statement": "2,800 distance-eight instances; 1,020 unresolved at 7/3",
+        "evidence_type": "partial discovery with exact certified subset",
+        "scope": "Capped searches remain unresolved",
+        "source": "research/03_amplification_search/REPORT.md",
+        "section": "5.2",
+        "evidence_files": [
+          "research/03_amplification_search/RESULTS.json"
+        ],
+        "limits": "No failed search is a lower exclusion.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-D6-01",
+      "branch": "amplification",
+      "statement": "d=6 implies d2<=112; remaining higher-rank mixed mechanisms give d2<=12",
+      "scope": "Finite abelian term-matched strict-trinomial covers",
+      "evidence_type": "uniform computer-assisted",
+      "status": "uniform computer-assisted",
+      "proofs": [
+        "results/notes/A04-distance6-obstruction.md"
+      ],
+      "evidence": [
+        "research/amplification/research/04_distance6_obstruction/verify6_all_pairings.cpp",
+        "research/amplification/research/04_distance6_obstruction/highrank6_certificates.json",
+        "research/amplification/research/04_distance6_obstruction/verify_presentations_sympy.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Full enumeration not rerun during export; retained full-matrix check rerun.",
+      "current_update": "",
+      "original_record": {
+        "id": "D6-01",
+        "statement": "d=6 implies d2<=112; remaining higher-rank mixed mechanisms give d2<=12",
+        "evidence_type": "uniform computer-assisted",
+        "scope": "Finite abelian term-matched strict-trinomial covers",
+        "source": "research/04_distance6_obstruction/REPORT.md",
+        "section": "5-6",
+        "evidence_files": [
+          "research/04_distance6_obstruction/verify6_all_pairings.cpp",
+          "research/04_distance6_obstruction/highrank6_certificates.json",
+          "research/04_distance6_obstruction/verify_presentations_sympy.py"
+        ],
+        "limits": "Full enumeration not rerun during export; retained full-matrix check rerun.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-D6-02",
+      "branch": "amplification",
+      "statement": "Matched Frobenius powers with a nontrivial canonical base cycle give a bounded cover logical; odd-subgroup descent preserves relevant nontriviality",
+      "scope": "Power-cycle and odd-invariant mechanisms",
+      "evidence_type": "symbolic proof",
+      "status": "symbolic proof",
+      "proofs": [
+        "results/notes/A04-distance6-obstruction.md"
+      ],
+      "evidence": [
+        "research/amplification/research/04_distance6_obstruction/frobenius_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Power equality alone is not a nonboundary certificate.",
+      "current_update": "",
+      "original_record": {
+        "id": "D6-02",
+        "statement": "Matched Frobenius powers with a nontrivial canonical base cycle give a bounded cover logical; odd-subgroup descent preserves relevant nontriviality",
+        "evidence_type": "symbolic proof",
+        "scope": "Power-cycle and odd-invariant mechanisms",
+        "source": "research/04_distance6_obstruction/REPORT.md",
+        "section": "2-3",
+        "evidence_files": [
+          "research/04_distance6_obstruction/frobenius_verification.json"
+        ],
+        "limits": "Power equality alone is not a nonboundary certificate.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-ONEBLOCK-01",
+      "branch": "amplification",
+      "statement": "A one-block logical of weight w gives d2<=2w^2",
+      "scope": "Finite abelian BB covers",
+      "evidence_type": "symbolic proof",
+      "status": "symbolic proof",
+      "proofs": [
+        "results/notes/A04-distance6-obstruction.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "ONEBLOCK-01",
+        "statement": "A one-block logical of weight w gives d2<=2w^2",
+        "evidence_type": "symbolic proof",
+        "scope": "Finite abelian BB covers",
+        "source": "research/04_distance6_obstruction/REPORT.md",
+        "section": "4.3",
+        "evidence_files": [],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-COMPACT-01",
+      "branch": "amplification",
+      "statement": "Genuinely higher-rank compact survival holds at all circuit weights through a torsion–Frobenius cyclic module",
+      "scope": "Four check differences generate U; free rank>=2; neither check in a finite subgroup",
+      "evidence_type": "symbolic proof with supplementary checks",
+      "status": "symbolic proof with supplementary checks",
+      "proofs": [
+        "results/notes/A05-compact-survival.md"
+      ],
+      "evidence": [
+        "research/amplification/research/05_compact_survival/finite_cover_certificates.json",
+        "research/amplification/research/05_compact_survival/audit_finite_certificates.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not an unrestricted homology base-change theorem.",
+      "current_update": "",
+      "original_record": {
+        "id": "COMPACT-01",
+        "statement": "Genuinely higher-rank compact survival holds at all circuit weights through a torsion–Frobenius cyclic module",
+        "evidence_type": "symbolic proof with supplementary checks",
+        "scope": "Four check differences generate U; free rank>=2; neither check in a finite subgroup",
+        "source": "research/05_compact_survival/REPORT.md",
+        "section": "3-6",
+        "evidence_files": [
+          "research/05_compact_survival/finite_cover_certificates.json",
+          "research/05_compact_survival/audit_finite_certificates.py"
+        ],
+        "limits": "Not an unrestricted homology base-change theorem.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-COMPACT-02",
+      "branch": "amplification",
+      "statement": "General d2<=2d^4 and refined subquartic bounds",
+      "scope": "All stated strict-trinomial covers",
+      "evidence_type": "symbolic corollaries with inherited and geometric dependencies",
+      "status": "historical-weaker-bound",
+      "proofs": [
+        "results/notes/A05-compact-survival.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Historical bound; later cubic bound is stronger asymptotically.",
+      "current_update": "",
+      "original_record": {
+        "id": "COMPACT-02",
+        "statement": "General d2<=2d^4 and refined subquartic bounds",
+        "evidence_type": "symbolic corollaries with inherited and geometric dependencies",
+        "scope": "All stated strict-trinomial covers",
+        "source": "research/05_compact_survival/REPORT.md",
+        "section": "7-9",
+        "evidence_files": [],
+        "limits": "Historical bound; later cubic bound is stronger asymptotically.",
+        "current": false
+      }
+    },
+    {
+      "id": "AMP-GLOBAL-01",
+      "branch": "amplification",
+      "statement": "d2<=32d^3",
+      "scope": "General stated strict-trinomial BB double-cover class",
+      "evidence_type": "symbolic corollary with external geometric dependency",
+      "status": "historical-weaker-bound",
+      "proofs": [
+        "results/notes/A06-linear-compact-replacement.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Polynomial in d, not a finite universal amplification constant.",
+      "current_update": "Current consolidated constants are in DIST-UPPER and DIST-TRUNCATED.",
+      "original_record": {
+        "id": "GLOBAL-01",
+        "statement": "d2<=32d^3",
+        "evidence_type": "symbolic corollary with external geometric dependency",
+        "scope": "General stated strict-trinomial BB double-cover class",
+        "source": "research/06_linear_compact_replacement/REPORT.md",
+        "section": "7",
+        "evidence_files": [],
+        "limits": "Polynomial in d, not a finite universal amplification constant.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-GLOBAL-02",
+      "branch": "amplification",
+      "statement": "Gamma(N)<=24 sqrt(N)",
+      "scope": "N is base physical length",
+      "evidence_type": "symbolic corollary with external geometric dependency",
+      "status": "historical-weaker-bound",
+      "proofs": [
+        "results/notes/A05-compact-survival.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Size-dependent; does not prove C_* finite.",
+      "current_update": "Current consolidated constants are in DIST-UPPER and DIST-TRUNCATED.",
+      "original_record": {
+        "id": "GLOBAL-02",
+        "statement": "Gamma(N)<=24 sqrt(N)",
+        "evidence_type": "symbolic corollary with external geometric dependency",
+        "scope": "N is base physical length",
+        "source": "research/05_compact_survival/REPORT.md",
+        "section": "9",
+        "evidence_files": [],
+        "limits": "Size-dependent; does not prove C_* finite.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-PATHOLOGY-01",
+      "branch": "amplification",
+      "statement": "A non-BB square-zero deformation loses every compact cover class under specialization while finite H1 remains",
+      "scope": "Outside BB trinomial hypotheses",
+      "evidence_type": "explicit symbolic negative control",
+      "status": "explicit symbolic negative control",
+      "proofs": [
+        "results/notes/A05-compact-survival.md"
+      ],
+      "evidence": [
+        "research/amplification/research/05_compact_survival/mechanism_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "PATHOLOGY-01",
+        "statement": "A non-BB square-zero deformation loses every compact cover class under specialization while finite H1 remains",
+        "evidence_type": "explicit symbolic negative control",
+        "scope": "Outside BB trinomial hypotheses",
+        "source": "research/05_compact_survival/REPORT.md",
+        "section": "2",
+        "evidence_files": [
+          "research/05_compact_survival/mechanism_verification.json"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-LINEAR-01",
+      "branch": "amplification",
+      "statement": "Compact minimum o*2^(a-b)*3^b*(3^s+1); cover ratios exactly 1,3/2,2",
+      "scope": "Torsion–Frobenius normal form with surviving compact image",
+      "evidence_type": "symbolic exact theorem",
+      "status": "symbolic exact theorem",
+      "proofs": [
+        "results/notes/A06-linear-compact-replacement.md"
+      ],
+      "evidence": [
+        "research/amplification/research/06_linear_compact_replacement/sparse_generator_checks.json",
+        "research/amplification/research/06_linear_compact_replacement/embedding_checks.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Universal support weight, not an unqualified statement about every finite logical.",
+      "current_update": "",
+      "original_record": {
+        "id": "LINEAR-01",
+        "statement": "Compact minimum o*2^(a-b)*3^b*(3^s+1); cover ratios exactly 1,3/2,2",
+        "evidence_type": "symbolic exact theorem",
+        "scope": "Torsion–Frobenius normal form with surviving compact image",
+        "source": "research/06_linear_compact_replacement/REPORT.md",
+        "section": "2-5",
+        "evidence_files": [
+          "research/06_linear_compact_replacement/sparse_generator_checks.json",
+          "research/06_linear_compact_replacement/embedding_checks.json"
+        ],
+        "limits": "Universal support weight, not an unqualified statement about every finite logical.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-LINEAR-02",
+      "branch": "amplification",
+      "statement": "[[18,4,2]] -> [[36,4,4]] realizes compact factor-two sharpness",
+      "scope": "Specific matched cover",
+      "evidence_type": "exact finite example",
+      "status": "exact finite example",
+      "proofs": [
+        "results/notes/A06-linear-compact-replacement.md"
+      ],
+      "evidence": [
+        "research/amplification/research/06_linear_compact_replacement/sharpness_example.json",
+        "research/amplification/research/06_linear_compact_replacement/verify_sharpness.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "LINEAR-02",
+        "statement": "[[18,4,2]] -> [[36,4,4]] realizes compact factor-two sharpness",
+        "evidence_type": "exact finite example",
+        "scope": "Specific matched cover",
+        "source": "research/06_linear_compact_replacement/REPORT.md",
+        "section": "6.1",
+        "evidence_files": [
+          "research/06_linear_compact_replacement/sharpness_example.json",
+          "research/06_linear_compact_replacement/verify_sharpness.py"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-RANK1-01",
+      "branch": "amplification",
+      "statement": "Exact cyclic universal module and compact specialization sequence retain the winding/Tor sector",
+      "scope": "Primitive rank-one Laurent setting, stated square-free gcd hypotheses",
+      "evidence_type": "symbolic exact module calculation",
+      "status": "symbolic exact module calculation",
+      "proofs": [
+        "results/notes/A07-rank-one-resonance.md"
+      ],
+      "evidence": [
+        "research/amplification/research/07_rank_one_resonance/structure_certificates.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "RANK1-01",
+        "statement": "Exact cyclic universal module and compact specialization sequence retain the winding/Tor sector",
+        "evidence_type": "symbolic exact module calculation",
+        "scope": "Primitive rank-one Laurent setting, stated square-free gcd hypotheses",
+        "source": "research/07_rank_one_resonance/REPORT.md",
+        "section": "2",
+        "evidence_files": [
+          "research/07_rank_one_resonance/structure_certificates.json"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-RANK1-02",
+      "branch": "amplification",
+      "statement": "One-sided defects and most two-sided parity patterns satisfy compact factor two",
+      "scope": "Primitive rank-one setting; finite nonboundary tests explicit",
+      "evidence_type": "symbolic proof",
+      "status": "symbolic proof",
+      "proofs": [
+        "results/notes/A07-rank-one-resonance.md"
+      ],
+      "evidence": [
+        "research/amplification/research/07_rank_one_resonance/lift_certificates.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "RANK1-02",
+        "statement": "One-sided defects and most two-sided parity patterns satisfy compact factor two",
+        "evidence_type": "symbolic proof",
+        "scope": "Primitive rank-one setting; finite nonboundary tests explicit",
+        "source": "research/07_rank_one_resonance/REPORT.md",
+        "section": "3-4",
+        "evidence_files": [
+          "research/07_rank_one_resonance/lift_certificates.json"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-RANK1-03",
+      "branch": "amplification",
+      "statement": "Remaining odd-order resonance has fixed-slope bound 2m, m=max(|p|,|q|,|p-q|)",
+      "scope": "Coprime primitive resonance slopes",
+      "evidence_type": "symbolic constructive bound",
+      "status": "symbolic constructive bound",
+      "proofs": [
+        "results/notes/A07-rank-one-resonance.md"
+      ],
+      "evidence": [
+        "research/amplification/research/07_rank_one_resonance/divided_euler_cases.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "m is not universally bounded; slope (2,1) gives factor four.",
+      "current_update": "",
+      "original_record": {
+        "id": "RANK1-03",
+        "statement": "Remaining odd-order resonance has fixed-slope bound 2m, m=max(|p|,|q|,|p-q|)",
+        "evidence_type": "symbolic constructive bound",
+        "scope": "Coprime primitive resonance slopes",
+        "source": "research/07_rank_one_resonance/REPORT.md",
+        "section": "5",
+        "evidence_files": [
+          "research/07_rank_one_resonance/divided_euler_cases.json"
+        ],
+        "limits": "m is not universally bounded; slope (2,1) gives factor four.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-RANK1-04",
+      "branch": "amplification",
+      "statement": "Along compatible long periods, actual finite distances equal full compact minima",
+      "scope": "Fixed Laurent data and stable root divisors, explicit no-winding threshold",
+      "evidence_type": "symbolic large-period realization",
+      "status": "symbolic large-period realization",
+      "proofs": [
+        "results/notes/A07-rank-one-resonance.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Cannot be applied to restricted-sector or fixed-message minima.",
+      "current_update": "",
+      "original_record": {
+        "id": "RANK1-04",
+        "statement": "Along compatible long periods, actual finite distances equal full compact minima",
+        "evidence_type": "symbolic large-period realization",
+        "scope": "Fixed Laurent data and stable root divisors, explicit no-winding threshold",
+        "source": "research/07_rank_one_resonance/REPORT.md",
+        "section": "7",
+        "evidence_files": [],
+        "limits": "Cannot be applied to restricted-sector or fixed-message minima.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-S21-01",
+      "branch": "amplification",
+      "statement": "Delta<=Delta_e<=2Delta and exact projection/completion formula",
+      "scope": "Slope (2,1) hard-core compact setting",
+      "evidence_type": "symbolic exact reduction",
+      "status": "symbolic exact reduction",
+      "proofs": [
+        "results/notes/A08-slope21-shortening.md"
+      ],
+      "evidence": [
+        "research/amplification/research/08_slope21_shortening/structure_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "S21-01",
+        "statement": "Delta<=Delta_e<=2Delta and exact projection/completion formula",
+        "evidence_type": "symbolic exact reduction",
+        "scope": "Slope (2,1) hard-core compact setting",
+        "source": "research/08_slope21_shortening/REPORT.md",
+        "section": "2-4",
+        "evidence_files": [
+          "research/08_slope21_shortening/structure_verification.json"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-S21-02",
+      "branch": "amplification",
+      "statement": "Exact base full/pure/complement minima 6/12/10; cover full/pure minima 14/16",
+      "scope": "The explicitly gauged record example",
+      "evidence_type": "exact arbitrary-support compact minima",
+      "status": "exact arbitrary-support compact minima",
+      "proofs": [
+        "results/notes/A08-slope21-shortening.md"
+      ],
+      "evidence": [
+        "research/amplification/research/08_slope21_shortening/exact_results.json",
+        "research/amplification/research/08_slope21_shortening/audit_certificates.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "12,10,16 are restricted minima, not new finite BB distances.",
+      "current_update": "",
+      "original_record": {
+        "id": "S21-02",
+        "statement": "Exact base full/pure/complement minima 6/12/10; cover full/pure minima 14/16",
+        "evidence_type": "exact arbitrary-support compact minima",
+        "scope": "The explicitly gauged record example",
+        "source": "research/08_slope21_shortening/REPORT.md",
+        "section": "5-6",
+        "evidence_files": [
+          "research/08_slope21_shortening/exact_results.json",
+          "research/08_slope21_shortening/audit_certificates.py"
+        ],
+        "limits": "12,10,16 are restricted minima, not new finite BB distances.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-GRAPH-01",
+      "branch": "amplification",
+      "statement": "Full compact energy is a common-message signed graph; half of the boundary spins eliminate exactly by majority",
+      "scope": "Universal slope-(2,1) graph, all messages and boundaries retained",
+      "evidence_type": "symbolic exact reduction",
+      "status": "symbolic exact reduction",
+      "proofs": [
+        "results/notes/A09-joint-completion.md"
+      ],
+      "evidence": [
+        "research/amplification/research/09_joint_completion/graph_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Alternating local updates are not claimed globally optimal.",
+      "current_update": "",
+      "original_record": {
+        "id": "GRAPH-01",
+        "statement": "Full compact energy is a common-message signed graph; half of the boundary spins eliminate exactly by majority",
+        "evidence_type": "symbolic exact reduction",
+        "scope": "Universal slope-(2,1) graph, all messages and boundaries retained",
+        "source": "research/09_joint_completion/REPORT.md",
+        "section": "2-4",
+        "evidence_files": [
+          "research/09_joint_completion/graph_verification.json"
+        ],
+        "limits": "Alternating local updates are not claimed globally optimal.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-GRAPH-02",
+      "branch": "amplification",
+      "statement": "Minimum-support optimal components satisfy b1<=number of sources, with a fixed-message support bound",
+      "scope": "Fixed message; no bound on message support",
+      "evidence_type": "symbolic proof",
+      "status": "symbolic proof",
+      "proofs": [
+        "results/notes/A09-joint-completion.md"
+      ],
+      "evidence": [
+        "research/amplification/research/09_joint_completion/component_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "GRAPH-02",
+        "statement": "Minimum-support optimal components satisfy b1<=number of sources, with a fixed-message support bound",
+        "evidence_type": "symbolic proof",
+        "scope": "Fixed message; no bound on message support",
+        "source": "research/09_joint_completion/REPORT.md",
+        "section": "5",
+        "evidence_files": [
+          "research/09_joint_completion/component_verification.json"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-PARETO-01",
+      "branch": "amplification",
+      "statement": "Complete projected-weight/completion frontier {(12,1),(14,0)}",
+      "scope": "Record example",
+      "evidence_type": "exact Pareto theorem with inherited closure certificates",
+      "status": "exact Pareto theorem with inherited closure certificates",
+      "proofs": [
+        "results/notes/A09-joint-completion.md"
+      ],
+      "evidence": [
+        "research/amplification/research/09_joint_completion/pareto_verification.json",
+        "research/amplification/research/09_joint_completion/verify_pareto.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "PARETO-01",
+        "statement": "Complete projected-weight/completion frontier {(12,1),(14,0)}",
+        "evidence_type": "exact Pareto theorem with inherited closure certificates",
+        "scope": "Record example",
+        "source": "research/09_joint_completion/REPORT.md",
+        "section": "7",
+        "evidence_files": [
+          "research/09_joint_completion/pareto_verification.json",
+          "research/09_joint_completion/verify_pareto.py"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-MAJORITY-01",
+      "branch": "amplification",
+      "statement": "Weight-182 locally stable circuit boundary gives restricted output 550>546",
+      "scope": "Input is explicitly a boundary",
+      "evidence_type": "exact counterexample to a restricted majority assertion",
+      "status": "exact counterexample to a restricted majority assertion",
+      "proofs": [
+        "results/notes/A09-joint-completion.md"
+      ],
+      "evidence": [
+        "research/amplification/research/09_joint_completion/majority_control_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a counterexample for a minimum nonboundary or full cover distance.",
+      "current_update": "",
+      "original_record": {
+        "id": "MAJORITY-01",
+        "statement": "Weight-182 locally stable circuit boundary gives restricted output 550>546",
+        "evidence_type": "exact counterexample to a restricted majority assertion",
+        "scope": "Input is explicitly a boundary",
+        "source": "research/09_joint_completion/REPORT.md",
+        "section": "6",
+        "evidence_files": [
+          "research/09_joint_completion/majority_control_verification.json"
+        ],
+        "limits": "Not a counterexample for a minimum nonboundary or full cover distance.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-TREE-01",
+      "branch": "amplification",
+      "statement": "Two local equations exactly characterize common-message data",
+      "scope": "Laurent PID slope-(2,1) setting",
+      "evidence_type": "symbolic exact characterization",
+      "status": "symbolic exact characterization",
+      "proofs": [
+        "results/notes/A10-nonlocal-exchange.md"
+      ],
+      "evidence": [
+        "research/amplification/research/10_nonlocal_exchange/identity_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "TREE-01",
+        "statement": "Two local equations exactly characterize common-message data",
+        "evidence_type": "symbolic exact characterization",
+        "scope": "Laurent PID slope-(2,1) setting",
+        "source": "research/10_nonlocal_exchange/REPORT.md",
+        "section": "2",
+        "evidence_files": [
+          "research/10_nonlocal_exchange/identity_verification.json"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-TREE-02",
+      "branch": "amplification",
+      "statement": "Canonical nonsource trees contract to all-or-nothing two-unit rewards; full fixed-message field optimum is independent-set packing",
+      "scope": "All source assignments and boundary fields, fixed common-message input",
+      "evidence_type": "symbolic exact reduction",
+      "status": "symbolic exact reduction",
+      "proofs": [
+        "results/notes/A10-nonlocal-exchange.md"
+      ],
+      "evidence": [
+        "research/amplification/research/10_nonlocal_exchange/forest_verification.json",
+        "research/amplification/research/10_nonlocal_exchange/tree_contraction_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "TREE-02",
+        "statement": "Canonical nonsource trees contract to all-or-nothing two-unit rewards; full fixed-message field optimum is independent-set packing",
+        "evidence_type": "symbolic exact reduction",
+        "scope": "All source assignments and boundary fields, fixed common-message input",
+        "source": "research/10_nonlocal_exchange/REPORT.md",
+        "section": "3-5",
+        "evidence_files": [
+          "research/10_nonlocal_exchange/forest_verification.json",
+          "research/10_nonlocal_exchange/tree_contraction_verification.json"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-TREE-03",
+      "branch": "amplification",
+      "statement": "A genuine compact message produces a triangular conflict graph",
+      "scope": "Not a minimum-distance assertion",
+      "evidence_type": "exact constructive negative control",
+      "status": "exact constructive negative control",
+      "proofs": [
+        "results/notes/A10-nonlocal-exchange.md"
+      ],
+      "evidence": [
+        "research/amplification/research/10_nonlocal_exchange/triangle_certificate.json",
+        "research/amplification/research/10_nonlocal_exchange/audit_triangle.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "",
+      "current_update": "",
+      "original_record": {
+        "id": "TREE-03",
+        "statement": "A genuine compact message produces a triangular conflict graph",
+        "evidence_type": "exact constructive negative control",
+        "scope": "Not a minimum-distance assertion",
+        "source": "research/10_nonlocal_exchange/REPORT.md",
+        "section": "6",
+        "evidence_files": [
+          "research/10_nonlocal_exchange/triangle_certificate.json",
+          "research/10_nonlocal_exchange/audit_triangle.py"
+        ],
+        "limits": "",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-TREE-04",
+      "branch": "amplification",
+      "statement": "Fixed-message minimum 74 with support 15; same universal class has full minimum 14",
+      "scope": "One explicit message in the record code",
+      "evidence_type": "exact conditional minimum plus unrestricted inherited certificate",
+      "status": "exact conditional minimum plus unrestricted inherited certificate",
+      "proofs": [
+        "results/notes/A10-nonlocal-exchange.md"
+      ],
+      "evidence": [
+        "research/amplification/research/10_nonlocal_exchange/fixed_message_certificate.json",
+        "research/amplification/research/10_nonlocal_exchange/fixed_message_potential.bin",
+        "research/amplification/research/10_nonlocal_exchange/audit_fixed_certificate.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "74 is not code distance; explicit boundary to 14 retained.",
+      "current_update": "",
+      "original_record": {
+        "id": "TREE-04",
+        "statement": "Fixed-message minimum 74 with support 15; same universal class has full minimum 14",
+        "evidence_type": "exact conditional minimum plus unrestricted inherited certificate",
+        "scope": "One explicit message in the record code",
+        "source": "research/10_nonlocal_exchange/REPORT.md",
+        "section": "7.2-7.3",
+        "evidence_files": [
+          "research/10_nonlocal_exchange/fixed_message_certificate.json",
+          "research/10_nonlocal_exchange/fixed_message_potential.bin",
+          "research/10_nonlocal_exchange/audit_fixed_certificate.py"
+        ],
+        "limits": "74 is not code distance; explicit boundary to 14 retained.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-TREE-05",
+      "branch": "amplification",
+      "statement": "For positive odd N, conditional minimum 74N and support 15N in one universal class of minimum 14",
+      "scope": "Separated messages in one fixed code",
+      "evidence_type": "symbolic parametric negative control",
+      "status": "symbolic parametric negative control",
+      "proofs": [
+        "results/notes/A10-nonlocal-exchange.md"
+      ],
+      "evidence": [
+        "research/amplification/research/10_nonlocal_exchange/parametric_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not an increasing-distance family.",
+      "current_update": "",
+      "original_record": {
+        "id": "TREE-05",
+        "statement": "For positive odd N, conditional minimum 74N and support 15N in one universal class of minimum 14",
+        "evidence_type": "symbolic parametric negative control",
+        "scope": "Separated messages in one fixed code",
+        "source": "research/10_nonlocal_exchange/REPORT.md",
+        "section": "7.4",
+        "evidence_files": [
+          "research/10_nonlocal_exchange/parametric_verification.json"
+        ],
+        "limits": "Not an increasing-distance family.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-OPEN-01",
+      "branch": "amplification",
+      "statement": "Full slope-(2,1) hat-Delta<=3Delta",
+      "scope": "All admissible compact messages and all boundary adjustments",
+      "evidence_type": "open conjecture",
+      "status": "open conjecture",
+      "proofs": [
+        "results/notes/A10-nonlocal-exchange.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Neither proved nor refuted; inherited bound is four.",
+      "current_update": "",
+      "original_record": {
+        "id": "OPEN-01",
+        "statement": "Full slope-(2,1) hat-Delta<=3Delta",
+        "evidence_type": "open conjecture",
+        "scope": "All admissible compact messages and all boundary adjustments",
+        "source": "research/10_nonlocal_exchange/REPORT.md",
+        "section": "9",
+        "evidence_files": [],
+        "limits": "Neither proved nor refuted; inherited bound is four.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-OPEN-02",
+      "branch": "amplification",
+      "statement": "Half-weight completion after a minimum base class and boundary adjustment",
+      "scope": "Stronger class-pinned statement",
+      "evidence_type": "open sufficient lemma",
+      "status": "open sufficient lemma",
+      "proofs": [
+        "results/notes/A09-joint-completion.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Failure would not by itself refute OPEN-01.",
+      "current_update": "",
+      "original_record": {
+        "id": "OPEN-02",
+        "statement": "Half-weight completion after a minimum base class and boundary adjustment",
+        "evidence_type": "open sufficient lemma",
+        "scope": "Stronger class-pinned statement",
+        "source": "research/09_joint_completion/REPORT.md",
+        "section": "8",
+        "evidence_files": [],
+        "limits": "Failure would not by itself refute OPEN-01.",
+        "current": true
+      }
+    },
+    {
+      "id": "AMP-OPEN-03",
+      "branch": "amplification",
+      "statement": "Finiteness or infiniteness of C_*",
+      "scope": "Entire stated strict-trinomial BB double-cover class",
+      "evidence_type": "open problem",
+      "status": "open problem",
+      "proofs": [
+        "research/amplification/docs/OPEN_PROBLEMS.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "No numerical universal linear upper bound and no unbounded-ratio family established.",
+      "current_update": "",
+      "original_record": {
+        "id": "OPEN-03",
+        "statement": "Finiteness or infiniteness of C_*",
+        "evidence_type": "open problem",
+        "scope": "Entire stated strict-trinomial BB double-cover class",
+        "source": "docs/OPEN_PROBLEMS.md",
+        "section": "5",
+        "evidence_files": [],
+        "limits": "No numerical universal linear upper bound and no unbounded-ratio family established.",
+        "current": true
+      }
+    },
+    {
+      "id": "DEG-A00",
+      "branch": "degradation",
+      "statement": "Four-term family [[8a^2+4a,2,2a+1]] -> [[16a^2+8a,4,2]] for a>=2.",
+      "scope": "Arbitrary-term extension, exactly four terms each.",
+      "evidence_type": "reported-proof-only",
+      "status": "reported-proof-only",
+      "proofs": [
+        "results/notes/X00-beyond-trinomials.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Original source/verifier/output package absent; public derivation retained. Not a strict-trinomial construction.",
+      "current_update": "",
+      "original_record": {
+        "id": "A00",
+        "stage": "00",
+        "status": "reported-proof-only",
+        "statement": "Four-term family [[8a^2+4a,2,2a+1]] -> [[16a^2+8a,4,2]] for a>=2.",
+        "scope": "Arbitrary-term extension, exactly four terms each.",
+        "evidence": [
+          "context/conversation/00-arbitrary-term-public-report.md"
+        ],
+        "limitations": "Original source/verifier/output package absent; public derivation retained. Not a strict-trinomial construction."
+      }
+    },
+    {
+      "id": "DEG-A01",
+      "branch": "degradation",
+      "statement": "gamma_all(N)=Theta(N^-1), with 4/N <= gamma_all(N) < 160/N for sufficiently large N.",
+      "scope": "Term counts may grow.",
+      "evidence_type": "reported-proof-only",
+      "status": "reported-proof-only",
+      "proofs": [
+        "results/notes/X00-beyond-trinomials.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a result for the strict-trinomial class; source code package absent.",
+      "current_update": "",
+      "original_record": {
+        "id": "A01",
+        "stage": "00",
+        "status": "reported-proof-only",
+        "statement": "gamma_all(N)=Theta(N^-1), with 4/N <= gamma_all(N) < 160/N for sufficiently large N.",
+        "scope": "Term counts may grow.",
+        "evidence": [
+          "context/conversation/00-arbitrary-term-public-report.md"
+        ],
+        "limitations": "Not a result for the strict-trinomial class; source code package absent."
+      }
+    },
+    {
+      "id": "DEG-I01",
+      "branch": "degradation",
+      "statement": "[[78,4,6]] -> [[156,4,14]], ratio 7/3, for the supplied A,B and periods 39->78.",
+      "scope": "Reported strict-trinomial finite example.",
+      "evidence_type": "inherited-input",
+      "status": "finite-certificate-repaired",
+      "proofs": [
+        "results/theory/01-counterexamples.md",
+        "certificates/upper/CERTIFICATE.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [
+        "research/degradation/context/conversation/INHERITED_INPUTS.md",
+        "research/degradation/context/input/Pasted text.txt"
+      ],
+      "limitations": "Independent exact-distance certificates are not present in the available filesystem.",
+      "current_update": "The third input ZIP supplies two independent exact verifiers. See CEX-UP; the original missing-certificate note is historical.",
+      "original_record": {
+        "id": "I01",
+        "stage": "input",
+        "status": "inherited-input",
+        "statement": "[[78,4,6]] -> [[156,4,14]], ratio 7/3, for the supplied A,B and periods 39->78.",
+        "scope": "Reported strict-trinomial finite example.",
+        "evidence": [
+          "context/conversation/INHERITED_INPUTS.md",
+          "context/input/Pasted text.txt"
+        ],
+        "limitations": "Independent exact-distance certificates are not present in the available filesystem."
+      }
+    },
+    {
+      "id": "DEG-I02",
+      "branch": "degradation",
+      "statement": "[[156,4,14]] -> [[312,8,12]] and the stated infinite 14->12 family; ratio 6/7.",
+      "scope": "Reported strict-trinomial degrading covers.",
+      "evidence_type": "inherited-input",
+      "status": "finite-certificate-repaired-family-inherited",
+      "proofs": [
+        "results/theory/01-counterexamples.md",
+        "certificates/lower/CERTIFICATE.md",
+        "results/HISTORY_AND_LIMITS.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [
+        "research/degradation/context/input/Pasted text.txt",
+        "research/degradation/context/input/Pasted markdown.md",
+        "research/degradation/context/conversation/INHERITED_INPUTS.md"
+      ],
+      "limitations": "Early report checks a weight-12 nonboundary and dimensions, not both exact distances. Later stages inherit exactness; original independent source package absent.",
+      "current_update": "The finite 14->12 example is repaired by CEX-DOWN; the entire inherited infinite family is not upgraded by testing that seed.",
+      "original_record": {
+        "id": "I02",
+        "stage": "input",
+        "status": "inherited-input",
+        "statement": "[[156,4,14]] -> [[312,8,12]] and the stated infinite 14->12 family; ratio 6/7.",
+        "scope": "Reported strict-trinomial degrading covers.",
+        "evidence": [
+          "context/input/Pasted text.txt",
+          "context/input/Pasted markdown.md",
+          "context/conversation/INHERITED_INPUTS.md"
+        ],
+        "limitations": "Early report checks a weight-12 nonboundary and dimensions, not both exact distances. Later stages inherit exactness; original independent source package absent."
+      }
+    },
+    {
+      "id": "DEG-I03",
+      "branch": "degradation",
+      "statement": "d>4 implies d_2>=6, with the stated stronger no-small-cycle fact.",
+      "scope": "Strict-trinomial starting assumptions.",
+      "evidence_type": "inherited-input",
+      "status": "inherited-input",
+      "proofs": [
+        "results/HISTORY_AND_LIMITS.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [
+        "research/degradation/context/input/Pasted markdown.md"
+      ],
+      "limitations": "Prior weight-two/weight-four package unavailable; preserve the original supplied scope.",
+      "current_update": "",
+      "original_record": {
+        "id": "I03",
+        "stage": "input",
+        "status": "inherited-input",
+        "statement": "d>4 implies d_2>=6, with the stated stronger no-small-cycle fact.",
+        "scope": "Strict-trinomial starting assumptions.",
+        "evidence": [
+          "context/input/Pasted markdown.md"
+        ],
+        "limitations": "Prior weight-two/weight-four package unavailable; preserve the original supplied scope."
+      }
+    },
+    {
+      "id": "DEG-D01",
+      "branch": "degradation",
+      "statement": "d_2=6 implies d<=56; combined with the stated small-weight inputs, d>56 implies d_2>=8.",
+      "scope": "All valid strict-trinomial double covers in the supplied proof.",
+      "evidence_type": "computer-assisted-theorem",
+      "status": "computer-assisted-theorem",
+      "proofs": [
+        "results/notes/D01-weight-six.md"
+      ],
+      "evidence": [
+        "research/degradation/research/01-weight-six/mixed_presentations.tsv",
+        "research/degradation/research/01-weight-six/presentation_verification.json",
+        "research/degradation/research/01-weight-six/pure_six_results.json",
+        "research/degradation/research/01-weight-six/classify_six.cpp",
+        "research/degradation/research/01-weight-six/verify_presentations.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Uniform conclusion requires the proof and exhaustive completeness argument, not only retained-catalogue checking.",
+      "current_update": "",
+      "original_record": {
+        "id": "D01",
+        "stage": "01",
+        "status": "computer-assisted-theorem",
+        "statement": "d_2=6 implies d<=56; combined with the stated small-weight inputs, d>56 implies d_2>=8.",
+        "scope": "All valid strict-trinomial double covers in the supplied proof.",
+        "evidence": [
+          "research/01-weight-six/proof.md",
+          "research/01-weight-six/mixed_presentations.tsv",
+          "research/01-weight-six/presentation_verification.json",
+          "research/01-weight-six/pure_six_results.json",
+          "research/01-weight-six/classify_six.cpp",
+          "research/01-weight-six/verify_presentations.py"
+        ],
+        "limitations": "Uniform conclusion requires the proof and exhaustive completeness argument, not only retained-catalogue checking."
+      }
+    },
+    {
+      "id": "DEG-D02",
+      "branch": "degradation",
+      "statement": "The weight-six two-check coefficient-filling lemma is false. For L=4^j, |q|=6 and minimum coefficient filling is 3*9^j.",
+      "scope": "Explicit connected strict-trinomial family; L<=d<=4L.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D01-weight-six.md"
+      ],
+      "evidence": [
+        "research/degradation/research/01-weight-six/verify_family.py",
+        "research/degradation/research/01-weight-six/family_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Base distances are intervals, not asserted exact distances.",
+      "current_update": "",
+      "original_record": {
+        "id": "D02",
+        "stage": "01",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "The weight-six two-check coefficient-filling lemma is false. For L=4^j, |q|=6 and minimum coefficient filling is 3*9^j.",
+        "scope": "Explicit connected strict-trinomial family; L<=d<=4L.",
+        "evidence": [
+          "research/01-weight-six/proof.md",
+          "research/01-weight-six/verify_family.py",
+          "research/01-weight-six/family_verification.json"
+        ],
+        "limitations": "Base distances are intervals, not asserted exact distances."
+      }
+    },
+    {
+      "id": "DEG-D03",
+      "branch": "degradation",
+      "statement": "For that specified cover, 2+2*9^j <= Fill(q) <= 6+6*9^j.",
+      "scope": "Lifted filling of the particular weight-six boundary.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D01-weight-six.md"
+      ],
+      "evidence": [
+        "research/degradation/research/01-weight-six/family_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Every cover cycle above that q also obeys the lower bound. Not a vanishing-ratio family.",
+      "current_update": "",
+      "original_record": {
+        "id": "D03",
+        "stage": "01",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "For that specified cover, 2+2*9^j <= Fill(q) <= 6+6*9^j.",
+        "scope": "Lifted filling of the particular weight-six boundary.",
+        "evidence": [
+          "research/01-weight-six/proof.md",
+          "research/01-weight-six/family_verification.json"
+        ],
+        "limitations": "Every cover cycle above that q also obeys the lower bound. Not a vanishing-ratio family."
+      }
+    },
+    {
+      "id": "DEG-D04",
+      "branch": "degradation",
+      "statement": "d_2=8 implies d<=96.",
+      "scope": "Term-preserving finite abelian quotients with positive-dimensional base, not only doubles.",
+      "evidence_type": "computer-assisted-theorem",
+      "status": "computer-assisted-theorem",
+      "proofs": [
+        "results/notes/D02-weight-eight.md"
+      ],
+      "evidence": [
+        "research/degradation/research/02-weight-eight/verification_summary.json",
+        "research/degradation/research/02-weight-eight/highrank_certificates.json",
+        "research/degradation/research/02-weight-eight/low_free_lattices.tsv",
+        "research/degradation/research/02-weight-eight/verify_summary.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "No new exact ratio record. Combined d>96 => d_2>=10 uses earlier exclusions.",
+      "current_update": "",
+      "original_record": {
+        "id": "D04",
+        "stage": "02",
+        "status": "computer-assisted-theorem",
+        "statement": "d_2=8 implies d<=96.",
+        "scope": "Term-preserving finite abelian quotients with positive-dimensional base, not only doubles.",
+        "evidence": [
+          "research/02-weight-eight/proof.md",
+          "research/02-weight-eight/verification_summary.json",
+          "research/02-weight-eight/highrank_certificates.json",
+          "research/02-weight-eight/low_free_lattices.tsv",
+          "research/02-weight-eight/verify_summary.py"
+        ],
+        "limitations": "No new exact ratio record. Combined d>96 => d_2>=10 uses earlier exclusions."
+      }
+    },
+    {
+      "id": "DEG-D05",
+      "branch": "degradation",
+      "statement": "d<=4*d_2^3.",
+      "scope": "Strict-trinomial doubles, extended as stated to finite abelian quotients with 2-group kernel.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D03-structural-degradation.md"
+      ],
+      "evidence": [
+        "research/degradation/research/03-structural-degradation/verification_summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Symbolic theorem independent of earlier incidence catalogues; finite tests are not its proof.",
+      "current_update": "",
+      "original_record": {
+        "id": "D05",
+        "stage": "03",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "d<=4*d_2^3.",
+        "scope": "Strict-trinomial doubles, extended as stated to finite abelian quotients with 2-group kernel.",
+        "evidence": [
+          "research/03-structural-degradation/proof.md",
+          "research/03-structural-degradation/verification_summary.json"
+        ],
+        "limitations": "Symbolic theorem independent of earlier incidence catalogues; finite tests are not its proof."
+      }
+    },
+    {
+      "id": "DEG-D06",
+      "branch": "degradation",
+      "statement": "gamma_3(N)>=max(min(1/12,20/N),N^(-2/3),pi*3^(1/6)/(2^(13/3)*sqrt(N))).",
+      "scope": "Degradation scale; first term uses earlier small-weight inputs.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D03-structural-degradation.md"
+      ],
+      "evidence": [
+        "research/degradation/research/03-structural-degradation/verify_geometry.py",
+        "research/degradation/research/03-structural-degradation/geometry_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a positive universal ratio and not a sharp asymptotic equivalence.",
+      "current_update": "",
+      "original_record": {
+        "id": "D06",
+        "stage": "03",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "gamma_3(N)>=max(min(1/12,20/N),N^(-2/3),pi*3^(1/6)/(2^(13/3)*sqrt(N))).",
+        "scope": "Degradation scale; first term uses earlier small-weight inputs.",
+        "evidence": [
+          "research/03-structural-degradation/proof.md",
+          "research/03-structural-degradation/verify_geometry.py",
+          "research/03-structural-degradation/geometry_verification.json"
+        ],
+        "limitations": "Not a positive universal ratio and not a sharp asymptotic equivalence."
+      }
+    },
+    {
+      "id": "DEG-D07",
+      "branch": "degradation",
+      "statement": "Compact projection is injective for support-generated rank-one odd-torsion presentations under the stated 2-group quotients.",
+      "scope": "Compact homology image; gives linear descent for a nonboundary compact lift.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D04-quadratic-bottleneck.md"
+      ],
+      "evidence": [
+        "research/degradation/research/04-quadratic-bottleneck/verify.py",
+        "research/degradation/research/04-quadratic-bottleneck/verify_independent.py",
+        "research/degradation/research/04-quadratic-bottleneck/cases.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a statement that all finite homology is compact. Visible 2-primary torsion remains.",
+      "current_update": "",
+      "original_record": {
+        "id": "D07",
+        "stage": "04",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "Compact projection is injective for support-generated rank-one odd-torsion presentations under the stated 2-group quotients.",
+        "scope": "Compact homology image; gives linear descent for a nonboundary compact lift.",
+        "evidence": [
+          "research/04-quadratic-bottleneck/proof.md",
+          "research/04-quadratic-bottleneck/verify.py",
+          "research/04-quadratic-bottleneck/verify_independent.py",
+          "research/04-quadratic-bottleneck/cases.json"
+        ],
+        "limitations": "Not a statement that all finite homology is compact. Visible 2-primary torsion remains."
+      }
+    },
+    {
+      "id": "DEG-D08",
+      "branch": "degradation",
+      "statement": "Short relation rows do not imply a quadratic cofactor bound; changing their integral basis does not repair the example.",
+      "scope": "Saturated rank-one lattice example.",
+      "evidence_type": "disproved-approach",
+      "status": "disproved-approach",
+      "proofs": [
+        "results/notes/D04-quadratic-bottleneck.md"
+      ],
+      "evidence": [
+        "research/degradation/research/04-quadratic-bottleneck/summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not an actual code-distance counterexample.",
+      "current_update": "",
+      "original_record": {
+        "id": "D08",
+        "stage": "04",
+        "status": "disproved-approach",
+        "statement": "Short relation rows do not imply a quadratic cofactor bound; changing their integral basis does not repair the example.",
+        "scope": "Saturated rank-one lattice example.",
+        "evidence": [
+          "research/04-quadratic-bottleneck/proof.md",
+          "research/04-quadratic-bottleneck/summary.json"
+        ],
+        "limitations": "Not an actual code-distance counterexample."
+      }
+    },
+    {
+      "id": "DEG-D09",
+      "branch": "degradation",
+      "statement": "A torsion-changing strict-trinomial quotient can kill the compact image even when universal H1 is simple/semisimple.",
+      "scope": "Specified C3 x C2 x Z example and its finite realization.",
+      "evidence_type": "disproved-approach",
+      "status": "disproved-approach",
+      "proofs": [
+        "results/notes/D04-quadratic-bottleneck.md"
+      ],
+      "evidence": [
+        "research/degradation/research/04-quadratic-bottleneck/verify.py",
+        "research/degradation/research/04-quadratic-bottleneck/summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a degradation counterfamily; there is an independent short base logical.",
+      "current_update": "",
+      "original_record": {
+        "id": "D09",
+        "stage": "04",
+        "status": "disproved-approach",
+        "statement": "A torsion-changing strict-trinomial quotient can kill the compact image even when universal H1 is simple/semisimple.",
+        "scope": "Specified C3 x C2 x Z example and its finite realization.",
+        "evidence": [
+          "research/04-quadratic-bottleneck/proof.md",
+          "research/04-quadratic-bottleneck/verify.py",
+          "research/04-quadratic-bottleneck/summary.json"
+        ],
+        "limitations": "Not a degradation counterfamily; there is an independent short base logical."
+      }
+    },
+    {
+      "id": "DEG-D10",
+      "branch": "degradation",
+      "statement": "For principal-period doubles, compact loss is fH1/f^2H1; the cyclic-torsion subclass has the specified exact gcd criterion.",
+      "scope": "Requires the stated nonzerodivisor-period hypotheses.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D04-quadratic-bottleneck.md"
+      ],
+      "evidence": [
+        "research/degradation/research/04-quadratic-bottleneck/verify_cyclic_strip.py",
+        "research/degradation/research/04-quadratic-bottleneck/cyclic_strip_cases.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "The specialization-created term remains separate; not applicable unchanged to a zerodivisor torsion quotient.",
+      "current_update": "",
+      "original_record": {
+        "id": "D10",
+        "stage": "04",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "For principal-period doubles, compact loss is fH1/f^2H1; the cyclic-torsion subclass has the specified exact gcd criterion.",
+        "scope": "Requires the stated nonzerodivisor-period hypotheses.",
+        "evidence": [
+          "research/04-quadratic-bottleneck/proof.md",
+          "research/04-quadratic-bottleneck/verify_cyclic_strip.py",
+          "research/04-quadratic-bottleneck/cyclic_strip_cases.json"
+        ],
+        "limitations": "The specialization-created term remains separate; not applicable unchanged to a zerodivisor torsion quotient."
+      }
+    },
+    {
+      "id": "DEG-D11",
+      "branch": "degradation",
+      "statement": "Active finite local H1 is N_m^2, H0=H2=N_m; m has one or two nonzero binary digits, with the stated cover projection and transfer forms.",
+      "scope": "Actual support-generated finite BB groups of rank at most two.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D05-visible-two-primary.md"
+      ],
+      "evidence": [
+        "research/degradation/research/05-visible-two-primary/local_cases.json",
+        "research/degradation/research/05-visible-two-primary/structured_verification.json",
+        "research/degradation/research/05-visible-two-primary/verify_local.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not arbitrary universal rank-four incidence groups; normalizing maps are not Hamming isometries.",
+      "current_update": "",
+      "original_record": {
+        "id": "D11",
+        "stage": "05",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "Active finite local H1 is N_m^2, H0=H2=N_m; m has one or two nonzero binary digits, with the stated cover projection and transfer forms.",
+        "scope": "Actual support-generated finite BB groups of rank at most two.",
+        "evidence": [
+          "research/05-visible-two-primary/proof.md",
+          "research/05-visible-two-primary/local_cases.json",
+          "research/05-visible-two-primary/structured_verification.json",
+          "research/05-visible-two-primary/verify_local.py"
+        ],
+        "limitations": "Not arbitrary universal rank-four incidence groups; normalizing maps are not Hamming isometries."
+      }
+    },
+    {
+      "id": "DEG-D12",
+      "branch": "degradation",
+      "statement": "High-contact family has exact base distance 4 and cover distance at most 6, despite unbounded nilpotent lengths.",
+      "scope": "Q=4^j family; parameters and hypotheses in source.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D05-visible-two-primary.md"
+      ],
+      "evidence": [
+        "research/degradation/research/05-visible-two-primary/verify_family.py",
+        "research/degradation/research/05-visible-two-primary/family_verification.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "No exact cover distance claimed; not an unbounded-degradation family.",
+      "current_update": "",
+      "original_record": {
+        "id": "D12",
+        "stage": "05",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "High-contact family has exact base distance 4 and cover distance at most 6, despite unbounded nilpotent lengths.",
+        "scope": "Q=4^j family; parameters and hypotheses in source.",
+        "evidence": [
+          "research/05-visible-two-primary/proof.md",
+          "research/05-visible-two-primary/verify_family.py",
+          "research/05-visible-two-primary/family_verification.json"
+        ],
+        "limitations": "No exact cover distance claimed; not an unbounded-degradation family."
+      }
+    },
+    {
+      "id": "DEG-D13",
+      "branch": "degradation",
+      "statement": "d<=3*d_2^2 for the deck-involution strip subclass.",
+      "scope": "Requires a weight-preserving compact incidence lift over T_odd x C2 x Z, with that involution mapping to the actual deck transformation.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D06-sparse-deck-descent.md",
+        "research/degradation/research/06-sparse-deck-descent/audit.md"
+      ],
+      "evidence": [
+        "research/degradation/research/06-sparse-deck-descent/verify.py",
+        "research/degradation/research/06-sparse-deck-descent/cases.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a global quadratic theorem; retained-involution period doubles and higher/finite incidence mechanisms remain outside.",
+      "current_update": "",
+      "original_record": {
+        "id": "D13",
+        "stage": "06",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "d<=3*d_2^2 for the deck-involution strip subclass.",
+        "scope": "Requires a weight-preserving compact incidence lift over T_odd x C2 x Z, with that involution mapping to the actual deck transformation.",
+        "evidence": [
+          "research/06-sparse-deck-descent/proof.md",
+          "research/06-sparse-deck-descent/verify.py",
+          "research/06-sparse-deck-descent/cases.json",
+          "research/06-sparse-deck-descent/audit.md"
+        ],
+        "limitations": "Not a global quadratic theorem; retained-involution period doubles and higher/finite incidence mechanisms remain outside."
+      }
+    },
+    {
+      "id": "DEG-D14",
+      "branch": "degradation",
+      "statement": "The deck-killing derivative operator can have nonzero syndrome in a retained-involution base.",
+      "scope": "Exact unchanged-check odd-period family in source.",
+      "evidence_type": "disproved-approach",
+      "status": "disproved-approach",
+      "proofs": [
+        "results/notes/D06-sparse-deck-descent.md"
+      ],
+      "evidence": [
+        "research/degradation/research/06-sparse-deck-descent/verification_summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Its weight-14 kernel witness is not minimum; an independent base logical has weight at most 8.",
+      "current_update": "",
+      "original_record": {
+        "id": "D14",
+        "stage": "06",
+        "status": "disproved-approach",
+        "statement": "The deck-killing derivative operator can have nonzero syndrome in a retained-involution base.",
+        "scope": "Exact unchanged-check odd-period family in source.",
+        "evidence": [
+          "research/06-sparse-deck-descent/proof.md",
+          "research/06-sparse-deck-descent/verification_summary.json"
+        ],
+        "limitations": "Its weight-14 kernel witness is not minimum; an independent base logical has weight at most 8."
+      }
+    },
+    {
+      "id": "DEG-P01",
+      "branch": "degradation",
+      "statement": "Every universal physical cover cycle is parameterized by k,h; finite compact nonboundary is exactly g_plus not dividing k.",
+      "scope": "No-universal-torsion rank-one setting, including the stated split/nonsplit seams.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D07-rank-one-amplification.md",
+        "research/degradation/research/07-rank-one-amplification/audit.md"
+      ],
+      "evidence": [
+        "research/degradation/research/07-rank-one-amplification/verify.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Retains separate specialization-created finite homology. No conclusion for arbitrary torsion presentations.",
+      "current_update": "",
+      "original_record": {
+        "id": "P01",
+        "stage": "07",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "Every universal physical cover cycle is parameterized by k,h; finite compact nonboundary is exactly g_plus not dividing k.",
+        "scope": "No-universal-torsion rank-one setting, including the stated split/nonsplit seams.",
+        "evidence": [
+          "research/07-rank-one-amplification/proof.md",
+          "research/07-rank-one-amplification/verify.py",
+          "research/07-rank-one-amplification/audit.md"
+        ],
+        "limitations": "Retains separate specialization-created finite homology. No conclusion for arbitrary torsion presentations."
+      }
+    },
+    {
+      "id": "DEG-P02",
+      "branch": "degradation",
+      "statement": "Factor-three and factor-two replacement bounds hold for the specified single-parity and other resolved voltage subclasses.",
+      "scope": "Precise normalization and parity hypotheses in Sections 3-5.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D07-rank-one-amplification.md"
+      ],
+      "evidence": [
+        "research/degradation/research/07-rank-one-amplification/verification_summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not the entire residual mixed-parity inequality.",
+      "current_update": "",
+      "original_record": {
+        "id": "P02",
+        "stage": "07",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "Factor-three and factor-two replacement bounds hold for the specified single-parity and other resolved voltage subclasses.",
+        "scope": "Precise normalization and parity hypotheses in Sections 3-5.",
+        "evidence": [
+          "research/07-rank-one-amplification/proof.md",
+          "research/07-rank-one-amplification/verification_summary.json"
+        ],
+        "limitations": "Not the entire residual mixed-parity inequality."
+      }
+    },
+    {
+      "id": "DEG-P03",
+      "branch": "degradation",
+      "statement": "Along fixed compatible gcd data and sufficiently large periods, d=mu0 and d_2=mu_plus.",
+      "scope": "Period stabilization for the exact full Laurent minima.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D07-rank-one-amplification.md",
+        "research/degradation/research/07-rank-one-amplification/audit.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Does not assert equality for arbitrary short periods.",
+      "current_update": "",
+      "original_record": {
+        "id": "P03",
+        "stage": "07",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "Along fixed compatible gcd data and sufficiently large periods, d=mu0 and d_2=mu_plus.",
+        "scope": "Period stabilization for the exact full Laurent minima.",
+        "evidence": [
+          "research/07-rank-one-amplification/proof.md",
+          "research/07-rank-one-amplification/audit.md"
+        ],
+        "limitations": "Does not assert equality for arbitrary short periods."
+      }
+    },
+    {
+      "id": "DEG-P04",
+      "branch": "degradation",
+      "statement": "mu0=8 and mu_plus=14 for A=1+z^2+z^7, B=1+z+z^8 with the stated twists.",
+      "scope": "All Laurent degrees and all admissible messages/boundaries.",
+      "evidence_type": "exact-minimum-certificate",
+      "status": "exact-minimum-certificate",
+      "proofs": [],
+      "evidence": [
+        "research/degradation/research/07-rank-one-amplification/family_certificate.json",
+        "research/degradation/research/07-rank-one-amplification/base_potential.bin",
+        "research/degradation/research/07-rank-one-amplification/cover_potential.bin",
+        "research/degradation/research/07-rank-one-amplification/verify.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Independent Bellman edge checking gives the all-degree lower bounds. Finite matrix tests alone would not suffice.",
+      "current_update": "",
+      "original_record": {
+        "id": "P04",
+        "stage": "07",
+        "status": "exact-minimum-certificate",
+        "statement": "mu0=8 and mu_plus=14 for A=1+z^2+z^7, B=1+z+z^8 with the stated twists.",
+        "scope": "All Laurent degrees and all admissible messages/boundaries.",
+        "evidence": [
+          "research/07-rank-one-amplification/family_certificate.json",
+          "research/07-rank-one-amplification/base_potential.bin",
+          "research/07-rank-one-amplification/cover_potential.bin",
+          "research/07-rank-one-amplification/verify.py"
+        ],
+        "limitations": "Independent Bellman edge checking gives the all-degree lower bounds. Finite matrix tests alone would not suffice."
+      }
+    },
+    {
+      "id": "DEG-P05",
+      "branch": "degradation",
+      "statement": "[[2L,4,8]] -> [[4L,4,14]] for odd multiples of 3 with L>=105.",
+      "scope": "Combination of P03 and P04 in the supplied proof.",
+      "evidence_type": "symbolic-plus-exact-minimum-certificate",
+      "status": "symbolic-plus-exact-minimum-certificate",
+      "proofs": [
+        "results/notes/D07-rank-one-amplification.md"
+      ],
+      "evidence": [
+        "research/degradation/research/07-rank-one-amplification/family_certificate.json",
+        "research/degradation/research/07-rank-one-amplification/verify.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Ratio 7/4 is not a new record or unbounded-amplification result.",
+      "current_update": "",
+      "original_record": {
+        "id": "P05",
+        "stage": "07",
+        "status": "symbolic-plus-exact-minimum-certificate",
+        "statement": "[[2L,4,8]] -> [[4L,4,14]] for odd multiples of 3 with L>=105.",
+        "scope": "Combination of P03 and P04 in the supplied proof.",
+        "evidence": [
+          "research/07-rank-one-amplification/proof.md",
+          "research/07-rank-one-amplification/family_certificate.json",
+          "research/07-rank-one-amplification/verify.py"
+        ],
+        "limitations": "Ratio 7/4 is not a new record or unbounded-amplification result."
+      }
+    },
+    {
+      "id": "DEG-P06",
+      "branch": "degradation",
+      "statement": "The naive Frobenius weight-at-most-3w candidate is a multiplier of transfer and is killed whenever that transfer is killed.",
+      "scope": "Exact physical and homology identity.",
+      "evidence_type": "disproved-approach",
+      "status": "disproved-approach",
+      "proofs": [
+        "results/notes/D07-rank-one-amplification.md"
+      ],
+      "evidence": [
+        "research/degradation/research/07-rank-one-amplification/verify.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Disproves the proposed nonboundary argument, not factor three.",
+      "current_update": "",
+      "original_record": {
+        "id": "P06",
+        "stage": "07",
+        "status": "disproved-approach",
+        "statement": "The naive Frobenius weight-at-most-3w candidate is a multiplier of transfer and is killed whenever that transfer is killed.",
+        "scope": "Exact physical and homology identity.",
+        "evidence": [
+          "research/07-rank-one-amplification/proof.md",
+          "research/07-rank-one-amplification/verify.py"
+        ],
+        "limitations": "Disproves the proposed nonboundary argument, not factor three."
+      }
+    },
+    {
+      "id": "DEG-P07",
+      "branch": "degradation",
+      "statement": "For the specified arithmetic-progression mixed pairs, a+b<=mu0 and a+b<=mu_plus<=2(a+b); hence mu_plus<=2mu0.",
+      "scope": "a,b>0, distinct and coprime; both congruent 1 or both 5 modulo 6.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D08-mixed-laurent.md"
+      ],
+      "evidence": [
+        "research/degradation/research/08-mixed-laurent/verify.py",
+        "research/degradation/research/08-mixed-laurent/verification_summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not exact distances for every pair and not the full mixed-parity class.",
+      "current_update": "",
+      "original_record": {
+        "id": "P07",
+        "stage": "08",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "For the specified arithmetic-progression mixed pairs, a+b<=mu0 and a+b<=mu_plus<=2(a+b); hence mu_plus<=2mu0.",
+        "scope": "a,b>0, distinct and coprime; both congruent 1 or both 5 modulo 6.",
+        "evidence": [
+          "research/08-mixed-laurent/proof.md",
+          "research/08-mixed-laurent/verify.py",
+          "research/08-mixed-laurent/verification_summary.json"
+        ],
+        "limitations": "Not exact distances for every pair and not the full mixed-parity class."
+      }
+    },
+    {
+      "id": "DEG-P08",
+      "branch": "degradation",
+      "statement": "The four-term message cancellation family beats the constant message by a growing additive gap.",
+      "scope": "Explicit B_j,F_j polynomial identity for all j>=0.",
+      "evidence_type": "disproved-approach",
+      "status": "disproved-approach",
+      "proofs": [
+        "results/notes/D08-mixed-laurent.md"
+      ],
+      "evidence": [
+        "research/degradation/research/08-mixed-laurent/verify.py",
+        "research/degradation/research/08-mixed-laurent/verification_summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Only constructed message weights; not complete minima and not a factor-three counterexample.",
+      "current_update": "",
+      "original_record": {
+        "id": "P08",
+        "stage": "08",
+        "status": "disproved-approach",
+        "statement": "The four-term message cancellation family beats the constant message by a growing additive gap.",
+        "scope": "Explicit B_j,F_j polynomial identity for all j>=0.",
+        "evidence": [
+          "research/08-mixed-laurent/proof.md",
+          "research/08-mixed-laurent/verify.py",
+          "research/08-mixed-laurent/verification_summary.json"
+        ],
+        "limitations": "Only constructed message weights; not complete minima and not a factor-three counterexample."
+      }
+    },
+    {
+      "id": "DEG-P09",
+      "branch": "degradation",
+      "statement": "The fixed-c parameterization has an exact systematic four-output and off-support penalty form.",
+      "scope": "All Laurent messages and boundary adjustments retained.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D08-mixed-laurent.md"
+      ],
+      "evidence": [
+        "research/degradation/research/08-mixed-laurent/audit.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "No restriction to base-minimizing F or fixed H is justified by the reformulation.",
+      "current_update": "",
+      "original_record": {
+        "id": "P09",
+        "stage": "08",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "The fixed-c parameterization has an exact systematic four-output and off-support penalty form.",
+        "scope": "All Laurent messages and boundary adjustments retained.",
+        "evidence": [
+          "research/08-mixed-laurent/proof.md",
+          "research/08-mixed-laurent/audit.py"
+        ],
+        "limitations": "No restriction to base-minimizing F or fixed H is justified by the reformulation."
+      }
+    },
+    {
+      "id": "DEG-P10",
+      "branch": "degradation",
+      "statement": "mu0=10 for the small arithmetic-progression pair a=1,b=7.",
+      "scope": "Specific base Laurent minimum.",
+      "evidence_type": "symbolic-exact-small-minimum",
+      "status": "symbolic-exact-small-minimum",
+      "proofs": [
+        "results/notes/D08-mixed-laurent.md"
+      ],
+      "evidence": [
+        "research/degradation/research/08-mixed-laurent/verification_summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not an exact cover minimum or a new finite ratio record.",
+      "current_update": "",
+      "original_record": {
+        "id": "P10",
+        "stage": "08",
+        "status": "symbolic-exact-small-minimum",
+        "statement": "mu0=10 for the small arithmetic-progression pair a=1,b=7.",
+        "scope": "Specific base Laurent minimum.",
+        "evidence": [
+          "research/08-mixed-laurent/proof.md",
+          "research/08-mixed-laurent/verification_summary.json"
+        ],
+        "limitations": "Not an exact cover minimum or a new finite ratio record."
+      }
+    },
+    {
+      "id": "DEG-P11",
+      "branch": "degradation",
+      "statement": "span(B)<=4 wt(F) wt((B/c)F) for every c-nondivisible Laurent F.",
+      "scope": "Fixed c=1+z+z^2; E=6r+2 and O=6t+1, including negative exponents.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D09-fixed-c-product-bound.md"
+      ],
+      "evidence": [
+        "research/degradation/research/09-fixed-c-product-bound/verify.py",
+        "research/degradation/research/09-fixed-c-product-bound/verification_summary.json"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a linear uncertainty bound. Uses actual strict-trinomial support structure.",
+      "current_update": "",
+      "original_record": {
+        "id": "P11",
+        "stage": "09",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "span(B)<=4 wt(F) wt((B/c)F) for every c-nondivisible Laurent F.",
+        "scope": "Fixed c=1+z+z^2; E=6r+2 and O=6t+1, including negative exponents.",
+        "evidence": [
+          "research/09-fixed-c-product-bound/proof.md",
+          "research/09-fixed-c-product-bound/verify.py",
+          "research/09-fixed-c-product-bound/verification_summary.json"
+        ],
+        "limitations": "Not a linear uncertainty bound. Uses actual strict-trinomial support structure."
+      }
+    },
+    {
+      "id": "DEG-P12",
+      "branch": "degradation",
+      "statement": "mu_plus<=mu0^2+2, and <=mu0^2 for positive E,O.",
+      "scope": "Full fixed-c Laurent minima; finite consequences only in the inherited stabilized regime.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D09-fixed-c-product-bound.md",
+        "research/degradation/research/09-fixed-c-product-bound/audit.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Not a global BB amplification bound and not the degradation inequality d<=C*d_2^2.",
+      "current_update": "",
+      "original_record": {
+        "id": "P12",
+        "stage": "09",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "mu_plus<=mu0^2+2, and <=mu0^2 for positive E,O.",
+        "scope": "Full fixed-c Laurent minima; finite consequences only in the inherited stabilized regime.",
+        "evidence": [
+          "research/09-fixed-c-product-bound/proof.md",
+          "research/09-fixed-c-product-bound/audit.md"
+        ],
+        "limitations": "Not a global BB amplification bound and not the degradation inequality d<=C*d_2^2."
+      }
+    },
+    {
+      "id": "DEG-P13",
+      "branch": "degradation",
+      "statement": "All 12 admissible cover residue classes are physical monomial translates, yielding exact unrestricted boundary-coset minimizations.",
+      "scope": "Fixed c, actual monomial basis.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D09-fixed-c-product-bound.md"
+      ],
+      "evidence": [
+        "research/degradation/research/09-fixed-c-product-bound/verify.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "The boundary variable remains arbitrary; does not imply constant-message optimality.",
+      "current_update": "",
+      "original_record": {
+        "id": "P13",
+        "stage": "09",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "All 12 admissible cover residue classes are physical monomial translates, yielding exact unrestricted boundary-coset minimizations.",
+        "scope": "Fixed c, actual monomial basis.",
+        "evidence": [
+          "research/09-fixed-c-product-bound/proof.md",
+          "research/09-fixed-c-product-bound/verify.py"
+        ],
+        "limitations": "The boundary variable remains arbitrary; does not imply constant-message optimality."
+      }
+    },
+    {
+      "id": "DEG-P14",
+      "branch": "degradation",
+      "statement": "A factor-three violation requires mu0 < (wt(b)+1)/2; unbounded ratios require both minimizing block weights to diverge.",
+      "scope": "Necessary conditions for the fixed-c strict-trinomial case.",
+      "evidence_type": "symbolic-proof-and-exact-checks",
+      "status": "symbolic-proof-and-exact-checks",
+      "proofs": [
+        "results/notes/D09-fixed-c-product-bound.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Necessary is not sufficient; still need a full cover lower bound.",
+      "current_update": "",
+      "original_record": {
+        "id": "P14",
+        "stage": "09",
+        "status": "symbolic-proof-and-exact-checks",
+        "statement": "A factor-three violation requires mu0 < (wt(b)+1)/2; unbounded ratios require both minimizing block weights to diverge.",
+        "scope": "Necessary conditions for the fixed-c strict-trinomial case.",
+        "evidence": [
+          "research/09-fixed-c-product-bound/proof.md"
+        ],
+        "limitations": "Necessary is not sufficient; still need a full cover lower bound."
+      }
+    },
+    {
+      "id": "DEG-P15",
+      "branch": "degradation",
+      "statement": "The relaxed systematic problem has exact minima mu0=2, mu_plus=4N+2 for all N>=1.",
+      "scope": "Second lifted numerator has five supported terms.",
+      "evidence_type": "exact-inadmissible-counterfamily",
+      "status": "exact-inadmissible-counterfamily",
+      "proofs": [
+        "results/notes/D09-fixed-c-product-bound.md",
+        "research/degradation/research/09-fixed-c-product-bound/audit.md"
+      ],
+      "evidence": [
+        "research/degradation/research/09-fixed-c-product-bound/verify.py"
+      ],
+      "unavailable_historical_sources": [],
+      "limitations": "Invalid strict-trinomial termwise support matching. Not a target BB-cover counterexample.",
+      "current_update": "",
+      "original_record": {
+        "id": "P15",
+        "stage": "09",
+        "status": "exact-inadmissible-counterfamily",
+        "statement": "The relaxed systematic problem has exact minima mu0=2, mu_plus=4N+2 for all N>=1.",
+        "scope": "Second lifted numerator has five supported terms.",
+        "evidence": [
+          "research/09-fixed-c-product-bound/proof.md",
+          "research/09-fixed-c-product-bound/verify.py",
+          "research/09-fixed-c-product-bound/audit.md"
+        ],
+        "limitations": "Invalid strict-trinomial termwise support matching. Not a target BB-cover counterexample."
+      }
+    },
+    {
+      "id": "DEG-O01",
+      "branch": "degradation",
+      "statement": "Universal strict-trinomial positive degradation constant, or a strict-trinomial family with d->infinity and d_2/d->0.",
+      "scope": "Global degradation question.",
+      "evidence_type": "open",
+      "status": "open",
+      "proofs": [
+        "results/notes/D03-structural-degradation.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Neither established in the available record.",
+      "current_update": "",
+      "original_record": {
+        "id": "O01",
+        "stage": "open",
+        "status": "open",
+        "statement": "Universal strict-trinomial positive degradation constant, or a strict-trinomial family with d->infinity and d_2/d->0.",
+        "scope": "Global degradation question.",
+        "evidence": [
+          "research/03-structural-degradation/proof.md"
+        ],
+        "limitations": "Neither established in the available record."
+      }
+    },
+    {
+      "id": "DEG-O02",
+      "branch": "degradation",
+      "statement": "Universal quadratic degradation improvement d<=C*d_2^2.",
+      "scope": "Mixed finite/strip visible-2-primary obstruction outside the proved subclasses.",
+      "evidence_type": "open",
+      "status": "open",
+      "proofs": [
+        "results/notes/D06-sparse-deck-descent.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Finite-local classification and the deck-involution subclass do not settle the global statement.",
+      "current_update": "",
+      "original_record": {
+        "id": "O02",
+        "stage": "open",
+        "status": "open",
+        "statement": "Universal quadratic degradation improvement d<=C*d_2^2.",
+        "scope": "Mixed finite/strip visible-2-primary obstruction outside the proved subclasses.",
+        "evidence": [
+          "research/06-sparse-deck-descent/proof.md"
+        ],
+        "limitations": "Finite-local classification and the deck-involution subclass do not settle the global statement."
+      }
+    },
+    {
+      "id": "DEG-O03",
+      "branch": "degradation",
+      "statement": "mu_plus<=3*mu0 for all remaining fixed-c mixed-parity pairs.",
+      "scope": "Full F,H Laurent optimization.",
+      "evidence_type": "open",
+      "status": "open",
+      "proofs": [
+        "results/notes/D09-fixed-c-product-bound.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Unproved and unrefuted; no certified strict-trinomial full-minimum violation.",
+      "current_update": "",
+      "original_record": {
+        "id": "O03",
+        "stage": "open",
+        "status": "open",
+        "statement": "mu_plus<=3*mu0 for all remaining fixed-c mixed-parity pairs.",
+        "scope": "Full F,H Laurent optimization.",
+        "evidence": [
+          "research/09-fixed-c-product-bound/proof.md"
+        ],
+        "limitations": "Unproved and unrefuted; no certified strict-trinomial full-minimum violation."
+      }
+    },
+    {
+      "id": "DEG-O04",
+      "branch": "degradation",
+      "statement": "Half-generator lower bound mu0 >= (wt(b)+1)/2.",
+      "scope": "Sufficient proposed fixed-c lemma.",
+      "evidence_type": "open",
+      "status": "open",
+      "proofs": [
+        "results/notes/D09-fixed-c-product-bound.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "Unproved and unrefuted. Its failure alone would not prove factor-three failure.",
+      "current_update": "",
+      "original_record": {
+        "id": "O04",
+        "stage": "open",
+        "status": "open",
+        "statement": "Half-generator lower bound mu0 >= (wt(b)+1)/2.",
+        "scope": "Sufficient proposed fixed-c lemma.",
+        "evidence": [
+          "research/09-fixed-c-product-bound/proof.md"
+        ],
+        "limitations": "Unproved and unrefuted. Its failure alone would not prove factor-three failure."
+      }
+    },
+    {
+      "id": "DEG-O05",
+      "branch": "degradation",
+      "statement": "Finiteness of C_*=sup d_2/d.",
+      "scope": "Global amplification including remaining rank-one torsion and other mechanisms.",
+      "evidence_type": "open",
+      "status": "open",
+      "proofs": [
+        "results/notes/D09-fixed-c-product-bound.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [],
+      "limitations": "No global universal linear bound or admissible unbounded-ratio family established here.",
+      "current_update": "",
+      "original_record": {
+        "id": "O05",
+        "stage": "open",
+        "status": "open",
+        "statement": "Finiteness of C_*=sup d_2/d.",
+        "scope": "Global amplification including remaining rank-one torsion and other mechanisms.",
+        "evidence": [
+          "research/09-fixed-c-product-bound/proof.md"
+        ],
+        "limitations": "No global universal linear bound or admissible unbounded-ratio family established here."
+      }
+    },
+    {
+      "id": "DEG-I04",
+      "branch": "degradation",
+      "statement": "Genuinely higher-rank compact factor-two theorem described as resolved in a user handoff.",
+      "scope": "Other-window context; exact standalone hypotheses unavailable here.",
+      "evidence_type": "inherited-branch-assertion",
+      "status": "related-proof-restored-with-explicit-scope",
+      "proofs": [
+        "results/notes/A06-linear-compact-replacement.md"
+      ],
+      "evidence": [],
+      "unavailable_historical_sources": [
+        "research/degradation/context/conversation/USER_HANDOFFS.md",
+        "research/degradation/context/conversation/INHERITED_INPUTS.md"
+      ],
+      "limitations": "No standalone proof package for this assertion was available; not promoted to a repository theorem.",
+      "current_update": "The other branch now supplies the exact compact theorem. Its explicit normal-form and survival hypotheses replace any unqualified handoff description.",
+      "original_record": {
+        "id": "I04",
+        "stage": "input",
+        "status": "inherited-branch-assertion",
+        "statement": "Genuinely higher-rank compact factor-two theorem described as resolved in a user handoff.",
+        "scope": "Other-window context; exact standalone hypotheses unavailable here.",
+        "evidence": [
+          "context/conversation/USER_HANDOFFS.md",
+          "context/conversation/INHERITED_INPUTS.md"
+        ],
+        "limitations": "No standalone proof package for this assertion was available; not promoted to a repository theorem."
+      }
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+[
+  {
+    "id": "01-weight-six",
+    "directory": "research/01-weight-six",
+    "original_archive": "provenance/source_archives/strict_trinomial_weight_six_certificate.zip",
+    "verify": [
+      [
+        "{python}",
+        "verify_presentations.py"
+      ],
+      [
+        "{python}",
+        "verify_family.py",
+        "1",
+        "2"
+      ]
+    ],
+    "rebuild": [
+      [
+        "bash",
+        "run_all.sh"
+      ]
+    ]
+  },
+  {
+    "id": "02-weight-eight",
+    "directory": "research/02-weight-eight",
+    "original_archive": "provenance/source_archives/strict_trinomial_weight_eight_certificate.zip",
+    "verify": [
+      [
+        "{python}",
+        "verify_graphs.py"
+      ],
+      [
+        "{python}",
+        "verify_highrank.py"
+      ],
+      [
+        "{python}",
+        "verify_low_and_pure.py"
+      ],
+      [
+        "{python}",
+        "verify_nilpotent_lemmas.py"
+      ],
+      [
+        "{python}",
+        "verify_summary.py"
+      ]
+    ],
+    "rebuild": [
+      [
+        "bash",
+        "run_all.sh"
+      ]
+    ]
+  },
+  {
+    "id": "03-structural-degradation",
+    "directory": "research/03-structural-degradation",
+    "original_archive": "provenance/source_archives/strict_trinomial_structural_bound.zip",
+    "verify": [
+      [
+        "{python}",
+        "verify_twists.py"
+      ],
+      [
+        "{python}",
+        "verify_geometry.py"
+      ],
+      [
+        "{python}",
+        "verify_odd_sector.py"
+      ]
+    ],
+    "rebuild": [
+      [
+        "{python}",
+        "verify_twists.py"
+      ],
+      [
+        "{python}",
+        "verify_geometry.py"
+      ],
+      [
+        "{python}",
+        "verify_odd_sector.py"
+      ]
+    ]
+  },
+  {
+    "id": "04-quadratic-bottleneck",
+    "directory": "research/04-quadratic-bottleneck",
+    "original_archive": "provenance/source_archives/strict_trinomial_quadratic_bottleneck.zip",
+    "verify": [
+      [
+        "{python}",
+        "verify.py"
+      ],
+      [
+        "{python}",
+        "verify_independent.py"
+      ],
+      [
+        "{python}",
+        "verify_cyclic_strip.py"
+      ],
+      [
+        "{python}",
+        "make_summary.py"
+      ]
+    ],
+    "rebuild": [
+      [
+        "{python}",
+        "verify.py"
+      ],
+      [
+        "{python}",
+        "verify_independent.py"
+      ],
+      [
+        "{python}",
+        "verify_cyclic_strip.py"
+      ],
+      [
+        "{python}",
+        "make_summary.py"
+      ]
+    ]
+  },
+  {
+    "id": "05-visible-two-primary",
+    "directory": "research/05-visible-two-primary",
+    "original_archive": "provenance/source_archives/strict_trinomial_visible2_normal_form.zip",
+    "verify": [
+      [
+        "{python}",
+        "verify_contact.py"
+      ],
+      [
+        "{python}",
+        "verify_local.py"
+      ],
+      [
+        "{python}",
+        "verify_structured.py"
+      ],
+      [
+        "{python}",
+        "verify_family.py"
+      ],
+      [
+        "{python}",
+        "make_summary.py"
+      ]
+    ],
+    "rebuild": [
+      [
+        "{python}",
+        "verify_contact.py"
+      ],
+      [
+        "{python}",
+        "verify_local.py"
+      ],
+      [
+        "{python}",
+        "verify_structured.py"
+      ],
+      [
+        "{python}",
+        "verify_family.py"
+      ],
+      [
+        "{python}",
+        "make_summary.py"
+      ]
+    ]
+  },
+  {
+    "id": "06-sparse-deck-descent",
+    "directory": "research/06-sparse-deck-descent",
+    "original_archive": "provenance/source_archives/strict_trinomial_sparse_deck_descent.zip",
+    "verify": [
+      [
+        "{python}",
+        "verify.py"
+      ]
+    ],
+    "rebuild": [
+      [
+        "{python}",
+        "verify.py"
+      ]
+    ]
+  },
+  {
+    "id": "07-rank-one-amplification",
+    "directory": "research/07-rank-one-amplification",
+    "original_archive": "provenance/source_archives/strict_trinomial_rank_one_amplification.zip",
+    "verify": [
+      [
+        "{python}",
+        "verify.py"
+      ]
+    ],
+    "rebuild": [
+      [
+        "{cxx}",
+        "-O3",
+        "-std=c++17",
+        "trellis.cpp",
+        "-o",
+        "trellis"
+      ],
+      [
+        "{python}",
+        "generate_family.py"
+      ],
+      [
+        "{python}",
+        "verify.py"
+      ]
+    ]
+  },
+  {
+    "id": "08-mixed-laurent",
+    "directory": "research/08-mixed-laurent",
+    "original_archive": "provenance/source_archives/strict_trinomial_mixed_laurent_progress.zip",
+    "verify": [
+      [
+        "{python}",
+        "verify.py"
+      ],
+      [
+        "{python}",
+        "audit.py"
+      ]
+    ],
+    "rebuild": [
+      [
+        "{python}",
+        "verify.py"
+      ],
+      [
+        "{python}",
+        "audit.py"
+      ]
+    ]
+  },
+  {
+    "id": "09-fixed-c-product-bound",
+    "directory": "research/09-fixed-c-product-bound",
+    "original_archive": "provenance/source_archives/strict_trinomial_fixed_c_product_bound.zip",
+    "verify": [
+      [
+        "{python}",
+        "verify.py"
+      ]
+    ],
+    "rebuild": [
+      [
+        "{python}",
+        "verify.py"
+      ]
+    ]
+  }
+]

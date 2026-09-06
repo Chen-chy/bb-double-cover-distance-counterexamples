@@ -1,0 +1,33 @@
+name: Package complete research source
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@83679a892e2d95755f2dac6acb0bfd1e9ac5d548 # v6.1.0
+        with:
+          python-version: '3.13'
+      - name: Check complete repository
+        run: python scripts/check_repository.py
+      - name: Verify release snapshot
+        run: python scripts/reproduce.py --profile core --output checks/release/ci-source
+      - name: Package every public result, proof, program, and certificate
+        run: |
+          python scripts/write_manifest.py
+          python scripts/package_repository.py
+      - name: Retain source archives without publishing a GitHub Release
+        uses: actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f # v7.0.0
+        with:
+          name: complete-research-source
+          path: dist/
+          if-no-files-found: error
+          retention-days: 30

@@ -1,0 +1,6 @@
+{
+  "independently_audited_pairs": 528,
+  "primal_dual_certificates": 1056,
+  "all_cycles_nonboundaries_and_term_matched_covers_verified": true,
+  "distance_lower_bounds_claimed": false
+}

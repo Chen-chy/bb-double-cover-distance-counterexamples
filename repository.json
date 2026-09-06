@@ -1,0 +1,21 @@
+{
+  "name": "bb-double-cover-research",
+  "version": "0.2.0",
+  "distribution": "standalone-complete-research-repository",
+  "default_branch": "main",
+  "release_tag": "v0.2.0",
+  "remote_repository_url": null,
+  "remote_publication_status": "not_created_by_local_packaging",
+  "reuse_license_status": "not_assigned",
+  "research_authors": null,
+  "primary_contents": [
+    "results",
+    "research",
+    "certificates",
+    "bbcover"
+  ],
+  "optional_typeset_manuscript": "paper",
+  "source_archives": 3,
+  "claim_count": 104,
+  "note": "Technical repository checks are separate from optional formal-manuscript approval."
+}

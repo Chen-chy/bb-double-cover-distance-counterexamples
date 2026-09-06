@@ -1,0 +1,5 @@
+# Optional dependencies, pinned to versions installed for export-time checking.
+# Most retained certificate auditors need only the Python standard library.
+# Recorded environment: Python 3.13.5; see checks/export_2026-09-06/audit_summary.json.
+sympy==1.14.0
+numpy==2.3.5

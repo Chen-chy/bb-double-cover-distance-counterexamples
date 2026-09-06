@@ -1,0 +1,114 @@
+{
+  "status": "all_checks_passed",
+  "counts": {
+    "quotient_identities": 101,
+    "base_quotient_counts": 101,
+    "arithmetic_progression_pairs": 235,
+    "phase_minus_boundary_moves": 109,
+    "full_k_h_reconstructions": 235,
+    "residue_lower_bound_message_checks": 367,
+    "cancellation_identity_instances": 81
+  },
+  "finite_matrix_checks": [
+    {
+      "a": 1,
+      "b": 7,
+      "L": 99,
+      "cover_n": 396,
+      "boundary_rank": 196,
+      "witness_weight": 14,
+      "nonboundary": true
+    },
+    {
+      "a": 1,
+      "b": 13,
+      "L": 171,
+      "cover_n": 684,
+      "boundary_rank": 340,
+      "witness_weight": 26,
+      "nonboundary": true
+    },
+    {
+      "a": 5,
+      "b": 11,
+      "L": 195,
+      "cover_n": 780,
+      "boundary_rank": 388,
+      "witness_weight": 32,
+      "nonboundary": true
+    },
+    {
+      "a": 5,
+      "b": 17,
+      "L": 267,
+      "cover_n": 1068,
+      "boundary_rank": 532,
+      "witness_weight": 44,
+      "nonboundary": true
+    },
+    {
+      "a": 7,
+      "b": 13,
+      "L": 243,
+      "cover_n": 972,
+      "boundary_rank": 484,
+      "witness_weight": 38,
+      "nonboundary": true
+    },
+    {
+      "a": 11,
+      "b": 17,
+      "L": 339,
+      "cover_n": 1356,
+      "boundary_rank": 676,
+      "witness_weight": 56,
+      "nonboundary": true
+    }
+  ],
+  "cancellation_family": [
+    {
+      "j": 0,
+      "impulse_weight": 10,
+      "message_weight": 4,
+      "constructed_pair_weight": 10
+    },
+    {
+      "j": 1,
+      "impulse_weight": 22,
+      "message_weight": 4,
+      "constructed_pair_weight": 18
+    },
+    {
+      "j": 2,
+      "impulse_weight": 34,
+      "message_weight": 4,
+      "constructed_pair_weight": 26
+    },
+    {
+      "j": 5,
+      "impulse_weight": 70,
+      "message_weight": 4,
+      "constructed_pair_weight": 50
+    },
+    {
+      "j": 20,
+      "impulse_weight": 250,
+      "message_weight": 4,
+      "constructed_pair_weight": 170
+    },
+    {
+      "j": 80,
+      "impulse_weight": 970,
+      "message_weight": 4,
+      "constructed_pair_weight": 650
+    }
+  ],
+  "exact_small_base_minimum": {
+    "a": 1,
+    "b": 7,
+    "mu0": 10,
+    "proof": "residue lower bound, parity, then monomial right block exclusion"
+  },
+  "scope": "No general factor-three result and no factor-three counterexample. No decoder-derived minimum is asserted."
+}
+Independent systematic/norm checks passed: 480

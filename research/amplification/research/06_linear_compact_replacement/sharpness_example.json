@@ -1,0 +1,55 @@
+{
+  "base": {
+    "periods": [
+      3,
+      3
+    ],
+    "n": 18,
+    "k": 4,
+    "d": 2,
+    "A": [
+      0,
+      3,
+      1
+    ],
+    "B": [
+      0,
+      3,
+      1
+    ],
+    "logical_support": [
+      0,
+      9
+    ],
+    "distinct_columns": 9,
+    "lower_certificate": "nonzero odd-weight columns; cover columns pairwise distinct"
+  },
+  "cover": {
+    "periods": [
+      6,
+      3
+    ],
+    "n": 36,
+    "k": 4,
+    "d": 4,
+    "A": [
+      0,
+      3,
+      1
+    ],
+    "B": [
+      0,
+      12,
+      1
+    ],
+    "logical_support": [
+      0,
+      9,
+      18,
+      27
+    ],
+    "distinct_columns": 36,
+    "lower_certificate": "nonzero odd-weight columns; cover columns pairwise distinct"
+  },
+  "exact_ratio": 2
+}

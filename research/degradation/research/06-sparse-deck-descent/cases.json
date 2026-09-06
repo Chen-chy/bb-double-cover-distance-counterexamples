@@ -1,0 +1,1495 @@
+[
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 20,
+    "physical_cover_weight": 20,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 18,
+    "physical_cover_weight": 18,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 8,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 16,
+    "physical_cover_weight": 16,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 20,
+    "physical_cover_weight": 20,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 18,
+    "physical_cover_weight": 18,
+    "replacement_weight": 8,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 45,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 45,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 20,
+    "physical_cover_weight": 20,
+    "replacement_weight": 8,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 18,
+    "physical_cover_weight": 18,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 20,
+    "physical_cover_weight": 20,
+    "replacement_weight": 8,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 16,
+    "physical_cover_weight": 16,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 20,
+    "physical_cover_weight": 20,
+    "replacement_weight": 14,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 16,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      0,
+      4
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 30,
+    "physical_cover_weight": 30,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      0,
+      4
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 26,
+    "physical_cover_weight": 26,
+    "replacement_weight": 16,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      0,
+      4
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 36,
+    "physical_cover_weight": 36,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      0,
+      4
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      0,
+      4
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      0,
+      4
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 30,
+    "physical_cover_weight": 30,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 26,
+    "physical_cover_weight": 26,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 26,
+    "physical_cover_weight": 26,
+    "replacement_weight": 14,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 30,
+    "physical_cover_weight": 30,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 26,
+    "physical_cover_weight": 26,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 30,
+    "physical_cover_weight": 30,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 26,
+    "physical_cover_weight": 26,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 45,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 45,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 28,
+    "physical_cover_weight": 28,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 18,
+    "physical_cover_weight": 18,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 28,
+    "physical_cover_weight": 28,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 26,
+    "physical_cover_weight": 26,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 26,
+    "physical_cover_weight": 26,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 26,
+    "physical_cover_weight": 26,
+    "replacement_weight": 16,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 28,
+    "physical_cover_weight": 28,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 28,
+    "physical_cover_weight": 28,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 16,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 28,
+    "physical_cover_weight": 28,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 26,
+    "physical_cover_weight": 26,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 28,
+    "physical_cover_weight": 28,
+    "replacement_weight": 14,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 20,
+    "physical_cover_weight": 20,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 24,
+    "physical_cover_weight": 24,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 16,
+    "physical_cover_weight": 16,
+    "replacement_weight": 4,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 20,
+    "physical_cover_weight": 20,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 14,
+    "physical_cover_weight": 14,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 20,
+    "physical_cover_weight": 20,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 12,
+    "physical_cover_weight": 12,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 18,
+    "physical_cover_weight": 18,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 45,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 14,
+    "physical_cover_weight": 14,
+    "replacement_weight": 4,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 45,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 16,
+    "physical_cover_weight": 16,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 12,
+    "physical_cover_weight": 12,
+    "replacement_weight": 4,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 16,
+    "physical_cover_weight": 16,
+    "replacement_weight": 12,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 14,
+    "physical_cover_weight": 14,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 18,
+    "physical_cover_weight": 18,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 14,
+    "physical_cover_weight": 14,
+    "replacement_weight": 4,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      3,
+      0
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 14,
+    "physical_cover_weight": 14,
+    "replacement_weight": 8,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      3,
+      0
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 14,
+    "physical_cover_weight": 14,
+    "replacement_weight": 4,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      3,
+      0
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 1,
+    "P": 66,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 14,
+    "physical_cover_weight": 14,
+    "replacement_weight": 4,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      3,
+      0
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 3,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 42,
+    "physical_cover_weight": 42,
+    "replacement_weight": 18,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 3,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 3,
+    "P": 45,
+    "eps": 0,
+    "seam": 1,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 3,
+    "P": 42,
+    "eps": 1,
+    "seam": 1,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 3,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 3,
+    "P": 42,
+    "eps": 0,
+    "seam": 1,
+    "formal_weight": 12,
+    "physical_cover_weight": 12,
+    "replacement_weight": 4,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 5,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 70,
+    "physical_cover_weight": 70,
+    "replacement_weight": 30,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 5,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 5,
+    "P": 45,
+    "eps": 0,
+    "seam": 1,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 5,
+    "P": 42,
+    "eps": 1,
+    "seam": 1,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 5,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 5,
+    "P": 42,
+    "eps": 0,
+    "seam": 1,
+    "formal_weight": 12,
+    "physical_cover_weight": 12,
+    "replacement_weight": 4,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 7,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 98,
+    "physical_cover_weight": 98,
+    "replacement_weight": 42,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 7,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 16,
+    "cover_k": 16,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 7,
+    "P": 45,
+    "eps": 0,
+    "seam": 1,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 7,
+    "P": 42,
+    "eps": 1,
+    "seam": 1,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 7,
+    "P": 39,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 22,
+    "physical_cover_weight": 22,
+    "replacement_weight": 10,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      3,
+      1
+    ],
+    "kind": "derivative"
+  },
+  {
+    "T": 7,
+    "P": 42,
+    "eps": 0,
+    "seam": 1,
+    "formal_weight": 12,
+    "physical_cover_weight": 12,
+    "replacement_weight": 4,
+    "base_k": 4,
+    "cover_k": 4,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier"
+  },
+  {
+    "T": 3,
+    "P": 15,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 4,
+    "physical_cover_weight": 4,
+    "replacement_weight": 2,
+    "base_k": 8,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier",
+    "zero_divisor_A_corner": true
+  },
+  {
+    "T": 3,
+    "P": 15,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 4,
+    "physical_cover_weight": 4,
+    "replacement_weight": 2,
+    "base_k": 8,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier",
+    "zero_divisor_A_corner": true
+  },
+  {
+    "T": 3,
+    "P": 30,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 4,
+    "physical_cover_weight": 4,
+    "replacement_weight": 2,
+    "base_k": 8,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier",
+    "zero_divisor_A_corner": true
+  },
+  {
+    "T": 3,
+    "P": 30,
+    "eps": 1,
+    "seam": 0,
+    "formal_weight": 4,
+    "physical_cover_weight": 4,
+    "replacement_weight": 2,
+    "base_k": 8,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      1
+    ],
+    "kind": "singleton_Cartier",
+    "zero_divisor_A_corner": true
+  },
+  {
+    "T": 1,
+    "P": 42,
+    "eps": 0,
+    "seam": 0,
+    "formal_weight": 14,
+    "physical_cover_weight": 14,
+    "replacement_weight": 6,
+    "base_k": 4,
+    "cover_k": 8,
+    "C_parities": [
+      2,
+      2
+    ],
+    "kind": "derivative",
+    "negative_Laurent_exponents": true
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "A": [
+    -1,
+    0,
+    4
+  ],
+  "B": [
+    -13,
+    -2,
+    0
+  ],
+  "c": [
+    0,
+    1,
+    5
+  ],
+  "E": [
+    0,
+    1,
+    2
+  ],
+  "g0": [
+    0,
+    1,
+    2
+  ],
+  "H": [
+    0,
+    1,
+    2
+  ],
+  "R": -6,
+  "S": -3,
+  "g": 3,
+  "p": -2,
+  "q": -1,
+  "base_witness_weight": 6,
+  "cover_witness_weight": 14,
+  "cover_k": 4,
+  "base_compact_transfer_is_boundary": true,
+  "scope": "new coordinate and nonboundary check; exact distances 6 and 14 are inherited from the supplied certificate"
+}

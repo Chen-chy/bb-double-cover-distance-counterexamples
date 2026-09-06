@@ -1,0 +1,14 @@
+{
+  "bellman_inequalities_checked": 358400,
+  "fixed_message_minimum_energy": 74,
+  "minimum_field_support_among_fixed_message_optima": 15,
+  "same_universal_class_attaining_word_weight": 14,
+  "fixed_message_counterexample_is_NOT_a_full_minimum_counterexample": true,
+  "finite_boundary_pairings_checked": 1002,
+  "finite_nonboundary_proved": true,
+  "base_distance_six_symbolic_checks": true,
+  "direct_tree_base_boundary_weight": 26,
+  "base_weight_after_direct_tree_flip": 26,
+  "parametric_spacing": 210,
+  "parametric_scope": "odd N; fixed-message minimum 74N, support minimum 15N; full universal class minimum 14 uses inherited lower certificate"
+}

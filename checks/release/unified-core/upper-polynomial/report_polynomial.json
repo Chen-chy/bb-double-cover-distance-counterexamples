@@ -1,0 +1,1212 @@
+{
+  "base_pair_check": {
+    "collisions": 0,
+    "distinct_nonzero_columns": 78,
+    "distinct_pair_sums": 3003
+  },
+  "circuits": {
+    "histogram": {
+      "6": 78,
+      "10": 468,
+      "12": 195
+    },
+    "orbits": [
+      {
+        "boundary": true,
+        "boundary_preimage": [
+          0
+        ],
+        "flat_support": [
+          0,
+          2,
+          13,
+          78,
+          86,
+          103
+        ],
+        "orbit_size": 78,
+        "stabilizer": [
+          0
+        ],
+        "support": {
+          "left": [
+            0,
+            2,
+            13
+          ],
+          "right": [
+            0,
+            8,
+            25
+          ]
+        },
+        "weight": 6
+      },
+      {
+        "boundary": true,
+        "boundary_preimage": [
+          0,
+          70
+        ],
+        "flat_support": [
+          0,
+          2,
+          5,
+          13,
+          70,
+          72,
+          86,
+          95,
+          103,
+          148
+        ],
+        "orbit_size": 78,
+        "stabilizer": [
+          0
+        ],
+        "support": {
+          "left": [
+            0,
+            2,
+            5,
+            13,
+            70,
+            72
+          ],
+          "right": [
+            8,
+            17,
+            25,
+            70
+          ]
+        },
+        "weight": 10
+      },
+      {
+        "boundary": true,
+        "boundary_preimage": [
+          0,
+          11
+        ],
+        "flat_support": [
+          0,
+          2,
+          11,
+          24,
+          78,
+          86,
+          89,
+          97,
+          103,
+          114
+        ],
+        "orbit_size": 78,
+        "stabilizer": [
+          0
+        ],
+        "support": {
+          "left": [
+            0,
+            2,
+            11,
+            24
+          ],
+          "right": [
+            0,
+            8,
+            11,
+            19,
+            25,
+            36
+          ]
+        },
+        "weight": 10
+      },
+      {
+        "boundary": true,
+        "boundary_preimage": [
+          0,
+          17
+        ],
+        "flat_support": [
+          0,
+          2,
+          13,
+          17,
+          19,
+          30,
+          78,
+          86,
+          95,
+          120
+        ],
+        "orbit_size": 78,
+        "stabilizer": [
+          0
+        ],
+        "support": {
+          "left": [
+            0,
+            2,
+            13,
+            17,
+            19,
+            30
+          ],
+          "right": [
+            0,
+            8,
+            17,
+            42
+          ]
+        },
+        "weight": 10
+      },
+      {
+        "boundary": true,
+        "boundary_preimage": [
+          0,
+          25
+        ],
+        "flat_support": [
+          0,
+          2,
+          13,
+          25,
+          27,
+          38,
+          78,
+          86,
+          111,
+          128
+        ],
+        "orbit_size": 78,
+        "stabilizer": [
+          0
+        ],
+        "support": {
+          "left": [
+            0,
+            2,
+            13,
+            25,
+            27,
+            38
+          ],
+          "right": [
+            0,
+            8,
+            33,
+            50
+          ]
+        },
+        "weight": 10
+      },
+      {
+        "boundary": true,
+        "boundary_preimage": [
+          0,
+          13
+        ],
+        "flat_support": [
+          0,
+          2,
+          15,
+          26,
+          78,
+          86,
+          91,
+          99,
+          103,
+          116
+        ],
+        "orbit_size": 78,
+        "stabilizer": [
+          0
+        ],
+        "support": {
+          "left": [
+            0,
+            2,
+            15,
+            26
+          ],
+          "right": [
+            0,
+            8,
+            13,
+            21,
+            25,
+            38
+          ]
+        },
+        "weight": 10
+      },
+      {
+        "boundary": true,
+        "boundary_preimage": [
+          65,
+          67
+        ],
+        "flat_support": [
+          0,
+          2,
+          65,
+          69,
+          90,
+          92,
+          143,
+          145,
+          151,
+          153
+        ],
+        "orbit_size": 78,
+        "stabilizer": [
+          0
+        ],
+        "support": {
+          "left": [
+            0,
+            2,
+            65,
+            69
+          ],
+          "right": [
+            12,
+            14,
+            65,
+            67,
+            73,
+            75
+          ]
+        },
+        "weight": 10
+      },
+      {
+        "boundary": true,
+        "boundary_preimage": [
+          0,
+          17,
+          70
+        ],
+        "flat_support": [
+          0,
+          2,
+          5,
+          13,
+          17,
+          19,
+          30,
+          70,
+          72,
+          86,
+          120,
+          148
+        ],
+        "orbit_size": 78,
+        "stabilizer": [
+          0
+        ],
+        "support": {
+          "left": [
+            0,
+            2,
+            5,
+            13,
+            17,
+            19,
+            30,
+            70,
+            72
+          ],
+          "right": [
+            8,
+            42,
+            70
+          ]
+        },
+        "weight": 12
+      },
+      {
+        "boundary": true,
+        "boundary_preimage": [
+          0,
+          2,
+          13
+        ],
+        "flat_support": [
+          0,
+          4,
+          26,
+          78,
+          80,
+          86,
+          88,
+          91,
+          99,
+          103,
+          105,
+          116
+        ],
+        "orbit_size": 78,
+        "stabilizer": [
+          0
+        ],
+        "support": {
+          "left": [
+            0,
+            4,
+            26
+          ],
+          "right": [
+            0,
+            2,
+            8,
+            10,
+            13,
+            21,
+            25,
+            27,
+            38
+          ]
+        },
+        "weight": 12
+      },
+      {
+        "boundary": true,
+        "boundary_preimage": [
+          1,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          23,
+          24,
+          25,
+          27,
+          28,
+          31,
+          32,
+          34,
+          37,
+          38,
+          41,
+          43,
+          44,
+          46,
+          48,
+          51,
+          53,
+          54,
+          57,
+          61,
+          63,
+          65,
+          66,
+          68,
+          74
+        ],
+        "flat_support": [
+          0,
+          8,
+          16,
+          25,
+          39,
+          47,
+          55,
+          64,
+          78,
+          89,
+          117,
+          128
+        ],
+        "orbit_size": 39,
+        "stabilizer": [
+          0,
+          39
+        ],
+        "support": {
+          "left": [
+            0,
+            8,
+            16,
+            25,
+            39,
+            47,
+            55,
+            64
+          ],
+          "right": [
+            0,
+            11,
+            39,
+            50
+          ]
+        },
+        "weight": 12
+      }
+    ],
+    "sha256": "ab05b51aa41a2cea530557a6d9940877c8974472edcff3aca84815ccbe79a957",
+    "total": 741
+  },
+  "codes": {
+    "39": {
+      "J_verified_on_all_basis_vectors": true,
+      "independent_row_indices": {
+        "HX": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "HZ": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ]
+      },
+      "k": 4,
+      "matrix_sha256": {
+        "HX": "6e84e8c9cbb4cec64bb6d04405ae0ac9d87ce71e6a1a972e8b833ab1a824eef4",
+        "HZ": "341909344e831fdcb9aaa7d117aafe474718b0e25b610ae536b20eb7b370b6b3"
+      },
+      "ranks": {
+        "HX": 37,
+        "HZ": 37
+      },
+      "row_pivots": {
+        "HX": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "HZ": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ]
+      }
+    },
+    "78": {
+      "J_verified_on_all_basis_vectors": true,
+      "independent_row_indices": {
+        "HX": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "HZ": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ]
+      },
+      "k": 4,
+      "matrix_sha256": {
+        "HX": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e",
+        "HZ": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+      },
+      "ranks": {
+        "HX": 76,
+        "HZ": 76
+      },
+      "row_pivots": {
+        "HX": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ],
+        "HZ": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75
+        ]
+      }
+    }
+  },
+  "enumeration": [
+    {
+      "L": 39,
+      "blocked_check_leaves": 0,
+      "bound": 4,
+      "budget_leaves": 15,
+      "circuit_weight_histogram": {},
+      "expanded_nodes": 7,
+      "nodes": 46,
+      "nonboundary_leaves": 0,
+      "oversize_assignments_skipped": 67,
+      "root": 0,
+      "sector": "Z",
+      "syndrome_bound_leaves": 24,
+      "zero_leaves": 0,
+      "zero_weight_histogram": {}
+    },
+    {
+      "L": 39,
+      "blocked_check_leaves": 0,
+      "bound": 4,
+      "budget_leaves": 15,
+      "circuit_weight_histogram": {},
+      "expanded_nodes": 7,
+      "nodes": 46,
+      "nonboundary_leaves": 0,
+      "oversize_assignments_skipped": 67,
+      "root": 39,
+      "sector": "Z",
+      "syndrome_bound_leaves": 24,
+      "zero_leaves": 0,
+      "zero_weight_histogram": {}
+    },
+    {
+      "L": 39,
+      "blocked_check_leaves": 0,
+      "bound": 4,
+      "budget_leaves": 15,
+      "circuit_weight_histogram": {},
+      "expanded_nodes": 7,
+      "nodes": 46,
+      "nonboundary_leaves": 0,
+      "oversize_assignments_skipped": 67,
+      "root": 0,
+      "sector": "X",
+      "syndrome_bound_leaves": 24,
+      "zero_leaves": 0,
+      "zero_weight_histogram": {}
+    },
+    {
+      "L": 39,
+      "blocked_check_leaves": 0,
+      "bound": 4,
+      "budget_leaves": 15,
+      "circuit_weight_histogram": {},
+      "expanded_nodes": 7,
+      "nodes": 46,
+      "nonboundary_leaves": 0,
+      "oversize_assignments_skipped": 67,
+      "root": 39,
+      "sector": "X",
+      "syndrome_bound_leaves": 24,
+      "zero_leaves": 0,
+      "zero_weight_histogram": {}
+    },
+    {
+      "L": 78,
+      "blocked_check_leaves": 0,
+      "bound": 12,
+      "budget_leaves": 424001,
+      "circuit_weight_histogram": {
+        "6": 3,
+        "10": 30,
+        "12": 16
+      },
+      "expanded_nodes": 227115,
+      "nodes": 1602436,
+      "nonboundary_leaves": 0,
+      "oversize_assignments_skipped": 169618,
+      "root": 0,
+      "sector": "Z",
+      "syndrome_bound_leaves": 951214,
+      "zero_leaves": 106,
+      "zero_weight_histogram": {
+        "6": 3,
+        "10": 30,
+        "12": 73
+      }
+    },
+    {
+      "L": 78,
+      "blocked_check_leaves": 0,
+      "bound": 12,
+      "budget_leaves": 414024,
+      "circuit_weight_histogram": {
+        "6": 3,
+        "10": 30,
+        "12": 14
+      },
+      "expanded_nodes": 221268,
+      "nodes": 1559534,
+      "nonboundary_leaves": 0,
+      "oversize_assignments_skipped": 164926,
+      "root": 78,
+      "sector": "Z",
+      "syndrome_bound_leaves": 924137,
+      "zero_leaves": 105,
+      "zero_weight_histogram": {
+        "6": 3,
+        "10": 30,
+        "12": 72
+      }
+    },
+    {
+      "L": 78,
+      "blocked_check_leaves": 0,
+      "bound": 12,
+      "budget_leaves": 415849,
+      "circuit_weight_histogram": {
+        "6": 3,
+        "10": 30,
+        "12": 14
+      },
+      "expanded_nodes": 223528,
+      "nodes": 1578044,
+      "nonboundary_leaves": 0,
+      "oversize_assignments_skipped": 165710,
+      "root": 0,
+      "sector": "X",
+      "syndrome_bound_leaves": 938563,
+      "zero_leaves": 104,
+      "zero_weight_histogram": {
+        "6": 3,
+        "10": 30,
+        "12": 71
+      }
+    },
+    {
+      "L": 78,
+      "blocked_check_leaves": 0,
+      "bound": 12,
+      "budget_leaves": 408291,
+      "circuit_weight_histogram": {
+        "6": 3,
+        "10": 30,
+        "12": 16
+      },
+      "expanded_nodes": 218276,
+      "nodes": 1561758,
+      "nonboundary_leaves": 0,
+      "oversize_assignments_skipped": 156186,
+      "root": 78,
+      "sector": "X",
+      "syndrome_bound_leaves": 935086,
+      "zero_leaves": 105,
+      "zero_weight_histogram": {
+        "6": 3,
+        "10": 30,
+        "12": 72
+      }
+    }
+  ],
+  "implementation": "sparse_polynomial_odd_subset_assignment",
+  "result": {
+    "base": [
+      78,
+      4,
+      6
+    ],
+    "cover": [
+      156,
+      4,
+      14
+    ],
+    "upper_bound_false": true
+  },
+  "witnesses": {
+    "H": [
+      1,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      23,
+      24,
+      25,
+      27,
+      28,
+      31,
+      32,
+      34,
+      37,
+      38,
+      41,
+      43,
+      44,
+      46,
+      48,
+      51,
+      53,
+      54,
+      57,
+      61,
+      63,
+      65,
+      66,
+      68,
+      74
+    ],
+    "w": {
+      "left": [
+        39,
+        47,
+        55,
+        64
+      ],
+      "right": [
+        0,
+        9,
+        11,
+        22,
+        35,
+        37,
+        48,
+        61,
+        74,
+        76
+      ]
+    },
+    "z": {
+      "left": [
+        0,
+        8,
+        16,
+        25
+      ],
+      "right": [
+        0,
+        11
+      ]
+    }
+  }
+}

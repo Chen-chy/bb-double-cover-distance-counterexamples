@@ -1,0 +1,8 @@
+{
+  "parameter_instances": 1088,
+  "compact_membership_checks": 4352,
+  "transfer_checks": 4352,
+  "exact_universal_transfer_boundary_checks": 4352,
+  "period_stability_checks": 1088,
+  "canonical_nonboundary_certificates": 140
+}

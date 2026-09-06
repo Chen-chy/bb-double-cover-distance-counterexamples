@@ -1,0 +1,43 @@
+connected labeled cubic multigraphs: 640
+seconds 7.143599510192871
+5 {'not_circuit': 12860, 'invalid_terms': 4200, 'unit': 120}
+4 {'not_circuit': 18740, 'invalid_terms': 52716, 'other': 192, 'frobenius': 24}
+3 {'cofactor_boundary': 1222, 'not_circuit': 12138, 'invalid_terms': 4572, 'torsion_frobenius': 56, 'involution': 234, 'other': 22, 'unit': 36}
+retained parameters Counter({('involution', 2, (2,)): 234, ('other', 2, ()): 192, ('unit', 2, (2,)): 120, ('torsion_frobenius', 2, (3,)): 50, ('unit', 2, (2, 2)): 36, ('frobenius', 2, ()): 24, ('other', 2, (3,)): 22, ('torsion_frobenius', 2, (2, 2)): 6})
+{(5, 'unit'): 120, (4, 'two_boundary_sum'): 192, (4, 'frobenius_square'): 24, (3, 'odd_three_twist'): 50, (3, 'single_involution'): 234, (3, 'finite_polynomial'): 16, (3, 'three_boundary_sum'): 6, (3, 'double_involution'): 6, (3, 'unit'): 36}
+{
+  "method": "full nine-generator Smith normal form plus independent Hermite relation checks",
+  "checked_presentations": 684,
+  "cases": {
+    "unit": 156,
+    "two_boundary_sum": 192,
+    "frobenius_square": 24,
+    "odd_three_twist": 50,
+    "single_involution": 234,
+    "finite_polynomial": 16,
+    "three_boundary_sum": 6,
+    "double_involution": 6
+  },
+  "sympy_version": "1.14.0"
+}
+{
+  "base_pairs_examined": 409,
+  "nontrivial_canonical_base_cycles": 125,
+  "cover_cases_checked": 4000,
+  "surviving_transfer": 2888,
+  "deck_associate_powers": 174,
+  "identical_powers": 938
+}
+{
+  "status": "all checks passed",
+  "theorem": "Every valid binary strict-trinomial BB double cover with base distance six has cover distance at most 112.",
+  "normalized_presentations": 2488320,
+  "all_pairing_checks": 34826760,
+  "higher_rank_presentations_rechecked_with_full_Smith_form": 684,
+  "finite_power_cycle_crosschecks": 4000,
+  "not_claimed": [
+    "optimality of 112",
+    "a finite universal amplification constant",
+    "an independent human referee or proof-assistant formalization"
+  ]
+}

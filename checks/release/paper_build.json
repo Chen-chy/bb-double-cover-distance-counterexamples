@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "pages": 19,
+  "engine": "pdflatex",
+  "runs": 3,
+  "shell_escape": false,
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "visual_review": "all 19 pages rendered; complete contact-sheet review and changed pages rechecked after final edits",
+  "pdf_sha256": "09c25104d320ad1aa0c606fabbb7383972c3b77a730f3bba373c65f3a6399b8e",
+  "benign_warning": "epstopdf notes that shell escape is disabled; the paper needs no image conversion",
+  "clean_source_root_build": "passed; extracted text identical to repository PDF",
+  "ancillary_retained_source_mappings_verified": 461
+}

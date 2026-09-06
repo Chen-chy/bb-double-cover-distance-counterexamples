@@ -1,0 +1,388 @@
+[
+  {
+    "id": "CEX-UP",
+    "branch": "main",
+    "statement": "[[78,4,6]] -> [[156,4,14]]: exact d2/d=7/3>2.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "exact-computer-assisted-certificate",
+    "status": "exact-computer-assisted-certificate",
+    "proofs": [
+      "results/theory/01-counterexamples.md#thm-examples"
+    ],
+    "evidence": [
+      "certificates/upper/CERTIFICATE.md",
+      "certificates/upper/verify_bitset.py",
+      "certificates/upper/verify_polynomial.py"
+    ],
+    "limitations": "",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "CEX-DOWN",
+    "branch": "main",
+    "statement": "[[156,4,14]] -> [[312,8,12]]: exact d2/d=6/7<1.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "exact-computer-assisted-certificate",
+    "status": "exact-computer-assisted-certificate",
+    "proofs": [
+      "results/theory/01-counterexamples.md#thm-examples"
+    ],
+    "evidence": [
+      "certificates/lower/CERTIFICATE.md",
+      "certificates/lower/verify_lower_bitset.py",
+      "certificates/lower/verify_lower_polynomial.py"
+    ],
+    "limitations": "",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "HOM-RANK",
+    "branch": "main",
+    "statement": "k<=k2<=2k; rank(transfer)=rank(projection)=k2/2.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/02-homology.md#prop-ranks"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "HOM-FULL",
+    "branch": "main",
+    "statement": "k2=2k implies d2<=2d.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/02-homology.md#eq-full-dimension"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "HOM-REFINED",
+    "branch": "main",
+    "statement": "d2<=2*lambda_(k-k2/2+1), where lambda_j is the logical spanning threshold.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/02-homology.md#prop-lambda"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "HOM-SECTORS",
+    "branch": "main",
+    "statement": "d2=min(d_vis,d_ker); d_vis>=d. Projection-kernel classes must not be omitted.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/02-homology.md"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "DIST-LOWER",
+    "branch": "main",
+    "statement": "d<=4*d2^3; equivalently d2>=2*ceil((d/4)^(1/3)/2).",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/03-polynomial-bounds.md#thm-polynomial"
+    ],
+    "evidence": [],
+    "limitations": "Also proved in the stated finite abelian 2-group-kernel descent extension.",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "DIST-UPPER",
+    "branch": "main",
+    "statement": "d2<=8*d^3.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-consolidation",
+    "status": "symbolic-proof-consolidation",
+    "proofs": [
+      "results/theory/03-polynomial-bounds.md#thm-polynomial"
+    ],
+    "evidence": [
+      "scripts/verify_lattice_transport.py"
+    ],
+    "limitations": "The imported upper constant was 32. Constant 8 is a prior consolidation corollary, not an original-archive claim. Finite identity checks do not prove the universal theorem.",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "DIST-INTERVAL",
+    "branch": "main",
+    "statement": "d_lower=2 ceil((d/4)^(1/3)/2); d_upper=2 floor(min(8d^3,n,C0(2n)^(3/4))/2), C0=(16/3)(12/pi^2)^(3/4); also minimize with 2d when k2=2k.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/04-size-bounds.md#eq-dlower"
+    ],
+    "evidence": [],
+    "limitations": "The integer CLI implements the safe cubic/length/transfer caps only, not an unsafe floating-point rounding of the analytic cap. Constants and exponents are not claimed optimal.",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "DIST-AMBIENT",
+    "branch": "main",
+    "statement": "d<=min(n/2,C0*n^(3/4)), C0=(16/3)(12/pi^2)^(3/4).",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/04-size-bounds.md"
+    ],
+    "evidence": [],
+    "limitations": "The geometry-of-numbers proof cites Minkowski second theorem; see REFERENCES.md.",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "DIST-TRUNCATED",
+    "branch": "main",
+    "statement": "gamma_-(N)>=max(N^(-2/3),c_-*N^(-1/2)); Gamma(N)<=c_+*sqrt(N); c_-=pi*3^(1/6)/2^(13/3), c_+=2^(3/2)*C0^(2/3).",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/04-size-bounds.md#cor-truncated"
+    ],
+    "evidence": [],
+    "limitations": "Nonempty collection and N is a cap on BASE qubits, not cover qubits. Not asymptotic equality.",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "DIST-EXAMPLE-THRESHOLDS",
+    "branch": "main",
+    "statement": "Gamma(N)>=7/3 for N>=78; gamma_-(N)<=6/7 for N>=156.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/04-size-bounds.md#cor-truncated"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "FINITE-SUBGROUP",
+    "branch": "main",
+    "statement": "A check supported in a finite subgroup K implies d<=|K| whenever k>0.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/03-polynomial-bounds.md#lem-finite-check"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "STRIP-COFACTOR",
+    "branch": "main",
+    "statement": "d<=4|T|R0 on a finite image of T+Z; three independent relation rows give the signed-cofactor strip bound.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-supplied",
+    "status": "symbolic-proof-supplied",
+    "proofs": [
+      "results/theory/03-polynomial-bounds.md#lem-strip"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "LATTICE-TRANSPORT",
+    "branch": "main",
+    "statement": "The voltage-kernel sublattice of three base relations has index 1 or 2; its cofactor vector is multiplied by that index.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "symbolic-proof-consolidation",
+    "status": "symbolic-proof-consolidation",
+    "proofs": [
+      "results/theory/03-polynomial-bounds.md#lem-transport"
+    ],
+    "evidence": [
+      "scripts/verify_lattice_transport.py"
+    ],
+    "limitations": "",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "CERT-COMPLETENESS",
+    "branch": "main",
+    "statement": "Circuit minimality, even parity, translation-root reduction and both branching algorithms certify exhaustive finite distance exclusions.",
+    "scope": "Binary coefficients; finite abelian groups; degree-two term-preserving quotient; exactly three distinct terms in each check before and after projection; k>0; n denotes base qubits.",
+    "evidence_type": "algorithm-completeness-proof",
+    "status": "algorithm-completeness-proof",
+    "proofs": [
+      "results/theory/06-certificate-algorithms.md"
+    ],
+    "evidence": [
+      "scripts/reproduce.py"
+    ],
+    "limitations": "Exact searches must terminate successfully; a timeout is incomplete, not an exclusion.",
+    "origin": "Consolidated exposition; retained and rendered in the standalone GitHub edition."
+  },
+  {
+    "id": "HOM-BOCKSTEIN",
+    "branch": "homology",
+    "statement": "The connecting maps satisfy beta_1 beta_2 = 0. Hence ker(tau_*) = im(beta_2) is contained in im(p_*).",
+    "scope": "Binary rectangular x/y BB double covers with the specified fourfold coefficient-ring thickening.",
+    "evidence_type": "symbolic-proof",
+    "status": "symbolic-proof",
+    "proofs": [
+      "results/notes/H01-bockstein-and-deck-structure.md"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step."
+  },
+  {
+    "id": "HOM-EXACT-DIMENSION",
+    "branch": "homology",
+    "statement": "rank(beta_1)=rank(beta_2)=r, k_2=2k-2r, and k_2-k=dim(ker beta_1 / im beta_2).",
+    "scope": "Binary rectangular x/y BB double covers with the specified fourfold coefficient-ring thickening.",
+    "evidence_type": "symbolic-proof",
+    "status": "symbolic-proof",
+    "proofs": [
+      "results/notes/H01-bockstein-and-deck-structure.md"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step."
+  },
+  {
+    "id": "HOM-DECK-JORDAN",
+    "branch": "homology",
+    "statement": "For D=F_2[epsilon]/epsilon^2, H_1(cover) is D^(k_2-k) direct-sum F_2^(2k-k_2); rank(T_*+I)=k_2-k.",
+    "scope": "Binary rectangular x/y BB double covers with the specified fourfold coefficient-ring thickening.",
+    "evidence_type": "symbolic-proof",
+    "status": "symbolic-proof",
+    "proofs": [
+      "results/notes/H01-bockstein-and-deck-structure.md"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step."
+  },
+  {
+    "id": "HOM-PAIRING",
+    "branch": "homology",
+    "statement": "Transfer and projection are adjoint for the perfect logical X/Z pairing; two full-fibre transfers always pair to zero.",
+    "scope": "Binary term-preserving double covers with the stated physical pairing conventions.",
+    "evidence_type": "symbolic-proof",
+    "status": "symbolic-proof",
+    "proofs": [
+      "results/notes/H01-bockstein-and-deck-structure.md"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step."
+  },
+  {
+    "id": "METRIC-CLASS-VARIATIONAL",
+    "branch": "homology",
+    "statement": "mu(alpha)=min (|q+r|+|r|), over [q]=alpha and partial_1 r=D_1 q; the second-order parameterization is independent of the chosen Bockstein preimage.",
+    "scope": "Binary rectangular x/y BB double covers with the specified fourfold coefficient-ring thickening. Projectable nonzero classes; triangular coordinates include carry terms.",
+    "evidence_type": "symbolic-proof",
+    "status": "symbolic-proof",
+    "proofs": [
+      "results/notes/H03-class-metrics-and-exchange.md"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step."
+  },
+  {
+    "id": "METRIC-QUOTIENT-DUAL",
+    "branch": "homology",
+    "statement": "K=cover boundaries + transfer(base cycles); mu(alpha)=dist_H(y_alpha,K). The exact binary separation dual and projected-circuit shortest-path formula hold.",
+    "scope": "Projectable classes for the explicitly defined binary chain maps; this is not a real-norm duality.",
+    "evidence_type": "symbolic-proof",
+    "status": "symbolic-proof",
+    "proofs": [
+      "results/notes/H03-class-metrics-and-exchange.md"
+    ],
+    "evidence": [],
+    "limitations": "",
+    "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step."
+  },
+  {
+    "id": "CEX-SUPPORT-FAMILY",
+    "branch": "homology",
+    "statement": "For every j>=2, [[18j,4,4]] -> [[36j,4,6]], every minimum logical is killed by transfer, and rho(z)=2j-1. The support-Bockstein lemma fails unboundedly, although d_2<=2d holds here.",
+    "scope": "The explicit cyclic family L=9j, A=1+x^(3j-1)+x^(6j-2), B=1+x^(9j-2)+x^(9j-1), with the specified term lift.",
+    "evidence_type": "symbolic-proof-with-finite-audit",
+    "status": "symbolic-proof-with-finite-audit",
+    "proofs": [
+      "results/notes/H02-support-obstruction-family.md"
+    ],
+    "evidence": [
+      "archive/early_counterexample/verify_previous_family.py",
+      "archive/early_counterexample/verify_auxiliary.py"
+    ],
+    "limitations": "The text proves the full family; finite j checks are audits, not the proof for all j.",
+    "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step."
+  },
+  {
+    "id": "CEX-LOW-SHEET-INFINITE",
+    "branch": "homology",
+    "statement": "[[6,4,2]] -> [[12,4,2]] has a killed class with delta=mu=2, rho=0, but nu=infinity.",
+    "scope": "The period-3/period-6 example and the designated low-monomial section.",
+    "evidence_type": "explicit-proof-and-finite-audit",
+    "status": "explicit-proof-and-finite-audit",
+    "proofs": [
+      "results/notes/H03-class-metrics-and-exchange.md"
+    ],
+    "evidence": [
+      "archive/early_counterexample/verify_auxiliary.py"
+    ],
+    "limitations": "nu is section-dependent and is not the cover distance.",
+    "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step."
+  },
+  {
+    "id": "METRIC-COUNTEREXAMPLE-TABLE",
+    "branch": "homology",
+    "statement": "For the main 6->14 counterexample: delta=6, rho=4, mu=14, nu=22. For the support family: delta=4, rho=2j-1, mu=6, nu=10j for even j and infinity for odd j.",
+    "scope": "Specified classes and the standard low-monomial section only.",
+    "evidence_type": "symbolic-proof-with-finite-audit",
+    "status": "symbolic-proof-with-finite-audit",
+    "proofs": [
+      "results/notes/H03-class-metrics-and-exchange.md"
+    ],
+    "evidence": [
+      "archive/early_counterexample/verify_counterexample.py",
+      "archive/early_counterexample/verify_auxiliary.py"
+    ],
+    "limitations": "Do not identify rho, mu, nu, fixed-message weight, or restricted-sector weight with an unrestricted code distance.",
+    "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step."
+  },
+  {
+    "id": "METRIC-EXCHANGE",
+    "branch": "homology",
+    "statement": "The coupled boundary and transfer-cycle moves have exact support-overlap formulas for their physical weight changes.",
+    "scope": "Triangular physical sheets (q+r,r) with the stated chain differentials.",
+    "evidence_type": "symbolic-proof",
+    "status": "symbolic-proof",
+    "proofs": [
+      "results/notes/H03-class-metrics-and-exchange.md"
+    ],
+    "evidence": [],
+    "limitations": "Local overlap restrictions alone do not imply a universal factor-two distance bound.",
+    "current_update": "Restored from the third input archive; not a new theorem claimed by the GitHub packaging step."
+  }
+]

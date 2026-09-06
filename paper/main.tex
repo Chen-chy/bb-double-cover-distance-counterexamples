@@ -1,0 +1,55 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array,longtable}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage{url}
+\setlength{\emergencystretch}{2em}
+\setlist{nosep}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\R}{\mathbb R}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\rk}{\operatorname{rank}}
+\newcommand{\Ann}{\operatorname{Ann}}
+\newcommand{\coker}{\operatorname{coker}}
+\newcommand{\spanop}{\operatorname{span}}
+\newcommand{\Qcode}[3]{[[#1,#2,#3]]}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\input{metadata}
+\hypersetup{pdftitle={Distance Distortion in Binary Bivariate Bicycle Double Covers},
+ pdfsubject={Exact counterexamples and polynomial comparison of double-cover distances},
+ pdfkeywords={bivariate bicycle codes, double covers, quantum LDPC, computer-assisted proof}}
+\title{Distance Distortion in Binary Bivariate Bicycle Double Covers}
+\author{\paperauthors}
+\date{6 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Binary bivariate bicycle codes with three distinct monomials in each check need not obey either of the proposed double-cover distance inequalities $d\le d_2\le2d$. We give connected, term-matched covers with exact parameters $\Qcode{78}{4}{6}\to\Qcode{156}{4}{14}$ and $\Qcode{156}{4}{14}\to\Qcode{312}{8}{12}$. Explicit logical operators and two independent exhaustive circuit enumerations certify both examples. We then prove the replacement inequalities $d\le4d_2^3$ and $d_2\le8d^3$, for every positive-dimensional strict-trinomial binary abelian double cover. The upper constant follows from an index-two transport of incidence relation lattices, combining the two previously separate proof directions. The proof treats arbitrary finite-support circuits, repeated roots, torsion collapse, and finite homology not represented by surviving compact classes. A self-contained cleaning and geometry-of-numbers argument also gives an explicit $O(n^{3/4})$ ambient distance estimate and $O(\sqrt N)$ truncated distance-distortion bounds. Projection and transfer identify the mechanisms behind the counterexamples; in particular, $k_2=2k$ still implies $d_2\le2d$. All claimed finite distances are accompanied by regenerable, independently checked certificates. Neither a universal linear amplification bound nor a positive universal degradation ratio is asserted.
+\end{abstract}
+\tableofcontents
+\input{sections/01_counterexamples}
+\input{sections/02_homology}
+\input{sections/03_polynomial_bounds}
+\input{sections/04_size_bounds}
+\input{sections/05_further_results}
+\appendix
+\input{appendices/01_algorithms}
+\input{appendices/02_reproduction}
+\input{references}
+\end{document}

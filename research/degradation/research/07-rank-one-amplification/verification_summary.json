@@ -1,0 +1,66 @@
+{
+  "family": {
+    "base": {
+      "states": 256,
+      "edges_checked": 512,
+      "distance": 8
+    },
+    "cover": {
+      "states": 16384,
+      "edges_checked": 65536,
+      "distance": 14
+    },
+    "finite_independent_checks": [
+      {
+        "L": 105,
+        "base_n": 210,
+        "cover_n": 420,
+        "base_k": 4,
+        "cover_k": 4,
+        "base_witness": 8,
+        "cover_witness": 14
+      },
+      {
+        "L": 111,
+        "base_n": 222,
+        "cover_n": 444,
+        "base_k": 4,
+        "cover_k": 4,
+        "base_witness": 8,
+        "cover_witness": 14
+      },
+      {
+        "L": 117,
+        "base_n": 234,
+        "cover_n": 468,
+        "base_k": 4,
+        "cover_k": 4,
+        "base_witness": 8,
+        "cover_witness": 14
+      },
+      {
+        "L": 129,
+        "base_n": 258,
+        "cover_n": 516,
+        "base_k": 4,
+        "cover_k": 4,
+        "base_witness": 8,
+        "cover_witness": 14
+      }
+    ]
+  },
+  "uniform_formulas": {
+    "finite_codes": 360,
+    "compact_membership_checks": 1440,
+    "transfer_checks": 360,
+    "transfer_losses": 40,
+    "selector_witnesses": 132,
+    "selector_cases": {
+      "(0, 0)": 38,
+      "(1, 1)": 12,
+      "(1, 0)": 2
+    },
+    "mixed_parity_identity_checks": 40,
+    "frobenius_class_identity_checks": 360
+  }
+}

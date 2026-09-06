@@ -1,0 +1,30 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "runs": [
+    {
+      "name": "upper-bitset",
+      "returncode": 0,
+      "seconds": 4.808,
+      "script_sha256": "2fc62d81925b981cc29f90f53e780be45d7f4b792a8ba9d6dedd42c0cad25516"
+    },
+    {
+      "name": "upper-polynomial",
+      "returncode": 0,
+      "seconds": 14.8,
+      "script_sha256": "53a1beee02c3937cb22594de56331161cb676b588d6a978def3e9f76f77df447"
+    },
+    {
+      "name": "lower-bitset",
+      "returncode": 0,
+      "seconds": 5.198,
+      "script_sha256": "892d9ca0bfcd0aa66174f48b035b5d2fc4d7e0030d32fb05060a0f0bf963633e"
+    },
+    {
+      "name": "lower-polynomial",
+      "returncode": 0,
+      "seconds": 20.119,
+      "script_sha256": "cd3730b637652c8313af5805ffe36cb83afe08a38ce717f51974b76341ee8e39"
+    }
+  ]
+}

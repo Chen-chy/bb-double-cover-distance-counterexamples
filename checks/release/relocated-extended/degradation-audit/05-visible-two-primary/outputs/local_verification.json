@@ -1,0 +1,21 @@
+{
+  "random_exact_cases": 384,
+  "local_length_histogram": {
+    "1->1": 337,
+    "1->2": 10,
+    "2->2": 28,
+    "2->4": 1,
+    "3->3": 3,
+    "4->4": 4,
+    "5->5": 1
+  },
+  "checked": [
+    "curvilinear H0",
+    "H1 free rank two over H0 by radical profiles",
+    "two-bit local lengths",
+    "doubling length rule",
+    "projection rank",
+    "kernel and image radical profiles of the projection normal form"
+  ],
+  "seconds": 2.436
+}

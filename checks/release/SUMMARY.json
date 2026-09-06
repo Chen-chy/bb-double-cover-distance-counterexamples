@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-06",
+  "core_status": "passed",
+  "core_unit_tests": 11,
+  "root_determinants_checked": 20736,
+  "voltage_cofactor_cases_checked": 4096,
+  "independent_counterexample_verifiers": 4,
+  "shared_middle_code": true,
+  "amplification_commands": 23,
+  "amplification_status": "passed",
+  "degradation_commands": 24,
+  "degradation_status": "passed",
+  "relocated_full_profile_status": "passed",
+  "source_members": 771,
+  "retained_source_member_mappings": 461,
+  "publication_status": "author and rights approvals pending; no upload",
+  "scope": "Retained exact checks passed. Universal mathematical proofs are in the paper; no proof-assistant or independent human-referee claim."
+}

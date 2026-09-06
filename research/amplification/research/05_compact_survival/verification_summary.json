@@ -1,0 +1,23 @@
+{
+  "all_checks_passed": true,
+  "proof_type": "uniform symbolic proof with supplementary exact arithmetic checks",
+  "minimum_distance_searches_performed": false,
+  "finite_cover_audit": {
+    "independently_audited_pairs": 528,
+    "primal_dual_certificates": 1056,
+    "all_cycles_nonboundaries_and_term_matched_covers_verified": true,
+    "distance_lower_bounds_claimed": false
+  },
+  "finite_cover_summary": {
+    "seed": 20260906,
+    "parameter_checks": 1920,
+    "nontrivial_base_generator_cases": 528,
+    "branches": {
+      "projection": 245,
+      "transfer": 283
+    },
+    "odd_norm_cases": 96,
+    "even_coordinate_covers": 312,
+    "statement": "Exact finite logical and dual-witness checks; no distance claims."
+  }
+}

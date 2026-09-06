@@ -1,0 +1,51 @@
+[03_amplification_search] g++ -O3 -std=c++17 search.cpp -o search
+  passed (0.766s)
+[03_amplification_search] g++ -O3 -std=c++17 search_general.cpp -o search_general
+  passed (0.768s)
+[03_amplification_search] g++ -O3 -std=c++17 mitm.cpp -o mitm
+  passed (0.666s)
+[03_amplification_search] {python} verify_theorems.py
+  passed (0.869s)
+[03_amplification_search] {python} verify_search.py
+  passed (0.719s)
+[03_amplification_search] {python} independent_search.py
+  passed (1.019s)
+[03_amplification_search] ./mitm
+  passed (0.165s)
+[04_distance6_obstruction] {python} verify_presentations_sympy.py
+  passed (1.521s)
+[05_compact_survival] {python} audit_finite_certificates.py
+  passed (0.675s)
+[05_compact_survival] {python} verify_mechanisms.py
+  passed (0.719s)
+[06_linear_compact_replacement] {python} audit_replacement_certificates.py
+  passed (1.330s)
+[06_linear_compact_replacement] {python} verify_sparse_generators.py
+  passed (0.977s)
+[06_linear_compact_replacement] {python} verify_embeddings.py
+  passed (0.821s)
+[06_linear_compact_replacement] {python} verify_sharpness.py
+  passed (0.669s)
+[07_rank_one_resonance] {python} audit_certificates.py
+  passed (0.874s)
+[07_rank_one_resonance] {python} check_seed_coordinates.py
+  passed (0.838s)
+[08_slope21_shortening] {python} audit_certificates.py
+  passed (1.334s)
+[08_slope21_shortening] {python} verify_structure.py
+  passed (0.721s)
+[09_joint_completion] {python} verify_graph.py
+  passed (1.575s)
+[09_joint_completion] {python} verify_components.py
+  passed (1.041s)
+[09_joint_completion] {python} verify_majority_control.py
+  passed (0.669s)
+[09_joint_completion] {python} verify_pareto.py
+  passed (0.676s)
+[10_nonlocal_exchange] {python} run_all.py
+  passed (5.715s)
+{
+  "status": "passed",
+  "commands": 23,
+  "summary": "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/extended/amplification-audit/summary.json"
+}

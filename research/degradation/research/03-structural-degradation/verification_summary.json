@@ -1,0 +1,132 @@
+{
+  "status": "IMPROVED_TRINOMIAL_DEGRADATION_BOUNDS",
+  "new_theorem": "For every valid strict-trinomial binary BB double cover with k>0, d <= 4*d_2^3.",
+  "extended_scope": "Term-preserving finite abelian group quotients with 2-group kernel.",
+  "all_bounded_cover_distances_excluded_for_unbounded_base_distance": true,
+  "degradation_lower_bound": "gamma_3(N) >= max(N^(-2/3), c0*N^(-1/2))",
+  "c0_exact": "pi*3^(1/6)/2^(13/3)",
+  "c0_decimal": 0.18715729827477232,
+  "inherited_combined_bound": "Also retain min(1/12,20/N) as another term in the maximum.",
+  "proof_type": "Symbolic; independent of prior finite incidence classifications; not formally verified or externally refereed.",
+  "new_exact_minimum_distance_records": false,
+  "universal_positive_constant_proved": false,
+  "vanishing_ratio_family_proved": false,
+  "inherited_upper_ratio": "6/7 for N>=636, retained at supplied certification status, not recertified here.",
+  "twist_checks": {
+    "description": "Exact witness checks; no minimum distances computed",
+    "cases": 758,
+    "all_zero_syndrome": true,
+    "all_nonboundary": true,
+    "max_qubits": 1152,
+    "two_primary_invariants": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        16,
+        1
+      ],
+      [
+        16,
+        2
+      ]
+    ],
+    "frobenius_powers": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "odd_norm_orders": [
+      1,
+      3,
+      5
+    ]
+  },
+  "geometry_checks": {
+    "root_quadruples": 20736,
+    "determinant_counts": {
+      "0": 17280,
+      "1": 1728,
+      "-1": 1728
+    },
+    "max_absolute_root_determinant": 1,
+    "gram_identity_exact_tests": 200,
+    "fermat_gcd_exact_tests": 256,
+    "ambient_constant": "32*sqrt(2)*3**(3/4)/(3*pi**(3/2))",
+    "ratio_constant": "2**(2/3)*3**(1/6)*pi/32",
+    "ratio_constant_decimal": 0.18715729827477232,
+    "seconds": 7.14
+  },
+  "odd_sector_checks": {
+    "purpose": "Reject the false version of the twist lemma without its active-summand hypothesis",
+    "minimum_distances_computed": false,
+    "cases": [
+      {
+        "L": 4,
+        "n": 288,
+        "odd_norm_weight": 3,
+        "cycle_weight": 6,
+        "is_boundary": true,
+        "displayed_filling_weight": 27,
+        "norm_sector_acyclic": true
+      },
+      {
+        "L": 16,
+        "n": 4608,
+        "odd_norm_weight": 3,
+        "cycle_weight": 6,
+        "is_boundary": true,
+        "displayed_filling_weight": 243,
+        "norm_sector_acyclic": true
+      },
+      {
+        "L": 64,
+        "n": 73728,
+        "odd_norm_weight": 3,
+        "cycle_weight": 6,
+        "is_boundary": true,
+        "displayed_filling_weight": 2187,
+        "norm_sector_acyclic": true
+      }
+    ]
+  },
+  "next_lemma": "Quadratic circuit-strip descent for mixed presentations with integral relation rank at least three."
+}

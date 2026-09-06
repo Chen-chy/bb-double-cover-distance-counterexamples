@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "L": 9,
+      "base_k": 4,
+      "cover_k": 4,
+      "base_logical_weight": 8,
+      "cover_logical_weight": 16
+    },
+    {
+      "L": 15,
+      "base_k": 28,
+      "cover_k": 28,
+      "base_logical_weight": 8,
+      "cover_logical_weight": 16
+    },
+    {
+      "L": 21,
+      "base_k": 16,
+      "cover_k": 16,
+      "base_logical_weight": 8,
+      "cover_logical_weight": 16
+    }
+  ]
+}

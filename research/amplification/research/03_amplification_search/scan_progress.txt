@@ -1,0 +1,4 @@
+PROGRESS 1100 {'base_tests': 741, 'base_d_gt6': 586, 'k0_skipped': 345, 'd2_skipped': 20, 'base_d6': 95, 'cover_tests': 2160, 'cutoffs': 98, 'base_d4': 40, 'disconnected_skipped': 14} sec 4.39
+PROGRESS 1500 {'base_tests': 1009, 'base_d_gt6': 794, 'k0_skipped': 468, 'd2_skipped': 27, 'base_d6': 138, 'cover_tests': 3008, 'cutoffs': 176, 'base_d4': 50, 'disconnected_skipped': 21} sec 7.25
+PROGRESS 2000 {'base_tests': 1333, 'base_d_gt6': 1042, 'k0_skipped': 635, 'd2_skipped': 35, 'base_d6': 187, 'cover_tests': 4096, 'cutoffs': 239, 'base_d4': 69, 'disconnected_skipped': 28} sec 9.79
+FINAL {'base_tests': 1678, 'base_d_gt6': 1321, 'k0_skipped': 782, 'd2_skipped': 40, 'base_d6': 230, 'cover_tests': 5072, 'cutoffs': 286, 'base_d4': 87, 'disconnected_skipped': 31} sec 12.26458215713501

@@ -1,0 +1,69 @@
+{
+  "description": "Exact witness checks; no minimum distances computed",
+  "cases": 758,
+  "all_zero_syndrome": true,
+  "all_nonboundary": true,
+  "max_qubits": 1152,
+  "two_primary_invariants": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      8,
+      4
+    ],
+    [
+      8,
+      8
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      16,
+      2
+    ]
+  ],
+  "frobenius_powers": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "odd_norm_orders": [
+    1,
+    3,
+    5
+  ],
+  "seconds": 1.098
+}

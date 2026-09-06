@@ -1,0 +1,207 @@
+Command: {python} verify_search.py
+
+{
+  "brute_force_comparisons": 45,
+  "exact_examples": [
+    {
+      "L": 39,
+      "A": [
+        0,
+        8,
+        25
+      ],
+      "B": [
+        0,
+        2,
+        13
+      ],
+      "k": 4,
+      "d": 6,
+      "lower": {
+        "l": 39,
+        "m": 1,
+        "k": 4,
+        "bound": 4,
+        "found": false,
+        "cutoff": false,
+        "nodes": 16,
+        "closed": 0,
+        "seconds": 2.4417e-05,
+        "witness": []
+      },
+      "upper": {
+        "l": 39,
+        "m": 1,
+        "k": 4,
+        "bound": 6,
+        "found": true,
+        "cutoff": false,
+        "nodes": 34,
+        "closed": 1,
+        "seconds": 6.961e-06,
+        "witness": [
+          0,
+          14,
+          22,
+          53,
+          30,
+          64
+        ]
+      },
+      "u": [
+        0,
+        14,
+        22,
+        30
+      ],
+      "v": [
+        14,
+        25
+      ]
+    },
+    {
+      "L": 78,
+      "A": [
+        0,
+        8,
+        25
+      ],
+      "B": [
+        0,
+        2,
+        13
+      ],
+      "k": 4,
+      "d": 14,
+      "lower": {
+        "l": 78,
+        "m": 1,
+        "k": 4,
+        "bound": 12,
+        "found": false,
+        "cutoff": false,
+        "nodes": 63104,
+        "closed": 99,
+        "seconds": 0.0099818,
+        "witness": []
+      },
+      "upper": {
+        "l": 78,
+        "m": 1,
+        "k": 4,
+        "bound": 14,
+        "found": true,
+        "cutoff": false,
+        "nodes": 2283,
+        "closed": 4,
+        "seconds": 0.000445412,
+        "witness": [
+          0,
+          53,
+          8,
+          16,
+          89,
+          11,
+          5,
+          58,
+          19,
+          103,
+          33,
+          36,
+          131,
+          30
+        ]
+      },
+      "u": [
+        0,
+        5,
+        8,
+        11,
+        16,
+        19,
+        30,
+        33,
+        36,
+        53,
+        58
+      ],
+      "v": [
+        11,
+        25,
+        53
+      ]
+    },
+    {
+      "label": "reduced code, NOT a new BB amplification example",
+      "L": 39,
+      "A": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          28,
+          0
+        ]
+      ],
+      "B": [
+        [
+          14,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          26,
+          0
+        ],
+        [
+          28,
+          0
+        ]
+      ],
+      "k": 4,
+      "d": 9,
+      "lower": {
+        "l": 39,
+        "m": 1,
+        "k": 4,
+        "bound": 8,
+        "found": false,
+        "cutoff": false,
+        "nodes": 4386,
+        "closed": 4,
+        "seconds": 0.000500414,
+        "witness": []
+      },
+      "upper": {
+        "l": 39,
+        "m": 1,
+        "k": 4,
+        "bound": 9,
+        "found": true,
+        "cutoff": false,
+        "nodes": 96,
+        "closed": 1,
+        "seconds": 2.5257e-05,
+        "witness": [
+          0,
+          11,
+          5,
+          10,
+          63,
+          71,
+          69,
+          16,
+          28
+        ]
+      }
+    }
+  ]
+}

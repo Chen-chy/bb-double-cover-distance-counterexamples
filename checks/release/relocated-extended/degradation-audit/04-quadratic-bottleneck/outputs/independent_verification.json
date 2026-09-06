@@ -1,0 +1,8 @@
+{
+  "independent_cases": 512,
+  "method": "Universal-window nullspaces; low-pivot raw rank increments; no finite-field gcds or CRT",
+  "all_agree": true,
+  "max_universal_kernel_dimension": 63,
+  "seconds": 1.121,
+  "cases_sha256": "1d0e197121d1e68269086aec8327cf91a752ca43aae42317fd0922b7eafa6c88"
+}

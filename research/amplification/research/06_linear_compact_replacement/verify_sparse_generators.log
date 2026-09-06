@@ -1,0 +1,5 @@
+{
+  "status": "all exact sparse identities passed",
+  "cases": 114,
+  "scope": "Cycle, exact universal weight, and explicit boundary equality; not finite-code distance searches."
+}

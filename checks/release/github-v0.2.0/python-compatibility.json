@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "runtime_tested": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "syntax_floor_checked": "3.10",
+  "files": [
+    "bbcover/__init__.py",
+    "bbcover/__main__.py",
+    "bbcover/bounds.py",
+    "bbcover/catalog.py",
+    "bbcover/code.py",
+    "bbcover/examples.py",
+    "bbcover/gf2.py",
+    "scripts/build_catalog.py",
+    "scripts/build_notes.py",
+    "scripts/build_paper.py",
+    "scripts/build_theory.py",
+    "scripts/check_release.py",
+    "scripts/check_repository.py",
+    "scripts/make_arxiv.py",
+    "scripts/package_repository.py",
+    "scripts/publish_github.py",
+    "scripts/reproduce.py",
+    "scripts/verify_homology_history.py",
+    "scripts/verify_lattice_transport.py",
+    "scripts/write_manifest.py",
+    "tests/test_core.py",
+    "tests/test_interface.py"
+  ],
+  "note": "Python 3.10 runtime is configured in CI, but only Python 3.13 was executed in this local environment."
+}

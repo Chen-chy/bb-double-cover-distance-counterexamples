@@ -1,0 +1,18 @@
+VALID COVER: unchanged A={0,8,25}, B={0,2,13}; periods 39 -> 78
+RANKS: base (37,37); cover (76,76); k=k_cover=4
+EXPLICIT WITNESSES: nontrivial base weight 6; cover weight 14 projecting to it
+KILLED CLASS: explicit h satisfies (B h,A h)=tau(z)
+BASE Z root=0: nodes=36; zero_leaves={}; nonboundaries=0; COMPLETE
+BASE Z root=39: nodes=36; zero_leaves={}; nonboundaries=0; COMPLETE
+BASE X root=0: nodes=36; zero_leaves={}; nonboundaries=0; COMPLETE
+BASE X root=39: nodes=36; zero_leaves={}; nonboundaries=0; COMPLETE
+COVER Z root=0: nodes=985001; zero_leaves={6: 3, 10: 30, 12: 66}; nonboundaries=0; COMPLETE
+COVER Z root=78: nodes=991809; zero_leaves={6: 3, 10: 30, 12: 56}; nonboundaries=0; COMPLETE
+COVER X root=0: nodes=941501; zero_leaves={6: 3, 10: 30, 12: 58}; nonboundaries=0; COMPLETE
+COVER X root=78: nodes=894576; zero_leaves={6: 3, 10: 30, 12: 58}; nonboundaries=0; COMPLETE
+COMPLETE COVER CIRCUIT CLASSIFICATION through weight 12: {6: 78, 10: 468, 12: 195}
+MINIMUM BASE LOGICALS: 39 translates; three nonzero classes; all transfers killed
+RHO: outside weights 0..3 exhaustively excluded; counts=[1, 72, 2556, 59640]; rho=4
+NU: all 65536 polynomial solutions checked; each nonzero projectable class has nu=22
+CLASS METRICS: delta=6, rho=4, mu=14, nu=22
+CERTIFIED: [[78,4,6]] -> [[156,4,14]]; 14 > 2*6.

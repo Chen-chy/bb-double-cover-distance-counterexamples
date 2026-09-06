@@ -1,0 +1,15 @@
+{
+  "root_quadruples": 20736,
+  "determinant_counts": {
+    "0": 17280,
+    "1": 1728,
+    "-1": 1728
+  },
+  "max_absolute_root_determinant": 1,
+  "gram_identity_exact_tests": 200,
+  "fermat_gcd_exact_tests": 256,
+  "ambient_constant": "32*sqrt(2)*3**(3/4)/(3*pi**(3/2))",
+  "ratio_constant": "2**(2/3)*3**(1/6)*pi/32",
+  "ratio_constant_decimal": 0.18715729827477232,
+  "seconds": 7.479
+}

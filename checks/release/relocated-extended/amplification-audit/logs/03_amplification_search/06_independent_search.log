@@ -1,0 +1,5 @@
+Command: {python} independent_search.py
+
+{"L": 39, "A": [0, 8, 25], "B": [0, 2, 13], "k": 4, "bound": 4, "found": false, "nodes": 18, "closed": 0, "seconds": 5.0067901611328125e-05}
+{"L": 78, "A": [0, 8, 25], "B": [0, 2, 13], "k": 4, "bound": 12, "found": false, "nodes": 66657, "closed": 92, "seconds": 0.29751038551330566}
+{"L": 39, "A": [0, 5, 28], "B": [14, 22, 26, 28], "k": 4, "bound": 8, "found": false, "nodes": 4705, "closed": 4, "seconds": 0.011489629745483398}

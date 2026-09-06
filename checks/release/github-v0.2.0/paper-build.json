@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "optional_output": "paper/main.pdf",
+  "pages": 19,
+  "sha256": "87bc5363ea55a09914351d2f61ed52c44e7a880785ab4dba6e081ebc7ac9f2e4",
+  "build": "3 PDFLaTeX passes; no shell escape; no unresolved references/citations",
+  "visual_review": "All-page 19-page contact sheet plus full-size reference page; no clipping or overflow visible.",
+  "warning": "epstopdf notes disabled shell escape; paper uses no external conversion."
+}

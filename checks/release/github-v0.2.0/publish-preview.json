@@ -1,0 +1,14 @@
+{
+  "mode": "preview_only",
+  "working_directory": "/mnt/data/bb-double-cover-research",
+  "command": "gh repo create bb-double-cover-research --source=. --remote=github --public --push",
+  "remote_created": false,
+  "required_checks": [
+    "complete-repository integrity",
+    "clean Git commit",
+    "authorized gh",
+    "new destination",
+    "unused github remote"
+  ],
+  "optional_tag_command": "git push github v0.2.0"
+}

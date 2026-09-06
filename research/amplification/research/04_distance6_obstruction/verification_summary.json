@@ -1,0 +1,13 @@
+{
+  "status": "all checks passed",
+  "theorem": "Every valid binary strict-trinomial BB double cover with base distance six has cover distance at most 112.",
+  "normalized_presentations": 2488320,
+  "all_pairing_checks": 34826760,
+  "higher_rank_presentations_rechecked_with_full_Smith_form": 684,
+  "finite_power_cycle_crosschecks": 4000,
+  "not_claimed": [
+    "optimality of 112",
+    "a finite universal amplification constant",
+    "an independent human referee or proof-assistant formalization"
+  ]
+}

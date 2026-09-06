@@ -1,0 +1,86 @@
+[研究结果总目录](../README.md) · [结论登记表](../CLAIMS.md) · [上一章](05-further-results.md) · [下一章](07-evidence-scope.md)
+
+> 本章包含完整论证，可独立于 PDF 阅读。符号、范围和引用见正文；GitHub 版命题编号独立于排版稿。
+
+<a id="app-algorithms"></a>
+
+# Why the finite distance certificates are exhaustive
+
+This appendix specifies the mathematical decision problem independently of the stored outputs. All four standalone programs regenerate their input matrices from the displayed periods and check terms. No program reads an asserted distance, a supplied list of circuits, another verifier, or a heuristic decoder output as evidence of exclusion.
+
+<a id="reduction-to-circuits-and-two-translation-roots"></a>
+
+## Reduction to circuits and two translation roots
+
+For a binary matrix $H$, a circuit is a nonempty inclusion-minimal support of a vector in $\ker H$. Every binary cycle is a disjoint union of circuits: take a nonempty minimal subcycle, remove it, and iterate. If a nonboundary cycle has minimum weight, it must itself be a circuit. Otherwise all smaller constituent circuits would be boundaries, making their sum a boundary.
+
+Each BB column has weight three, so the parity of the syndrome weight equals the parity of the selected support size. Every cycle has even weight. It is therefore enough to exclude nonboundary circuits through weight $4$, $12$, and $10$ for the three codes respectively. Translation preserves the checks and boundaries. A circuit meeting the left block has a translate containing the left identity qubit; one meeting the right block has a translate containing the right identity qubit. The union of all translates of the circuits found at these two roots is the full circuit set up to the cutoff. Redundant roots and translations are deduplicated as sorted physical-coordinate tuples.
+
+<a id="first-implementation-first-present-branching"></a>
+
+## First implementation: first-present branching
+
+A state records chosen variables $U$, excluded variables $E$, and syndrome $s=\sum_{j\in U}H_j$. The root starts in $U$. At cutoff $b$, write $r=b-|U|$ for the remaining budget. If $s\ne0$, the following are necessary conditions for completion: $r>0$, $|s|\le3r$, and every odd check has an available incident variable. Violation of any condition prunes the branch.
+
+Choose an odd check and order its undecided incident variables $v_1,\ldots,v_t$. A completing circuit must select at least one. Branch $i$ selects $v_i$ and excludes $v_1,\ldots,v_{i-1}$, leaving later variables undecided. In a prescribed target circuit, its first present variable determines exactly one branch. Thus the branching does not omit a circuit.
+
+At zero syndrome, test whether the selected cycle is a boundary and stop that branch. This cannot truncate a larger circuit containing $U$, because a circuit has no proper nonempty zero-syndrome subset. The leaf is recorded as a circuit exactly when the selected columns have rank $|U|-1$. Indeed, their sum is zero; nullity one is equivalent to the absence of a proper nonempty subcycle. Boundary membership is tested by exact binary elimination against the image of the boundary matrix, with a preimage recovered when needed.
+
+<a id="second-implementation-all-odd-local-assignments"></a>
+
+## Second implementation: all odd local assignments
+
+The second program uses polynomial supports represented by finite sets and symmetric difference, not the first program’s integer-bitset routines. At a selected odd check, let $T$ be the undecided incident variables. Enumerate every odd-cardinality subset $V\subseteq T$ whose size fits the remaining budget, select $V$, and exclude $T\setminus V$. This fixes all of $T$ at once. Every completing circuit has a unique intersection $V$ with $T$, and that intersection is odd. The same necessary pruning conditions and zero-syndrome stopping argument apply. The search trees and node counts differ from the first implementation.
+
+For a cyclic code with syndrome map $(P,Q)$ over $\mathbb F_2[x]/F_L$, put
+
+$$
+g=\gcd(P,Q,F_L),\quad a=P/g,\quad b=Q/g,\quad f=F_L/g.
+$$
+
+Compute a polynomial Bezout identity $Ua+Vb+Wf=1$. A candidate $(u,v)$ cannot be a boundary unless both coordinates are divisible by $g$. Otherwise set
+
+$$
+h=U(v/g)+V(u/g)\pmod f.
+$$
+
+It is a boundary exactly when $Qh=u$ and $Ph=v$ modulo $F_L$. Sufficiency gives an explicit preimage. For necessity, if $(u,v)=(Qh_0,Ph_0)$, division by $g$ and the Bezout identity give $h=h_0\pmod f$, which yields the same boundary. This works without square-free assumptions. For the two-variable code, write $P=P_0+yP_1$, $Q=Q_0+yQ_1$, with $Q_1=x^2$ a unit. For a boundary preimage $h=h_0+yh_1$, eliminate
+
+$$
+h_1=Q_1^{-1}(u_0+Q_0h_0).
+$$
+
+The remaining equations for $h_0$ are
+
+$$
+(Q_0^2+Q_1^2)h_0=Q_1u_1+Q_0u_0,\qquad
+ (P_0+P_1Q_1^{-1}Q_0)h_0=v_0+P_1Q_1^{-1}u_0.
+$$
+
+The same polynomial congruence solver decides these equations, followed by a direct check of both complete boundary coordinates. Necessity follows from elimination; sufficiency follows from the reconstructed preimage. Thus this implementation does not reuse the bitset boundary-span test. The dual-number witness separately proves nontriviality without either search.
+
+<a id="boundary-orbits-and-checks-in-both-sectors"></a>
+
+## Boundary orbits and checks in both sectors
+
+For the period-$78$ code, the $741$ short circuits split into ten translation orbits. Nine have size $78$, and one has size $39$. Representatives are the boundaries of
+
+$$
+1;\quad 1+x^a\ (a=2,8,11,13,17,25);\quad A;\quad B;\quad H,
+$$
+
+where $H$ is the polynomial in Section [1](01-counterexamples.md#sec-examples). Their respective circuit-weight totals are $78$ at weight six, $468$ at weight ten, and $195$ at weight twelve. For the $(78,2)$ code, the $1,092$ circuits through weight ten form seven size-$156$ orbits: the boundary of $1$ and the boundaries of $1+x^ay^b$ for
+
+$$
+(a,b)=(2,1),(8,1),(11,1),(13,0),(17,1),(25,0).
+$$
+
+The totals are $156$ at weight six and $936$ at weight ten. These orbit descriptions are independently reconstructed from the search results, not used as a completeness assumption.
+
+Each program also enumerates the $X$ sector directly, checks all commutation entries and ranks, verifies the inversion-and-block-swap matrix identities, and compares the complete $X$ circuit set with the transformed $Z$ set. Each code’s explicit $Z$ logical and its $X$ image attain the stated even distance. A mixed Pauli logical cannot be lighter: at least one of its CSS components is a nontrivial pure-sector logical, and its support is contained in the union support of the mixed operator.
+
+<a id="canonical-output-and-the-shared-middle-code"></a>
+
+## Canonical output and the shared middle code
+
+Matrices are ASCII with header `GF2MATRIX v1`, followed by dimensions and then one binary row per line. The unified runner compares all independently regenerated matrix files and sorted circuit sets. It additionally checks that the period-$78$ cover in the first counterexample is literally the period-$78$ base in the second, including both matrices and all $741$ short circuits. The upper package uses a two-line circuit header and the lower package does not; the comparison strips only that documented header before comparing supports. SHA-256 hashes identify exact files but are not substitutes for the exhaustion proof above.

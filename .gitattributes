@@ -1,0 +1,8 @@
+# Exact hashes of mathematical source files must survive every checkout.
+# Disable automatic CRLF normalization; Git still detects ordinary text diffs.
+* -text
+*.py diff=python
+*.pdf binary
+*.bin binary
+*.gz binary
+*.zip binary

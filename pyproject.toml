@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bbcover-research"
+version = "0.2.0"
+description = "Exact certificates and research tools for BB double-cover distance distortion"
+requires-python = ">=3.10"
+readme = "README.md"
+# Research authorship and reuse licenses are not inferred by this package.
+dependencies = []
+
+[project.scripts]
+bbcover = "bbcover.__main__:main"
+
+[project.optional-dependencies]
+research = ["sympy>=1.12,<2"]
+
+[tool.setuptools]
+packages = ["bbcover"]
+
+[tool.setuptools.package-data]
+bbcover = ["examples.json", "catalog.json"]

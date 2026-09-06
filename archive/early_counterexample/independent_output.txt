@@ -1,0 +1,6 @@
+Ranks, commutation, and nontrivial weights 6 and 14: PASS
+base root 0 bound 4 nodes 36 zero_leaves {} nontrivial 0 seconds 0.0
+base root 39 bound 4 nodes 51 zero_leaves {} nontrivial 0 seconds 0.0
+cover root 0 bound 12 nodes 1001573 zero_leaves {6: 3, 10: 30, 12: 66} nontrivial 0 seconds 0.727
+cover root 78 bound 12 nodes 1023759 zero_leaves {6: 3, 10: 30, 12: 56} nontrivial 0 seconds 0.775
+CERTIFIED: base [[78,4,6]], cover [[156,4,14]], 14 > 2*6.

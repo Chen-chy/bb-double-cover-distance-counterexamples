@@ -1,0 +1,113 @@
+{
+  "partial_growth_cases": [
+    {
+      "M": 4,
+      "N": 4,
+      "m": 2,
+      "m2": 3,
+      "projection_rank_over_field": 3,
+      "kernel_profile_over_field": [
+        3,
+        1,
+        0
+      ],
+      "r": 1,
+      "s": 0
+    },
+    {
+      "M": 8,
+      "N": 8,
+      "m": 4,
+      "m2": 6,
+      "projection_rank_over_field": 6,
+      "kernel_profile_over_field": [
+        6,
+        4,
+        2,
+        1,
+        0
+      ],
+      "r": 1,
+      "s": 1
+    },
+    {
+      "M": 16,
+      "N": 16,
+      "m": 8,
+      "m2": 12,
+      "projection_rank_over_field": 12,
+      "kernel_profile_over_field": [
+        12,
+        10,
+        8,
+        6,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "r": 1,
+      "s": 2
+    },
+    {
+      "M": 8,
+      "N": 8,
+      "m": 4,
+      "m2": 5,
+      "projection_rank_over_field": 5,
+      "kernel_profile_over_field": [
+        5,
+        3,
+        2,
+        1,
+        0
+      ],
+      "r": 2,
+      "s": 0
+    },
+    {
+      "M": 16,
+      "N": 16,
+      "m": 8,
+      "m2": 10,
+      "projection_rank_over_field": 10,
+      "kernel_profile_over_field": [
+        10,
+        8,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "r": 2,
+      "s": 1
+    },
+    {
+      "M": 16,
+      "N": 16,
+      "m": 8,
+      "m2": 9,
+      "projection_rank_over_field": 9,
+      "kernel_profile_over_field": [
+        9,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "r": 3,
+      "s": 0
+    }
+  ],
+  "cyclic_sylow_cases": 72,
+  "all_checks_pass": true,
+  "seconds": 1.61
+}

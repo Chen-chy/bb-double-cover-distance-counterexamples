@@ -1,0 +1,37 @@
+{
+  "universal": {
+    "identities": 10,
+    "all_exact": true,
+    "projector_monomials": [
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "explicit": {
+    "base_gcd": 49,
+    "base_e": 7,
+    "base_j": 11,
+    "base_purification_weight": 12,
+    "projection_boundary_multiplier": [
+      3,
+      4
+    ],
+    "first_explicit_fill_outside_support": 2,
+    "improved_fill_outside_support": 1,
+    "improved_cover_weight": 14
+  },
+  "finite": {
+    "L": 201,
+    "base_n": 402,
+    "cover_n": 804,
+    "base_k": 4,
+    "cover_k": 4,
+    "base_witness_weight": 6,
+    "cover_witness_weight": 14,
+    "base_dual_hex": "0x36db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6c00000000000000000000000000000000000000000000000000",
+    "cover_dual_hex": "0xb6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db6db40000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "dual_boundary_pairings": 603
+  }
+}

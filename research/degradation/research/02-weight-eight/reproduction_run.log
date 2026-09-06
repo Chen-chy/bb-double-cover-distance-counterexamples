@@ -1,0 +1,293 @@
+n=8 labelled=168840 types=20 orbitset=168840
+Colouring orbit counts: {4: 270, 5: 338, 6: 206, 7: 63}
+{
+  "labelled_counts_all": [
+    1,
+    0,
+    0,
+    0,
+    7,
+    0,
+    640,
+    0,
+    170555
+  ],
+  "labelled_counts_connected": [
+    0,
+    0,
+    0,
+    0,
+    7,
+    0,
+    640,
+    0,
+    168840
+  ],
+  "connected_eight_types": 20,
+  "automorphism_orders": [
+    4,
+    2,
+    4,
+    4,
+    8,
+    4,
+    4,
+    12,
+    2,
+    8,
+    8,
+    4,
+    2,
+    8,
+    8,
+    12,
+    48,
+    16,
+    4,
+    16
+  ],
+  "colour_orbits": 877,
+  "mixed_port_assignments": 40917312,
+  "pure_port_assignments": 5598720
+}
+{
+  "retained_pairs": 312,
+  "categories": {
+    "shortenable": 279,
+    "associated_squares": 5,
+    "cyclic_order_four_twist": 5,
+    "explicit_boundary": 12,
+    "finite_check_subgroup": 6,
+    "involution_twisted_square": 5
+  },
+  "unresolved": 0,
+  "input_sha256": "f327dabff670a0c513f07dac76d104252aaacd63fd6a6971992ba7bfeeab9132"
+}
+{
+  "checked_lattices": 44619,
+  "free_rank_counts": {
+    "0": 36590,
+    "1": 8029
+  },
+  "maximum_finite_order": 56,
+  "maximum_strip_bound": 96,
+  "maximizer_row_ids": {
+    "0": [
+      42889,
+      42897,
+      42940,
+      42941,
+      42951,
+      42952,
+      43025,
+      43029,
+      43030,
+      43031,
+      43051,
+      43056,
+      43073,
+      43077,
+      43078,
+      43079
+    ],
+    "1": [
+      25879,
+      25887,
+      25915,
+      25923,
+      25937,
+      25940
+    ]
+  },
+  "input_sha256": "4df3bebab227c231f186b553f335e6caca5c592a5120bfce86690a82d4628d43"
+}
+{
+  "checked_pure_presentations": 12,
+  "maximum_group_order": 15,
+  "group_types": [
+    [
+      2,
+      6
+    ],
+    [
+      12
+    ],
+    [
+      14
+    ],
+    [
+      15
+    ]
+  ],
+  "certificates": [
+    {
+      "id": 0,
+      "group_order": 12,
+      "invariant_factors": [
+        12
+      ]
+    },
+    {
+      "id": 1,
+      "group_order": 12,
+      "invariant_factors": [
+        12
+      ]
+    },
+    {
+      "id": 2,
+      "group_order": 12,
+      "invariant_factors": [
+        12
+      ]
+    },
+    {
+      "id": 3,
+      "group_order": 12,
+      "invariant_factors": [
+        2,
+        6
+      ]
+    },
+    {
+      "id": 4,
+      "group_order": 12,
+      "invariant_factors": [
+        12
+      ]
+    },
+    {
+      "id": 5,
+      "group_order": 12,
+      "invariant_factors": [
+        12
+      ]
+    },
+    {
+      "id": 6,
+      "group_order": 15,
+      "invariant_factors": [
+        15
+      ]
+    },
+    {
+      "id": 7,
+      "group_order": 15,
+      "invariant_factors": [
+        15
+      ]
+    },
+    {
+      "id": 8,
+      "group_order": 14,
+      "invariant_factors": [
+        14
+      ]
+    },
+    {
+      "id": 9,
+      "group_order": 14,
+      "invariant_factors": [
+        14
+      ]
+    },
+    {
+      "id": 10,
+      "group_order": 14,
+      "invariant_factors": [
+        14
+      ]
+    },
+    {
+      "id": 11,
+      "group_order": 14,
+      "invariant_factors": [
+        14
+      ]
+    }
+  ],
+  "input_sha256": "53cac389e0de7eedc0788c2585e977ae709b157b1051b49a0cc132bc79fef92a"
+}
+{
+  "cyclic_twist_test_cases": 340,
+  "cyclic_twist_orders_tested": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "cyclic_twist_all_witnesses_nonboundary": true,
+  "twisted_square_strict_cases_checked": 3520,
+  "twisted_square_positive_dimension_cases": 2912,
+  "twisted_square_k_values": [
+    4,
+    8,
+    12,
+    24
+  ],
+  "minimum_distances_computed": false
+}
+{
+  "status": "D2_EQ_8_UNBOUNDED_BASE_EXCLUDED",
+  "universal_base_distance_bound_D8": 96,
+  "scope": "Any term-preserving finite abelian group quotient with positive-dimensional base and cover distance exactly eight; in particular every valid strict-trinomial BB double cover.",
+  "combined_previous_result": "With the prior weight-two, weight-four and weight-six exclusions, d>96 implies d_2>=10.",
+  "degradation_lower_bound": "gamma_3(N)>=min(1/12,20/N); hence gamma_3(N)>=20/N for N>=240.",
+  "mixed_port_assignments": 40917312,
+  "pure_port_assignments": 5598720,
+  "low_free_lattices": 44619,
+  "high_free_pairs": 312,
+  "high_free_categories": {
+    "shortenable": 279,
+    "associated_squares": 5,
+    "cyclic_order_four_twist": 5,
+    "explicit_boundary": 12,
+    "finite_check_subgroup": 6,
+    "involution_twisted_square": 5
+  },
+  "pure_group_types": [
+    [
+      2,
+      6
+    ],
+    [
+      12
+    ],
+    [
+      14
+    ],
+    [
+      15
+    ]
+  ],
+  "unresolved_presentations": 0,
+  "exact_distance_records_claimed": false,
+  "vanishing_ratio_family_proved": false,
+  "catalogue_hashes": {
+    "highrank_eight.tsv": "f327dabff670a0c513f07dac76d104252aaacd63fd6a6971992ba7bfeeab9132",
+    "low_free_lattices.tsv": "4df3bebab227c231f186b553f335e6caca5c592a5120bfce86690a82d4628d43",
+    "pure_eight.tsv": "53cac389e0de7eedc0788c2585e977ae709b157b1051b49a0cc132bc79fef92a"
+  },
+  "finite_sanity_checks": {
+    "cyclic_twist_test_cases": 340,
+    "cyclic_twist_orders_tested": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "cyclic_twist_all_witnesses_nonboundary": true,
+    "twisted_square_strict_cases_checked": 3520,
+    "twisted_square_positive_dimension_cases": 2912,
+    "twisted_square_k_values": [
+      4,
+      8,
+      12,
+      24
+    ],
+    "minimum_distances_computed": false
+  },
+  "python_version": "3.13.5",
+  "sympy_version": "1.14.0"
+}
+ALL ACCOUNTING, SOURCE CERTIFICATES AND CATALOGUE HASHES VERIFIED.

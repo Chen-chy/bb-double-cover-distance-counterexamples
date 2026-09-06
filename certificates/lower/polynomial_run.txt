@@ -1,0 +1,17 @@
+COVER IDENTITIES, POLYNOMIAL WITNESSES AND BOUNDARY SOLVERS: PASS
+MATRIX base HX 468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e
+MATRIX base HZ 4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de
+SEARCH base Z {"blocked": 0, "bound": 12, "budget": 424001, "circuit_weights": {"6": 3, "10": 30, "12": 16}, "expanded": 227115, "nodes": 1602436, "root": 0, "syndrome_bound": 951214, "zero": 106, "zero_weights": {"6": 3, "10": 30, "12": 73}}
+SEARCH base Z {"blocked": 0, "bound": 12, "budget": 414024, "circuit_weights": {"6": 3, "10": 30, "12": 14}, "expanded": 221268, "nodes": 1559534, "root": 78, "syndrome_bound": 924137, "zero": 105, "zero_weights": {"6": 3, "10": 30, "12": 72}}
+SEARCH base X {"blocked": 0, "bound": 12, "budget": 415849, "circuit_weights": {"6": 3, "10": 30, "12": 14}, "expanded": 223528, "nodes": 1578044, "root": 0, "syndrome_bound": 938563, "zero": 104, "zero_weights": {"6": 3, "10": 30, "12": 71}}
+SEARCH base X {"blocked": 0, "bound": 12, "budget": 408291, "circuit_weights": {"6": 3, "10": 30, "12": 16}, "expanded": 218276, "nodes": 1561758, "root": 78, "syndrome_bound": 935086, "zero": 105, "zero_weights": {"6": 3, "10": 30, "12": 72}}
+CIRCUITS base 741 {6: 78, 10: 468, 12: 195} 78294b4b567fbcfa389e951a72edc96e6a5bb40c099ee9eaf3e2abe1571aa7fa
+MATRIX cover HX 9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8
+MATRIX cover HZ 6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb
+SEARCH cover Z {"blocked": 0, "bound": 10, "budget": 54186, "circuit_weights": {"6": 3, "10": 30}, "expanded": 18691, "nodes": 153347, "root": 0, "syndrome_bound": 80437, "zero": 33, "zero_weights": {"6": 3, "10": 30}}
+SEARCH cover Z {"blocked": 0, "bound": 10, "budget": 56767, "circuit_weights": {"6": 3, "10": 30}, "expanded": 18245, "nodes": 155951, "root": 156, "syndrome_bound": 80906, "zero": 33, "zero_weights": {"6": 3, "10": 30}}
+SEARCH cover X {"blocked": 0, "bound": 10, "budget": 56111, "circuit_weights": {"6": 3, "10": 30}, "expanded": 18052, "nodes": 154080, "root": 0, "syndrome_bound": 79884, "zero": 33, "zero_weights": {"6": 3, "10": 30}}
+SEARCH cover X {"blocked": 0, "bound": 10, "budget": 55194, "circuit_weights": {"6": 3, "10": 30}, "expanded": 18672, "nodes": 155065, "root": 156, "syndrome_bound": 81166, "zero": 33, "zero_weights": {"6": 3, "10": 30}}
+CIRCUITS cover 1092 {6: 156, 10: 936} a2361757be4c36b7bd2297ab1be4319e0658e2a2a4d07ef703c5bfbe23b3914d
+PARAMETERS: [[156,4,14]] -> [[312,8,12]]
+BB_LOWER_BOUND_COUNTEREXAMPLE_VERIFIED

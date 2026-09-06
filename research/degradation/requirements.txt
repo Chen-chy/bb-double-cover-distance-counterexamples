@@ -1,0 +1,3 @@
+# Used by the weight-six/eight and structural verifiers.
+# Later packages use the Python standard library.
+sympy==1.14.0

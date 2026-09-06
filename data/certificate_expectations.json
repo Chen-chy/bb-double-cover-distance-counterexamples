@@ -1,0 +1,49 @@
+{
+  "basis": "x^i*y^j -> i*m+j; right block offset ell*m",
+  "codes": [
+    {
+      "name": "q39",
+      "parameters": [
+        78,
+        4,
+        6
+      ],
+      "rank_HX": 37,
+      "rank_HZ": 37,
+      "circuit_cutoff": 4,
+      "circuit_histogram": {}
+    },
+    {
+      "name": "q78",
+      "parameters": [
+        156,
+        4,
+        14
+      ],
+      "rank_HX": 76,
+      "rank_HZ": 76,
+      "circuit_cutoff": 12,
+      "circuit_histogram": {
+        "6": 78,
+        "10": 468,
+        "12": 195
+      }
+    },
+    {
+      "name": "q78x2",
+      "parameters": [
+        312,
+        8,
+        12
+      ],
+      "rank_HX": 152,
+      "rank_HZ": 152,
+      "circuit_cutoff": 10,
+      "circuit_histogram": {
+        "6": 156,
+        "10": 936
+      }
+    }
+  ],
+  "note": "Expected report values, not trusted inputs to any standalone verifier."
+}

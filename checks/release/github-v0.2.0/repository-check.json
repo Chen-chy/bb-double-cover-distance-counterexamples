@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "retained_member_mappings_checked": 573,
+  "unique_retained_source_files": 484,
+  "complete_result_records": 104,
+  "maintained_markdown_files_checked": 56,
+  "local_targets_checked": 721,
+  "theory_chapters": 7,
+  "display_math_coverage": [
+    79,
+    79
+  ],
+  "full_research_notes": 25,
+  "generated_checks": {
+    "build_theory.py": "passed",
+    "build_notes.py": "passed",
+    "build_catalog.py": "passed"
+  },
+  "narrow_secret_screen_files": 764,
+  "warnings": [
+    "Symbolic proofs and finite audits are not independent peer review or formal verification.",
+    "Original historical records can reference unavailable material; see results/HISTORY_AND_LIMITS.md.",
+    "No reuse license or research authorship is inferred by this technical check."
+  ],
+  "errors": []
+}

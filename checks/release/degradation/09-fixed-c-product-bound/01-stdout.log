@@ -1,0 +1,10 @@
+{
+  "status": "All exact checks passed",
+  "counts": {
+    "quotient_and_weight_table_instances": 2401,
+    "distinct_monomial_unit_classes": 12,
+    "all_message_parameterization_and_orbit_checks": 360,
+    "independent_incidence_product_bound_checks": 240,
+    "relaxation_counterfamily_identity_checks": 96
+  }
+}

@@ -1,0 +1,10 @@
+Command: {python} verify_components.py
+
+{
+  "status": "all exact checks passed",
+  "finite_domain_cases": 96,
+  "spin_configurations": 49152,
+  "optimal_components_checked": 34,
+  "source_free_components_checked": 7,
+  "generic_tree_controls": 8
+}

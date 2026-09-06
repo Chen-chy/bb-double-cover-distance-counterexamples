@@ -1,0 +1,3 @@
+# Only the extended archived audits need this dependency.
+# The four counterexample verifiers and all core tools use the standard library.
+sympy>=1.12,<2

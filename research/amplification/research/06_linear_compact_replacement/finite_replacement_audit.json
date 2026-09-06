@@ -1,0 +1,6 @@
+{
+  "status": "all independent audits passed",
+  "pairs": 1161,
+  "primal_dual_certificates": 2322,
+  "checks": "term matching, exact cycles, every boundary, dual separation, independent rank, optimized norm formula"
+}

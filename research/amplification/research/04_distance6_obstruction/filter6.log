@@ -1,0 +1,5 @@
+seconds 8.433093309402466
+5 {'not_circuit': 12860, 'invalid_terms': 4200, 'unit': 120}
+4 {'not_circuit': 18740, 'invalid_terms': 52716, 'other': 192, 'frobenius': 24}
+3 {'cofactor_boundary': 1222, 'not_circuit': 12138, 'invalid_terms': 4572, 'torsion_frobenius': 56, 'involution': 234, 'other': 22, 'unit': 36}
+retained parameters Counter({('involution', 2, (2,)): 234, ('other', 2, ()): 192, ('unit', 2, (2,)): 120, ('torsion_frobenius', 2, (3,)): 50, ('unit', 2, (2, 2)): 36, ('frobenius', 2, ()): 24, ('other', 2, (3,)): 22, ('torsion_frobenius', 2, (2, 2)): 6})

@@ -1,0 +1,12 @@
+{
+  "proof.md": "5c402e1e1476dd499f602be885faa887908019e6e24b5a4b1d312137e71239ab",
+  "README.md": "47d30516a2e9e1b842f42ec5eadb1de0e11ba3a8e562f54f5d95f254cfb2d5c7",
+  "run_all.sh": "e5bf79299994a80f4726991c8b5645e6879ace1deb4006036c0b6b211bf223c0",
+  "verify_twists.py": "41f4e2837036dfc178d90d443a8d15f120091584fefb18aeba3f990d9b7f726e",
+  "verify_geometry.py": "717abdae6cde9ac9d8732851e43744310bceb7f20cace0ee199b9e918ad3ed62",
+  "verify_odd_sector.py": "be0bbe79ebf661ecd9930d24ca0d7e319cb1a0e930adf9d3aac14277396c0f6c",
+  "twist_verification.json": "2fd68ca6f426f92d4786a11197620dcb2ac1d139919b3077471390ec983f262c",
+  "geometry_verification.json": "01578ae5246a36f74109f59591dd61ffd5ea6ca31e4b35db19cf4a34fa89f685",
+  "odd_sector_verification.json": "79ab7a298f6b69e4eff6d62e325017fba39f99275d2cea8bf01693eb67022fa4",
+  "verification_summary.json": "2e3d59e7cac8bfd3a564ef1d5702c99a6e749a5c461b6b9413f145588dc5e2eb"
+}

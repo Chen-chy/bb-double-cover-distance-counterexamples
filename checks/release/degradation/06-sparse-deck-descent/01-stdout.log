@@ -1,0 +1,82 @@
+{
+  "status": "TRINOMIAL_STILL_OPEN",
+  "new_theorem": "For a compact weight-w kernel logical on a support-generated one-involution strip, with that involution equal to the deck kernel, d <= 3*w^2.",
+  "global_quadratic_proved": false,
+  "global_quadratic_refuted": false,
+  "universal_chain_homotopy_tests": 96,
+  "finite_test_attempts": 299,
+  "nonboundary_cover_projection_boundary_cases": 93,
+  "other_or_inadmissible_cases": 206,
+  "derivative_cases": 74,
+  "singleton_Cartier_cases": 19,
+  "odd_torsion_cases": 22,
+  "nonproduct_period_cases": 22,
+  "largest_cover_n_tested_in_successful_cases": 1260,
+  "zero_divisor_A_corner_cases": 4,
+  "negative_Laurent_exponent_cases": 1,
+  "collision_free_successful_witnesses": 93,
+  "minimum_distance_claims": false,
+  "counterfamily_attempt": "Retained-involution period doubles have a weight-14 compact kernel class, but also a weight-8 base logical for every odd multiple P of 3 with P>8.",
+  "retained_involution_family": [
+    {
+      "P": 9,
+      "base_n": 36,
+      "base_k": 4,
+      "cover_n": 72,
+      "cover_k": 8,
+      "base_logical_weight": 8,
+      "cover_kernel_logical_weight": 14,
+      "wrong_target_derivative_syndrome_weight": 8
+    },
+    {
+      "P": 15,
+      "base_n": 60,
+      "base_k": 4,
+      "cover_n": 120,
+      "cover_k": 8,
+      "base_logical_weight": 8,
+      "cover_kernel_logical_weight": 14,
+      "wrong_target_derivative_syndrome_weight": 8
+    },
+    {
+      "P": 21,
+      "base_n": 84,
+      "base_k": 4,
+      "cover_n": 168,
+      "cover_k": 8,
+      "base_logical_weight": 8,
+      "cover_kernel_logical_weight": 14,
+      "wrong_target_derivative_syndrome_weight": 8
+    },
+    {
+      "P": 33,
+      "base_n": 132,
+      "base_k": 4,
+      "cover_n": 264,
+      "cover_k": 8,
+      "base_logical_weight": 8,
+      "cover_kernel_logical_weight": 14,
+      "wrong_target_derivative_syndrome_weight": 8
+    },
+    {
+      "P": 45,
+      "base_n": 180,
+      "base_k": 4,
+      "cover_n": 360,
+      "cover_k": 8,
+      "base_logical_weight": 8,
+      "cover_kernel_logical_weight": 14,
+      "wrong_target_derivative_syndrome_weight": 8
+    },
+    {
+      "P": 63,
+      "base_n": 252,
+      "base_k": 4,
+      "cover_n": 504,
+      "cover_k": 8,
+      "base_logical_weight": 8,
+      "cover_kernel_logical_weight": 14,
+      "wrong_target_derivative_syndrome_weight": 8
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "generator": "scripts/build_theory.py",
+  "source_sha256": {
+    "paper/appendices/01_algorithms.tex": "18a6191b1f33217f559ed9ec2f133ade7cd59fcc79ba680be035ca20cb73e84b",
+    "paper/appendices/02_reproduction.tex": "8a90d3b9d1e947016ff060957853bcbd375cb91c6e9bf36e73388908ac29e93d",
+    "paper/main.tex": "21641061e490d715ff156eb6211ec7afad4456ef6aa22acd073b97b60f3a3cb5",
+    "paper/metadata.tex": "871ca2cab81af36073f1e03f54ff69a182ef8ed7747171e6538c26720be00e3b",
+    "paper/references.tex": "8f11078509179099698f2b04a277477884d2114c3f60079165cdf5cb1c1ede47",
+    "paper/sections/01_counterexamples.tex": "b15cbc3fb4d7e7f9e28e6d8e41d41fa0fa57b227594a689f06dcdfcbdd068e3d",
+    "paper/sections/02_homology.tex": "b8d47e720264599b00b6107cd6d8d90c749cce1c4caed0af1e7ce9a95ba0a042",
+    "paper/sections/03_polynomial_bounds.tex": "c78450b052ae79c867900522816e91fa2efb504230cc3ee6220f9a9cefc4825d",
+    "paper/sections/04_size_bounds.tex": "6988f7b195bc84de86e9551a3985318cd4f57610717caf8da11a84163f77465e",
+    "paper/sections/05_further_results.tex": "9b901ecaf39a19931f7dd9454fbcc58ed37218daab64da14553367f6e718e2e7"
+  },
+  "rendered_sha256": {
+    "results/theory/01-counterexamples.md": "6e71d6a32cbf0be12800ed87c69cb6a3e49ee83985be1ff415abecc5e12cc190",
+    "results/theory/02-homology.md": "44063581cbd3d19b7876d97c9184bc580ac7a6e7b4acb5ea160a3eb35d20c627",
+    "results/theory/03-polynomial-bounds.md": "55a19f2705ea0648bcbb55adf0cdafd24b4aa9fdefa3e774e1d177f30d448012",
+    "results/theory/04-size-bounds.md": "f7b374fc820d432809883d59a853e97854b2b51072c805fc650c47e01bb73aad",
+    "results/theory/05-further-results.md": "7c160def5f7b780801eb52aad44e9d7c56adb74bc570c77b09364d107ae3b77d",
+    "results/theory/06-certificate-algorithms.md": "34f4d0e804623ee686ffd0b65fb7c9dedb95e066ff9d663d1d18d2c60b061154",
+    "results/theory/07-evidence-scope.md": "7b49c3149b894e91e87c768f2d1583185a04cb35ebeb36f57481f8cde9e8d367"
+  },
+  "chapters": 7,
+  "display_math_in_source": 79,
+  "display_math_rendered": 79,
+  "theorem_like_blocks": 12,
+  "proof_blocks": 10,
+  "resolved_label_targets": 75,
+  "unresolved_internal_references": [],
+  "scope": "Structural coverage audit, not mathematical validation of the proofs."
+}

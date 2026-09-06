@@ -1,0 +1,49 @@
+{
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "executions": [
+    {
+      "script": "verify_lower_bitset.py",
+      "returncode": 0,
+      "success": true,
+      "seconds": 4.696,
+      "script_sha256": "892d9ca0bfcd0aa66174f48b035b5d2fc4d7e0030d32fb05060a0f0bf963633e",
+      "stdout_sha256": "f7d5319bc18eb2ac67def5992c7e6b2366bb4d88f1f8a27d1e5d3c49d43947d2"
+    },
+    {
+      "script": "verify_lower_polynomial.py",
+      "returncode": 0,
+      "success": true,
+      "seconds": 16.047,
+      "script_sha256": "cd3730b637652c8313af5805ffe36cb83afe08a38ce717f51974b76341ee8e39",
+      "stdout_sha256": "d35afd7d48447545183243630c7a6e3a89edeaa829c003874856cdf9c67c88a2"
+    }
+  ],
+  "independent_comparison": {
+    "base_HX.txt": {
+      "byte_identical": true,
+      "sha256": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e"
+    },
+    "base_HZ.txt": {
+      "byte_identical": true,
+      "sha256": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+    },
+    "cover_HX.txt": {
+      "byte_identical": true,
+      "sha256": "9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8"
+    },
+    "cover_HZ.txt": {
+      "byte_identical": true,
+      "sha256": "6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb"
+    },
+    "base_circuits.txt": {
+      "byte_identical": true,
+      "sha256": "78294b4b567fbcfa389e951a72edc96e6a5bb40c099ee9eaf3e2abe1571aa7fa"
+    },
+    "cover_circuits.txt": {
+      "byte_identical": true,
+      "sha256": "a2361757be4c36b7bd2297ab1be4319e0658e2a2a4d07ef703c5bfbe23b3914d"
+    }
+  },
+  "ranks_distances_circuit_counts_identical": true
+}

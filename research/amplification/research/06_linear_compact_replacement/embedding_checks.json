@@ -1,0 +1,63 @@
+{
+  "status": "all generic evaluation checks passed",
+  "records": [
+    {
+      "M": 1,
+      "m": 1,
+      "j": 0,
+      "q": 2,
+      "independent_normal_monomials": 10
+    },
+    {
+      "M": 1,
+      "m": 1,
+      "j": 0,
+      "q": 4,
+      "independent_normal_monomials": 20
+    },
+    {
+      "M": 2,
+      "m": 1,
+      "j": 0,
+      "q": 1,
+      "independent_normal_monomials": 10
+    },
+    {
+      "M": 2,
+      "m": 2,
+      "j": 0,
+      "q": 2,
+      "independent_normal_monomials": 40
+    },
+    {
+      "M": 4,
+      "m": 1,
+      "j": 3,
+      "q": 2,
+      "independent_normal_monomials": 40
+    },
+    {
+      "M": 4,
+      "m": 2,
+      "j": 1,
+      "q": 2,
+      "independent_normal_monomials": 80
+    },
+    {
+      "M": 4,
+      "m": 4,
+      "j": 3,
+      "q": 1,
+      "independent_normal_monomials": 80
+    },
+    {
+      "M": 8,
+      "m": 2,
+      "j": 3,
+      "q": 2,
+      "independent_normal_monomials": 160
+    }
+  ],
+  "random_polynomials": 640,
+  "scope": "Bounded exact tests of kernel(B) and normal-form injectivity, supplementing the symbolic coset proof."
+}

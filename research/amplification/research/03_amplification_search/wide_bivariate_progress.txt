@@ -1,0 +1,2 @@
+PROGRESS 600 {'base_tests': 547, 'base_d_gt_bound': 462, 'base_d6': 42, 'cover_tests': 2432, 'cutoffs': 234, 'disconnected_skipped': 54, 'base_d4': 34, 'd2_skipped': 9} sec 8.76
+FINAL {'base_tests': 1094, 'base_d_gt_bound': 912, 'base_d6': 101, 'cover_tests': 5280, 'cutoffs': 507, 'disconnected_skipped': 104, 'base_d4': 64, 'd2_skipped': 17, 'duplicates': 2} sec 19.262829303741455

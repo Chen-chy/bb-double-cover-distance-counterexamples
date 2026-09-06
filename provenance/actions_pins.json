@@ -1,0 +1,23 @@
+{
+  "scope": "Pinned upstream implementation references; configured workflows have not run remotely during local preparation.",
+  "actions": [
+    {
+      "action": "actions/checkout",
+      "version": "v6.0.2",
+      "commit": "de0fac2e4500dabe0009e67214ff5f5447ce83dd",
+      "source": "https://github.com/actions/checkout/releases/tag/v6.0.2"
+    },
+    {
+      "action": "actions/setup-python",
+      "version": "v6.1.0",
+      "commit": "83679a892e2d95755f2dac6acb0bfd1e9ac5d548",
+      "source": "https://github.com/actions/setup-python/releases/tag/v6.1.0"
+    },
+    {
+      "action": "actions/upload-artifact",
+      "version": "v7.0.0",
+      "commit": "bbbca2ddaa5d8feaa63e36b76fdaad77386f024f",
+      "source": "https://github.com/actions/upload-artifact/releases/tag/v7.0.0"
+    }
+  ]
+}

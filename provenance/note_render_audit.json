@@ -1,0 +1,193 @@
+{
+  "policy": "Complete text; only display delimiters, inherited citation markers and navigation adjusted.",
+  "notes": [
+    {
+      "source": "research/amplification/history/01_initial_family_and_baseline.md",
+      "source_sha256": "01dcf1821311dd0dfb2b05a7bb0ef46b6b0d480454a95b046feeae24ef345ef7",
+      "rendered": "results/notes/A01-initial-family-and-baseline.md",
+      "rendered_sha256": "da729f232033eb73afd5cc92e8a2076be54a899282de3182a667fab612941612",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/amplification/history/02_distance4_and_transfer_metric.md",
+      "source_sha256": "431786125124736cd1daa5a7f5c84cdfdcb8a6971ea7cb2baf94a5e95561cc20",
+      "rendered": "results/notes/A02-distance4-and-transfer-metric.md",
+      "rendered_sha256": "fbe98218466474e474aef2f81f1324d0356ae9309a768fffa989d99e3299b59d",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/amplification/research/03_amplification_search/REPORT.md",
+      "source_sha256": "ff4d4cdc77a7cf40739de58f072357fb5e7954e2a99134eb5352c3b19bffdd95",
+      "rendered": "results/notes/A03-amplification-search.md",
+      "rendered_sha256": "16e70f6e1afdede6358cec59ab7d36e01869d851d2f0e86f50ff5deef6ac9292",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/amplification/research/04_distance6_obstruction/REPORT.md",
+      "source_sha256": "34fab7d79b4aecaf81b08b36647886c31793e839c5553656ea46d627142b2eaf",
+      "rendered": "results/notes/A04-distance6-obstruction.md",
+      "rendered_sha256": "5da4547996563804e82c6db9260ad22b6e64b2f2d24984a23b95c53c694e6961",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/amplification/research/05_compact_survival/REPORT.md",
+      "source_sha256": "2a656d4c94328cc7e44f6311bbffff751c38df123b2d78eff4e2599db2d94cf1",
+      "rendered": "results/notes/A05-compact-survival.md",
+      "rendered_sha256": "da06e36d4c74d238ea681bfe7dd49750701fed3334ae8196c3b67637be0f1f39",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/amplification/research/06_linear_compact_replacement/REPORT.md",
+      "source_sha256": "0050f98a6326f6679946fc238c518fce462a98e65e48f4403c0917e0885f301d",
+      "rendered": "results/notes/A06-linear-compact-replacement.md",
+      "rendered_sha256": "9b1962536d18789f1716744a9f30b84641fe6c60e877c364804a9e5fa357e005",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/amplification/research/07_rank_one_resonance/REPORT.md",
+      "source_sha256": "3dc46bbfce58a811562256c5fe40756b374eb8c3e301e59551f69cd965602935",
+      "rendered": "results/notes/A07-rank-one-resonance.md",
+      "rendered_sha256": "8d10e3b9f74c97a73bc3e11ccbb0fbcebcafb2d8efa64c6c8253f8b00d42308c",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/amplification/research/08_slope21_shortening/REPORT.md",
+      "source_sha256": "e28b79641822afdc511fa0d51232e6a3b099eb11e79f955c7437e69022b13a71",
+      "rendered": "results/notes/A08-slope21-shortening.md",
+      "rendered_sha256": "f8146be340cfafdd0063d65afe819d83e40e4fe0ec45e51b16e13127d293d6e4",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/amplification/research/09_joint_completion/REPORT.md",
+      "source_sha256": "a9a6fd273c885315796664e11d94396ef23acca5ead4da114862fbb0b384eefe",
+      "rendered": "results/notes/A09-joint-completion.md",
+      "rendered_sha256": "483ce976833a159bf61e76e6ed57ad92478a2accdfbf8382fb3b9916a67bf1ba",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/amplification/research/10_nonlocal_exchange/REPORT.md",
+      "source_sha256": "5667f8e1ce705f2e8cd2e9aaf4593ec52d6356e6a41657a963afab90e06fe1d2",
+      "rendered": "results/notes/A10-nonlocal-exchange.md",
+      "rendered_sha256": "95a9e5079cd0868018b8068dfe96bf3c5b8a7b519a3b912e391098b3071fc8da",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/degradation/research/01-weight-six/proof.md",
+      "source_sha256": "f0f53428f86f5ba40dc224d5c449dee249070678aa08fb7e62240689e4fde4b1",
+      "rendered": "results/notes/D01-weight-six.md",
+      "rendered_sha256": "1d92443dc8edb58912eec2492f5017703bc0ffcf7ebdf0bb49a1f685d5faef99",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/degradation/research/02-weight-eight/proof.md",
+      "source_sha256": "0db1661eafb335c4b526964a95c646cd745dc5d5f2e83293f45a7bacbc963568",
+      "rendered": "results/notes/D02-weight-eight.md",
+      "rendered_sha256": "7a8d6ca97f02495357c6ea26118a2c0aecab5532c1f11e1c1c2c16e2b4da7717",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/degradation/research/03-structural-degradation/proof.md",
+      "source_sha256": "5c402e1e1476dd499f602be885faa887908019e6e24b5a4b1d312137e71239ab",
+      "rendered": "results/notes/D03-structural-degradation.md",
+      "rendered_sha256": "f697c4d502e4a954e11b356734008b108e5ec091e7fc0dba8b1b2617d2527ec0",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/degradation/research/04-quadratic-bottleneck/proof.md",
+      "source_sha256": "cfffb82ffce16947149068b78ab048f8ba4a3f8a182841f53e29d337cf7cb92d",
+      "rendered": "results/notes/D04-quadratic-bottleneck.md",
+      "rendered_sha256": "5e339202f7ccaee5b266ae1491423c8133482289cfb28f6d8d14cc1f4dfd9e94",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/degradation/research/05-visible-two-primary/proof.md",
+      "source_sha256": "ebd59824f06c6d203f4520ed8aaefbf881b38e5112499a4ddc33b25983ddf61d",
+      "rendered": "results/notes/D05-visible-two-primary.md",
+      "rendered_sha256": "09203dbf23410f6cbbe97fece2900ef457eb7eab785fc75055da0c62fc16e8e7",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/degradation/research/06-sparse-deck-descent/proof.md",
+      "source_sha256": "cb317bbd7dc1964bd2d4916f7d615c38b9107adf0030de10a7d7da3a46857566",
+      "rendered": "results/notes/D06-sparse-deck-descent.md",
+      "rendered_sha256": "190b01f88c6a00dfd6936f72097aedfe70664d32401ca9501c9f351d4477dec4",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/degradation/research/07-rank-one-amplification/proof.md",
+      "source_sha256": "6c6ca6b3fe5d036f5aa042925e81da199dd26b7ddf0fc8d6a6186f532172f43e",
+      "rendered": "results/notes/D07-rank-one-amplification.md",
+      "rendered_sha256": "7db007688d7902bfc4a7111267c6b4cf975dcda5a3de2a694292e190a11fc1d6",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/degradation/research/08-mixed-laurent/proof.md",
+      "source_sha256": "0fd0689beb6f285c012b9c6471c3c4a003d44f9a94aec1788cd9f25a6ccb67ec",
+      "rendered": "results/notes/D08-mixed-laurent.md",
+      "rendered_sha256": "86f265eb425bf805615d0f326925b3d1059b33c86c848efeb4aefc9f02ea67f6",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/degradation/research/09-fixed-c-product-bound/proof.md",
+      "source_sha256": "0a16cfa19490dd4695ae953a60a62d7a29ee0b5f89ce187e5e42808487f13f21",
+      "rendered": "results/notes/D09-fixed-c-product-bound.md",
+      "rendered_sha256": "2a68dd9001222a9e27edffef98e5f47812e2ae9111e1a9abaf004912228b9f09",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/homology/H01-bockstein-and-deck-structure.md",
+      "source_sha256": "afb4c74b8110acddcf69ebded1da407c94cee8db519f3ea5cffa321d8432978a",
+      "rendered": "results/notes/H01-bockstein-and-deck-structure.md",
+      "rendered_sha256": "3de99b44924986675c1412cd528238553102d6f807798b208b4e2eeaf37389d5",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/homology/H02-support-obstruction-family.md",
+      "source_sha256": "af72c96c2d5ce345eeb8e0fcd3f78dd0f672831ccdc914ddf618afc295d57c75",
+      "rendered": "results/notes/H02-support-obstruction-family.md",
+      "rendered_sha256": "0e99e7c89d6ce39912816fd721d07769135c2b86f9f024989f6a341bc07ff7dc",
+      "unavailable_historical_links_rendered_as_text": [
+        "sandbox:/mnt/data/bb_upper_audit/verify_support_bockstein_counterexample.py"
+      ]
+    },
+    {
+      "source": "research/homology/H03-class-metrics-and-exchange.md",
+      "source_sha256": "7ef0f73b2b1793e9da4cec88767241933ccbbfef8bebb34d42366049f0facad3",
+      "rendered": "results/notes/H03-class-metrics-and-exchange.md",
+      "rendered_sha256": "c7ec9f07e330ef574c7dbdeffbc4f3d8091a4c2acad293c2b8e53250d919d3be",
+      "unavailable_historical_links_rendered_as_text": []
+    },
+    {
+      "source": "research/homology/H04-upper-referee-certificate.md",
+      "source_sha256": "460a58fb9bf56185dbef40fd7f46aa4294714cbbd9ca09555cdd2ab694db143c",
+      "rendered": "results/notes/H04-upper-referee-certificate.md",
+      "rendered_sha256": "e882c83a85f7640e699978cb6771af7f2a9d3e2f1e8f9f6c5e94bc4ee80d8402",
+      "unavailable_historical_links_rendered_as_text": [
+        "sandbox:/mnt/data/bb_referee_certificate/CERTIFICATE.md",
+        "sandbox:/mnt/data/bb_referee_certificate/bitset_run.txt",
+        "sandbox:/mnt/data/bb_referee_certificate/polynomial_run.txt",
+        "sandbox:/mnt/data/bb_referee_certificate/bitset_output/circuits.txt",
+        "sandbox:/mnt/data/bb_referee_certificate/EXECUTION_METADATA.json"
+      ]
+    },
+    {
+      "source": "research/homology/H05-lower-referee-certificate.md",
+      "source_sha256": "ab44a149e4e03d67e61f8e018f933421879c1a90da71e970580623040118a08f",
+      "rendered": "results/notes/H05-lower-referee-certificate.md",
+      "rendered_sha256": "ee9b4308b15fcba6d45aef75be2842b71a0634daafb321beb6467d588a4351d9",
+      "unavailable_historical_links_rendered_as_text": [
+        "sandbox:/mnt/data/bb_lower_counterexample/CERTIFICATE.md",
+        "sandbox:/mnt/data/bb_lower_counterexample/EXECUTION_METADATA.json",
+        "sandbox:/mnt/data/bb_lower_counterexample/bitset_run.txt",
+        "sandbox:/mnt/data/bb_lower_counterexample/polynomial_run.txt"
+      ]
+    },
+    {
+      "source": "research/beyond-trinomials/REPORT.md",
+      "source_sha256": "eed9e523943eec65e531f0378c876f2bbb401234e914998e837c5aaa9b58bdc0",
+      "rendered": "results/notes/X00-beyond-trinomials.md",
+      "rendered_sha256": "79ad8e315082c976a3b4ebef772b57b246fa1d3ec753e6807200edd7ae6aa1fb",
+      "unavailable_historical_links_rendered_as_text": []
+    }
+  ]
+}

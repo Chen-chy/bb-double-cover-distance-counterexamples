@@ -1,0 +1,306 @@
+{
+  "profile": "audit",
+  "started_utc": "2026-09-06T16:34:57.251556+00:00",
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+    "packages": {
+      "sympy": "1.14.0",
+      "numpy": "2.3.5"
+    },
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "python_optimized": false
+  },
+  "scope": "Execution of the listed retained programs only; not an independent mathematical referee review.",
+  "records": [
+    {
+      "module": "03_amplification_search",
+      "command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "search.cpp",
+        "-o",
+        "search"
+      ],
+      "started_utc": "2026-09-06T16:34:57.284542+00:00",
+      "stdout_stderr": "logs/03_amplification_search/01_g++.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.766406
+    },
+    {
+      "module": "03_amplification_search",
+      "command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "search_general.cpp",
+        "-o",
+        "search_general"
+      ],
+      "started_utc": "2026-09-06T16:34:58.051231+00:00",
+      "stdout_stderr": "logs/03_amplification_search/02_g++.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.768141
+    },
+    {
+      "module": "03_amplification_search",
+      "command": [
+        "g++",
+        "-O3",
+        "-std=c++17",
+        "mitm.cpp",
+        "-o",
+        "mitm"
+      ],
+      "started_utc": "2026-09-06T16:34:58.819687+00:00",
+      "stdout_stderr": "logs/03_amplification_search/03_g++.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.665615
+    },
+    {
+      "module": "03_amplification_search",
+      "command": [
+        "{python}",
+        "verify_theorems.py"
+      ],
+      "started_utc": "2026-09-06T16:34:59.485610+00:00",
+      "stdout_stderr": "logs/03_amplification_search/04_verify_theorems.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.869074
+    },
+    {
+      "module": "03_amplification_search",
+      "command": [
+        "{python}",
+        "verify_search.py"
+      ],
+      "started_utc": "2026-09-06T16:35:00.355030+00:00",
+      "stdout_stderr": "logs/03_amplification_search/05_verify_search.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.719106
+    },
+    {
+      "module": "03_amplification_search",
+      "command": [
+        "{python}",
+        "independent_search.py"
+      ],
+      "started_utc": "2026-09-06T16:35:01.074473+00:00",
+      "stdout_stderr": "logs/03_amplification_search/06_independent_search.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 1.018734
+    },
+    {
+      "module": "03_amplification_search",
+      "command": [
+        "./mitm"
+      ],
+      "started_utc": "2026-09-06T16:35:02.093538+00:00",
+      "stdout_stderr": "logs/03_amplification_search/07_mitm.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.164508
+    },
+    {
+      "module": "04_distance6_obstruction",
+      "command": [
+        "{python}",
+        "verify_presentations_sympy.py"
+      ],
+      "started_utc": "2026-09-06T16:35:02.267576+00:00",
+      "stdout_stderr": "logs/04_distance6_obstruction/01_verify_presentations_sympy.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 1.520748
+    },
+    {
+      "module": "05_compact_survival",
+      "command": [
+        "{python}",
+        "audit_finite_certificates.py"
+      ],
+      "started_utc": "2026-09-06T16:35:03.795406+00:00",
+      "stdout_stderr": "logs/05_compact_survival/01_audit_finite_certificates.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.675493
+    },
+    {
+      "module": "05_compact_survival",
+      "command": [
+        "{python}",
+        "verify_mechanisms.py"
+      ],
+      "started_utc": "2026-09-06T16:35:04.471250+00:00",
+      "stdout_stderr": "logs/05_compact_survival/02_verify_mechanisms.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.719052
+    },
+    {
+      "module": "06_linear_compact_replacement",
+      "command": [
+        "{python}",
+        "audit_replacement_certificates.py"
+      ],
+      "started_utc": "2026-09-06T16:35:05.198062+00:00",
+      "stdout_stderr": "logs/06_linear_compact_replacement/01_audit_replacement_certificates.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 1.329516
+    },
+    {
+      "module": "06_linear_compact_replacement",
+      "command": [
+        "{python}",
+        "verify_sparse_generators.py"
+      ],
+      "started_utc": "2026-09-06T16:35:06.528036+00:00",
+      "stdout_stderr": "logs/06_linear_compact_replacement/02_verify_sparse_generators.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.977399
+    },
+    {
+      "module": "06_linear_compact_replacement",
+      "command": [
+        "{python}",
+        "verify_embeddings.py"
+      ],
+      "started_utc": "2026-09-06T16:35:07.505772+00:00",
+      "stdout_stderr": "logs/06_linear_compact_replacement/03_verify_embeddings.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.820821
+    },
+    {
+      "module": "06_linear_compact_replacement",
+      "command": [
+        "{python}",
+        "verify_sharpness.py"
+      ],
+      "started_utc": "2026-09-06T16:35:08.327023+00:00",
+      "stdout_stderr": "logs/06_linear_compact_replacement/04_verify_sharpness.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.669148
+    },
+    {
+      "module": "07_rank_one_resonance",
+      "command": [
+        "{python}",
+        "audit_certificates.py"
+      ],
+      "started_utc": "2026-09-06T16:35:09.007807+00:00",
+      "stdout_stderr": "logs/07_rank_one_resonance/01_audit_certificates.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.874281
+    },
+    {
+      "module": "07_rank_one_resonance",
+      "command": [
+        "{python}",
+        "check_seed_coordinates.py"
+      ],
+      "started_utc": "2026-09-06T16:35:09.882496+00:00",
+      "stdout_stderr": "logs/07_rank_one_resonance/02_check_seed_coordinates.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.838177
+    },
+    {
+      "module": "08_slope21_shortening",
+      "command": [
+        "{python}",
+        "audit_certificates.py"
+      ],
+      "started_utc": "2026-09-06T16:35:10.736028+00:00",
+      "stdout_stderr": "logs/08_slope21_shortening/01_audit_certificates.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 1.334105
+    },
+    {
+      "module": "08_slope21_shortening",
+      "command": [
+        "{python}",
+        "verify_structure.py"
+      ],
+      "started_utc": "2026-09-06T16:35:12.070481+00:00",
+      "stdout_stderr": "logs/08_slope21_shortening/02_verify_structure.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.720941
+    },
+    {
+      "module": "09_joint_completion",
+      "command": [
+        "{python}",
+        "verify_graph.py"
+      ],
+      "started_utc": "2026-09-06T16:35:12.808473+00:00",
+      "stdout_stderr": "logs/09_joint_completion/01_verify_graph.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 1.575095
+    },
+    {
+      "module": "09_joint_completion",
+      "command": [
+        "{python}",
+        "verify_components.py"
+      ],
+      "started_utc": "2026-09-06T16:35:14.383966+00:00",
+      "stdout_stderr": "logs/09_joint_completion/02_verify_components.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 1.040859
+    },
+    {
+      "module": "09_joint_completion",
+      "command": [
+        "{python}",
+        "verify_majority_control.py"
+      ],
+      "started_utc": "2026-09-06T16:35:15.425508+00:00",
+      "stdout_stderr": "logs/09_joint_completion/03_verify_majority_control.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.668656
+    },
+    {
+      "module": "09_joint_completion",
+      "command": [
+        "{python}",
+        "verify_pareto.py"
+      ],
+      "started_utc": "2026-09-06T16:35:16.094549+00:00",
+      "stdout_stderr": "logs/09_joint_completion/04_verify_pareto.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 0.676352
+    },
+    {
+      "module": "10_nonlocal_exchange",
+      "command": [
+        "{python}",
+        "run_all.py"
+      ],
+      "started_utc": "2026-09-06T16:35:16.779845+00:00",
+      "stdout_stderr": "logs/10_nonlocal_exchange/01_run_all.log",
+      "status": "passed",
+      "returncode": 0,
+      "elapsed_seconds": 5.715192
+    }
+  ],
+  "status": "passed",
+  "completed_utc": "2026-09-06T16:35:22.495435+00:00"
+}

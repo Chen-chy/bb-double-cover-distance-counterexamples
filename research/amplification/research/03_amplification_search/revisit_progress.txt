@@ -1,0 +1,7 @@
+PROGRESS 0 {'tested': 1, 'short_logical_found': 1} sec 0.06
+PROGRESS 50 {'tested': 51, 'short_logical_found': 51} sec 1.34
+PROGRESS 100 {'tested': 101, 'short_logical_found': 101} sec 2.23
+PROGRESS 150 {'tested': 151, 'short_logical_found': 151} sec 3.37
+PROGRESS 200 {'tested': 201, 'short_logical_found': 201} sec 4.21
+PROGRESS 250 {'tested': 251, 'short_logical_found': 251} sec 4.53
+FINAL {'tested': 286, 'short_logical_found': 286} sec 5.0908379554748535

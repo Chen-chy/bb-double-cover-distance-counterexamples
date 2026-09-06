@@ -1,0 +1,64 @@
+{
+  "status": "D2_EQ_8_UNBOUNDED_BASE_EXCLUDED",
+  "universal_base_distance_bound_D8": 96,
+  "scope": "Any term-preserving finite abelian group quotient with positive-dimensional base and cover distance exactly eight; in particular every valid strict-trinomial BB double cover.",
+  "combined_previous_result": "With the prior weight-two, weight-four and weight-six exclusions, d>96 implies d_2>=10.",
+  "degradation_lower_bound": "gamma_3(N)>=min(1/12,20/N); hence gamma_3(N)>=20/N for N>=240.",
+  "mixed_port_assignments": 40917312,
+  "pure_port_assignments": 5598720,
+  "low_free_lattices": 44619,
+  "high_free_pairs": 312,
+  "high_free_categories": {
+    "shortenable": 279,
+    "associated_squares": 5,
+    "cyclic_order_four_twist": 5,
+    "explicit_boundary": 12,
+    "finite_check_subgroup": 6,
+    "involution_twisted_square": 5
+  },
+  "pure_group_types": [
+    [
+      2,
+      6
+    ],
+    [
+      12
+    ],
+    [
+      14
+    ],
+    [
+      15
+    ]
+  ],
+  "unresolved_presentations": 0,
+  "exact_distance_records_claimed": false,
+  "vanishing_ratio_family_proved": false,
+  "catalogue_hashes": {
+    "highrank_eight.tsv": "f327dabff670a0c513f07dac76d104252aaacd63fd6a6971992ba7bfeeab9132",
+    "low_free_lattices.tsv": "4df3bebab227c231f186b553f335e6caca5c592a5120bfce86690a82d4628d43",
+    "pure_eight.tsv": "53cac389e0de7eedc0788c2585e977ae709b157b1051b49a0cc132bc79fef92a"
+  },
+  "finite_sanity_checks": {
+    "cyclic_twist_test_cases": 340,
+    "cyclic_twist_orders_tested": [
+      2,
+      4,
+      8,
+      16
+    ],
+    "cyclic_twist_all_witnesses_nonboundary": true,
+    "twisted_square_strict_cases_checked": 3520,
+    "twisted_square_positive_dimension_cases": 2912,
+    "twisted_square_k_values": [
+      4,
+      8,
+      12,
+      24
+    ],
+    "minimum_distances_computed": false
+  },
+  "python_version": "3.13.5",
+  "sympy_version": "1.14.0"
+}
+ALL ACCOUNTING, SOURCE CERTIFICATES AND CATALOGUE HASHES VERIFIED.

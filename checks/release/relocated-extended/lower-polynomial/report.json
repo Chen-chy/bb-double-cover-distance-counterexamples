@@ -1,0 +1,366 @@
+{
+  "codes": {
+    "base": {
+      "circuit_sha256": "78294b4b567fbcfa389e951a72edc96e6a5bb40c099ee9eaf3e2abe1571aa7fa",
+      "circuits": {
+        "6": 78,
+        "10": 468,
+        "12": 195
+      },
+      "d": 14,
+      "k": 4,
+      "n": 156,
+      "rank_HX": 76,
+      "rank_HZ": 76,
+      "sha256": {
+        "HX": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e",
+        "HZ": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+      }
+    },
+    "cover": {
+      "circuit_sha256": "a2361757be4c36b7bd2297ab1be4319e0658e2a2a4d07ef703c5bfbe23b3914d",
+      "circuits": {
+        "6": 156,
+        "10": 936
+      },
+      "d": 12,
+      "k": 8,
+      "n": 312,
+      "rank_HX": 152,
+      "rank_HZ": 152,
+      "sha256": {
+        "HX": "9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8",
+        "HZ": "6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb"
+      }
+    }
+  },
+  "implementation": "sparse_polynomial_odd_subsets",
+  "searches": [
+    {
+      "blocked": 0,
+      "bound": 12,
+      "budget": 424001,
+      "circuit_weights": {
+        "6": 3,
+        "10": 30,
+        "12": 16
+      },
+      "code": "base",
+      "expanded": 227115,
+      "nodes": 1602436,
+      "root": 0,
+      "sector": "Z",
+      "syndrome_bound": 951214,
+      "zero": 106,
+      "zero_weights": {
+        "6": 3,
+        "10": 30,
+        "12": 73
+      }
+    },
+    {
+      "blocked": 0,
+      "bound": 12,
+      "budget": 414024,
+      "circuit_weights": {
+        "6": 3,
+        "10": 30,
+        "12": 14
+      },
+      "code": "base",
+      "expanded": 221268,
+      "nodes": 1559534,
+      "root": 78,
+      "sector": "Z",
+      "syndrome_bound": 924137,
+      "zero": 105,
+      "zero_weights": {
+        "6": 3,
+        "10": 30,
+        "12": 72
+      }
+    },
+    {
+      "blocked": 0,
+      "bound": 12,
+      "budget": 415849,
+      "circuit_weights": {
+        "6": 3,
+        "10": 30,
+        "12": 14
+      },
+      "code": "base",
+      "expanded": 223528,
+      "nodes": 1578044,
+      "root": 0,
+      "sector": "X",
+      "syndrome_bound": 938563,
+      "zero": 104,
+      "zero_weights": {
+        "6": 3,
+        "10": 30,
+        "12": 71
+      }
+    },
+    {
+      "blocked": 0,
+      "bound": 12,
+      "budget": 408291,
+      "circuit_weights": {
+        "6": 3,
+        "10": 30,
+        "12": 16
+      },
+      "code": "base",
+      "expanded": 218276,
+      "nodes": 1561758,
+      "root": 78,
+      "sector": "X",
+      "syndrome_bound": 935086,
+      "zero": 105,
+      "zero_weights": {
+        "6": 3,
+        "10": 30,
+        "12": 72
+      }
+    },
+    {
+      "blocked": 0,
+      "bound": 10,
+      "budget": 54186,
+      "circuit_weights": {
+        "6": 3,
+        "10": 30
+      },
+      "code": "cover",
+      "expanded": 18691,
+      "nodes": 153347,
+      "root": 0,
+      "sector": "Z",
+      "syndrome_bound": 80437,
+      "zero": 33,
+      "zero_weights": {
+        "6": 3,
+        "10": 30
+      }
+    },
+    {
+      "blocked": 0,
+      "bound": 10,
+      "budget": 56767,
+      "circuit_weights": {
+        "6": 3,
+        "10": 30
+      },
+      "code": "cover",
+      "expanded": 18245,
+      "nodes": 155951,
+      "root": 156,
+      "sector": "Z",
+      "syndrome_bound": 80906,
+      "zero": 33,
+      "zero_weights": {
+        "6": 3,
+        "10": 30
+      }
+    },
+    {
+      "blocked": 0,
+      "bound": 10,
+      "budget": 56111,
+      "circuit_weights": {
+        "6": 3,
+        "10": 30
+      },
+      "code": "cover",
+      "expanded": 18052,
+      "nodes": 154080,
+      "root": 0,
+      "sector": "X",
+      "syndrome_bound": 79884,
+      "zero": 33,
+      "zero_weights": {
+        "6": 3,
+        "10": 30
+      }
+    },
+    {
+      "blocked": 0,
+      "bound": 10,
+      "budget": 55194,
+      "circuit_weights": {
+        "6": 3,
+        "10": 30
+      },
+      "code": "cover",
+      "expanded": 18672,
+      "nodes": 155065,
+      "root": 156,
+      "sector": "X",
+      "syndrome_bound": 81166,
+      "zero": 33,
+      "zero_weights": {
+        "6": 3,
+        "10": 30
+      }
+    }
+  ],
+  "witnesses": {
+    "base": [
+      [
+        [
+          39,
+          0
+        ],
+        [
+          47,
+          0
+        ],
+        [
+          55,
+          0
+        ],
+        [
+          64,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          11,
+          0
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          35,
+          0
+        ],
+        [
+          37,
+          0
+        ],
+        [
+          48,
+          0
+        ],
+        [
+          61,
+          0
+        ],
+        [
+          74,
+          0
+        ],
+        [
+          76,
+          0
+        ]
+      ]
+    ],
+    "cover": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          25,
+          0
+        ],
+        [
+          39,
+          1
+        ],
+        [
+          47,
+          0
+        ],
+        [
+          55,
+          1
+        ],
+        [
+          64,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          39,
+          1
+        ],
+        [
+          50,
+          0
+        ]
+      ]
+    ],
+    "projected_boundary_preimage": [
+      1,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      23,
+      24,
+      25,
+      27,
+      28,
+      31,
+      32,
+      34,
+      37,
+      38,
+      41,
+      43,
+      44,
+      46,
+      48,
+      51,
+      53,
+      54,
+      57,
+      61,
+      63,
+      65,
+      66,
+      68,
+      74
+    ]
+  }
+}

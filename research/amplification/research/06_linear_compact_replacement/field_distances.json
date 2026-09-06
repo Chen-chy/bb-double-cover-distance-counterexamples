@@ -1,0 +1,122 @@
+[
+  {
+    "M": 1,
+    "m": 1,
+    "j": 0,
+    "dimension": 1,
+    "distance": 1,
+    "prediction": 1
+  },
+  {
+    "M": 2,
+    "m": 1,
+    "j": 0,
+    "dimension": 1,
+    "distance": 2,
+    "prediction": 2
+  },
+  {
+    "M": 2,
+    "m": 2,
+    "j": 0,
+    "dimension": 2,
+    "distance": 3,
+    "prediction": 3
+  },
+  {
+    "M": 4,
+    "m": 1,
+    "j": 0,
+    "dimension": 1,
+    "distance": 4,
+    "prediction": 4
+  },
+  {
+    "M": 4,
+    "m": 2,
+    "j": 0,
+    "dimension": 2,
+    "distance": 6,
+    "prediction": 6
+  },
+  {
+    "M": 4,
+    "m": 2,
+    "j": 1,
+    "dimension": 2,
+    "distance": 6,
+    "prediction": 6
+  },
+  {
+    "M": 4,
+    "m": 2,
+    "j": 2,
+    "dimension": 2,
+    "distance": 6,
+    "prediction": 6
+  },
+  {
+    "M": 4,
+    "m": 4,
+    "j": 0,
+    "dimension": 4,
+    "distance": 9,
+    "prediction": 9
+  },
+  {
+    "M": 4,
+    "m": 4,
+    "j": 1,
+    "dimension": 4,
+    "distance": 9,
+    "prediction": 9
+  },
+  {
+    "M": 8,
+    "m": 2,
+    "j": 0,
+    "dimension": 2,
+    "distance": 12,
+    "prediction": 12
+  },
+  {
+    "M": 8,
+    "m": 2,
+    "j": 3,
+    "dimension": 2,
+    "distance": 12,
+    "prediction": 12
+  },
+  {
+    "M": 8,
+    "m": 4,
+    "j": 0,
+    "dimension": 4,
+    "distance": 18,
+    "prediction": 18
+  },
+  {
+    "M": 8,
+    "m": 4,
+    "j": 3,
+    "dimension": 4,
+    "distance": 18,
+    "prediction": 18
+  },
+  {
+    "M": 8,
+    "m": 8,
+    "j": 0,
+    "dimension": 8,
+    "distance": 27,
+    "prediction": 27
+  },
+  {
+    "M": 8,
+    "m": 8,
+    "j": 1,
+    "dimension": 8,
+    "distance": 27,
+    "prediction": 27
+  }
+]

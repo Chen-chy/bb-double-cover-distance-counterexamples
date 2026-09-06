@@ -1,0 +1,491 @@
+[
+  {
+    "id": "BASE-01",
+    "statement": "Connected uniform family [[252j+78,4,6]] -> [[504j+156,4,14]], j>=0; record ratio 7/3",
+    "evidence_type": "conversation-derived uniform proof plus certified seed",
+    "scope": "Unchanged polynomials, univariate cyclic double cover",
+    "source": "history/01_initial_family_and_baseline.md",
+    "section": "1",
+    "evidence_files": [
+      "research/03_amplification_search/search_verification.json",
+      "research/03_amplification_search/independent_exclusions.json"
+    ],
+    "limits": "Original early full archive/fixed-box logs unavailable; finite seed has intact later verification.",
+    "current": true
+  },
+  {
+    "id": "BASE-02",
+    "statement": "k<=k2<=2k; ranks of transfer and projection are k2/2; k2=2k implies d2<=2d",
+    "evidence_type": "inherited symbolic baseline",
+    "scope": "Binary BB double covers",
+    "source": "history/01_initial_family_and_baseline.md",
+    "section": "3",
+    "evidence_files": [],
+    "limits": "Not a metric theorem for a killed chosen class.",
+    "current": true
+  },
+  {
+    "id": "BASE-03",
+    "statement": "d=2 implies d2<=4",
+    "evidence_type": "inherited symbolic baseline",
+    "scope": "Weight-six BB double covers",
+    "source": "history/01_initial_family_and_baseline.md",
+    "section": "3",
+    "evidence_files": [],
+    "limits": "Original full early report is unavailable; downstream reports identify this as input.",
+    "current": true
+  },
+  {
+    "id": "D4-01",
+    "statement": "d=4 implies d2<=48",
+    "evidence_type": "uniform computer-assisted; recovered-source provenance",
+    "scope": "All stated term-matched weight-six covers",
+    "source": "history/02_distance4_and_transfer_metric.md",
+    "section": "2-4",
+    "evidence_files": [
+      "history/recovered_round2/verify4_independent.py",
+      "history/recovered_round2/verify_weight_four_sympy.py"
+    ],
+    "limits": "Recovered text is not authenticated original source bytes; not an optimality claim.",
+    "current": true
+  },
+  {
+    "id": "METRIC-01",
+    "statement": "For A=1+x+x^2, B=A^2, L=3q, q>=3 odd: d=d2=4, k=k2=4, mu=lambda3=lambda4=q+1",
+    "evidence_type": "symbolic exact family; recovered finite checker",
+    "scope": "Transfer-sector metric, not amplification",
+    "source": "history/02_distance4_and_transfer_metric.md",
+    "section": "6",
+    "evidence_files": [
+      "history/recovered_round2/verify_metric_family.py"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "R3-01",
+    "statement": "Univariate one-block restricted distance doubles or does not increase according to the support-lift gcd dichotomy; a one-block logical w gives d2<=2w",
+    "evidence_type": "symbolic proof",
+    "scope": "Univariate strict-trinomial term-matched doubles",
+    "source": "research/03_amplification_search/REPORT.md",
+    "section": "2",
+    "evidence_files": [
+      "research/03_amplification_search/verify_theorems.py"
+    ],
+    "limits": "Does not imply factor two for mixed-block minima.",
+    "current": true
+  },
+  {
+    "id": "R3-02",
+    "statement": "Full split-cover homology reduces to (P^2,Q+delta P) with exact physical W_delta",
+    "evidence_type": "symbolic exact reduction",
+    "scope": "Split group extensions",
+    "source": "research/03_amplification_search/REPORT.md",
+    "section": "3",
+    "evidence_files": [
+      "research/03_amplification_search/theorem_checks.json"
+    ],
+    "limits": "Ordinary reduced Hamming distance is not physical cover distance.",
+    "current": true
+  },
+  {
+    "id": "R3-03",
+    "statement": "A [[78,4,6]] base has auxiliary reduced code [[78,4,9]]",
+    "evidence_type": "exact finite counterexample to an intermediate lemma",
+    "scope": "Auxiliary reduced code, not a strict-trinomial BB cover",
+    "source": "research/03_amplification_search/REPORT.md",
+    "section": "4",
+    "evidence_files": [
+      "research/03_amplification_search/reduced_code_mitm.json",
+      "research/03_amplification_search/mitm.cpp",
+      "research/03_amplification_search/independent_search.py"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "SEARCH-01",
+    "statement": "16,384 selected distance-four/six cover instances certified within 7/3",
+    "evidence_type": "retained exact finite audits on selected corpus",
+    "scope": "Parameter instances; no exhaustive coverage of BB class",
+    "source": "research/03_amplification_search/REPORT.md",
+    "section": "5.1",
+    "evidence_files": [
+      "research/03_amplification_search/final_verification_summary.json"
+    ],
+    "limits": "Cover witnesses are upper bounds, not exact cover distances in every row.",
+    "current": true
+  },
+  {
+    "id": "SEARCH-02",
+    "statement": "2,800 distance-eight instances; 1,020 unresolved at 7/3",
+    "evidence_type": "partial discovery with exact certified subset",
+    "scope": "Capped searches remain unresolved",
+    "source": "research/03_amplification_search/REPORT.md",
+    "section": "5.2",
+    "evidence_files": [
+      "research/03_amplification_search/RESULTS.json"
+    ],
+    "limits": "No failed search is a lower exclusion.",
+    "current": true
+  },
+  {
+    "id": "D6-01",
+    "statement": "d=6 implies d2<=112; remaining higher-rank mixed mechanisms give d2<=12",
+    "evidence_type": "uniform computer-assisted",
+    "scope": "Finite abelian term-matched strict-trinomial covers",
+    "source": "research/04_distance6_obstruction/REPORT.md",
+    "section": "5-6",
+    "evidence_files": [
+      "research/04_distance6_obstruction/verify6_all_pairings.cpp",
+      "research/04_distance6_obstruction/highrank6_certificates.json",
+      "research/04_distance6_obstruction/verify_presentations_sympy.py"
+    ],
+    "limits": "Full enumeration not rerun during export; retained full-matrix check rerun.",
+    "current": true
+  },
+  {
+    "id": "D6-02",
+    "statement": "Matched Frobenius powers with a nontrivial canonical base cycle give a bounded cover logical; odd-subgroup descent preserves relevant nontriviality",
+    "evidence_type": "symbolic proof",
+    "scope": "Power-cycle and odd-invariant mechanisms",
+    "source": "research/04_distance6_obstruction/REPORT.md",
+    "section": "2-3",
+    "evidence_files": [
+      "research/04_distance6_obstruction/frobenius_verification.json"
+    ],
+    "limits": "Power equality alone is not a nonboundary certificate.",
+    "current": true
+  },
+  {
+    "id": "ONEBLOCK-01",
+    "statement": "A one-block logical of weight w gives d2<=2w^2",
+    "evidence_type": "symbolic proof",
+    "scope": "Finite abelian BB covers",
+    "source": "research/04_distance6_obstruction/REPORT.md",
+    "section": "4.3",
+    "evidence_files": [],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "COMPACT-01",
+    "statement": "Genuinely higher-rank compact survival holds at all circuit weights through a torsion\u2013Frobenius cyclic module",
+    "evidence_type": "symbolic proof with supplementary checks",
+    "scope": "Four check differences generate U; free rank>=2; neither check in a finite subgroup",
+    "source": "research/05_compact_survival/REPORT.md",
+    "section": "3-6",
+    "evidence_files": [
+      "research/05_compact_survival/finite_cover_certificates.json",
+      "research/05_compact_survival/audit_finite_certificates.py"
+    ],
+    "limits": "Not an unrestricted homology base-change theorem.",
+    "current": true
+  },
+  {
+    "id": "COMPACT-02",
+    "statement": "General d2<=2d^4 and refined subquartic bounds",
+    "evidence_type": "symbolic corollaries with inherited and geometric dependencies",
+    "scope": "All stated strict-trinomial covers",
+    "source": "research/05_compact_survival/REPORT.md",
+    "section": "7-9",
+    "evidence_files": [],
+    "limits": "Historical bound; later cubic bound is stronger asymptotically.",
+    "current": false
+  },
+  {
+    "id": "GLOBAL-01",
+    "statement": "d2<=32d^3",
+    "evidence_type": "symbolic corollary with external geometric dependency",
+    "scope": "General stated strict-trinomial BB double-cover class",
+    "source": "research/06_linear_compact_replacement/REPORT.md",
+    "section": "7",
+    "evidence_files": [],
+    "limits": "Polynomial in d, not a finite universal amplification constant.",
+    "current": true
+  },
+  {
+    "id": "GLOBAL-02",
+    "statement": "Gamma(N)<=24 sqrt(N)",
+    "evidence_type": "symbolic corollary with external geometric dependency",
+    "scope": "N is base physical length",
+    "source": "research/05_compact_survival/REPORT.md",
+    "section": "9",
+    "evidence_files": [],
+    "limits": "Size-dependent; does not prove C_* finite.",
+    "current": true
+  },
+  {
+    "id": "PATHOLOGY-01",
+    "statement": "A non-BB square-zero deformation loses every compact cover class under specialization while finite H1 remains",
+    "evidence_type": "explicit symbolic negative control",
+    "scope": "Outside BB trinomial hypotheses",
+    "source": "research/05_compact_survival/REPORT.md",
+    "section": "2",
+    "evidence_files": [
+      "research/05_compact_survival/mechanism_verification.json"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "LINEAR-01",
+    "statement": "Compact minimum o*2^(a-b)*3^b*(3^s+1); cover ratios exactly 1,3/2,2",
+    "evidence_type": "symbolic exact theorem",
+    "scope": "Torsion\u2013Frobenius normal form with surviving compact image",
+    "source": "research/06_linear_compact_replacement/REPORT.md",
+    "section": "2-5",
+    "evidence_files": [
+      "research/06_linear_compact_replacement/sparse_generator_checks.json",
+      "research/06_linear_compact_replacement/embedding_checks.json"
+    ],
+    "limits": "Universal support weight, not an unqualified statement about every finite logical.",
+    "current": true
+  },
+  {
+    "id": "LINEAR-02",
+    "statement": "[[18,4,2]] -> [[36,4,4]] realizes compact factor-two sharpness",
+    "evidence_type": "exact finite example",
+    "scope": "Specific matched cover",
+    "source": "research/06_linear_compact_replacement/REPORT.md",
+    "section": "6.1",
+    "evidence_files": [
+      "research/06_linear_compact_replacement/sharpness_example.json",
+      "research/06_linear_compact_replacement/verify_sharpness.py"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "RANK1-01",
+    "statement": "Exact cyclic universal module and compact specialization sequence retain the winding/Tor sector",
+    "evidence_type": "symbolic exact module calculation",
+    "scope": "Primitive rank-one Laurent setting, stated square-free gcd hypotheses",
+    "source": "research/07_rank_one_resonance/REPORT.md",
+    "section": "2",
+    "evidence_files": [
+      "research/07_rank_one_resonance/structure_certificates.json"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "RANK1-02",
+    "statement": "One-sided defects and most two-sided parity patterns satisfy compact factor two",
+    "evidence_type": "symbolic proof",
+    "scope": "Primitive rank-one setting; finite nonboundary tests explicit",
+    "source": "research/07_rank_one_resonance/REPORT.md",
+    "section": "3-4",
+    "evidence_files": [
+      "research/07_rank_one_resonance/lift_certificates.json"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "RANK1-03",
+    "statement": "Remaining odd-order resonance has fixed-slope bound 2m, m=max(|p|,|q|,|p-q|)",
+    "evidence_type": "symbolic constructive bound",
+    "scope": "Coprime primitive resonance slopes",
+    "source": "research/07_rank_one_resonance/REPORT.md",
+    "section": "5",
+    "evidence_files": [
+      "research/07_rank_one_resonance/divided_euler_cases.json"
+    ],
+    "limits": "m is not universally bounded; slope (2,1) gives factor four.",
+    "current": true
+  },
+  {
+    "id": "RANK1-04",
+    "statement": "Along compatible long periods, actual finite distances equal full compact minima",
+    "evidence_type": "symbolic large-period realization",
+    "scope": "Fixed Laurent data and stable root divisors, explicit no-winding threshold",
+    "source": "research/07_rank_one_resonance/REPORT.md",
+    "section": "7",
+    "evidence_files": [],
+    "limits": "Cannot be applied to restricted-sector or fixed-message minima.",
+    "current": true
+  },
+  {
+    "id": "S21-01",
+    "statement": "Delta<=Delta_e<=2Delta and exact projection/completion formula",
+    "evidence_type": "symbolic exact reduction",
+    "scope": "Slope (2,1) hard-core compact setting",
+    "source": "research/08_slope21_shortening/REPORT.md",
+    "section": "2-4",
+    "evidence_files": [
+      "research/08_slope21_shortening/structure_verification.json"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "S21-02",
+    "statement": "Exact base full/pure/complement minima 6/12/10; cover full/pure minima 14/16",
+    "evidence_type": "exact arbitrary-support compact minima",
+    "scope": "The explicitly gauged record example",
+    "source": "research/08_slope21_shortening/REPORT.md",
+    "section": "5-6",
+    "evidence_files": [
+      "research/08_slope21_shortening/exact_results.json",
+      "research/08_slope21_shortening/audit_certificates.py"
+    ],
+    "limits": "12,10,16 are restricted minima, not new finite BB distances.",
+    "current": true
+  },
+  {
+    "id": "GRAPH-01",
+    "statement": "Full compact energy is a common-message signed graph; half of the boundary spins eliminate exactly by majority",
+    "evidence_type": "symbolic exact reduction",
+    "scope": "Universal slope-(2,1) graph, all messages and boundaries retained",
+    "source": "research/09_joint_completion/REPORT.md",
+    "section": "2-4",
+    "evidence_files": [
+      "research/09_joint_completion/graph_verification.json"
+    ],
+    "limits": "Alternating local updates are not claimed globally optimal.",
+    "current": true
+  },
+  {
+    "id": "GRAPH-02",
+    "statement": "Minimum-support optimal components satisfy b1<=number of sources, with a fixed-message support bound",
+    "evidence_type": "symbolic proof",
+    "scope": "Fixed message; no bound on message support",
+    "source": "research/09_joint_completion/REPORT.md",
+    "section": "5",
+    "evidence_files": [
+      "research/09_joint_completion/component_verification.json"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "PARETO-01",
+    "statement": "Complete projected-weight/completion frontier {(12,1),(14,0)}",
+    "evidence_type": "exact Pareto theorem with inherited closure certificates",
+    "scope": "Record example",
+    "source": "research/09_joint_completion/REPORT.md",
+    "section": "7",
+    "evidence_files": [
+      "research/09_joint_completion/pareto_verification.json",
+      "research/09_joint_completion/verify_pareto.py"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "MAJORITY-01",
+    "statement": "Weight-182 locally stable circuit boundary gives restricted output 550>546",
+    "evidence_type": "exact counterexample to a restricted majority assertion",
+    "scope": "Input is explicitly a boundary",
+    "source": "research/09_joint_completion/REPORT.md",
+    "section": "6",
+    "evidence_files": [
+      "research/09_joint_completion/majority_control_verification.json"
+    ],
+    "limits": "Not a counterexample for a minimum nonboundary or full cover distance.",
+    "current": true
+  },
+  {
+    "id": "TREE-01",
+    "statement": "Two local equations exactly characterize common-message data",
+    "evidence_type": "symbolic exact characterization",
+    "scope": "Laurent PID slope-(2,1) setting",
+    "source": "research/10_nonlocal_exchange/REPORT.md",
+    "section": "2",
+    "evidence_files": [
+      "research/10_nonlocal_exchange/identity_verification.json"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "TREE-02",
+    "statement": "Canonical nonsource trees contract to all-or-nothing two-unit rewards; full fixed-message field optimum is independent-set packing",
+    "evidence_type": "symbolic exact reduction",
+    "scope": "All source assignments and boundary fields, fixed common-message input",
+    "source": "research/10_nonlocal_exchange/REPORT.md",
+    "section": "3-5",
+    "evidence_files": [
+      "research/10_nonlocal_exchange/forest_verification.json",
+      "research/10_nonlocal_exchange/tree_contraction_verification.json"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "TREE-03",
+    "statement": "A genuine compact message produces a triangular conflict graph",
+    "evidence_type": "exact constructive negative control",
+    "scope": "Not a minimum-distance assertion",
+    "source": "research/10_nonlocal_exchange/REPORT.md",
+    "section": "6",
+    "evidence_files": [
+      "research/10_nonlocal_exchange/triangle_certificate.json",
+      "research/10_nonlocal_exchange/audit_triangle.py"
+    ],
+    "limits": "",
+    "current": true
+  },
+  {
+    "id": "TREE-04",
+    "statement": "Fixed-message minimum 74 with support 15; same universal class has full minimum 14",
+    "evidence_type": "exact conditional minimum plus unrestricted inherited certificate",
+    "scope": "One explicit message in the record code",
+    "source": "research/10_nonlocal_exchange/REPORT.md",
+    "section": "7.2-7.3",
+    "evidence_files": [
+      "research/10_nonlocal_exchange/fixed_message_certificate.json",
+      "research/10_nonlocal_exchange/fixed_message_potential.bin",
+      "research/10_nonlocal_exchange/audit_fixed_certificate.py"
+    ],
+    "limits": "74 is not code distance; explicit boundary to 14 retained.",
+    "current": true
+  },
+  {
+    "id": "TREE-05",
+    "statement": "For positive odd N, conditional minimum 74N and support 15N in one universal class of minimum 14",
+    "evidence_type": "symbolic parametric negative control",
+    "scope": "Separated messages in one fixed code",
+    "source": "research/10_nonlocal_exchange/REPORT.md",
+    "section": "7.4",
+    "evidence_files": [
+      "research/10_nonlocal_exchange/parametric_verification.json"
+    ],
+    "limits": "Not an increasing-distance family.",
+    "current": true
+  },
+  {
+    "id": "OPEN-01",
+    "statement": "Full slope-(2,1) hat-Delta<=3Delta",
+    "evidence_type": "open conjecture",
+    "scope": "All admissible compact messages and all boundary adjustments",
+    "source": "research/10_nonlocal_exchange/REPORT.md",
+    "section": "9",
+    "evidence_files": [],
+    "limits": "Neither proved nor refuted; inherited bound is four.",
+    "current": true
+  },
+  {
+    "id": "OPEN-02",
+    "statement": "Half-weight completion after a minimum base class and boundary adjustment",
+    "evidence_type": "open sufficient lemma",
+    "scope": "Stronger class-pinned statement",
+    "source": "research/09_joint_completion/REPORT.md",
+    "section": "8",
+    "evidence_files": [],
+    "limits": "Failure would not by itself refute OPEN-01.",
+    "current": true
+  },
+  {
+    "id": "OPEN-03",
+    "statement": "Finiteness or infiniteness of C_*",
+    "evidence_type": "open problem",
+    "scope": "Entire stated strict-trinomial BB double-cover class",
+    "source": "docs/OPEN_PROBLEMS.md",
+    "section": "5",
+    "evidence_files": [],
+    "limits": "No numerical universal linear upper bound and no unbounded-ratio family established.",
+    "current": true
+  }
+]

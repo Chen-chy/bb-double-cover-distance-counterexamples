@@ -1,0 +1,103 @@
+{
+  "polytope": {
+    "vertices": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        -1,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        -1,
+        1
+      ]
+    ],
+    "maximum_absolute_minors": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    },
+    "minor_checks": {
+      "1": 48,
+      "2": 396,
+      "3": 880,
+      "4": 495
+    },
+    "rank_one_root_functional_maximum": 1
+  },
+  "nilpotent_pencil": {
+    "generic_cases": 24,
+    "finite_field_checks": 176,
+    "negative_controls": 15
+  },
+  "specialization_negative_control": {
+    "universal_cover_generator_cycle_identity": true,
+    "universal_generator_specializes_to_zero": true,
+    "specialized_cover_homology_dimension": 2,
+    "outside_BB_strict_trinomial_class": true
+  },
+  "classification": "exact algebraic checks, not distance estimates"
+}

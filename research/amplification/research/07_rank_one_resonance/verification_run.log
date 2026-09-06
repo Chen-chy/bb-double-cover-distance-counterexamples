@@ -1,0 +1,150 @@
+verify_structure.py
+{
+  "parameter_instances": 1088,
+  "compact_membership_checks": 4352,
+  "transfer_checks": 4352,
+  "exact_universal_transfer_boundary_checks": 4352,
+  "period_stability_checks": 1088,
+  "canonical_nonboundary_certificates": 140
+}
+
+verify_lifts.py
+{
+  "parity_gcd_classification_checks": 1009,
+  "parity_cases": {
+    "one_odd_each": 357,
+    "transfer_only": 590,
+    "two_odd_each": 62
+  },
+  "finite_nonboundary_checks": 1740,
+  "methods": {
+    "coprime_transfer": 1391,
+    "two_sided_two_odd": 48,
+    "one_sided_two_odd": 36,
+    "matched_odd_exponents": 46,
+    "one_sided_monomial_derivative": 113,
+    "divided_euler": 36,
+    "matched_even_exponents": 70
+  },
+  "symbolic_slope_grid_checks": 720,
+  "new_primal_dual_certificates": 376,
+  "divided_euler_finite_checks": 36
+}
+
+check_seed_coordinates.py
+{
+  "A": [
+    -1,
+    0,
+    4
+  ],
+  "B": [
+    -13,
+    -2,
+    0
+  ],
+  "c": [
+    0,
+    1,
+    5
+  ],
+  "E": [
+    0,
+    1,
+    2
+  ],
+  "g0": [
+    0,
+    1,
+    2
+  ],
+  "H": [
+    0,
+    1,
+    2
+  ],
+  "R": -6,
+  "S": -3,
+  "g": 3,
+  "p": -2,
+  "q": -1,
+  "base_witness_weight": 6,
+  "cover_witness_weight": 14,
+  "cover_k": 4,
+  "base_compact_transfer_is_boundary": true,
+  "scope": "new coordinate and nonboundary check; exact distances 6 and 14 are inherited from the supplied certificate"
+}
+
+verify_finite_parity.py
+{
+  "finite_logical_checks": 1644,
+  "outside_compact_image_checks": 1028,
+  "one_sided_monomial_derivative": 637,
+  "finite_base_instances": 71,
+  "two_sided_two_odd": 304,
+  "matched_odd_exponents": 407,
+  "matched_even_exponents": 86,
+  "one_sided_two_odd": 210
+}
+
+verify_sharpness.py
+[
+  {
+    "L": 9,
+    "base_parameters": [
+      18,
+      4,
+      2
+    ],
+    "cover_parameters": [
+      36,
+      4,
+      4
+    ],
+    "classification": "exact finite cross-check of the uniform symbolic family"
+  },
+  {
+    "L": 15,
+    "base_parameters": [
+      30,
+      4,
+      2
+    ],
+    "cover_parameters": [
+      60,
+      4,
+      4
+    ],
+    "classification": "exact finite cross-check of the uniform symbolic family"
+  },
+  {
+    "L": 21,
+    "base_parameters": [
+      42,
+      4,
+      2
+    ],
+    "cover_parameters": [
+      84,
+      4,
+      4
+    ],
+    "classification": "exact finite cross-check of the uniform symbolic family"
+  }
+]
+
+audit_certificates.py
+{
+  "status": "all independently audited certificates passed",
+  "certificates": 610,
+  "boundary_dual_pairings": 27594,
+  "by_file": {
+    "structure_certificates.json": 140,
+    "lift_certificates.json": 376,
+    "seed_nonboundary_certificate.json": 1,
+    "finite_parity_certificates.json": 90,
+    "sharpness_certificates.json": 3
+  },
+  "audit_method": "coordinate arithmetic, low-pivot ranks, explicit separating duals; no constructor imports"
+}
+

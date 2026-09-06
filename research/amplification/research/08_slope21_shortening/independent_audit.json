@@ -1,0 +1,67 @@
+[
+  {
+    "name": "base_full",
+    "minimum": 6,
+    "closure_states": 45,
+    "transitions_checked": 90,
+    "subthreshold_transitions": 45,
+    "primal": {
+      "weight": 6,
+      "exact_cycle": true,
+      "exact_label": true
+    },
+    "seconds": 0.0005154750001565844
+  },
+  {
+    "name": "base_resonant_purified",
+    "minimum": 12,
+    "closure_states": 3025,
+    "transitions_checked": 6050,
+    "subthreshold_transitions": 3844,
+    "primal": {
+      "weight": 12,
+      "exact_cycle": true,
+      "exact_label": true
+    },
+    "seconds": 0.006746338000084506
+  },
+  {
+    "name": "base_other_purified",
+    "minimum": 10,
+    "closure_states": 1009,
+    "transitions_checked": 2018,
+    "subthreshold_transitions": 1135,
+    "primal": {
+      "weight": 10,
+      "exact_cycle": true,
+      "exact_label": true
+    },
+    "seconds": 0.001540522000141209
+  },
+  {
+    "name": "cover_full",
+    "minimum": 14,
+    "closure_states": 58707,
+    "transitions_checked": 234828,
+    "subthreshold_transitions": 68362,
+    "primal": {
+      "weight": 14,
+      "exact_cycle": true,
+      "exact_label": true
+    },
+    "seconds": 0.17815588599978582
+  },
+  {
+    "name": "cover_resonant_purified",
+    "minimum": 16,
+    "closure_states": 305220,
+    "transitions_checked": 1220880,
+    "subthreshold_transitions": 359578,
+    "primal": {
+      "weight": 16,
+      "exact_cycle": true,
+      "exact_label": true
+    },
+    "seconds": 0.9795959769999172
+  }
+]

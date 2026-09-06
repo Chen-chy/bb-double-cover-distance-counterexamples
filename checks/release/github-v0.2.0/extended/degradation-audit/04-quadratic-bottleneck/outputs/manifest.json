@@ -1,0 +1,16 @@
+{
+  "README.md": "fa9ed636893a73cf351a7e2028a32745344e8f2dfc6071e52fcf76e9aafaeb52",
+  "cases.json": "1d0e197121d1e68269086aec8327cf91a752ca43aae42317fd0922b7eafa6c88",
+  "cyclic_strip_cases.json": "c6386ea76a165633ced06578d16157518b117a698600b285b25240494fffaf3d",
+  "cyclic_strip_verification.json": "ac5c669d44b04d07153d222faf0c6ae7f80feb312b587ba6900a53cfef60af32",
+  "independent_verification.json": "29364142596b624213fca03b52caab32eb144f6764789d410994ea1ca20656bb",
+  "make_summary.py": "00e2e7fc5e511daf6c0279acfb3e0397e1fc402913e14e9bc8587ed49f9cb337",
+  "proof.md": "cfffb82ffce16947149068b78ab048f8ba4a3f8a182841f53e29d337cf7cb92d",
+  "run_all.sh": "0874add0b28f4ebff7994a6438da3596468bd3e83fe4a506b658a7caae037bbc",
+  "run_output.txt": "168aada50a8007aeb10fb520b45068a57aed6d01e44bf46d035c95d7ad96be90",
+  "summary.json": "62cc98719568908b571dd242f275ac87c1b7e63c4967339bd36448f29c7a4268",
+  "verification_summary.json": "09892745cb883662870b65aec4b27ca42cc548c9dabeb3e33638bfac8305cf51",
+  "verify.py": "3c8b76a5dde73644248dfabda9d06d6707912c773e6ed0c84046acf531da81e3",
+  "verify_cyclic_strip.py": "70b3663d8a1e3fe5708998cc5516fecc5d7d5e0d21ee3c122701791744af644e",
+  "verify_independent.py": "cc61f449ee491726b8137d5b2abc39b9c34db2d31ba32116ac42169674dc9b97"
+}

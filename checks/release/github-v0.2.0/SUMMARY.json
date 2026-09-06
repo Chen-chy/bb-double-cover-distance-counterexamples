@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "version": "0.2.0",
+  "completed_utc": "2026-09-06T16:41:06.027360+00:00",
+  "identity": "Standalone GitHub research repository, not an arXiv ancillary package.",
+  "contents": {
+    "theory_chapters": 7,
+    "display_equations_preserved": 79,
+    "full_research_notes": 25,
+    "result_records": 104,
+    "result_groups": {
+      "main": 16,
+      "homology": 10,
+      "amplification": 38,
+      "degradation": 40
+    },
+    "source_archives": 3,
+    "input_member_records": 771,
+    "retained_member_mappings": 573,
+    "unique_retained_source_files": 484
+  },
+  "actual_checks": {
+    "unit_tests": 25,
+    "independent_exact_counterexample_verifiers": 4,
+    "cross_implementation_matrix_comparisons": 10,
+    "cross_implementation_circuit_comparisons": 4,
+    "shared_middle_code_identical": true,
+    "port_determinant_cases": 20736,
+    "index_two_lattice_cases": 4096,
+    "amplification_audit_commands": 23,
+    "degradation_audit_commands": 24,
+    "homology_class_metric_history_programs": 4,
+    "isolated_wheel_install_and_cli": "passed",
+    "workflow_static_check": "passed",
+    "publish_command_no_write_preview": "passed",
+    "optional_paper_pages": 19
+  },
+  "local_reports": {
+    "core": "core/report.json",
+    "extended": "extended/report.json",
+    "homology": "homology-history/report.json",
+    "package_install": "installed-package.json",
+    "repository": "repository-check.json",
+    "workflow_static": "workflow-static-check.json",
+    "paper": "paper-build.json"
+  },
+  "not_claimed": [
+    "No remote GitHub repository or remote Actions result was created.",
+    "Finite audit commands do not replace symbolic all-parameter proofs.",
+    "The entire expensive discovery/classification search space was not rerun.",
+    "Unrecovered historical source packages retain their explicit evidence limitations.",
+    "No human research author, reuse license, formal proof, or independent peer review was supplied."
+  ],
+  "release_portability": "Git bundle and archive round-trip checks are recorded in the separate final delivery report after the immutable commit is created."
+}

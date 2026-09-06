@@ -1,0 +1,28 @@
+[
+  {
+    "name": "base_full",
+    "minimum": 6,
+    "closure_states": 45,
+    "transitions_checked": 90,
+    "subthreshold_transitions": 45,
+    "primal": {
+      "weight": 6,
+      "exact_cycle": true,
+      "exact_label": true
+    },
+    "seconds": 0.0004218809999656514
+  },
+  {
+    "name": "cover_full",
+    "minimum": 14,
+    "closure_states": 58707,
+    "transitions_checked": 234828,
+    "subthreshold_transitions": 68362,
+    "primal": {
+      "weight": 14,
+      "exact_cycle": true,
+      "exact_label": true
+    },
+    "seconds": 0.18595731999994314
+  }
+]

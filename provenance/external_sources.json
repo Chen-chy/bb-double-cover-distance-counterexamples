@@ -1,0 +1,34 @@
+{
+  "checked_on": "2026-09-06",
+  "sources": [
+    {
+      "title": "Sequences of Bivariate Bicycle Codes from Covering Graphs",
+      "authors": [
+        "Benjamin C. B. Symons",
+        "Abhishek Rajput",
+        "Dan E. Browne"
+      ],
+      "identifier": "arXiv:2511.13560v3",
+      "version_date": "2026-08-06",
+      "url": "https://arxiv.org/abs/2511.13560v3",
+      "supplied_pdf_sha256": "549f63efc9fcae20983854d924852422ff4d9056811c8aa020024914d380aecc",
+      "scope": "group-algebra BB definition, termwise cover conditions, conjectured all-degree distance inequalities; proved odd-degree statements are not contradicted"
+    },
+    {
+      "title": "An Introduction to the Geometry of Numbers",
+      "author": "J. W. S. Cassels",
+      "edition": "Springer, Classics in Mathematics, 1997 reprint",
+      "scope": "Minkowski second theorem, Chapter VIII",
+      "cross_check_primary_lecture_notes": "https://webspace.science.uu.nl/~koyma001/DA/dio2.pdf",
+      "cross_check": "Theorem 2.9 and reference to Cassels Chapter 8"
+    },
+    {
+      "title": "arXiv: Submit TeX/LaTeX",
+      "url": "https://info.arxiv.org/help/submit_tex.html"
+    },
+    {
+      "title": "arXiv: Ancillary Files",
+      "url": "https://info.arxiv.org/help/ancillary_files.html"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Command: {python} audit_certificates.py
+
+{
+  "status": "all independently audited certificates passed",
+  "certificates": 610,
+  "boundary_dual_pairings": 27594,
+  "by_file": {
+    "structure_certificates.json": 140,
+    "lift_certificates.json": 376,
+    "seed_nonboundary_certificate.json": 1,
+    "finite_parity_certificates.json": 90,
+    "sharpness_certificates.json": 3
+  },
+  "audit_method": "coordinate arithmetic, low-pivot ranks, explicit separating duals; no constructor imports"
+}

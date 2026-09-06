@@ -1,0 +1,13 @@
+{
+  "retained_pairs": 312,
+  "categories": {
+    "shortenable": 279,
+    "associated_squares": 5,
+    "cyclic_order_four_twist": 5,
+    "explicit_boundary": 12,
+    "finite_check_subgroup": 6,
+    "involution_twisted_square": 5
+  },
+  "unresolved": 0,
+  "input_sha256": "f327dabff670a0c513f07dac76d104252aaacd63fd6a6971992ba7bfeeab9132"
+}

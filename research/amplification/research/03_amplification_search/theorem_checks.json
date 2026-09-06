@@ -1,0 +1,50 @@
+{
+  "oneblock": {
+    "exact_doubling_branch": 317,
+    "instances": 372,
+    "weight_preserving_branch": 55
+  },
+  "split": {
+    "instances": 192,
+    "positive_k_instances": 46
+  },
+  "reduced_example": {
+    "L": 39,
+    "P": [
+      0,
+      14,
+      22
+    ],
+    "Q": [
+      0,
+      26,
+      28
+    ],
+    "effective_A": [
+      0,
+      5,
+      28
+    ],
+    "effective_B": [
+      14,
+      22,
+      26,
+      28
+    ],
+    "k": 4,
+    "effective_d": 9,
+    "witness_u": [
+      0,
+      5,
+      10,
+      11,
+      16,
+      28
+    ],
+    "witness_v": [
+      24,
+      30,
+      32
+    ]
+  }
+}

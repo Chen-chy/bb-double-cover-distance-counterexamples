@@ -1,0 +1,58 @@
+CHECKING 01-weight-six
+  {python} verify_presentations.py
+  passed
+  {python} verify_family.py 1 2
+  passed
+CHECKING 02-weight-eight
+  {python} verify_graphs.py
+  passed
+  {python} verify_highrank.py
+  passed
+  {python} verify_low_and_pure.py
+  passed
+  {python} verify_nilpotent_lemmas.py
+  passed
+  {python} verify_summary.py
+  passed
+CHECKING 03-structural-degradation
+  {python} verify_twists.py
+  passed
+  {python} verify_geometry.py
+  passed
+  {python} verify_odd_sector.py
+  passed
+CHECKING 04-quadratic-bottleneck
+  {python} verify.py
+  passed
+  {python} verify_independent.py
+  passed
+  {python} verify_cyclic_strip.py
+  passed
+  {python} make_summary.py
+  passed
+CHECKING 05-visible-two-primary
+  {python} verify_contact.py
+  passed
+  {python} verify_local.py
+  passed
+  {python} verify_structured.py
+  passed
+  {python} verify_family.py
+  passed
+  {python} make_summary.py
+  passed
+CHECKING 06-sparse-deck-descent
+  {python} verify.py
+  passed
+CHECKING 07-rank-one-amplification
+  {python} verify.py
+  passed
+CHECKING 08-mixed-laurent
+  {python} verify.py
+  passed
+  {python} audit.py
+  passed
+CHECKING 09-fixed-c-product-bound
+  {python} verify.py
+  passed
+All selected existing commands passed.

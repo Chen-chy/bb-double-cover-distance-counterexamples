@@ -1,0 +1,233 @@
+[
+  {
+    "name": "base_full",
+    "kind": "base",
+    "mod": 7,
+    "target": 7,
+    "kill": 1,
+    "coef0": 1,
+    "coef1": 0,
+    "bound": 6,
+    "expect": 6,
+    "A0": 49,
+    "A1": 0,
+    "B0": 8197,
+    "B1": 0,
+    "result": {
+      "certified": true,
+      "capped": false,
+      "D": 13,
+      "distance": 6,
+      "states": 81,
+      "popped": 62,
+      "seconds": 7.0822e-05,
+      "physical": [
+        [
+          0,
+          5,
+          9,
+          10
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "certificate_states": 45
+    },
+    "certificate": "certificates/base_full.bin",
+    "sha256": "b5a941a04365046f3c48fd50cc1c96c65eb5ff138a82966c731c1438259a7a4f"
+  },
+  {
+    "name": "base_resonant_purified",
+    "kind": "base",
+    "mod": 49,
+    "target": 7,
+    "kill": 11,
+    "coef0": 1,
+    "coef1": 0,
+    "bound": 12,
+    "expect": 12,
+    "A0": 49,
+    "A1": 0,
+    "B0": 8197,
+    "B1": 0,
+    "result": {
+      "certified": true,
+      "capped": false,
+      "D": 13,
+      "distance": 12,
+      "states": 4250,
+      "popped": 3680,
+      "seconds": 0.0016785,
+      "physical": [
+        [
+          0,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14
+        ],
+        [
+          0,
+          2,
+          6
+        ]
+      ],
+      "certificate_states": 3025
+    },
+    "certificate": "certificates/base_resonant_purified.bin",
+    "sha256": "55288a212ef585759b41fbadf9b326d41f9418c3792678e20b753bdd35c347ec"
+  },
+  {
+    "name": "base_other_purified",
+    "kind": "base",
+    "mod": 49,
+    "target": 11,
+    "kill": 7,
+    "coef0": 1,
+    "coef1": 0,
+    "bound": 10,
+    "expect": 10,
+    "A0": 49,
+    "A1": 0,
+    "B0": 8197,
+    "B1": 0,
+    "result": {
+      "certified": true,
+      "capped": false,
+      "D": 13,
+      "distance": 10,
+      "states": 1633,
+      "popped": 1287,
+      "seconds": 0.000724804,
+      "physical": [
+        [
+          0,
+          2,
+          3,
+          4,
+          6,
+          9,
+          10,
+          11
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "certificate_states": 1009
+    },
+    "certificate": "certificates/base_other_purified.bin",
+    "sha256": "e3976e4ac341d99f71e7aae9976909561f102eb72514cc24ecdf8596eb330632"
+  },
+  {
+    "name": "cover_full",
+    "kind": "cover",
+    "mod": 7,
+    "target": 7,
+    "kill": 1,
+    "coef0": 1,
+    "coef1": 1,
+    "bound": 14,
+    "expect": 14,
+    "A0": 33,
+    "A1": 16,
+    "B0": 8196,
+    "B1": 1,
+    "result": {
+      "certified": true,
+      "capped": false,
+      "D": 13,
+      "distance": 14,
+      "states": 111946,
+      "popped": 90010,
+      "seconds": 0.0535891,
+      "physical": [
+        [
+          3,
+          10,
+          11
+        ],
+        [
+          0,
+          4,
+          6,
+          7,
+          9,
+          11,
+          12
+        ],
+        [
+          0
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "certificate_states": 58707
+    },
+    "certificate": "certificates/cover_full.bin",
+    "sha256": "710d51a1ad3593a5bdb5fe016fbed2e5bbfe3edf85342c152cce476ae07dad21"
+  },
+  {
+    "name": "cover_resonant_purified",
+    "kind": "cover",
+    "mod": 475,
+    "target": 7,
+    "kill": 69,
+    "coef0": 219,
+    "coef1": 125,
+    "bound": 16,
+    "expect": 16,
+    "A0": 33,
+    "A1": 16,
+    "B0": 8196,
+    "B1": 1,
+    "result": {
+      "certified": true,
+      "capped": false,
+      "D": 13,
+      "distance": 16,
+      "states": 587293,
+      "popped": 476452,
+      "seconds": 0.398432,
+      "physical": [
+        [
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          12
+        ],
+        [
+          0,
+          3,
+          5,
+          9,
+          11
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          2
+        ]
+      ],
+      "certificate_states": 305220
+    },
+    "certificate": "certificates/cover_resonant_purified.bin",
+    "sha256": "f2f6ec68ac00b7f5932bc6e1c5c8b917497fc6a4b3432cafc9e8ce9509bd15ec"
+  }
+]

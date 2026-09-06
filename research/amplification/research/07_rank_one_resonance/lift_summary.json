@@ -1,0 +1,21 @@
+{
+  "parity_gcd_classification_checks": 1009,
+  "parity_cases": {
+    "one_odd_each": 357,
+    "transfer_only": 590,
+    "two_odd_each": 62
+  },
+  "finite_nonboundary_checks": 1740,
+  "methods": {
+    "coprime_transfer": 1391,
+    "two_sided_two_odd": 48,
+    "one_sided_two_odd": 36,
+    "matched_odd_exponents": 46,
+    "one_sided_monomial_derivative": 113,
+    "divided_euler": 36,
+    "matched_even_exponents": 70
+  },
+  "symbolic_slope_grid_checks": 720,
+  "new_primal_dual_certificates": 376,
+  "divided_euler_finite_checks": 36
+}

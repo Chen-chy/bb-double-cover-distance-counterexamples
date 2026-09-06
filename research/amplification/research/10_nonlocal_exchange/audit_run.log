@@ -1,0 +1,106 @@
+
+--- verify_identities.py ---
+{
+  "independent_formal_symbols": [
+    "A",
+    "B",
+    "Y",
+    "H"
+  ],
+  "complete_common_message_matrix_identities": true,
+  "maximal_minor_factorization": true,
+  "number_of_formal_identities": 6
+}
+
+--- verify_forest.py ---
+{
+  "tests": 288,
+  "all_spin_assignments": 118822,
+  "candidate_trees": 38,
+  "largest_candidate_tree": 2,
+  "all_full_and_reduced_minima_agree": true,
+  "minimum_support_agrees": true
+}
+
+--- verify_tree_contraction.py ---
+{
+  "tree_sign_cases": 24,
+  "direct_internal_external_assignments": 112320,
+  "exact_two_unit_all_or_nothing_reward_verified": true
+}
+
+--- audit_triangle.py ---
+{
+  "common_message_is_genuine": true,
+  "survives_modulo_E0": true,
+  "simultaneously_eligible_tree_conflict_graph_contains_triangle": true,
+  "incident_edges_audited": 15,
+  "frustrated_square_source_site": 14,
+  "not_a_counterexample_to_factor_three": true
+}
+
+--- audit_fixed_certificate.py ---
+{
+  "bellman_inequalities_checked": 358400,
+  "fixed_message_minimum_energy": 74,
+  "minimum_field_support_among_fixed_message_optima": 15,
+  "same_universal_class_attaining_word_weight": 14,
+  "fixed_message_counterexample_is_NOT_a_full_minimum_counterexample": true,
+  "finite_boundary_pairings_checked": 1002,
+  "finite_nonboundary_proved": true,
+  "base_distance_six_symbolic_checks": true,
+  "direct_tree_base_boundary_weight": 26,
+  "base_weight_after_direct_tree_flip": 26,
+  "parametric_spacing": 210,
+  "parametric_scope": "odd N; fixed-message minimum 74N, support minimum 15N; full universal class minimum 14 uses inherited lower certificate"
+}
+
+--- verify_parametric.py ---
+[
+  {
+    "N": 1,
+    "fixed_message_minimum_from_uniform_proof": 74,
+    "minimum_field_support_from_uniform_proof": 15,
+    "same_universal_class": true,
+    "explicit_boundary_to_weight14": true
+  },
+  {
+    "N": 3,
+    "fixed_message_minimum_from_uniform_proof": 222,
+    "minimum_field_support_from_uniform_proof": 45,
+    "same_universal_class": true,
+    "explicit_boundary_to_weight14": true
+  },
+  {
+    "N": 5,
+    "fixed_message_minimum_from_uniform_proof": 370,
+    "minimum_field_support_from_uniform_proof": 75,
+    "same_universal_class": true,
+    "explicit_boundary_to_weight14": true
+  },
+  {
+    "N": 11,
+    "fixed_message_minimum_from_uniform_proof": 814,
+    "minimum_field_support_from_uniform_proof": 165,
+    "same_universal_class": true,
+    "explicit_boundary_to_weight14": true
+  }
+]
+
+--- inherited_certificates/audit_certificates.py ---
+{"name": "base_full", "minimum": 6, "closure_states": 45, "transitions_checked": 90, "subthreshold_transitions": 45, "primal": {"weight": 6, "exact_cycle": true, "exact_label": true}, "seconds": 0.0004218809999656514}
+{"name": "cover_full", "minimum": 14, "closure_states": 58707, "transitions_checked": 234828, "subthreshold_transitions": 68362, "primal": {"weight": 14, "exact_cycle": true, "exact_label": true}, "seconds": 0.18595731999994314}
+{
+  "status": "all retained audits passed",
+  "factor_three_status": "unresolved",
+  "new_counterexample_above_three": false,
+  "audited_scripts": [
+    "verify_identities.py",
+    "verify_forest.py",
+    "verify_tree_contraction.py",
+    "audit_triangle.py",
+    "audit_fixed_certificate.py",
+    "verify_parametric.py",
+    "inherited_certificates/audit_certificates.py"
+  ]
+}

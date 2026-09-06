@@ -1,0 +1,32 @@
+{
+  "status": "all checks passed",
+  "scripts": [
+    "verify_sparse_generators.py",
+    "verify_embeddings.py",
+    "field_distance.py",
+    "verify_finite_replacement.py",
+    "audit_replacement_certificates.py",
+    "verify_sharpness.py"
+  ],
+  "sparse_generator_cases": 114,
+  "generic_embedding_checks": 640,
+  "finite_replacement": {
+    "parameter_checks": 2880,
+    "certified_pairs": 1161,
+    "compact_ratio_counts": {
+      "1": 337,
+      "1.5": 204,
+      "2": 620
+    },
+    "even_coordinate_covers": 729,
+    "odd_norm_cases": 144,
+    "explicit_torsion_collapse_cases": 9,
+    "caveat": "Exact finite logical certificates. Compact weights are symbolic universal weights; finite quantum distances are not claimed."
+  },
+  "independent_audit": {
+    "status": "all independent audits passed",
+    "pairs": 1161,
+    "primal_dual_certificates": 2322,
+    "checks": "term matching, exact cycles, every boundary, dual separation, independent rank, optimized norm formula"
+  }
+}

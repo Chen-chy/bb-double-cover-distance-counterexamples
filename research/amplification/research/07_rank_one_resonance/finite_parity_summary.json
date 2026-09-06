@@ -1,0 +1,10 @@
+{
+  "finite_logical_checks": 1644,
+  "outside_compact_image_checks": 1028,
+  "one_sided_monomial_derivative": 637,
+  "finite_base_instances": 71,
+  "two_sided_two_odd": 304,
+  "matched_odd_exponents": 407,
+  "matched_even_exponents": 86,
+  "one_sided_two_odd": 210
+}

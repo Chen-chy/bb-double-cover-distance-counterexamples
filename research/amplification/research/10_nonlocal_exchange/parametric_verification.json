@@ -1,0 +1,30 @@
+[
+  {
+    "N": 1,
+    "fixed_message_minimum_from_uniform_proof": 74,
+    "minimum_field_support_from_uniform_proof": 15,
+    "same_universal_class": true,
+    "explicit_boundary_to_weight14": true
+  },
+  {
+    "N": 3,
+    "fixed_message_minimum_from_uniform_proof": 222,
+    "minimum_field_support_from_uniform_proof": 45,
+    "same_universal_class": true,
+    "explicit_boundary_to_weight14": true
+  },
+  {
+    "N": 5,
+    "fixed_message_minimum_from_uniform_proof": 370,
+    "minimum_field_support_from_uniform_proof": 75,
+    "same_universal_class": true,
+    "explicit_boundary_to_weight14": true
+  },
+  {
+    "N": 11,
+    "fixed_message_minimum_from_uniform_proof": 814,
+    "minimum_field_support_from_uniform_proof": 165,
+    "same_universal_class": true,
+    "explicit_boundary_to_weight14": true
+  }
+]

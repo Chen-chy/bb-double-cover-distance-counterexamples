@@ -1,0 +1,1 @@
+FINAL {'base_tests': 462, 'base_d_gt_bound': 343, 'base_d6': 36, 'below_target_distance': 62, 'base_d4': 26, 'disconnected_skipped': 38, 'base_d8': 54, 'cover_tests': 1728, 'cutoffs': 408, 'doubling_k_skipped': 8, 'd2_skipped': 3} sec 22.078328609466553

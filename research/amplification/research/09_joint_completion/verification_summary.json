@@ -1,0 +1,6 @@
+{
+  "graph_verification.json": "all exact checks passed",
+  "component_verification.json": "all exact checks passed",
+  "majority_control_verification.json": "all exact checks passed",
+  "pareto_verification.json": "all exact checks passed"
+}

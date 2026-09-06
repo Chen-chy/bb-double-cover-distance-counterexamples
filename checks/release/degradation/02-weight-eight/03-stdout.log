@@ -1,0 +1,145 @@
+{
+  "checked_lattices": 44619,
+  "free_rank_counts": {
+    "0": 36590,
+    "1": 8029
+  },
+  "maximum_finite_order": 56,
+  "maximum_strip_bound": 96,
+  "maximizer_row_ids": {
+    "0": [
+      42889,
+      42897,
+      42940,
+      42941,
+      42951,
+      42952,
+      43025,
+      43029,
+      43030,
+      43031,
+      43051,
+      43056,
+      43073,
+      43077,
+      43078,
+      43079
+    ],
+    "1": [
+      25879,
+      25887,
+      25915,
+      25923,
+      25937,
+      25940
+    ]
+  },
+  "input_sha256": "4df3bebab227c231f186b553f335e6caca5c592a5120bfce86690a82d4628d43"
+}
+{
+  "checked_pure_presentations": 12,
+  "maximum_group_order": 15,
+  "group_types": [
+    [
+      2,
+      6
+    ],
+    [
+      12
+    ],
+    [
+      14
+    ],
+    [
+      15
+    ]
+  ],
+  "certificates": [
+    {
+      "id": 0,
+      "group_order": 12,
+      "invariant_factors": [
+        12
+      ]
+    },
+    {
+      "id": 1,
+      "group_order": 12,
+      "invariant_factors": [
+        12
+      ]
+    },
+    {
+      "id": 2,
+      "group_order": 12,
+      "invariant_factors": [
+        12
+      ]
+    },
+    {
+      "id": 3,
+      "group_order": 12,
+      "invariant_factors": [
+        2,
+        6
+      ]
+    },
+    {
+      "id": 4,
+      "group_order": 12,
+      "invariant_factors": [
+        12
+      ]
+    },
+    {
+      "id": 5,
+      "group_order": 12,
+      "invariant_factors": [
+        12
+      ]
+    },
+    {
+      "id": 6,
+      "group_order": 15,
+      "invariant_factors": [
+        15
+      ]
+    },
+    {
+      "id": 7,
+      "group_order": 15,
+      "invariant_factors": [
+        15
+      ]
+    },
+    {
+      "id": 8,
+      "group_order": 14,
+      "invariant_factors": [
+        14
+      ]
+    },
+    {
+      "id": 9,
+      "group_order": 14,
+      "invariant_factors": [
+        14
+      ]
+    },
+    {
+      "id": 10,
+      "group_order": 14,
+      "invariant_factors": [
+        14
+      ]
+    },
+    {
+      "id": 11,
+      "group_order": 14,
+      "invariant_factors": [
+        14
+      ]
+    }
+  ],
+  "input_sha256": "53cac389e0de7eedc0788c2585e977ae709b157b1051b49a0cc132bc79fef92a"
+}

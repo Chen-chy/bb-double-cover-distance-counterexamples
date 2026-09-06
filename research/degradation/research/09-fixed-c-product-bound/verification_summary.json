@@ -1,0 +1,272 @@
+{
+  "status": "All exact checks passed",
+  "theorems": {
+    "product_uncertainty": "span(B) <= 4 wt(F) wt((B/c)F) for every c-nondivisible Laurent F",
+    "quadratic_bound": "mu_plus <= mu_0^2 + 2; for E,O>0, mu_plus <= mu_0^2",
+    "orbit_reduction": "All 12 admissible universal cover residue classes are monomial translates",
+    "factor_three": "Unproved and unrefuted for the full strict-trinomial class",
+    "relaxation_control": "mu_0=2, mu_plus=4N+2 exactly, but the second lifted check has five terms and is inadmissible"
+  },
+  "counts": {
+    "quotient_and_weight_table_instances": 2401,
+    "distinct_monomial_unit_classes": 12,
+    "all_message_parameterization_and_orbit_checks": 360,
+    "independent_incidence_product_bound_checks": 240,
+    "relaxation_counterfamily_identity_checks": 96
+  },
+  "incidence_examples": [
+    {
+      "E": -16,
+      "O": 31,
+      "F": [
+        -2,
+        14
+      ],
+      "R": 47,
+      "input_weight": 2,
+      "output_weight": 42,
+      "component_a": 42,
+      "component_m": 2,
+      "rows": [
+        [
+          32,
+          2,
+          0
+        ],
+        [
+          15,
+          -1,
+          -1
+        ]
+      ],
+      "cross": [
+        -2,
+        32,
+        -62
+      ]
+    },
+    {
+      "E": 14,
+      "O": 7,
+      "F": [
+        5,
+        6
+      ],
+      "R": 14,
+      "input_weight": 2,
+      "output_weight": 10,
+      "component_a": 10,
+      "component_m": 2,
+      "rows": [
+        [
+          7,
+          0,
+          -1
+        ],
+        [
+          7,
+          -1,
+          1
+        ]
+      ],
+      "cross": [
+        -1,
+        -14,
+        -7
+      ]
+    },
+    {
+      "E": -28,
+      "O": 19,
+      "F": [
+        -4,
+        4,
+        5,
+        19,
+        29
+      ],
+      "R": 47,
+      "input_weight": 5,
+      "output_weight": 43,
+      "component_a": 43,
+      "component_m": 5,
+      "rows": [
+        [
+          19,
+          0,
+          -1
+        ],
+        [
+          9,
+          1,
+          1
+        ]
+      ],
+      "cross": [
+        1,
+        -28,
+        19
+      ]
+    },
+    {
+      "E": 8,
+      "O": -17,
+      "F": [
+        16,
+        17
+      ],
+      "R": 25,
+      "input_weight": 2,
+      "output_weight": 16,
+      "component_a": 16,
+      "component_m": 2,
+      "rows": [
+        [
+          17,
+          0,
+          1
+        ],
+        [
+          8,
+          -1,
+          0
+        ]
+      ],
+      "cross": [
+        1,
+        8,
+        -17
+      ]
+    },
+    {
+      "E": -52,
+      "O": -29,
+      "F": [
+        7,
+        19,
+        20
+      ],
+      "R": 52,
+      "input_weight": 3,
+      "output_weight": 43,
+      "component_a": 43,
+      "component_m": 3,
+      "rows": [
+        [
+          23,
+          1,
+          -1
+        ],
+        [
+          6,
+          -1,
+          2
+        ]
+      ],
+      "cross": [
+        1,
+        -52,
+        -29
+      ]
+    },
+    {
+      "E": 8,
+      "O": 1,
+      "F": [
+        -9,
+        14,
+        22,
+        24,
+        27,
+        28,
+        39
+      ],
+      "R": 8,
+      "input_weight": 7,
+      "output_weight": 23,
+      "component_a": 5,
+      "component_m": 1,
+      "rows": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          8,
+          -1,
+          0
+        ]
+      ],
+      "cross": [
+        -1,
+        -8,
+        -1
+      ]
+    },
+    {
+      "E": -22,
+      "O": -17,
+      "F": [
+        -10,
+        0,
+        23,
+        27,
+        36
+      ],
+      "R": 22,
+      "input_weight": 5,
+      "output_weight": 35,
+      "component_a": 18,
+      "component_m": 2,
+      "rows": [
+        [
+          5,
+          1,
+          -1
+        ],
+        [
+          12,
+          -1,
+          2
+        ]
+      ],
+      "cross": [
+        1,
+        -22,
+        -17
+      ]
+    },
+    {
+      "E": -16,
+      "O": -47,
+      "F": [
+        -4,
+        39
+      ],
+      "R": 47,
+      "input_weight": 2,
+      "output_weight": 60,
+      "component_a": 60,
+      "component_m": 2,
+      "rows": [
+        [
+          31,
+          -1,
+          1
+        ],
+        [
+          16,
+          1,
+          0
+        ]
+      ],
+      "cross": [
+        -1,
+        16,
+        47
+      ]
+    }
+  ],
+  "scope": "Finite checks verify identities and constructive certificates. The uniform inequalities are proved symbolically in proof.md. No new exact strict-trinomial minimum or finite distance record is claimed."
+}

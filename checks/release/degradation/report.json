@@ -1,0 +1,659 @@
+{
+  "purpose": "Execution of existing archived verification commands; not a new mathematical audit.",
+  "mode": "verify",
+  "started_utc": "2026-09-06T15:06:02.214372+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "byteorder": "little",
+  "stages": [
+    {
+      "id": "01-weight-six",
+      "source_directory": "research/01-weight-six",
+      "commands": [
+        {
+          "command_template": [
+            "{python}",
+            "verify_presentations.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_presentations.py"
+          ],
+          "started_utc": "2026-09-06T15:06:02.567530+00:00",
+          "stdout": "01-weight-six/01-stdout.log",
+          "stderr": "01-weight-six/01-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 3.548472,
+          "finished_utc": "2026-09-06T15:06:06.116091+00:00",
+          "stdout_sha256": "00a168a75252a2fc9f5a3abaa086599a8dddfd2bd591523091890cd9db337afc",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_family.py",
+            "1",
+            "2"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_family.py",
+            "1",
+            "2"
+          ],
+          "started_utc": "2026-09-06T15:06:06.116501+00:00",
+          "stdout": "01-weight-six/02-stdout.log",
+          "stderr": "01-weight-six/02-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 0.923758,
+          "finished_utc": "2026-09-06T15:06:07.040741+00:00",
+          "stdout_sha256": "68e7bc46c2766a40622de41f1c07a3a94eb6855e500c63672af2d77f90afef8b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "passed": true,
+      "changed_or_new_workcopy_files": [],
+      "deleted_workcopy_files": [],
+      "original_files_unchanged": true
+    },
+    {
+      "id": "02-weight-eight",
+      "source_directory": "research/02-weight-eight",
+      "commands": [
+        {
+          "command_template": [
+            "{python}",
+            "verify_graphs.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_graphs.py"
+          ],
+          "started_utc": "2026-09-06T15:06:07.052128+00:00",
+          "stdout": "02-weight-eight/01-stdout.log",
+          "stderr": "02-weight-eight/01-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 0.817246,
+          "finished_utc": "2026-09-06T15:06:07.869460+00:00",
+          "stdout_sha256": "937fddbe1c0d28021a6043da549fdb6a4be41324e6409a35103a3a78e6e59868",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_highrank.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_highrank.py"
+          ],
+          "started_utc": "2026-09-06T15:06:07.869884+00:00",
+          "stdout": "02-weight-eight/02-stdout.log",
+          "stderr": "02-weight-eight/02-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 1.436309,
+          "finished_utc": "2026-09-06T15:06:09.306281+00:00",
+          "stdout_sha256": "42add78f790baf54d2f1e619c432353db8d4277903967452fb3aec711e0795cd",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_low_and_pure.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_low_and_pure.py"
+          ],
+          "started_utc": "2026-09-06T15:06:09.306678+00:00",
+          "stdout": "02-weight-eight/03-stdout.log",
+          "stderr": "02-weight-eight/03-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 3.824081,
+          "finished_utc": "2026-09-06T15:06:13.130988+00:00",
+          "stdout_sha256": "ee08a1b2726f778c834604065d73b8da210b4c07842ddfe6ac803299912aef1b",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_nilpotent_lemmas.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_nilpotent_lemmas.py"
+          ],
+          "started_utc": "2026-09-06T15:06:13.132928+00:00",
+          "stdout": "02-weight-eight/04-stdout.log",
+          "stderr": "02-weight-eight/04-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 1.127288,
+          "finished_utc": "2026-09-06T15:06:14.260442+00:00",
+          "stdout_sha256": "52bd1207916192c7717e3697dceccf2b05d6fd6907a5aa348c183ccb765bf835",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_summary.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_summary.py"
+          ],
+          "started_utc": "2026-09-06T15:06:14.262761+00:00",
+          "stdout": "02-weight-eight/05-stdout.log",
+          "stderr": "02-weight-eight/05-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 1.122934,
+          "finished_utc": "2026-09-06T15:06:15.385779+00:00",
+          "stdout_sha256": "8b42954791c1322db3cf2a573e7d8b4d0a15007c4a6575d087258be254206cec",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "passed": true,
+      "changed_or_new_workcopy_files": [],
+      "deleted_workcopy_files": [],
+      "original_files_unchanged": true
+    },
+    {
+      "id": "03-structural-degradation",
+      "source_directory": "research/03-structural-degradation",
+      "commands": [
+        {
+          "command_template": [
+            "{python}",
+            "verify_twists.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_twists.py"
+          ],
+          "started_utc": "2026-09-06T15:06:15.408371+00:00",
+          "stdout": "03-structural-degradation/01-stdout.log",
+          "stderr": "03-structural-degradation/01-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 1.843112,
+          "finished_utc": "2026-09-06T15:06:17.254496+00:00",
+          "stdout_sha256": "8a8dc3b89522d7f1c7af070e20914b1fa106b4e36763f43951a8a051121b636e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_geometry.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_geometry.py"
+          ],
+          "started_utc": "2026-09-06T15:06:17.255060+00:00",
+          "stdout": "03-structural-degradation/02-stdout.log",
+          "stderr": "03-structural-degradation/02-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 8.455803,
+          "finished_utc": "2026-09-06T15:06:25.710969+00:00",
+          "stdout_sha256": "db2c9cbbda7c9230d97193fea73b66ffbfaa0961dab7945970d3a3a12a75bf12",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_odd_sector.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_odd_sector.py"
+          ],
+          "started_utc": "2026-09-06T15:06:25.712116+00:00",
+          "stdout": "03-structural-degradation/03-stdout.log",
+          "stderr": "03-structural-degradation/03-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 0.672742,
+          "finished_utc": "2026-09-06T15:06:26.384944+00:00",
+          "stdout_sha256": "79ab7a298f6b69e4eff6d62e325017fba39f99275d2cea8bf01693eb67022fa4",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "passed": true,
+      "changed_or_new_workcopy_files": [
+        {
+          "file": "geometry_verification.json",
+          "before_sha256": "01578ae5246a36f74109f59591dd61ffd5ea6ca31e4b35db19cf4a34fa89f685",
+          "after_sha256": "db2c9cbbda7c9230d97193fea73b66ffbfaa0961dab7945970d3a3a12a75bf12",
+          "retained_as_export_output": true,
+          "output_path": "03-structural-degradation/outputs/geometry_verification.json"
+        },
+        {
+          "file": "twist_verification.json",
+          "before_sha256": "2fd68ca6f426f92d4786a11197620dcb2ac1d139919b3077471390ec983f262c",
+          "after_sha256": "298f830e8d25ef8980ea2e8da708aca7c89470b1fe17779e7f4516ae150f5f20",
+          "retained_as_export_output": true,
+          "output_path": "03-structural-degradation/outputs/twist_verification.json"
+        }
+      ],
+      "deleted_workcopy_files": [],
+      "original_files_unchanged": true
+    },
+    {
+      "id": "04-quadratic-bottleneck",
+      "source_directory": "research/04-quadratic-bottleneck",
+      "commands": [
+        {
+          "command_template": [
+            "{python}",
+            "verify.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify.py"
+          ],
+          "started_utc": "2026-09-06T15:06:26.389249+00:00",
+          "stdout": "04-quadratic-bottleneck/01-stdout.log",
+          "stderr": "04-quadratic-bottleneck/01-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 7.524563,
+          "finished_utc": "2026-09-06T15:06:33.913888+00:00",
+          "stdout_sha256": "b170d94dea8da34b11d309fbef98381ffb6382063ec1a34e3f64573744e8f54c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_independent.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_independent.py"
+          ],
+          "started_utc": "2026-09-06T15:06:33.915424+00:00",
+          "stdout": "04-quadratic-bottleneck/02-stdout.log",
+          "stderr": "04-quadratic-bottleneck/02-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 1.923621,
+          "finished_utc": "2026-09-06T15:06:35.839130+00:00",
+          "stdout_sha256": "10c80dd34c1b7d2b09c9d700315516c856b2974ecb267a45e2625a349c9df6d1",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_cyclic_strip.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_cyclic_strip.py"
+          ],
+          "started_utc": "2026-09-06T15:06:35.839583+00:00",
+          "stdout": "04-quadratic-bottleneck/03-stdout.log",
+          "stderr": "04-quadratic-bottleneck/03-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 3.975739,
+          "finished_utc": "2026-09-06T15:06:39.815405+00:00",
+          "stdout_sha256": "e3ed3d1a5515a27d3f8c61d91402471d001dbac94e33521920940b15a4534e2d",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "make_summary.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "make_summary.py"
+          ],
+          "started_utc": "2026-09-06T15:06:39.815891+00:00",
+          "stdout": "04-quadratic-bottleneck/04-stdout.log",
+          "stderr": "04-quadratic-bottleneck/04-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 0.570657,
+          "finished_utc": "2026-09-06T15:06:40.386633+00:00",
+          "stdout_sha256": "f1d8169818b8ae0613019013ff9c41a1c2d5ed1b1508136079842f95a4ec1c93",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "passed": true,
+      "changed_or_new_workcopy_files": [
+        {
+          "file": "cyclic_strip_verification.json",
+          "before_sha256": "ce5de8c6ffe81d215fc5602e9467bbdd5743d2a75b21cb999036b606160ace4d",
+          "after_sha256": "2242a16432a04d93829a95e083447017a7e622d84e55d8c00ecba879fc17b19b",
+          "retained_as_export_output": true,
+          "output_path": "04-quadratic-bottleneck/outputs/cyclic_strip_verification.json"
+        },
+        {
+          "file": "independent_verification.json",
+          "before_sha256": "aa7cdbf4ffca5c6c94d41ff1f7efdf865dab9df0978a42647bbaa66b83b4dc38",
+          "after_sha256": "78223d410bd925714924105e4debd216d50a2e75fce6a558148542359dacaa76",
+          "retained_as_export_output": true,
+          "output_path": "04-quadratic-bottleneck/outputs/independent_verification.json"
+        },
+        {
+          "file": "manifest.json",
+          "before_sha256": "90d59525bdf17844ac370f5774af7f47acf3ea7d79dcfd009e832f2f2b479ec1",
+          "after_sha256": "d82ac9d81e99b303e33cbdbe4d1f71291ae2ef4e5d5b6b3734f7516ef14a247f",
+          "retained_as_export_output": true,
+          "output_path": "04-quadratic-bottleneck/outputs/manifest.json"
+        },
+        {
+          "file": "summary.json",
+          "before_sha256": "e8100cd691eb191fd14aa8f0176edb2bd94bfa86d4bcde25e8349fb7ddf8c224",
+          "after_sha256": "a1015718c243e270e86ab8d5626063266ef8dfda3b4b09b226fb5c814c760b11",
+          "retained_as_export_output": true,
+          "output_path": "04-quadratic-bottleneck/outputs/summary.json"
+        },
+        {
+          "file": "verification_summary.json",
+          "before_sha256": "dc12900fbffc12cf597883b0b83b5acbe9e44f9f48aa8acd41f77c03ad5e0b6f",
+          "after_sha256": "934f23641945fce23abf8173fa481dd0e983db4b57146f313ca5157bb9869a95",
+          "retained_as_export_output": true,
+          "output_path": "04-quadratic-bottleneck/outputs/verification_summary.json"
+        }
+      ],
+      "deleted_workcopy_files": [],
+      "original_files_unchanged": true
+    },
+    {
+      "id": "05-visible-two-primary",
+      "source_directory": "research/05-visible-two-primary",
+      "commands": [
+        {
+          "command_template": [
+            "{python}",
+            "verify_contact.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_contact.py"
+          ],
+          "started_utc": "2026-09-06T15:06:40.393834+00:00",
+          "stdout": "05-visible-two-primary/01-stdout.log",
+          "stderr": "05-visible-two-primary/01-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 0.919493,
+          "finished_utc": "2026-09-06T15:06:41.313402+00:00",
+          "stdout_sha256": "4c087d4c6b1dd89d9f68713352032946f00052e238b2714969cbc65970135d2c",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_local.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_local.py"
+          ],
+          "started_utc": "2026-09-06T15:06:41.313880+00:00",
+          "stdout": "05-visible-two-primary/02-stdout.log",
+          "stderr": "05-visible-two-primary/02-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 8.726033,
+          "finished_utc": "2026-09-06T15:06:50.042827+00:00",
+          "stdout_sha256": "e7a12a8f68a045f954ba0030b9049a53a35d96f59a0e1a87ab5e4d46a659c901",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_structured.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_structured.py"
+          ],
+          "started_utc": "2026-09-06T15:06:50.114152+00:00",
+          "stdout": "05-visible-two-primary/03-stdout.log",
+          "stderr": "05-visible-two-primary/03-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 8.906947,
+          "finished_utc": "2026-09-06T15:06:59.025739+00:00",
+          "stdout_sha256": "62530dee5afecf91d6f6829c3e8a3908ca10a41db24fde4748b8fe1582d20abb",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "verify_family.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify_family.py"
+          ],
+          "started_utc": "2026-09-06T15:06:59.041726+00:00",
+          "stdout": "05-visible-two-primary/04-stdout.log",
+          "stderr": "05-visible-two-primary/04-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 0.71904,
+          "finished_utc": "2026-09-06T15:06:59.760872+00:00",
+          "stdout_sha256": "19d64397035548d5532bc511f638cbc76536d6dc4920bac0479372d7d18f996f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "make_summary.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "make_summary.py"
+          ],
+          "started_utc": "2026-09-06T15:06:59.761414+00:00",
+          "stdout": "05-visible-two-primary/05-stdout.log",
+          "stderr": "05-visible-two-primary/05-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 0.569194,
+          "finished_utc": "2026-09-06T15:07:00.330707+00:00",
+          "stdout_sha256": "bf0c8985618f1ca4b9d1e713e8dce1209441ea4f11329bd7928d30aec6be260f",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "passed": true,
+      "changed_or_new_workcopy_files": [
+        {
+          "file": "contact_verification.json",
+          "before_sha256": "202c2e28f8672294d80f859f65c813a83008be1ba73541caa28d3b966950b805",
+          "after_sha256": "0455afca19913e3399c3456486eb99a5f4a1f07cf829393a84aaabd05cc975ee",
+          "retained_as_export_output": true,
+          "output_path": "05-visible-two-primary/outputs/contact_verification.json"
+        },
+        {
+          "file": "family_verification.json",
+          "before_sha256": "596407d35beb936edf9b90b50cb9e152c2ff04defd05de96571bd2d782fcae0d",
+          "after_sha256": "abe84cc663397c015ac3d92d1df8d729cdf02d10758d85c584dafcd3c4cf6728",
+          "retained_as_export_output": true,
+          "output_path": "05-visible-two-primary/outputs/family_verification.json"
+        },
+        {
+          "file": "local_verification.json",
+          "before_sha256": "77e6397b3ecd9d4afc48b96b69cd64f945ba2e1b0537f0bca07738d27c3ded0e",
+          "after_sha256": "f183a45a74c2e940f3640b6caaa4ce5ade66827a22589c59b4ca31afb969856c",
+          "retained_as_export_output": true,
+          "output_path": "05-visible-two-primary/outputs/local_verification.json"
+        },
+        {
+          "file": "manifest.json",
+          "before_sha256": "b9b3a6986c8f2dc46e8c89fbe1c3927f93af77d10170abc36a88c1ea4bcdef71",
+          "after_sha256": "18f9b6675692ba4c8da6904a964df58578aa314700e129504514a055f40e6f62",
+          "retained_as_export_output": true,
+          "output_path": "05-visible-two-primary/outputs/manifest.json"
+        },
+        {
+          "file": "structured_verification.json",
+          "before_sha256": "944a21666f667ce4cbb536942db7232e6e997927c79bc630dc71cec036f85f4f",
+          "after_sha256": "3d43c3943dfd9eae43d138b37ddc6fa206847ccd8dbc06c80ab386fea7225452",
+          "retained_as_export_output": true,
+          "output_path": "05-visible-two-primary/outputs/structured_verification.json"
+        },
+        {
+          "file": "verification_summary.json",
+          "before_sha256": "17c5c25c0b8b353623e16a1f6d16153957bcb3bb753208518321478154447411",
+          "after_sha256": "706baf6420b27bfdd9ad4b73cec5d7b361fdb8c92007ba5204e98bb1e3d24438",
+          "retained_as_export_output": true,
+          "output_path": "05-visible-two-primary/outputs/verification_summary.json"
+        }
+      ],
+      "deleted_workcopy_files": [],
+      "original_files_unchanged": true
+    },
+    {
+      "id": "06-sparse-deck-descent",
+      "source_directory": "research/06-sparse-deck-descent",
+      "commands": [
+        {
+          "command_template": [
+            "{python}",
+            "verify.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify.py"
+          ],
+          "started_utc": "2026-09-06T15:07:00.334954+00:00",
+          "stdout": "06-sparse-deck-descent/01-stdout.log",
+          "stderr": "06-sparse-deck-descent/01-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 0.923344,
+          "finished_utc": "2026-09-06T15:07:01.258379+00:00",
+          "stdout_sha256": "d0f44e14e17da224608237ce5bf9acd269e46f0f1932cb6ed3011a033a2aa5a5",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "passed": true,
+      "changed_or_new_workcopy_files": [],
+      "deleted_workcopy_files": [],
+      "original_files_unchanged": true
+    },
+    {
+      "id": "07-rank-one-amplification",
+      "source_directory": "research/07-rank-one-amplification",
+      "commands": [
+        {
+          "command_template": [
+            "{python}",
+            "verify.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify.py"
+          ],
+          "started_utc": "2026-09-06T15:07:01.262727+00:00",
+          "stdout": "07-rank-one-amplification/01-stdout.log",
+          "stderr": "07-rank-one-amplification/01-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 1.019365,
+          "finished_utc": "2026-09-06T15:07:02.282156+00:00",
+          "stdout_sha256": "1df084f24a59ec575319a0fc7f4775c9a270590f99ae861bdcade25ed76579c8",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "passed": true,
+      "changed_or_new_workcopy_files": [],
+      "deleted_workcopy_files": [],
+      "original_files_unchanged": true
+    },
+    {
+      "id": "08-mixed-laurent",
+      "source_directory": "research/08-mixed-laurent",
+      "commands": [
+        {
+          "command_template": [
+            "{python}",
+            "verify.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify.py"
+          ],
+          "started_utc": "2026-09-06T15:07:02.284829+00:00",
+          "stdout": "08-mixed-laurent/01-stdout.log",
+          "stderr": "08-mixed-laurent/01-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 0.868598,
+          "finished_utc": "2026-09-06T15:07:03.153491+00:00",
+          "stdout_sha256": "0e75e31becf7d85cdbd995109236562bcaf61525d68452f6876b9e64ef8e51c7",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "command_template": [
+            "{python}",
+            "audit.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "audit.py"
+          ],
+          "started_utc": "2026-09-06T15:07:03.154129+00:00",
+          "stdout": "08-mixed-laurent/02-stdout.log",
+          "stderr": "08-mixed-laurent/02-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 0.721296,
+          "finished_utc": "2026-09-06T15:07:03.875511+00:00",
+          "stdout_sha256": "a5b678ce5e76604e2f82899d9133c6067a348c0929c08aecdcbe419d39400de0",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "passed": true,
+      "changed_or_new_workcopy_files": [],
+      "deleted_workcopy_files": [],
+      "original_files_unchanged": true
+    },
+    {
+      "id": "09-fixed-c-product-bound",
+      "source_directory": "research/09-fixed-c-product-bound",
+      "commands": [
+        {
+          "command_template": [
+            "{python}",
+            "verify.py"
+          ],
+          "command": [
+            "/opt/pyvenv/bin/python",
+            "verify.py"
+          ],
+          "started_utc": "2026-09-06T15:07:03.878858+00:00",
+          "stdout": "09-fixed-c-product-bound/01-stdout.log",
+          "stderr": "09-fixed-c-product-bound/01-stderr.log",
+          "returncode": 0,
+          "passed": true,
+          "elapsed_seconds": 1.168975,
+          "finished_utc": "2026-09-06T15:07:05.047901+00:00",
+          "stdout_sha256": "5356b4dd3679f8d77779e02f0f18c6eff335899ef9f664f31576946c6cb9a83e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "passed": true,
+      "changed_or_new_workcopy_files": [],
+      "deleted_workcopy_files": [],
+      "original_files_unchanged": true
+    }
+  ],
+  "original_evidence_modified": false,
+  "sympy_version": "1.14.0",
+  "finished_utc": "2026-09-06T15:07:05.049331+00:00",
+  "all_selected_commands_passed": true,
+  "command_count": 24
+}

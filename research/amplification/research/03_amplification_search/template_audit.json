@@ -1,0 +1,7 @@
+{
+  "base_parameter_sets": 16,
+  "cover_instances": 256,
+  "independently_audited_upper_witnesses": 256,
+  "base_d": 6,
+  "cover_upper_at_most": 14
+}

@@ -1,0 +1,27 @@
+{
+  "python_version": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "executions": [
+    {
+      "script": "verify_bitset.py",
+      "returncode": 0,
+      "success_token_seen": true,
+      "script_sha256": "2fc62d81925b981cc29f90f53e780be45d7f4b792a8ba9d6dedd42c0cad25516",
+      "stdout_sha256": "2e26b1a511c14d8c57a3b0e431cd75955facbe47685b1b3830398a756917c1a8"
+    },
+    {
+      "script": "verify_polynomial.py",
+      "returncode": 0,
+      "success_token_seen": true,
+      "script_sha256": "53a1beee02c3937cb22594de56331161cb676b588d6a978def3e9f76f77df447",
+      "stdout_sha256": "f5f1f76cd0da623190cfcb08c77f05ab666424974c95608826220fac91f61ad1"
+    }
+  ],
+  "independent_comparison": {
+    "all_four_matrices_byte_identical": true,
+    "all_741_circuits_byte_identical": true,
+    "all_10_canonical_orbits_and_preimages_identical": true,
+    "ranks_and_distances_identical": true,
+    "H_preimages_identical": true
+  }
+}

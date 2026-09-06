@@ -1,0 +1,13 @@
+# Template only. Do not publish this as completed citation metadata.
+# Fill actual authors and identifiers only after approval.
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and the relevant certificate."
+title: "Distance Distortion in Binary Bivariate Bicycle Double Covers"
+type: software
+version: 0.1.0
+date-released: 2026-09-06
+authors:
+  - family-names: REPLACE_WITH_APPROVED_AUTHOR
+    given-names: REPLACE_WITH_APPROVED_AUTHOR
+# repository-code: Add only after the public repository exists.
+# license: Add only after rights and license have been approved.

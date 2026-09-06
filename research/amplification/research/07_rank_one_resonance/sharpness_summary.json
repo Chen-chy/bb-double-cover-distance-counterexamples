@@ -1,0 +1,44 @@
+[
+  {
+    "L": 9,
+    "base_parameters": [
+      18,
+      4,
+      2
+    ],
+    "cover_parameters": [
+      36,
+      4,
+      4
+    ],
+    "classification": "exact finite cross-check of the uniform symbolic family"
+  },
+  {
+    "L": 15,
+    "base_parameters": [
+      30,
+      4,
+      2
+    ],
+    "cover_parameters": [
+      60,
+      4,
+      4
+    ],
+    "classification": "exact finite cross-check of the uniform symbolic family"
+  },
+  {
+    "L": 21,
+    "base_parameters": [
+      42,
+      4,
+      2
+    ],
+    "cover_parameters": [
+      84,
+      4,
+      4
+    ],
+    "classification": "exact finite cross-check of the uniform symbolic family"
+  }
+]

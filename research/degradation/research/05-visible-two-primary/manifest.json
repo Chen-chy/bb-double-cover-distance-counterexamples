@@ -1,0 +1,18 @@
+{
+  "README.md": "59e4fbc48090d27957817cefdafa89cbe5af5846945c62a1852ae6969f004f1b",
+  "algebra.py": "7919adcb6331d2972945722f5445c157af83d64b1656f0773e5d03cc5e442825",
+  "contact_verification.json": "202c2e28f8672294d80f859f65c813a83008be1ba73541caa28d3b966950b805",
+  "family_verification.json": "596407d35beb936edf9b90b50cb9e152c2ff04defd05de96571bd2d782fcae0d",
+  "local_cases.json": "684e1cc5c103b1ccbfd96797450529fd36bbb134a1cf0e1947274e889c9a2d77",
+  "local_verification.json": "77e6397b3ecd9d4afc48b96b69cd64f945ba2e1b0537f0bca07738d27c3ded0e",
+  "make_summary.py": "be298ad59310f04a833f6f0ddfb550f2d90af9e5e079478beff9556ea05c94f2",
+  "proof.md": "ebd59824f06c6d203f4520ed8aaefbf881b38e5112499a4ddc33b25983ddf61d",
+  "run_all.sh": "880240f323ee9dba33e34beaa63b349cc5c940e5f28348c22e6f4d9330f9ed05",
+  "run_output.txt": "6ad677635cd576358e12a4f15e15257df62d907ba54a3853f5989ede3fc4fded",
+  "structured_verification.json": "944a21666f667ce4cbb536942db7232e6e997927c79bc630dc71cec036f85f4f",
+  "verification_summary.json": "17c5c25c0b8b353623e16a1f6d16153957bcb3bb753208518321478154447411",
+  "verify_contact.py": "57d30964f0647f058eb332ff6606356cb1f9b7b20c8e3014730826c9bacfe7d6",
+  "verify_family.py": "9588da2eb2623b3f5318cfe330f2746f8f7e3491b3d86e9ca26f6de0786eb6ff",
+  "verify_local.py": "57449717b210bb62e6f56e811b4f77165cf3449ea51c33366c7528f1a598297f",
+  "verify_structured.py": "74475b718c3e28788c3e4ae0d72b6c3271d8f9c6b885ab6340f048aed5fd8337"
+}

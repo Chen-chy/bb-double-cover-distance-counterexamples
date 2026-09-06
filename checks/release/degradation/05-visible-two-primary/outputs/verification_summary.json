@@ -1,0 +1,273 @@
+{
+  "principal_status": "TRINOMIAL_STILL_OPEN",
+  "quadratic_bound_proved": false,
+  "quadratic_bound_refuted": false,
+  "new_uniform_results": [
+    "Actual finite local H0 is K[t]/t^m; H1 is two equal copies; H2 is one copy.",
+    "Local length m has at most two nonzero binary digits for support-generated strict-trinomial BB codes.",
+    "Projection and transfer have the compatible two-branch normal forms in proof.md.",
+    "Every increasing local double-cover length is a power of two plus a power-of-two increment.",
+    "Explicit strict-trinomial high-contact families realize non-power-of-two lengths; a partial-growth family has exact base distance four."
+  ],
+  "scope": "Actual support groups with at most two generators; no Hamming-isometry claim and no identification of compact image with full finite homology.",
+  "inherited_distance_bound": "d <= 4*d_2^3",
+  "new_distance_degradation_record": false,
+  "contact": {
+    "exact_contact_cases": 10649,
+    "identically_zero_cases_excluded": 8,
+    "multiplicities": {
+      "1": 9361,
+      "2": 1145,
+      "3": 82,
+      "4": 107,
+      "5": 2,
+      "6": 3,
+      "8": 3,
+      "9": 1
+    },
+    "examples_by_multiplicity": {
+      "1": [
+        0,
+        1,
+        0,
+        2
+      ],
+      "2": [
+        0,
+        1,
+        1,
+        6
+      ],
+      "4": [
+        0,
+        1,
+        5,
+        4
+      ],
+      "3": [
+        0,
+        5,
+        3,
+        7
+      ],
+      "6": [
+        -70,
+        6,
+        -34,
+        -68
+      ],
+      "8": [
+        -12,
+        28,
+        -52,
+        -80
+      ],
+      "5": [
+        95,
+        -3,
+        51,
+        20
+      ],
+      "9": [
+        -32,
+        -57,
+        -7,
+        63
+      ]
+    },
+    "sharp_families": [
+      {
+        "r": 1,
+        "Q": 2,
+        "multiplicity_at_x2_x_1": 3
+      },
+      {
+        "r": 2,
+        "Q": 4,
+        "multiplicity_at_x2_x_1": 5
+      },
+      {
+        "r": 3,
+        "Q": 8,
+        "multiplicity_at_x2_x_1": 9
+      },
+      {
+        "r": 4,
+        "Q": 16,
+        "multiplicity_at_x2_x_1": 17
+      },
+      {
+        "r": 5,
+        "Q": 32,
+        "multiplicity_at_x2_x_1": 33
+      },
+      {
+        "r": 6,
+        "Q": 64,
+        "multiplicity_at_x2_x_1": 65
+      },
+      {
+        "r": 7,
+        "Q": 128,
+        "multiplicity_at_x2_x_1": 129
+      },
+      {
+        "r": 8,
+        "Q": 256,
+        "multiplicity_at_x2_x_1": 257
+      }
+    ],
+    "all_binary_weights_at_most_two": true,
+    "seconds": 0.314
+  },
+  "random_local_matrices": {
+    "random_exact_cases": 384,
+    "local_length_histogram": {
+      "1->1": 337,
+      "1->2": 10,
+      "2->2": 28,
+      "2->4": 1,
+      "3->3": 3,
+      "4->4": 4,
+      "5->5": 1
+    },
+    "checked": [
+      "curvilinear H0",
+      "H1 free rank two over H0 by radical profiles",
+      "two-bit local lengths",
+      "doubling length rule",
+      "projection rank",
+      "kernel and image radical profiles of the projection normal form"
+    ],
+    "seconds": 4.103
+  },
+  "structured_matrices": {
+    "partial_growth_cases": [
+      {
+        "M": 4,
+        "N": 4,
+        "m": 2,
+        "m2": 3,
+        "projection_rank_over_field": 3,
+        "kernel_profile_over_field": [
+          3,
+          1,
+          0
+        ],
+        "r": 1,
+        "s": 0
+      },
+      {
+        "M": 8,
+        "N": 8,
+        "m": 4,
+        "m2": 6,
+        "projection_rank_over_field": 6,
+        "kernel_profile_over_field": [
+          6,
+          4,
+          2,
+          1,
+          0
+        ],
+        "r": 1,
+        "s": 1
+      },
+      {
+        "M": 16,
+        "N": 16,
+        "m": 8,
+        "m2": 12,
+        "projection_rank_over_field": 12,
+        "kernel_profile_over_field": [
+          12,
+          10,
+          8,
+          6,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "r": 1,
+        "s": 2
+      },
+      {
+        "M": 8,
+        "N": 8,
+        "m": 4,
+        "m2": 5,
+        "projection_rank_over_field": 5,
+        "kernel_profile_over_field": [
+          5,
+          3,
+          2,
+          1,
+          0
+        ],
+        "r": 2,
+        "s": 0
+      },
+      {
+        "M": 16,
+        "N": 16,
+        "m": 8,
+        "m2": 10,
+        "projection_rank_over_field": 10,
+        "kernel_profile_over_field": [
+          10,
+          8,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "r": 2,
+        "s": 1
+      },
+      {
+        "M": 16,
+        "N": 16,
+        "m": 8,
+        "m2": 9,
+        "projection_rank_over_field": 9,
+        "kernel_profile_over_field": [
+          9,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "r": 3,
+        "s": 0
+      }
+    ],
+    "cyclic_sylow_cases": 72,
+    "all_checks_pass": true,
+    "seconds": 1.61
+  },
+  "rectangular_family": {
+    "Q": 4,
+    "base_n": 576,
+    "base_k": 16,
+    "base_distance_exact": 4,
+    "base_weight_two_cycles_excluded_by_distinct_columns": true,
+    "cover_n": 1152,
+    "cover_k": 20,
+    "cover_distance_upper_bound": 6,
+    "cover_distance_exact_not_claimed": true,
+    "termwise_matching_and_strict_supports": true,
+    "connected_by_A_support_generators": true,
+    "projection_rank_binary": 10,
+    "four_term_same_local_full_doubling_guard": true,
+    "seconds": 0.071
+  }
+}

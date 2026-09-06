@@ -1,0 +1,39 @@
+{
+  "status": "CONSTANT_BOUND_STILL_OPEN",
+  "best_rigorous_lower_bound": "7/3",
+  "finite_universal_upper_bound_established": false,
+  "highest_exact_BB_cover_ratio_certified": "14/6 = 7/3",
+  "new_larger_ratio_found": false,
+  "thresholds": {
+    "7/3": "not proved universally; no exact counterexample obtained",
+    "5/2": "not proved universally; no exact counterexample obtained",
+    "3": "not proved universally; no exact counterexample obtained"
+  },
+  "structural_results": [
+    {
+      "claim": "For univariate strict-trinomial double covers, any one-block base logical of weight w implies d2 <= 2w.",
+      "evidence": "uniform symbolic proof",
+      "scope": "all period parities and valid term-matched lifts"
+    },
+    {
+      "claim": "Split covers reduce on full homology to (P^2,Q+delta P), with the exact physical weight functional in REPORT.md.",
+      "evidence": "uniform symbolic proof",
+      "scope": "split group extensions; includes odd doubled coordinates"
+    }
+  ],
+  "disproved_intermediate_lemma": {
+    "claim": "Reduced distance <= base distance",
+    "counterexample": "Base [[78,4,6]], reduced [[78,4,9]]",
+    "is_new_BB_amplification_record": false
+  },
+  "completed_d4_d6_cover_instances": 16384,
+  "completed_d4_d6_instances_with_independent_upper_witness_audit": 16384,
+  "partial_d8": {
+    "cover_instances": 2800,
+    "certified_within_7_over_3": 1780,
+    "certified_within_5_over_2": 1787,
+    "certified_within_3": 1794,
+    "unresolved_at_7_over_3": 1020
+  },
+  "counting_warning": "Counts are tested parameter instances, not inequivalent codes or exhaustive coverage."
+}

@@ -1,0 +1,8 @@
+Command: {python} verify_graph.py
+
+{
+  "normal_form_cases": 240,
+  "independent_odd_vertex_tests": 4803,
+  "per_case_joint_odd_flips": "all subsets of up to eight odd vertices",
+  "status": "all exact checks passed"
+}

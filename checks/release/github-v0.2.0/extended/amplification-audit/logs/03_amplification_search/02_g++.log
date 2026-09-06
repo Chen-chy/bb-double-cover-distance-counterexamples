@@ -1,0 +1,2 @@
+Command: g++ -O3 -std=c++17 search_general.cpp -o search_general
+

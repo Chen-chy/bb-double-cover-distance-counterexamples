@@ -1,0 +1,369 @@
+{
+  "profile": "extended",
+  "started_utc": "2026-09-06T16:34:15.216574+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "name": "unit-tests",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "started_utc": "2026-09-06T16:34:15.218034+00:00",
+      "log": "unit-tests.log",
+      "script_sha256": null,
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 0.718214,
+      "log_sha256": "98903243b26db19c5990ef19144a9bf64c12e626e07aed0c696a322984b10f94"
+    },
+    {
+      "name": "lattice-transport",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/verify_lattice_transport.py",
+        "--output",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/extended/lattice.json"
+      ],
+      "started_utc": "2026-09-06T16:34:15.936817+00:00",
+      "log": "lattice-transport.log",
+      "script_sha256": "6fc1239e29f6ba4ecd1177178d528c570b549eaab9a1dd0fb15d10bf0232a5df",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 1.321196,
+      "log_sha256": "f0ab648c6d1bc4822974607793378cf8caaa1a7b925a74b920635b82ee28e2c3"
+    },
+    {
+      "name": "upper-bitset",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "certificates/upper/verify_bitset.py",
+        "--output-dir",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/extended/upper-bitset"
+      ],
+      "started_utc": "2026-09-06T16:34:17.258498+00:00",
+      "log": "upper-bitset.log",
+      "script_sha256": "2fc62d81925b981cc29f90f53e780be45d7f4b792a8ba9d6dedd42c0cad25516",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 4.278637,
+      "log_sha256": "2e26b1a511c14d8c57a3b0e431cd75955facbe47685b1b3830398a756917c1a8"
+    },
+    {
+      "name": "upper-polynomial",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "certificates/upper/verify_polynomial.py",
+        "--output-dir",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/extended/upper-polynomial"
+      ],
+      "started_utc": "2026-09-06T16:34:21.537703+00:00",
+      "log": "upper-polynomial.log",
+      "script_sha256": "53a1beee02c3937cb22594de56331161cb676b588d6a978def3e9f76f77df447",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 13.904793,
+      "log_sha256": "f5f1f76cd0da623190cfcb08c77f05ab666424974c95608826220fac91f61ad1"
+    },
+    {
+      "name": "lower-bitset",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "certificates/lower/verify_lower_bitset.py",
+        "--output-dir",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/extended/lower-bitset"
+      ],
+      "started_utc": "2026-09-06T16:34:35.443016+00:00",
+      "log": "lower-bitset.log",
+      "script_sha256": "892d9ca0bfcd0aa66174f48b035b5d2fc4d7e0030d32fb05060a0f0bf963633e",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 4.780756,
+      "log_sha256": "f7d5319bc18eb2ac67def5992c7e6b2366bb4d88f1f8a27d1e5d3c49d43947d2"
+    },
+    {
+      "name": "lower-polynomial",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "certificates/lower/verify_lower_polynomial.py",
+        "--output-dir",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/extended/lower-polynomial"
+      ],
+      "started_utc": "2026-09-06T16:34:40.224357+00:00",
+      "log": "lower-polynomial.log",
+      "script_sha256": "cd3730b637652c8313af5805ffe36cb83afe08a38ce717f51974b76341ee8e39",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 16.532184,
+      "log_sha256": "d35afd7d48447545183243630c7a6e3a89edeaa829c003874856cdf9c67c88a2"
+    },
+    {
+      "name": "amplification-audit",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "research/amplification/tools/run_checks.py",
+        "--profile",
+        "audit",
+        "--output",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/extended/amplification-audit",
+        "--timeout",
+        "300.0"
+      ],
+      "started_utc": "2026-09-06T16:34:56.788195+00:00",
+      "log": "amplification-audit.log",
+      "script_sha256": "ceddf645d3702ba5f1bc9954f6fe97d09743c7d5e0f23f6584c8f673094b42c8",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 25.923058,
+      "log_sha256": "31deaa3ee4047b30cd8eb0a9fec84afab6a402eeba611b1681af5b6d2159c962"
+    },
+    {
+      "name": "degradation-audit",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "research/degradation/scripts/run_checks.py",
+        "--mode",
+        "verify",
+        "--output",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/extended/degradation-audit",
+        "--timeout",
+        "300.0"
+      ],
+      "started_utc": "2026-09-06T16:35:22.711906+00:00",
+      "log": "degradation-audit.log",
+      "script_sha256": "cafa7fae82c065ce0677bed3913cf90e7aa889fcb4f010c79ff499bd3410ff46",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 46.981822,
+      "log_sha256": "4448e3d79acba2bb06e5505974df34919e49b4f70b762696852612ddb2524209"
+    }
+  ],
+  "status": "passed",
+  "scope": "exact counterexample regeneration and explicitly listed retained audits",
+  "cross_checks": {
+    "status": "passed",
+    "matrix_comparisons": [
+      {
+        "left": "upper-bitset/L39_HX.txt",
+        "right": "upper-polynomial/L39_HX.txt",
+        "sha256": "6e84e8c9cbb4cec64bb6d04405ae0ac9d87ce71e6a1a972e8b833ab1a824eef4"
+      },
+      {
+        "left": "upper-bitset/L39_HZ.txt",
+        "right": "upper-polynomial/L39_HZ.txt",
+        "sha256": "341909344e831fdcb9aaa7d117aafe474718b0e25b610ae536b20eb7b370b6b3"
+      },
+      {
+        "left": "upper-bitset/L78_HX.txt",
+        "right": "upper-polynomial/L78_HX.txt",
+        "sha256": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e"
+      },
+      {
+        "left": "upper-bitset/L78_HZ.txt",
+        "right": "upper-polynomial/L78_HZ.txt",
+        "sha256": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+      },
+      {
+        "left": "lower-bitset/base_HX.txt",
+        "right": "lower-polynomial/base_HX.txt",
+        "sha256": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e"
+      },
+      {
+        "left": "lower-bitset/base_HZ.txt",
+        "right": "lower-polynomial/base_HZ.txt",
+        "sha256": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+      },
+      {
+        "left": "lower-bitset/cover_HX.txt",
+        "right": "lower-polynomial/cover_HX.txt",
+        "sha256": "9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8"
+      },
+      {
+        "left": "lower-bitset/cover_HZ.txt",
+        "right": "lower-polynomial/cover_HZ.txt",
+        "sha256": "6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb"
+      },
+      {
+        "left": "upper-bitset/L78_HX.txt",
+        "right": "lower-bitset/base_HX.txt",
+        "sha256": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e"
+      },
+      {
+        "left": "upper-bitset/L78_HZ.txt",
+        "right": "lower-bitset/base_HZ.txt",
+        "sha256": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+      }
+    ],
+    "circuit_comparisons": [
+      {
+        "left": "upper-bitset/circuits.txt",
+        "right": "upper-polynomial/circuits.txt",
+        "count": 741,
+        "weight_histogram": {
+          "6": 78,
+          "10": 468,
+          "12": 195
+        }
+      },
+      {
+        "left": "lower-bitset/base_circuits.txt",
+        "right": "lower-polynomial/base_circuits.txt",
+        "count": 741,
+        "weight_histogram": {
+          "6": 78,
+          "10": 468,
+          "12": 195
+        }
+      },
+      {
+        "left": "upper-bitset/circuits.txt",
+        "right": "lower-bitset/base_circuits.txt",
+        "count": 741,
+        "weight_histogram": {
+          "6": 78,
+          "10": 468,
+          "12": 195
+        }
+      },
+      {
+        "left": "lower-bitset/cover_circuits.txt",
+        "right": "lower-polynomial/cover_circuits.txt",
+        "count": 1092,
+        "weight_histogram": {
+          "6": 156,
+          "10": 936
+        }
+      }
+    ],
+    "convenience_matrices_compared": 6,
+    "shared_middle_code_identical": true
+  },
+  "completed_utc": "2026-09-06T16:36:09.694278+00:00",
+  "output_sha256": {
+    "amplification-audit/logs/03_amplification_search/01_g++.log": "e6d54bdfdbda4f12d41afb42b385f48707ba1cabc4a65fbc20b2a905805e633f",
+    "amplification-audit/logs/03_amplification_search/02_g++.log": "8b2af8755d398d1fe89041b04f8ff4d1c7a1ec4f644d3085572bd3181d4b9612",
+    "amplification-audit/logs/03_amplification_search/03_g++.log": "5440e78c2dd5e6b8449f3096f943aef42e123027dc52b6bfeda5b19f192596f7",
+    "amplification-audit/logs/03_amplification_search/04_verify_theorems.log": "4c084f1453ab039de9d2170c9d18a70878bebe8783b5245c040d0fcd55659058",
+    "amplification-audit/logs/03_amplification_search/05_verify_search.log": "fa01dbda158807582a3270f06ee1fd07b8b47515ef287dcfa1f4a146c2ed3ca4",
+    "amplification-audit/logs/03_amplification_search/06_independent_search.log": "22db435d1e9d4084ed620547e4bacf75636fe456a142c7e835b473c8c65481a6",
+    "amplification-audit/logs/03_amplification_search/07_mitm.log": "d8f873191a02a131e57a8c0403648bf918b98f1e7f358a6d4eb3e63e57b28308",
+    "amplification-audit/logs/04_distance6_obstruction/01_verify_presentations_sympy.log": "df1c2fd127a731081a2cd63e06eef2f16cc158a3ecf6da793165895e44122dd2",
+    "amplification-audit/logs/05_compact_survival/01_audit_finite_certificates.log": "0c12861a3374ce31e64a3ec7d4a796abd92c86eeb73bc04508f8ad6b3186eb2f",
+    "amplification-audit/logs/05_compact_survival/02_verify_mechanisms.log": "387aaacd1db1503d37b18c487edc4845e5f09990bd5a128993044fa0c43f5729",
+    "amplification-audit/logs/06_linear_compact_replacement/01_audit_replacement_certificates.log": "20274b8334636e0d942a5c9d905941fea3bd7c0c0d59a7509d4c1e94772d2dd0",
+    "amplification-audit/logs/06_linear_compact_replacement/02_verify_sparse_generators.log": "72455b0bd07c8aa4ba76c95fc102d8f6693480b99f0dc66973e86978c907f28b",
+    "amplification-audit/logs/06_linear_compact_replacement/03_verify_embeddings.log": "8d02c66928fa20026f9bd1985819e741d76e536c06dff8aec1538a8bf9d6acfa",
+    "amplification-audit/logs/06_linear_compact_replacement/04_verify_sharpness.log": "e0173037e92de72be60f451263feaeb50788f5d1622bd9d240d34c6208050c8e",
+    "amplification-audit/logs/07_rank_one_resonance/01_audit_certificates.log": "5f85555521396258a535e272682c4d075e7058fdca3d82680b63174727ecca63",
+    "amplification-audit/logs/07_rank_one_resonance/02_check_seed_coordinates.log": "f137640b4bfaa9f375a6a663e2415762aef060c7cecebcd33db7e6d99c4a332c",
+    "amplification-audit/logs/08_slope21_shortening/01_audit_certificates.log": "676f6a81ad9ac6570705fd482806ece553b444c2a46e3935059cc4d192b74513",
+    "amplification-audit/logs/08_slope21_shortening/02_verify_structure.log": "8e3294e444a27d7a1ef2d16a5db372d9ff15ed9df54f9420f36be2fe44cb1ec8",
+    "amplification-audit/logs/09_joint_completion/01_verify_graph.log": "cdca456f689071f7c925ed31fdcb987080cacd497322e77b2fe21d483ada9a25",
+    "amplification-audit/logs/09_joint_completion/02_verify_components.log": "2e7898efa5c05c9576b1283f50b35aad2d3eb57da7801113a890f5a85756c3a8",
+    "amplification-audit/logs/09_joint_completion/03_verify_majority_control.log": "b461f926a303755e61d645f81d6533dc1cfc36990525977ee54eebcd2c30e337",
+    "amplification-audit/logs/09_joint_completion/04_verify_pareto.log": "5f6df99e95b08ff1e8cee72d06442b496a4a0ef33e5b9811416fc42c97df5a4e",
+    "amplification-audit/logs/10_nonlocal_exchange/01_run_all.log": "5eec2df38cbf6a90d1f064def6478285457bbc36e172d675d9dcc43e5185ac6b",
+    "amplification-audit/summary.json": "d37dbf696538ebf60a5fc2cd37308c3951f2329e5fce060ee92af811d76fa1d2",
+    "amplification-audit.log": "31deaa3ee4047b30cd8eb0a9fec84afab6a402eeba611b1681af5b6d2159c962",
+    "cross_checks.json": "af58f2556bf69e11995b785c6bb20bdbbcef63d9690db1e5fa492360bab3123d",
+    "degradation-audit/01-weight-six/01-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/01-weight-six/01-stdout.log": "00a168a75252a2fc9f5a3abaa086599a8dddfd2bd591523091890cd9db337afc",
+    "degradation-audit/01-weight-six/02-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/01-weight-six/02-stdout.log": "68e7bc46c2766a40622de41f1c07a3a94eb6855e500c63672af2d77f90afef8b",
+    "degradation-audit/02-weight-eight/01-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/02-weight-eight/01-stdout.log": "937fddbe1c0d28021a6043da549fdb6a4be41324e6409a35103a3a78e6e59868",
+    "degradation-audit/02-weight-eight/02-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/02-weight-eight/02-stdout.log": "42add78f790baf54d2f1e619c432353db8d4277903967452fb3aec711e0795cd",
+    "degradation-audit/02-weight-eight/03-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/02-weight-eight/03-stdout.log": "ee08a1b2726f778c834604065d73b8da210b4c07842ddfe6ac803299912aef1b",
+    "degradation-audit/02-weight-eight/04-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/02-weight-eight/04-stdout.log": "52bd1207916192c7717e3697dceccf2b05d6fd6907a5aa348c183ccb765bf835",
+    "degradation-audit/02-weight-eight/05-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/02-weight-eight/05-stdout.log": "8b42954791c1322db3cf2a573e7d8b4d0a15007c4a6575d087258be254206cec",
+    "degradation-audit/03-structural-degradation/01-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/03-structural-degradation/01-stdout.log": "886c7240df349f71200f428536ef0ad9947e740918b29660bc033f50c395e302",
+    "degradation-audit/03-structural-degradation/02-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/03-structural-degradation/02-stdout.log": "95da9ce7240e79b1a4d585a815b03e4b3815c95a2e29d30dee3fb923cf854c1e",
+    "degradation-audit/03-structural-degradation/03-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/03-structural-degradation/03-stdout.log": "79ab7a298f6b69e4eff6d62e325017fba39f99275d2cea8bf01693eb67022fa4",
+    "degradation-audit/03-structural-degradation/outputs/geometry_verification.json": "95da9ce7240e79b1a4d585a815b03e4b3815c95a2e29d30dee3fb923cf854c1e",
+    "degradation-audit/03-structural-degradation/outputs/twist_verification.json": "1b522249dfedef61d8dd8074a3c77bef8f0fbb91d5ce1d71021becafaceb21f5",
+    "degradation-audit/04-quadratic-bottleneck/01-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/04-quadratic-bottleneck/01-stdout.log": "e631af1bc46211e115b89476f2e0c194e63bc2f2efb6811d3a6cc8a25c2244be",
+    "degradation-audit/04-quadratic-bottleneck/02-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/04-quadratic-bottleneck/02-stdout.log": "e214f25fd82ace5e6e8f917b155f6d436861f25036295f19a7a26c0cf8ba5f8e",
+    "degradation-audit/04-quadratic-bottleneck/03-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/04-quadratic-bottleneck/03-stdout.log": "26af28d852f8deddf01ff4e635669288a184b83dc94d8ba7c4806d54b1021c2d",
+    "degradation-audit/04-quadratic-bottleneck/04-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/04-quadratic-bottleneck/04-stdout.log": "f1d8169818b8ae0613019013ff9c41a1c2d5ed1b1508136079842f95a4ec1c93",
+    "degradation-audit/04-quadratic-bottleneck/outputs/cyclic_strip_verification.json": "ac5c669d44b04d07153d222faf0c6ae7f80feb312b587ba6900a53cfef60af32",
+    "degradation-audit/04-quadratic-bottleneck/outputs/independent_verification.json": "29364142596b624213fca03b52caab32eb144f6764789d410994ea1ca20656bb",
+    "degradation-audit/04-quadratic-bottleneck/outputs/manifest.json": "50d683c5ff19e4bfdca37d6c1e8f7a797dbe9a55f554db0de5294fa0bc0b2d40",
+    "degradation-audit/04-quadratic-bottleneck/outputs/summary.json": "62cc98719568908b571dd242f275ac87c1b7e63c4967339bd36448f29c7a4268",
+    "degradation-audit/04-quadratic-bottleneck/outputs/verification_summary.json": "09892745cb883662870b65aec4b27ca42cc548c9dabeb3e33638bfac8305cf51",
+    "degradation-audit/05-visible-two-primary/01-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/05-visible-two-primary/01-stdout.log": "0e08d00799e440722cbb43a54484769ec6c2ec633070510bfe91ebc24fbeeadf",
+    "degradation-audit/05-visible-two-primary/02-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/05-visible-two-primary/02-stdout.log": "eba7731bb807f2aedbea4a6f2f48c3b16e630b424f7182d7c86c9865e290b1fe",
+    "degradation-audit/05-visible-two-primary/03-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/05-visible-two-primary/03-stdout.log": "114974b2d37d87ede25b77abf610d585beeb3162d23f749b34a481f1936c371b",
+    "degradation-audit/05-visible-two-primary/04-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/05-visible-two-primary/04-stdout.log": "c4345e078c964320d543dab036a0e08f7bde3c458c3d9e09e76c1e91d5a34275",
+    "degradation-audit/05-visible-two-primary/05-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/05-visible-two-primary/05-stdout.log": "bf0c8985618f1ca4b9d1e713e8dce1209441ea4f11329bd7928d30aec6be260f",
+    "degradation-audit/05-visible-two-primary/outputs/contact_verification.json": "2a8de0c6deaec75cb3a6376990da67f8061331fcce1a3a6a52062a975f152f12",
+    "degradation-audit/05-visible-two-primary/outputs/family_verification.json": "c16bd7c43e3c4a5a4d217eae53d8c84496fe436750f6fdef9d722dc6f5aecb49",
+    "degradation-audit/05-visible-two-primary/outputs/local_verification.json": "f045edf507177b17f26b5d89f566eee1206f9ae0d00ee07b82eb2f874948c65b",
+    "degradation-audit/05-visible-two-primary/outputs/manifest.json": "7a59ef5d849a42be64b55f91e7f5f10f3f8aa463539415a993e5afc21c817edb",
+    "degradation-audit/05-visible-two-primary/outputs/structured_verification.json": "6d5512d8b263101e24085a1c29b8b2e4b0692f2754d69d67d471c193cdfe3771",
+    "degradation-audit/05-visible-two-primary/outputs/verification_summary.json": "c034044f2102a57adb1ee608329a1e15f6eebfb27228c497e39e41bac02c2458",
+    "degradation-audit/06-sparse-deck-descent/01-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/06-sparse-deck-descent/01-stdout.log": "d0f44e14e17da224608237ce5bf9acd269e46f0f1932cb6ed3011a033a2aa5a5",
+    "degradation-audit/07-rank-one-amplification/01-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/07-rank-one-amplification/01-stdout.log": "1df084f24a59ec575319a0fc7f4775c9a270590f99ae861bdcade25ed76579c8",
+    "degradation-audit/08-mixed-laurent/01-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/08-mixed-laurent/01-stdout.log": "0e75e31becf7d85cdbd995109236562bcaf61525d68452f6876b9e64ef8e51c7",
+    "degradation-audit/08-mixed-laurent/02-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/08-mixed-laurent/02-stdout.log": "a5b678ce5e76604e2f82899d9133c6067a348c0929c08aecdcbe419d39400de0",
+    "degradation-audit/09-fixed-c-product-bound/01-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "degradation-audit/09-fixed-c-product-bound/01-stdout.log": "5356b4dd3679f8d77779e02f0f18c6eff335899ef9f664f31576946c6cb9a83e",
+    "degradation-audit.log": "4448e3d79acba2bb06e5505974df34919e49b4f70b762696852612ddb2524209",
+    "lattice-transport.log": "f0ab648c6d1bc4822974607793378cf8caaa1a7b925a74b920635b82ee28e2c3",
+    "lattice.json": "f0ab648c6d1bc4822974607793378cf8caaa1a7b925a74b920635b82ee28e2c3",
+    "lower-bitset/base_HX.txt": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e",
+    "lower-bitset/base_HZ.txt": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de",
+    "lower-bitset/base_circuits.txt": "78294b4b567fbcfa389e951a72edc96e6a5bb40c099ee9eaf3e2abe1571aa7fa",
+    "lower-bitset/cover_HX.txt": "9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8",
+    "lower-bitset/cover_HZ.txt": "6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb",
+    "lower-bitset/cover_circuits.txt": "a2361757be4c36b7bd2297ab1be4319e0658e2a2a4d07ef703c5bfbe23b3914d",
+    "lower-bitset.log": "f7d5319bc18eb2ac67def5992c7e6b2366bb4d88f1f8a27d1e5d3c49d43947d2",
+    "lower-polynomial/base_HX.txt": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e",
+    "lower-polynomial/base_HZ.txt": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de",
+    "lower-polynomial/base_circuits.txt": "78294b4b567fbcfa389e951a72edc96e6a5bb40c099ee9eaf3e2abe1571aa7fa",
+    "lower-polynomial/cover_HX.txt": "9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8",
+    "lower-polynomial/cover_HZ.txt": "6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb",
+    "lower-polynomial/cover_circuits.txt": "a2361757be4c36b7bd2297ab1be4319e0658e2a2a4d07ef703c5bfbe23b3914d",
+    "lower-polynomial.log": "d35afd7d48447545183243630c7a6e3a89edeaa829c003874856cdf9c67c88a2",
+    "unit-tests.log": "98903243b26db19c5990ef19144a9bf64c12e626e07aed0c696a322984b10f94",
+    "upper-bitset/L39_HX.txt": "6e84e8c9cbb4cec64bb6d04405ae0ac9d87ce71e6a1a972e8b833ab1a824eef4",
+    "upper-bitset/L39_HZ.txt": "341909344e831fdcb9aaa7d117aafe474718b0e25b610ae536b20eb7b370b6b3",
+    "upper-bitset/L78_HX.txt": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e",
+    "upper-bitset/L78_HZ.txt": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de",
+    "upper-bitset/circuits.txt": "ab05b51aa41a2cea530557a6d9940877c8974472edcff3aca84815ccbe79a957",
+    "upper-bitset/report_bitset.json": "2b4eeb426ffbe6c1a0ead4e0c9bb7653a9fe8ae777f6cb99bfdea0f7b61d62e1",
+    "upper-bitset.log": "2e26b1a511c14d8c57a3b0e431cd75955facbe47685b1b3830398a756917c1a8",
+    "upper-polynomial/L39_HX.txt": "6e84e8c9cbb4cec64bb6d04405ae0ac9d87ce71e6a1a972e8b833ab1a824eef4",
+    "upper-polynomial/L39_HZ.txt": "341909344e831fdcb9aaa7d117aafe474718b0e25b610ae536b20eb7b370b6b3",
+    "upper-polynomial/L78_HX.txt": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e",
+    "upper-polynomial/L78_HZ.txt": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de",
+    "upper-polynomial/circuits.txt": "ab05b51aa41a2cea530557a6d9940877c8974472edcff3aca84815ccbe79a957",
+    "upper-polynomial/report_polynomial.json": "d95d5dee577f784ca722d8432534ac389d18aa70c55831d50deb87afcc7212e6",
+    "upper-polynomial.log": "f5f1f76cd0da623190cfcb08c77f05ab666424974c95608826220fac91f61ad1"
+  }
+}

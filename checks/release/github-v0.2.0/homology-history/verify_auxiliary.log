@@ -1,0 +1,21 @@
+PARAMETER-UNIFORM F4/MIN-PLUS CERTIFICATE: PASS
+j=2: [[36,4,4]] -> [[72,4,6]], 18 minimum Z representatives, rho=3, minimum literal-projection lift weight=10: PASS
+j=3: [[54,4,4]] -> [[108,4,6]], 27 minimum Z representatives, rho=5, minimum literal-projection lift weight=14: PASS
+j=4: [[72,4,4]] -> [[144,4,6]], 36 minimum Z representatives, rho=7, minimum literal-projection lift weight=18: PASS
+j=5: [[90,4,4]] -> [[180,4,6]], 45 minimum Z representatives, rho=9, minimum literal-projection lift weight=22: PASS
+j=6: [[108,4,4]] -> [[216,4,6]], 54 minimum Z representatives, rho=11, minimum literal-projection lift weight=26: PASS
+PARAMETER-UNIFORM LOW-SHEET KERNEL CERTIFICATE: nullity two for every j>=2
+FAMILY j=2: delta=4; rho=3; mu=6; nu=20; class boundary identity PASS
+FAMILY j=3: delta=4; rho=5; mu=6; nu=inf; class boundary identity PASS
+FAMILY j=4: delta=4; rho=7; mu=6; nu=40; class boundary identity PASS
+FAMILY j=5: delta=4; rho=9; mu=6; nu=inf; class boundary identity PASS
+FAMILY j=6: delta=4; rho=11; mu=6; nu=60; class boundary identity PASS
+FAMILY j=7: delta=4; rho=13; mu=6; nu=inf; class boundary identity PASS
+FAMILY j=8: delta=4; rho=15; mu=6; nu=80; class boundary identity PASS
+FAMILY j=9: delta=4; rho=17; mu=6; nu=inf; class boundary identity PASS
+FAMILY j=10: delta=4; rho=19; mu=6; nu=100; class boundary identity PASS
+FAMILY j=11: delta=4; rho=21; mu=6; nu=inf; class boundary identity PASS
+FAMILY j=12: delta=4; rho=23; mu=6; nu=120; class boundary identity PASS
+SMALLEST NU COUNTEREXAMPLE: [[6,4,2]] -> [[12,4,2]]; delta=mu=2; rho=0; nu=infinity
+OLD [[30,4,4]] -> [[60,4,6]]: delta=4; rho=1; mu=6; nu=20
+ALL AUXILIARY CHECKS PASSED

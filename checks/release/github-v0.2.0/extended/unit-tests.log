@@ -1,0 +1,30 @@
+test_examples (test_core.BoundTests.test_examples) ... ok
+test_integer_rounding (test_core.BoundTests.test_integer_rounding) ... ok
+test_invalid_bounds (test_core.BoundTests.test_invalid_bounds) ... ok
+test_collapsed_checks_are_rejected (test_core.ExampleTests.test_collapsed_checks_are_rejected) ... ok
+test_cover_neighborhoods (test_core.ExampleTests.test_cover_neighborhoods) ... ok
+test_inversion_swap (test_core.ExampleTests.test_inversion_swap) ... ok
+test_new_kernel_sector_projects_to_boundary (test_core.ExampleTests.test_new_kernel_sector_projects_to_boundary) ... ok
+test_parameters_witnesses_and_commutation (test_core.ExampleTests.test_parameters_witnesses_and_commutation) ... ok
+test_transfer_kills_weight_six_logical (test_core.ExampleTests.test_transfer_kills_weight_six_logical) ... ok
+test_invalid_vectors (test_core.GF2Tests.test_invalid_vectors) ... ok
+test_rank_and_solve (test_core.GF2Tests.test_rank_and_solve) ... ok
+test_bounds_cli (test_interface.InterfaceTests.test_bounds_cli) ... ok
+test_branch_filter (test_interface.InterfaceTests.test_branch_filter) ... ok
+test_comparison_rejects_unknown (test_interface.InterfaceTests.test_comparison_rejects_unknown) ... ok
+test_complete_register (test_interface.InterfaceTests.test_complete_register) ... ok
+test_inspection_scope (test_interface.InterfaceTests.test_inspection_scope) ... ok
+test_invalid_cli_argument (test_interface.InterfaceTests.test_invalid_cli_argument) ... ok
+test_lower_comparison (test_interface.InterfaceTests.test_lower_comparison) ... ok
+test_register_matches_repository (test_interface.InterfaceTests.test_register_matches_repository) ... ok
+test_results_cli (test_interface.InterfaceTests.test_results_cli) ... ok
+test_returns_fresh_data (test_interface.InterfaceTests.test_returns_fresh_data) ... ok
+test_status_filter (test_interface.InterfaceTests.test_status_filter) ... ok
+test_unknown_result (test_interface.InterfaceTests.test_unknown_result) ... ok
+test_upper_comparison (test_interface.InterfaceTests.test_upper_comparison) ... ok
+test_version (test_interface.InterfaceTests.test_version) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.063s
+
+OK

@@ -1,0 +1,10 @@
+{
+  "exact_cases": 256,
+  "loss_cases": 62,
+  "squarefree_cases": 174,
+  "nonsquarefree_no_loss_cases": 20,
+  "max_torsion_order": 24,
+  "all_gcd_and_matrix_dimensions_agree": true,
+  "minimum_distances_computed": false,
+  "seconds": 3.355
+}

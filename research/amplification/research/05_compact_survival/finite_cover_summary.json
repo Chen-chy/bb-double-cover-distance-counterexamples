@@ -1,0 +1,12 @@
+{
+  "seed": 20260906,
+  "parameter_checks": 1920,
+  "nontrivial_base_generator_cases": 528,
+  "branches": {
+    "projection": 245,
+    "transfer": 283
+  },
+  "odd_norm_cases": 96,
+  "even_coordinate_covers": 312,
+  "statement": "Exact finite logical and dual-witness checks; no distance claims."
+}

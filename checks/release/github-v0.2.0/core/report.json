@@ -1,0 +1,242 @@
+{
+  "profile": "core",
+  "started_utc": "2026-09-06T16:37:58.632273+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "name": "unit-tests",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "started_utc": "2026-09-06T16:37:58.633544+00:00",
+      "log": "unit-tests.log",
+      "script_sha256": null,
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 1.043327,
+      "log_sha256": "baeca1f2e6cf4a9bfc478af6f926860c9fe7e98a81f353d2dfd2af248d34327b"
+    },
+    {
+      "name": "lattice-transport",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/verify_lattice_transport.py",
+        "--output",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/core/lattice.json"
+      ],
+      "started_utc": "2026-09-06T16:37:59.677306+00:00",
+      "log": "lattice-transport.log",
+      "script_sha256": "6fc1239e29f6ba4ecd1177178d528c570b549eaab9a1dd0fb15d10bf0232a5df",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 1.701276,
+      "log_sha256": "f0ab648c6d1bc4822974607793378cf8caaa1a7b925a74b920635b82ee28e2c3"
+    },
+    {
+      "name": "upper-bitset",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "certificates/upper/verify_bitset.py",
+        "--output-dir",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/core/upper-bitset"
+      ],
+      "started_utc": "2026-09-06T16:38:01.379057+00:00",
+      "log": "upper-bitset.log",
+      "script_sha256": "2fc62d81925b981cc29f90f53e780be45d7f4b792a8ba9d6dedd42c0cad25516",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 4.898246,
+      "log_sha256": "2e26b1a511c14d8c57a3b0e431cd75955facbe47685b1b3830398a756917c1a8"
+    },
+    {
+      "name": "upper-polynomial",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "certificates/upper/verify_polynomial.py",
+        "--output-dir",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/core/upper-polynomial"
+      ],
+      "started_utc": "2026-09-06T16:38:06.278024+00:00",
+      "log": "upper-polynomial.log",
+      "script_sha256": "53a1beee02c3937cb22594de56331161cb676b588d6a978def3e9f76f77df447",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 14.119103,
+      "log_sha256": "f5f1f76cd0da623190cfcb08c77f05ab666424974c95608826220fac91f61ad1"
+    },
+    {
+      "name": "lower-bitset",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "certificates/lower/verify_lower_bitset.py",
+        "--output-dir",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/core/lower-bitset"
+      ],
+      "started_utc": "2026-09-06T16:38:20.397658+00:00",
+      "log": "lower-bitset.log",
+      "script_sha256": "892d9ca0bfcd0aa66174f48b035b5d2fc4d7e0030d32fb05060a0f0bf963633e",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 5.042714,
+      "log_sha256": "f7d5319bc18eb2ac67def5992c7e6b2366bb4d88f1f8a27d1e5d3c49d43947d2"
+    },
+    {
+      "name": "lower-polynomial",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "certificates/lower/verify_lower_polynomial.py",
+        "--output-dir",
+        "/mnt/data/bb-double-cover-research/checks/release/github-v0.2.0/core/lower-polynomial"
+      ],
+      "started_utc": "2026-09-06T16:38:25.440950+00:00",
+      "log": "lower-polynomial.log",
+      "script_sha256": "cd3730b637652c8313af5805ffe36cb83afe08a38ce717f51974b76341ee8e39",
+      "returncode": 0,
+      "status": "passed",
+      "seconds": 16.275527,
+      "log_sha256": "d35afd7d48447545183243630c7a6e3a89edeaa829c003874856cdf9c67c88a2"
+    }
+  ],
+  "status": "passed",
+  "scope": "exact counterexample regeneration and explicitly listed retained audits",
+  "cross_checks": {
+    "status": "passed",
+    "matrix_comparisons": [
+      {
+        "left": "upper-bitset/L39_HX.txt",
+        "right": "upper-polynomial/L39_HX.txt",
+        "sha256": "6e84e8c9cbb4cec64bb6d04405ae0ac9d87ce71e6a1a972e8b833ab1a824eef4"
+      },
+      {
+        "left": "upper-bitset/L39_HZ.txt",
+        "right": "upper-polynomial/L39_HZ.txt",
+        "sha256": "341909344e831fdcb9aaa7d117aafe474718b0e25b610ae536b20eb7b370b6b3"
+      },
+      {
+        "left": "upper-bitset/L78_HX.txt",
+        "right": "upper-polynomial/L78_HX.txt",
+        "sha256": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e"
+      },
+      {
+        "left": "upper-bitset/L78_HZ.txt",
+        "right": "upper-polynomial/L78_HZ.txt",
+        "sha256": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+      },
+      {
+        "left": "lower-bitset/base_HX.txt",
+        "right": "lower-polynomial/base_HX.txt",
+        "sha256": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e"
+      },
+      {
+        "left": "lower-bitset/base_HZ.txt",
+        "right": "lower-polynomial/base_HZ.txt",
+        "sha256": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+      },
+      {
+        "left": "lower-bitset/cover_HX.txt",
+        "right": "lower-polynomial/cover_HX.txt",
+        "sha256": "9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8"
+      },
+      {
+        "left": "lower-bitset/cover_HZ.txt",
+        "right": "lower-polynomial/cover_HZ.txt",
+        "sha256": "6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb"
+      },
+      {
+        "left": "upper-bitset/L78_HX.txt",
+        "right": "lower-bitset/base_HX.txt",
+        "sha256": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e"
+      },
+      {
+        "left": "upper-bitset/L78_HZ.txt",
+        "right": "lower-bitset/base_HZ.txt",
+        "sha256": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de"
+      }
+    ],
+    "circuit_comparisons": [
+      {
+        "left": "upper-bitset/circuits.txt",
+        "right": "upper-polynomial/circuits.txt",
+        "count": 741,
+        "weight_histogram": {
+          "6": 78,
+          "10": 468,
+          "12": 195
+        }
+      },
+      {
+        "left": "lower-bitset/base_circuits.txt",
+        "right": "lower-polynomial/base_circuits.txt",
+        "count": 741,
+        "weight_histogram": {
+          "6": 78,
+          "10": 468,
+          "12": 195
+        }
+      },
+      {
+        "left": "upper-bitset/circuits.txt",
+        "right": "lower-bitset/base_circuits.txt",
+        "count": 741,
+        "weight_histogram": {
+          "6": 78,
+          "10": 468,
+          "12": 195
+        }
+      },
+      {
+        "left": "lower-bitset/cover_circuits.txt",
+        "right": "lower-polynomial/cover_circuits.txt",
+        "count": 1092,
+        "weight_histogram": {
+          "6": 156,
+          "10": 936
+        }
+      }
+    ],
+    "convenience_matrices_compared": 6,
+    "shared_middle_code_identical": true
+  },
+  "completed_utc": "2026-09-06T16:38:41.745118+00:00",
+  "output_sha256": {
+    "cross_checks.json": "af58f2556bf69e11995b785c6bb20bdbbcef63d9690db1e5fa492360bab3123d",
+    "lattice-transport.log": "f0ab648c6d1bc4822974607793378cf8caaa1a7b925a74b920635b82ee28e2c3",
+    "lattice.json": "f0ab648c6d1bc4822974607793378cf8caaa1a7b925a74b920635b82ee28e2c3",
+    "lower-bitset/base_HX.txt": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e",
+    "lower-bitset/base_HZ.txt": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de",
+    "lower-bitset/base_circuits.txt": "78294b4b567fbcfa389e951a72edc96e6a5bb40c099ee9eaf3e2abe1571aa7fa",
+    "lower-bitset/cover_HX.txt": "9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8",
+    "lower-bitset/cover_HZ.txt": "6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb",
+    "lower-bitset/cover_circuits.txt": "a2361757be4c36b7bd2297ab1be4319e0658e2a2a4d07ef703c5bfbe23b3914d",
+    "lower-bitset.log": "f7d5319bc18eb2ac67def5992c7e6b2366bb4d88f1f8a27d1e5d3c49d43947d2",
+    "lower-polynomial/base_HX.txt": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e",
+    "lower-polynomial/base_HZ.txt": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de",
+    "lower-polynomial/base_circuits.txt": "78294b4b567fbcfa389e951a72edc96e6a5bb40c099ee9eaf3e2abe1571aa7fa",
+    "lower-polynomial/cover_HX.txt": "9fd965e3e18cf16da6313af087fabbbba2619cf5031ad4233337ea10b21c47c8",
+    "lower-polynomial/cover_HZ.txt": "6a9433d6d4dc4a955d4e57fbf16f6088ef1422dc5f324161c7c1888085113bcb",
+    "lower-polynomial/cover_circuits.txt": "a2361757be4c36b7bd2297ab1be4319e0658e2a2a4d07ef703c5bfbe23b3914d",
+    "lower-polynomial.log": "d35afd7d48447545183243630c7a6e3a89edeaa829c003874856cdf9c67c88a2",
+    "unit-tests.log": "baeca1f2e6cf4a9bfc478af6f926860c9fe7e98a81f353d2dfd2af248d34327b",
+    "upper-bitset/L39_HX.txt": "6e84e8c9cbb4cec64bb6d04405ae0ac9d87ce71e6a1a972e8b833ab1a824eef4",
+    "upper-bitset/L39_HZ.txt": "341909344e831fdcb9aaa7d117aafe474718b0e25b610ae536b20eb7b370b6b3",
+    "upper-bitset/L78_HX.txt": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e",
+    "upper-bitset/L78_HZ.txt": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de",
+    "upper-bitset/circuits.txt": "ab05b51aa41a2cea530557a6d9940877c8974472edcff3aca84815ccbe79a957",
+    "upper-bitset/report_bitset.json": "2b4eeb426ffbe6c1a0ead4e0c9bb7653a9fe8ae777f6cb99bfdea0f7b61d62e1",
+    "upper-bitset.log": "2e26b1a511c14d8c57a3b0e431cd75955facbe47685b1b3830398a756917c1a8",
+    "upper-polynomial/L39_HX.txt": "6e84e8c9cbb4cec64bb6d04405ae0ac9d87ce71e6a1a972e8b833ab1a824eef4",
+    "upper-polynomial/L39_HZ.txt": "341909344e831fdcb9aaa7d117aafe474718b0e25b610ae536b20eb7b370b6b3",
+    "upper-polynomial/L78_HX.txt": "468b9f9db365929d4506dbcbb38e09ff8a0f42c1c1997bb64295249d36dc361e",
+    "upper-polynomial/L78_HZ.txt": "4825f8e81f446083b9a23cf2fde781c966007930363e8e5fb0470780d19fc0de",
+    "upper-polynomial/circuits.txt": "ab05b51aa41a2cea530557a6d9940877c8974472edcff3aca84815ccbe79a957",
+    "upper-polynomial/report_polynomial.json": "d95d5dee577f784ca722d8432534ac389d18aa70c55831d50deb87afcc7212e6",
+    "upper-polynomial.log": "f5f1f76cd0da623190cfcb08c77f05ab666424974c95608826220fac91f61ad1"
+  }
+}

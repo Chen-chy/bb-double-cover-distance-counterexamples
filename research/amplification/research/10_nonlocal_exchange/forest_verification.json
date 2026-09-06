@@ -1,0 +1,8 @@
+{
+  "tests": 288,
+  "all_spin_assignments": 118822,
+  "candidate_trees": 38,
+  "largest_candidate_tree": 2,
+  "all_full_and_reduced_minima_agree": true,
+  "minimum_support_agrees": true
+}

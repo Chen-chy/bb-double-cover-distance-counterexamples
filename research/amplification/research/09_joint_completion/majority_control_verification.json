@@ -1,0 +1,22 @@
+{
+  "status": "all exact checks passed",
+  "classification": "boundary negative control; NOT a logical counterexample",
+  "boundary_multiplier_weight": 259,
+  "base_weight": 182,
+  "restricted_majority_weights": [
+    550,
+    550
+  ],
+  "three_times_base_weight": 546,
+  "primitive_specialization": {
+    "r": 1,
+    "s": 30001,
+    "g": 303
+  },
+  "selected_column_rank": 181,
+  "selected_columns": 182,
+  "check_rows": 268,
+  "circuit_support": true,
+  "maximum_single_boundary_overlap": 2,
+  "single_stabilizer_weight_increase_at_least": 2
+}

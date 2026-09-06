@@ -1,0 +1,19 @@
+{
+  "cyclic_twist_test_cases": 340,
+  "cyclic_twist_orders_tested": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "cyclic_twist_all_witnesses_nonboundary": true,
+  "twisted_square_strict_cases_checked": 3520,
+  "twisted_square_positive_dimension_cases": 2912,
+  "twisted_square_k_values": [
+    4,
+    8,
+    12,
+    24
+  ],
+  "minimum_distances_computed": false
+}

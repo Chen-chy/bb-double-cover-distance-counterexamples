@@ -1,0 +1,12 @@
+{
+  "seed": 9302,
+  "stats": {
+    "cover_instances": 5280,
+    "certified_at_7_over_3": 5280,
+    "certified_at_5_over_2": 5280,
+    "certified_at_3": 5280,
+    "audited_upper_witnesses": 5280,
+    "distinct_base_parameter_sets": 165
+  },
+  "seconds": 3.73866605758667
+}

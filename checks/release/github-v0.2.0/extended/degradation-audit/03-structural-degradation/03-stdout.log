@@ -1,0 +1,33 @@
+{
+  "purpose": "Reject the false version of the twist lemma without its active-summand hypothesis",
+  "minimum_distances_computed": false,
+  "cases": [
+    {
+      "L": 4,
+      "n": 288,
+      "odd_norm_weight": 3,
+      "cycle_weight": 6,
+      "is_boundary": true,
+      "displayed_filling_weight": 27,
+      "norm_sector_acyclic": true
+    },
+    {
+      "L": 16,
+      "n": 4608,
+      "odd_norm_weight": 3,
+      "cycle_weight": 6,
+      "is_boundary": true,
+      "displayed_filling_weight": 243,
+      "norm_sector_acyclic": true
+    },
+    {
+      "L": 64,
+      "n": 73728,
+      "odd_norm_weight": 3,
+      "cycle_weight": 6,
+      "is_boundary": true,
+      "displayed_filling_weight": 2187,
+      "norm_sector_acyclic": true
+    }
+  ]
+}

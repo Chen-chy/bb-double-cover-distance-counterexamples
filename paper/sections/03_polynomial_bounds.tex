@@ -1,0 +1,196 @@
+\section{A two-sided polynomial replacement}
+\label{sec:polynomial}
+The two distance inequalities fail, but neither distance can be held fixed while the other tends to infinity.
+
+\begin{theorem}[Polynomial distance comparison]\label{thm:polynomial}
+For every strict-trinomial binary abelian double cover with $k>0$,
+\begin{equation}\label{eq:cubic}
+ \boxed{d\le4d_2^3,\qquad d_2\le8d^3.}
+\end{equation}
+In particular, with $n$ the number of base qubits,
+\begin{equation}\label{eq:basic-interval}
+ 2\ceil{\frac{(d/4)^{1/3}}2}
+ \ \le\ d_2\ \le\ 2\floor{\frac{\min\{8d^3,n\}}2}.
+\end{equation}
+The lower inequality $d\le4d_2^3$ also holds for term-preserving finite abelian quotients whose kernel is any finite $2$-group.
+\end{theorem}
+The archived amplification argument gave $d_2\le32d^3$. The constant eight in \eqref{eq:cubic} is a consolidation corollary: the cofactor argument used for descent can be transported upwards through an index-at-most-two relation sublattice. It avoids the external lattice-code theorem previously used for the finite-presentation case. We give the complete argument, including the higher-rank torsion case, rather than treating this improvement as a numerical extrapolation.
+
+\subsection{Two elementary distance bounds}
+\begin{lemma}[A finite check subgroup]\label{lem:finite-check}
+Suppose one normalized check is supported in a finite subgroup $K\le G$. If the code has positive dimension, then $d\le|K|$. In particular $d\le|G|=n/2$.
+\end{lemma}
+\begin{proof}
+Assume the check is $A$. The group algebra is free over $\F_2[K]$, so $\Ann(A)$ is generated, as an $R$-module, by elements supported in $K$, each of weight at most $|K|$. The common annihilator of $A,B$ is nonzero: the nondegenerate identity-coefficient pairing identifies it with the dual of $R/(A,B)$. Thus multiplication by $B$ is singular, hence nonsurjective, on $\Ann(A)$. Its image is an $R$-submodule. At least one of the indicated generators $u$ is outside $B\Ann(A)$. The cycle $(u,0)$ is then a nonboundary: a boundary representation would require $Bh=u$ and $Ah=0$.
+\end{proof}
+
+\begin{lemma}[Strip cleaning and cofactors]\label{lem:strip}
+Suppose the normalized check translations factor through $T\oplus\Z$, where $T$ is finite. Let $R_0$ be the larger of the two check-support spans in a primitive free coordinate. Every positive-dimensional finite image satisfies
+\begin{equation}\label{eq:strip}
+ d\le4|T|R_0.
+\end{equation}
+If $r_1,r_2,r_3\in\Z^4$ are independent relations and $c\in\Z^4$ is their signed cofactor vector, every positive-dimensional finite quotient of $\Z^4/\langle r_1,r_2,r_3\rangle$ satisfies
+\begin{equation}\label{eq:cofactor}
+ d\le4\max\{\spanop(0,c_1,c_2),\spanop(0,c_3,c_4)\}.
+\end{equation}
+Here $\spanop$ of finitely many real numbers is their maximum minus their minimum.
+\end{lemma}
+\begin{proof}
+Quotient the finite image by the image of $T$. The quotient is cyclic, with at most $2|T|$ qubits per cell. A seam twist merely permutes the internal coordinates. Shift left and right block origins independently so that both stabilizer types have span at most $R_0$: if the two check supports start at $a_{\min},b_{\min}$, shift the left block by $-b_{\min}$ and the right block by $-a_{\min}$.
+
+If the number $P$ of cells is less than $2R_0$, Lemma~\ref{lem:finite-check} already suffices. Otherwise partition the circle into an even number of intervals, each of length between $R_0$ and $2R_0$. One may start with $2\floor{P/(2R_0)}$ intervals of length $R_0$ and distribute the remaining cells. If $d>4|T|R_0$, every interval is correctable. No stabilizer generator meets two intervals of the same parity. A commuting Pauli supported on the even union therefore has separately commuting restrictions to its intervals; each restriction is a stabilizer. The even union is correctable, and so is the complementary odd union. The cleaning lemma rules out two complementary correctable regions for $k>0$.
+
+For completeness, cleaning is finite symplectic linear algebra: if a logical restriction to a correctable region cannot be canceled by a stabilizer restriction, a separating linear functional gives a Pauli supported in that region which commutes with the stabilizers but anticommutes with that logical, contradicting correctability. No geometric limit is involved.
+
+For three independent rows, let $\tau$ be the gcd of the entries of $c$. Smith normal form gives $|T|=\tau$, and the primitive free coordinate is $c/\tau$. Substitution into \eqref{eq:strip} gives \eqref{eq:cofactor}.
+\end{proof}
+
+\subsection{Presentations extracted from a minimum logical}
+Choose a minimum nonboundary cycle of weight $w$ in either source code. It has circuit support. Pair the syndrome incidences at each check; there are $3w$ incidences. The resulting cubic graph on the selected qubits is connected, since a component would otherwise be a proper subcycle. It has no loops because each column has three distinct incidences. Parallel edges are allowed.
+
+Label the three ports at a left qubit by $0,e_1,e_2$, and those at a right qubit by $0,e_3,e_4$. An edge pairing ports at qubits $u,v$ imposes
+\[
+ p_u+c_{u,i}=p_v+c_{v,j}.
+\]
+A spanning tree determines all relative qubit positions. The remaining edges supply relation rows in $\Z^4$. Let $L$ be their integral span and put
+\begin{equation}\label{eq:presentation}
+ H=\Z^4/L.
+\end{equation}
+The actual support group is a quotient of $H$, and the selected circuit lifts to a finite-support cycle over $\F_2[H]$. Its qubits remain distinct, since a collision in $H$ would be a collision in the source code. If this universal cycle were a boundary, its finite image would be a boundary; hence it is nontrivial universally as well.
+
+Every fundamental graph cycle has length at most $w$. Its relation row is a sum of at most $w$ vectors from
+\begin{equation}\label{eq:roots}
+ \mathcal D=\{\pm e_1,\pm e_2,\pm(e_1-e_2),
+                   \pm e_3,\pm e_4,\pm(e_3-e_4)\}.
+\end{equation}
+In particular every row has Euclidean norm at most $\sqrt2w$. Every determinant of four vectors from $\mathcal D$ is $0$ or $\pm1$: a nonzero determinant uses two vectors in each coordinate block, where the planar determinants have those values. If $r_1,r_2,r_3$ are independent fundamental rows with cofactor vector $c$, multilinearity therefore gives
+\begin{equation}\label{eq:row-bound}
+ \max_{\delta\in\mathcal D}|c\cdot\delta|\le w^3.
+\end{equation}
+The left side is precisely the maximum span in \eqref{eq:cofactor}.
+
+\subsection{The index-two transport lemma}
+\begin{lemma}[Transporting three relations through a double cover]\label{lem:transport}
+Suppose three independent rows $r_1,r_2,r_3$ vanish in a base group $G$. Under the corresponding lifted translations in $\widetilde G$, there is a rank-three relation sublattice with cofactor vector $c'=jc$, where $j\in\{1,2\}$ and $c$ is the original cofactor vector, up to a common orientation sign. Consequently, if the rows obey \eqref{eq:row-bound},
+\begin{equation}\label{eq:transport}
+ d_2\le8w^3.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Let $K_3=\langle r_1,r_2,r_3\rangle\cong\Z^3$. Each row maps under lifted translations to the deck kernel $D\cong\Z_2$. This defines a homomorphism $\nu:K_3\to D$. Set $K'_3=\ker\nu$. Its index $j=[K_3:K'_3]$ is one or two, and all its elements are actual cover relations.
+
+For an integral basis change from $K_3$ to $K'_3$, the determinant is $\pm j$. Taking the third exterior power multiplies the cofactor vector by the same scalar, hence $c'=\pm jc$. The cover is a finite quotient of $\Z^4/K'_3$. Lemma~\ref{lem:strip} and \eqref{eq:row-bound} yield $d_2\le4jw^3\le8w^3$.
+
+Explicitly, if the parity vector is nonzero and $r_i$ has odd voltage, a basis of the kernel is $2r_i$ together with $r_j-\nu(r_j)r_i$ for $j\ne i$. Its index is two, not eight. There is no need to double all three rows separately, nor to lift the original logical as a cycle.
+\end{proof}
+This lemma treats both finite and virtually cyclic incidence presentations: even if $L$ has rank four, we use only three independent relations. Conversely, for descent from a cover, the same three rows already vanish in the base, so \eqref{eq:cofactor} gives $d\le4w^3$ without an index increase.
+
+\subsection{Pure circuits and higher-free-rank structure}
+For a circuit contained in one block, use only the two translations of that check. A strict trinomial is a nonzerodivisor in its support-generated group algebra whenever that group has positive free rank. Indeed, choose a free-coordinate direction with a unique extremal term. When two free positions coincide, choose the remaining singleton as the extremum; its coefficient is a torsion monomial, hence a unit. Comparing extremal degrees proves injectivity of multiplication.
+
+A pure universal cycle therefore forces its two-generator presentation to be finite. Two independent fundamental rows and Hadamard's inequality give group order at most $2w^2$. The image of this subgroup has size at most $2w^2$ downstairs and its preimage at most $4w^2$ upstairs. Lemma~\ref{lem:finite-check} gives the corresponding target distance bounds. From now on the source circuit meets both blocks.
+
+Write $H=T\oplus\Z^r$. Split the odd torsion into characters after extending scalars to an algebraic closure of $\F_2$, and filter the $2$-primary group algebra by its nilpotent augmentation ideal. Each associated graded layer is a free module over the Laurent polynomial ring of the free part.
+
+\begin{lemma}[Higher-rank classification]\label{lem:structure}
+If neither check has a point as its free support, nonzero universal first homology is impossible for $r\ge3$. For $r=2$, it forces, after monomial gauges, term permutations, and possibly exchanging the checks,
+\begin{equation}\label{eq:frobenius}
+ H=T\oplus\langle x,y\rangle,\qquad
+ A=1+x+y,\quad B=1+t x^q+u y^q,
+ \quad q=2^s,
+ \quad T=\langle t,u\rangle.
+\end{equation}
+Only the trivial character of $T_{\rm odd}$ can support this homology. Moreover, for a weight-$w$ incidence presentation,
+\begin{equation}\label{eq:torsion-bound}
+ |T|\le\frac{2w^2}{1+q^2}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+In an odd-character component, reduce modulo the $2$-primary augmentation ideal. If the two reduced Laurent polynomials are nonzero and coprime, every cycle in the Laurent domain is a boundary. Lift its boundary preimage and subtract it; repeat in the successive augmentation layers. Nilpotence terminates the procedure. Thus coprime reductions imply exactness also before reduction.
+
+A non-point trinomial support cannot reduce to zero: if two free positions coincide, the singleton coefficient remains nonzero. The Newton polytope of a product is the Minkowski sum of the factor polytopes. A nontrivial segment cannot be a summand of a nondegenerate triangle. Every non-point summand of a triangle is a positively homothetic triangle: its edge directions are among the three triangle directions, and the positive closing relation fixes their relative lengths. Therefore a common factor of triangular trinomials forces positively homothetic coplanar support triangles. Nonparallel segments, or a segment and a triangle, have no common nonunit factor. If one support is a point, it is torsion-supported and the finite-check lemma applies instead. Otherwise combined free rank at least three gives coprime reductions in every component, an impossibility for the chosen cycle.
+
+For $r=2$ with neither free support a point, the nonregular case must be two homothetic triangles. Their exponents can be written
+\[
+ (0,pv_1,pv_2),\qquad (0,qv_1,qv_2),\qquad \gcd(p,q)=1.
+\]
+Bezout's identity shows $v_1,v_2$ are integral and generate the free lattice. They are therefore a basis. In these coordinates the reduced polynomials are scalar Fermat polynomials. Write $p=2^a p_0$, with $p_0$ odd. In characteristic two, the polynomial is a $2^a$-th power of a scalar Fermat polynomial of odd degree $p_0$. Its projective homogenization is smooth: the three partial derivatives cannot all vanish. A reducible plane projective curve has intersecting components and hence a singular point, so this odd-degree polynomial is absolutely irreducible. The degree-one case is immediate. The same argument applies to $q$. A common factor forces equal odd parts; coprimality of $p,q$ then forces both odd parts to equal one, and one of $p,q$ is one. This proves the form \eqref{eq:frobenius}.
+
+The lifts $x,y$ of the smaller triangle split the free part. The remaining generators are the torsion elements $t,u$. Since the reduced $A$ is $1+x+y$, divisibility of the reduced $B$ by $A$ is equivalent to $\chi(t)=\chi(u)=1$. They generate the torsion, so the odd character is trivial.
+
+Finally all relation rows in these normalized port coordinates have form $(-q\beta_1,-q\beta_2,\beta_1,\beta_2)$. Projection to $\beta\in\Z^2$ identifies the saturated relation lattice with $\Z^2$, and $|T|$ is the index of the actual relation lattice there. Two independent fundamental rows have $\beta$ norms at most $\sqrt2w/\sqrt{1+q^2}$. Their determinant bounds this index from above, giving \eqref{eq:torsion-bound}. Changing reference ports does not invalidate the norm estimate: each traversed vertex still contributes a difference of two normalized ports from \eqref{eq:roots}.
+\end{proof}
+
+\subsection{A short nonboundary in an active torsion--Frobenius summand}
+\begin{lemma}[Nilpotent-twist witness]\label{lem:twist}
+Let a finite abelian code have checks $A=1+x+y$, $B=1+t x^{2^s}+u y^{2^s}$. Put $T_0=\langle t,u\rangle$, let $O$ be its odd subgroup, and let $E=\sum_{o\in O}o$. If $ER/(A,B)\ne0$, then
+\begin{equation}\label{eq:twist-weight}
+ d\le |T_0|(1+3^s).
+\end{equation}
+The active-summand assumption is essential; global $k>0$ alone is not a replacement for it.
+\end{lemma}
+\begin{proof}
+Work in the $E$ summand. Its $2$-primary torsion is
+\[
+ K=\langle g\rangle\times\langle h\rangle\cong C_M\times C_N,
+ \qquad N\mid M,
+\]
+where $M,N$ are powers of two. Put $e=1+g$, $f=1+h$, and $q=2^s$. For $M>1$, write the $2$-parts of $t,u$ as $g^a h^b,g^c h^d$. At least one of $a,c$ is odd because these two elements generate $K$. Put
+\[
+ C=B+A^q=eF+fH_0.
+\]
+Modulo $(e,f)$, the residue of $F$ is one of $x^q$, $y^q$, or $x^q+y^q$. At every common maximal ideal of $A,B$ in the active summand it is a unit: the first two are monomials and the last is one when $A=0$.
+
+Define a globally supported polynomial
+\begin{equation}\label{eq:S-witness}
+ S=E e^{M-N}C^{N-1},\qquad W=(SA^{q-1},S).
+\end{equation}
+Since $EC^N=Ee^NF^N$, we have $CS=0$ and hence $\partial_1W=0$. For $M=N=1$, take $S=E$; then $EC=0$ directly.
+
+To prove nontriviality, localize at a common maximal ideal in the active summand. The associated graded ring for $I=(e,f)$ is
+\[
+ (R/I)[e,f]/(e^M,f^N).
+\]
+This follows from a free group-coset basis over $\F_2[K]$; localization and an idempotent summand preserve that freeness. The initial form of $C$ is $e\overline F+f\overline H_0$, with $\overline F$ a unit. Substitution of this expression for $e$, leaving $f$ fixed, is an automorphism of the graded ring. Both directions preserve the truncation relations because $N\mid M$. Thus its annihilator is generated by its $(M-1)$-st power. Lifting through the finite $I$ filtration gives
+\[
+ \Ann(C)=C^{M-1}R,\qquad \Ann(C^{M-1})=CR.
+\]
+Explicitly, subtract a multiple of $C^{M-1}$ that matches the lowest nonzero graded part of an element killed by $C$, then iterate at higher filtration. The same argument proves the second identity. Also
+\[
+ C^{M-1}=F^{M-N} e^{M-N}C^{N-1},
+\]
+so locally $S$ is a unit multiple of $C^{M-1}$. Hence $\Ann(C)=SR$ and $\Ann(S)=CR$. The trivial-$K$ case has the same conclusions with $C=0,S=1$.
+
+If $W=(Br,Ar)$ were a boundary, then $Ar=S$ and $Br=SA^{q-1}$, whence $Cr=0$. Write $r=Sv$. The equation $Ar=S$ now implies $S(Av+1)=0$, so $Av+1\in CR$. This is impossible: $A,C$ belong to the chosen maximal ideal but $Av+1$ is a unit.
+
+Finally $e^{M-N}$ has $M/N$ terms, $C$ has at most four terms, and $N$ is a power of two. Frobenius gives $\wt(C^{N-1})\le N^2$ and $\wt(A^{q-1})\le3^s$. Thus $\wt(S)\le|O|MN=|T_0|$ and $\wt(W)\le|T_0|(1+3^s)$.
+\end{proof}
+
+\subsection{Why the active summand survives in the required direction}
+The group-algebra map of a finite abelian $2$-group quotient has nilpotent kernel: it is generated by commuting nilpotents $1+t$ for kernel elements $t$. It therefore induces a bijection of maximal ideals. A common maximal ideal of the two checks exists in a specified odd idempotent summand downstairs exactly when one exists in the corresponding summand upstairs.
+
+For a source circuit with presentation \eqref{eq:frobenius}, Lemma~\ref{lem:structure} says that every nontrivial universal homology component lies in the trivial odd character. For $E$ the odd norm, the other components of the chosen universal cycle are boundaries, so its finite source class equals its $E$ component and is nonzero. Thus the source $E$ summand encodes. The preceding nilpotent-kernel observation gives the active target summand. This is not an assumption that the particular logical projects or transfers nontrivially.
+
+For descent, the target torsion image has order at most $|T|$. For ascent, one may construct the universal lifted presentation directly. Let $f:\Z^4\to G$ and $\widetilde f:\Z^4\to\widetilde G$ record the normalized translations, and let $L$ be the source relation lattice. Then
+\[
+ L'=L\cap\ker\widetilde f,\qquad [L:L']\le2,
+ \qquad \widetilde H=\Z^4/L'\longrightarrow H
+\]
+has finite kernel of order at most two. It also maps onto the actual cover support subgroup. Its torsion has order at most $2|T|$. Choosing lifts of the free basis gives the same form $A'=1+x'+y'$, $B'=1+t'(x')^q+u'(y')^q$. The odd torsion is canonically unchanged by the $2$-kernel, so the active-summand argument applies.
+
+Combining Lemma~\ref{lem:twist} with \eqref{eq:torsion-bound}, the distance in the target is at most
+\begin{equation}\label{eq:ranktwo-target}
+ j|T|(1+3^s)
+ \le 2j w^2\frac{1+3^s}{1+4^s}
+ \le2j w^2,
+\end{equation}
+where $j=1$ for descent and $j\le2$ for ascent. If a check is torsion-supported instead, two independent relation rows bound $|T|\le2w^2$ directly by minors and Hadamard, and Lemma~\ref{lem:finite-check} gives the same target bound. A torsion-supported check cannot occur with combined free rank above two, since the other check supplies at most two free directions.
+
+\subsection{Completion of the proof}
+\begin{proof}[Proof of Theorem~\ref{thm:polynomial}]
+For descent take $w=d_2$. Pure circuits give $d\le2w^2$. A mixed presentation with relation rank at least three gives $d\le4w^3$ by \eqref{eq:cofactor}--\eqref{eq:row-bound}. Relation rank at most one would give free rank at least three and hence no universal nonboundary, by Lemma~\ref{lem:structure}. In the remaining rank-two case, \eqref{eq:ranktwo-target} or the finite-check argument gives $d\le2w^2$. This proves $d\le4d_2^3$. Only the active-summand step uses the $2$-group nature of the kernel, so this conclusion holds for all finite $2$-group kernels.
+
+For ascent take $w=d$. Pure circuits give $d_2\le4w^2$. In relation rank at least three use Lemma~\ref{lem:transport}, giving $d_2\le8w^3$. Free rank at least three is again impossible for the source nonboundary. In free rank two, \eqref{eq:ranktwo-target} gives $d_2\le4w^2$. Since $w\ge2$, all cases satisfy $d_2\le8d^3$.
+
+Finally apply Lemma~\ref{lem:finite-check} to the cover, whose group has $n$ elements, and use evenness of all cycle weights to round both endpoints in \eqref{eq:basic-interval}.
+\end{proof}

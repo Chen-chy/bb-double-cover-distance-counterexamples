@@ -1,0 +1,8 @@
+PARAMETER-UNIFORM F4/MIN-PLUS CERTIFICATE: PASS
+j=2: [[36,4,4]] -> [[72,4,6]], 18 minimum Z representatives, rho=3, minimum literal-projection lift weight=10: PASS
+j=3: [[54,4,4]] -> [[108,4,6]], 27 minimum Z representatives, rho=5, minimum literal-projection lift weight=14: PASS
+j=4: [[72,4,4]] -> [[144,4,6]], 36 minimum Z representatives, rho=7, minimum literal-projection lift weight=18: PASS
+j=5: [[90,4,4]] -> [[180,4,6]], 45 minimum Z representatives, rho=9, minimum literal-projection lift weight=22: PASS
+j=6: [[108,4,4]] -> [[216,4,6]], 54 minimum Z representatives, rho=11, minimum literal-projection lift weight=26: PASS
+[[30,4,4]] -> [[60,4,6]] normal-form test: rho(z)=1: PASS
+ALL EXACT CHECKS PASSED. The support lemma is false; these examples satisfy d_cover <= 2*d_base.

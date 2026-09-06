@@ -1,0 +1,175 @@
+{
+  "candidate": {
+    "l": 105,
+    "m": 1,
+    "cl": 210,
+    "cm": 1,
+    "A": [
+      [
+        0,
+        0
+      ],
+      [
+        77,
+        0
+      ],
+      [
+        38,
+        0
+      ]
+    ],
+    "B": [
+      [
+        0,
+        0
+      ],
+      [
+        52,
+        0
+      ],
+      [
+        39,
+        0
+      ]
+    ],
+    "At": [
+      [
+        0,
+        0
+      ],
+      [
+        77,
+        0
+      ],
+      [
+        38,
+        0
+      ]
+    ],
+    "Bt": [
+      [
+        0,
+        0
+      ],
+      [
+        52,
+        0
+      ],
+      [
+        39,
+        0
+      ]
+    ],
+    "d": 8,
+    "k": 8,
+    "base_witness": [
+      0,
+      105,
+      144,
+      130,
+      183,
+      117,
+      209,
+      157
+    ],
+    "direction": 0,
+    "lift": 0,
+    "cover_test": {
+      "l": 210,
+      "m": 1,
+      "k": 8,
+      "bound": 18,
+      "found": false,
+      "cutoff": true,
+      "nodes": 200000,
+      "closed": 0,
+      "seconds": 0.00536491,
+      "witness": []
+    },
+    "probes": [
+      {
+        "l": 210,
+        "m": 1,
+        "k": 8,
+        "bound": 18,
+        "found": false,
+        "cutoff": true,
+        "nodes": 1000000,
+        "closed": 12,
+        "seconds": 0.0314734,
+        "witness": [],
+        "order": 19
+      },
+      {
+        "l": 210,
+        "m": 1,
+        "k": 8,
+        "bound": 18,
+        "found": false,
+        "cutoff": true,
+        "nodes": 1000000,
+        "closed": 16,
+        "seconds": 0.0327294,
+        "witness": [],
+        "order": 73
+      },
+      {
+        "l": 210,
+        "m": 1,
+        "k": 8,
+        "bound": 18,
+        "found": false,
+        "cutoff": true,
+        "nodes": 1000000,
+        "closed": 5,
+        "seconds": 0.0339325,
+        "witness": [],
+        "order": 211
+      },
+      {
+        "l": 210,
+        "m": 1,
+        "k": 8,
+        "bound": 18,
+        "found": false,
+        "cutoff": true,
+        "nodes": 1000000,
+        "closed": 22,
+        "seconds": 0.0314569,
+        "witness": [],
+        "order": 2027
+      }
+    ]
+  },
+  "result": {
+    "l": 210,
+    "m": 1,
+    "k": 8,
+    "bound": 18,
+    "found": true,
+    "cutoff": false,
+    "nodes": 36307304,
+    "closed": 311,
+    "seconds": 1.04814,
+    "witness": [
+      0,
+      133,
+      38,
+      286,
+      77,
+      325,
+      338,
+      291,
+      81,
+      278,
+      329,
+      30,
+      398,
+      150,
+      308,
+      60,
+      218,
+      180
+    ]
+  }
+}

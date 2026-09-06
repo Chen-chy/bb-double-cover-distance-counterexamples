@@ -1,0 +1,3 @@
+na=5 total=829440 rank<=2=17180 rank bins=0,0,17180,812260, rank3=297000 rank4=515260 max finite order=12 max T*rho bound=10
+na=4 total=829440 rank<=2=71672 rank bins=372,7044,64256,757768, rank3=342408 rank4=415360 max finite order=24 max T*rho bound=14
+na=3 total=829440 rank<=2=18280 rank bins=1,108,18171,811160, rank3=277008 rank4=534152 max finite order=27 max T*rho bound=12

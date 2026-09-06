@@ -1,0 +1,16 @@
+{
+  "Q": 4,
+  "base_n": 576,
+  "base_k": 16,
+  "base_distance_exact": 4,
+  "base_weight_two_cycles_excluded_by_distinct_columns": true,
+  "cover_n": 1152,
+  "cover_k": 20,
+  "cover_distance_upper_bound": 6,
+  "cover_distance_exact_not_claimed": true,
+  "termwise_matching_and_strict_supports": true,
+  "connected_by_A_support_generators": true,
+  "projection_rank_binary": 10,
+  "four_term_same_local_full_doubling_guard": true,
+  "seconds": 0.069
+}
